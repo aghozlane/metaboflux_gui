@@ -1,0 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# Main Program #
+
+import gtk, locale
+import app
+
+locale.setlocale(locale.LC_ALL, 'en_US.utf8')
+
+app = app.App()
+app.run()

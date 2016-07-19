@@ -1,0 +1,596 @@
+\hypertarget{mpi__load_8h}{
+\section{metaboflux/include/mpi\_\-load.h File Reference}
+\label{mpi__load_8h}\index{metaboflux/include/mpi\_\-load.h@{metaboflux/include/mpi\_\-load.h}}
+}
+
+
+Parallelize the program.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=372pt]{mpi__load_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mpi__load_8h_afc95cdfc5153ccd5954a98aa7961a626}{Mpi\_\-connectInterface} (int)
+\begin{DoxyCompactList}\small\item\em Enter in the program for standard deviation. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_ad7fe2a9dd47b4a4353fe4a95e443969a}{Mpi\_\-disconnectInterface} (int)
+\begin{DoxyCompactList}\small\item\em Disconnection to the interface. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_aa10a38be940ec3edbe44b5b5108e5e87}{Mpi\_\-init} (int, char $\ast$$\ast$, int $\ast$)
+\begin{DoxyCompactList}\small\item\em Enter in the program for standard deviation. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_a49f24c98f9724a9d2d64bf3b41d7c101}{Mpi\_\-master} (\hyperlink{structListParameters}{pListParameters}, char $\ast$$\ast$, int, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Master process. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_a4cf3597a859457305000e2168f205993}{Mpi\_\-writer} (\hyperlink{structListParameters}{pListParameters}, char $\ast$$\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em Master process. \end{DoxyCompactList}\item 
+int \hyperlink{mpi__load_8h_ab4d2e0de3a14f863a405bddfa625b8bd}{Mpi\_\-sizeResultTab} (\hyperlink{structListParameters}{pListParameters}, int, int, int)
+\begin{DoxyCompactList}\small\item\em Determine the size of the result tab. \end{DoxyCompactList}\item 
+double $\ast$ \hyperlink{mpi__load_8h_aa305e4bef7acf975da871190b8e3e1d2}{Mpi\_\-allocResultTab} (int)
+\begin{DoxyCompactList}\small\item\em Allocate the result tab. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_aa753112f6c21ff66c1c63f511ccbb325}{Mpi\_\-writeSimFile} (\hyperlink{structListParameters}{pListParameters}, FILE $\ast$, FILE $\ast$, double $\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em Determine the size of the result tab. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_a3f0c05e595da1760ed46a5f5f978a704}{Mpi\_\-writeSdFile} (FILE $\ast$, double $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Determine the size of the result tab. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_a73a3042b31e240b5785eed805f963212}{Mpi\_\-slave} (\hyperlink{structListParameters}{pListParameters}, char $\ast$$\ast$, int, int, int)
+\item 
+void \hyperlink{mpi__load_8h_a68f6a4d5212d2eb5e853f8ab5d3f0f97}{Mpi\_\-finalize} (void)
+\begin{DoxyCompactList}\small\item\em End MPI execution environment. \end{DoxyCompactList}\item 
+void \hyperlink{mpi__load_8h_afeea8538ec6091c216e0d58a4b4ac9f1}{compute\_\-mpi} (int, char $\ast$$\ast$, char $\ast$$\ast$, int, int, int, int)
+\begin{DoxyCompactList}\small\item\em Compute the simulated annealing through mpi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parallelize the program. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 novembre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{mpi__load_8h_source}{mpi\_\-load.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{mpi__load_8h_afeea8538ec6091c216e0d58a4b4ac9f1}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!compute\_\-mpi@{compute\_\-mpi}}
+\index{compute\_\-mpi@{compute\_\-mpi}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{compute\_\-mpi}]{\setlength{\rightskip}{0pt plus 5cm}void compute\_\-mpi (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{activity, }
+\item[{int}]{group, }
+\item[{int}]{debug, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_afeea8538ec6091c216e0d58a4b4ac9f1}
+
+
+Compute the simulated annealing through mpi. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & List of arguments \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em activity} & Chosen activity \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em debug} & Debug flag \\
+\hline
+{\em port} & Interface port \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 546 of file mpi\_\-load.c.
+
+
+
+References Data\_\-desallocation(), Data\_\-parameters(), Mpi\_\-connectInterface(), Mpi\_\-disconnectInterface(), Mpi\_\-finalize(), Mpi\_\-init(), Mpi\_\-master(), Mpi\_\-slave(), and Mpi\_\-writer().
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{mpi__load_8h_afeea8538ec6091c216e0d58a4b4ac9f1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{mpi__load_8h_aa305e4bef7acf975da871190b8e3e1d2}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-allocResultTab@{Mpi\_\-allocResultTab}}
+\index{Mpi\_\-allocResultTab@{Mpi\_\-allocResultTab}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-allocResultTab}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Mpi\_\-allocResultTab (
+\begin{DoxyParamCaption}
+\item[{int}]{tailleTab}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_aa305e4bef7acf975da871190b8e3e1d2}
+
+
+Allocate the result tab. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em tailleTab} & Size of Result tab \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Adress of the allocated space 
+\end{DoxyReturn}
+
+
+Definition at line 355 of file mpi\_\-load.c.
+
+
+
+Referenced by Mpi\_\-slave(), and Mpi\_\-writer().
+
+\hypertarget{mpi__load_8h_afc95cdfc5153ccd5954a98aa7961a626}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-connectInterface@{Mpi\_\-connectInterface}}
+\index{Mpi\_\-connectInterface@{Mpi\_\-connectInterface}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-connectInterface}]{\setlength{\rightskip}{0pt plus 5cm}int Mpi\_\-connectInterface (
+\begin{DoxyParamCaption}
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_afc95cdfc5153ccd5954a98aa7961a626}
+
+
+Enter in the program for standard deviation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Connection port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Socket 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file mpi\_\-load.c.
+
+
+
+Referenced by compute\_\-mpi().
+
+\hypertarget{mpi__load_8h_ad7fe2a9dd47b4a4353fe4a95e443969a}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-disconnectInterface@{Mpi\_\-disconnectInterface}}
+\index{Mpi\_\-disconnectInterface@{Mpi\_\-disconnectInterface}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-disconnectInterface}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-disconnectInterface (
+\begin{DoxyParamCaption}
+\item[{int}]{desc}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_ad7fe2a9dd47b4a4353fe4a95e443969a}
+
+
+Disconnection to the interface. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em desc} & Socket \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file mpi\_\-load.c.
+
+
+
+Referenced by compute\_\-mpi().
+
+\hypertarget{mpi__load_8h_a68f6a4d5212d2eb5e853f8ab5d3f0f97}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-finalize@{Mpi\_\-finalize}}
+\index{Mpi\_\-finalize@{Mpi\_\-finalize}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-finalize}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-finalize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_a68f6a4d5212d2eb5e853f8ab5d3f0f97}
+
+
+End MPI execution environment. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+
+Definition at line 527 of file mpi\_\-load.c.
+
+
+
+Referenced by compute\_\-mpi().
+
+\hypertarget{mpi__load_8h_aa10a38be940ec3edbe44b5b5108e5e87}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-init@{Mpi\_\-init}}
+\index{Mpi\_\-init@{Mpi\_\-init}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-init (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{int $\ast$}]{tab}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_aa10a38be940ec3edbe44b5b5108e5e87}
+
+
+Enter in the program for standard deviation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & List of arguments \\
+\hline
+{\em tab} & Table \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file mpi\_\-load.c.
+
+
+
+Referenced by compute\_\-mpi().
+
+\hypertarget{mpi__load_8h_a49f24c98f9724a9d2d64bf3b41d7c101}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-master@{Mpi\_\-master}}
+\index{Mpi\_\-master@{Mpi\_\-master}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-master}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-master (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{allone, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{activity, }
+\item[{int}]{group, }
+\item[{int}]{myid, }
+\item[{int}]{numprocs, }
+\item[{int}]{desc}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_a49f24c98f9724a9d2d64bf3b41d7c101}
+
+
+Master process. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em allone} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em activity} & Chosen activity \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em myid} & Id of the thread \\
+\hline
+{\em numprocs} & Number of thread \\
+\hline
+{\em desc} & Socket \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 154 of file mpi\_\-load.c.
+
+
+
+References ListParameters::conf, ListParameters::nb\_\-parameters, Xml\_\-getNbGroup(), and Xml\_\-getNbSimulations().
+
+
+
+Referenced by compute\_\-mpi().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{mpi__load_8h_a49f24c98f9724a9d2d64bf3b41d7c101_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{mpi__load_8h_ab4d2e0de3a14f863a405bddfa625b8bd}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-sizeResultTab@{Mpi\_\-sizeResultTab}}
+\index{Mpi\_\-sizeResultTab@{Mpi\_\-sizeResultTab}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-sizeResultTab}]{\setlength{\rightskip}{0pt plus 5cm}int Mpi\_\-sizeResultTab (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{allone, }
+\item[{int}]{activity, }
+\item[{int}]{group, }
+\item[{int}]{nb\_\-species}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_ab4d2e0de3a14f863a405bddfa625b8bd}
+
+
+Determine the size of the result tab. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em allone} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em activity} & Chosen activity \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em nb\_\-species} & Number of interest species \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size of Result tab 
+\end{DoxyReturn}
+
+
+Definition at line 334 of file mpi\_\-load.c.
+
+
+
+References ListParameters::conf, ListParameters::model, ListParameters::nb\_\-parameters, and Xml\_\-getNbTriesMod().
+
+
+
+Referenced by Mpi\_\-slave(), and Mpi\_\-writer().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{mpi__load_8h_ab4d2e0de3a14f863a405bddfa625b8bd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{mpi__load_8h_a73a3042b31e240b5785eed805f963212}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-slave@{Mpi\_\-slave}}
+\index{Mpi\_\-slave@{Mpi\_\-slave}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-slave}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-slave (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{allone, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{activity, }
+\item[{int}]{group, }
+\item[{int}]{debug}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_a73a3042b31e240b5785eed805f963212}
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em allone} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em activity} & Activity chosen \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em debug} & Debug flag \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 440 of file mpi\_\-load.c.
+
+
+
+References ListParameters::conf, Min\_\-compute\_\-minimization(), Mod\_\-compute\_\-modeling(), Mpi\_\-allocResultTab(), Mpi\_\-sizeResultTab(), ListParameters::nb\_\-parameters, Recuit\_\-compute\_\-recuit(), Sd\_\-compute\_\-standard\_\-deviation(), Xml\_\-getBoltzmann(), Xml\_\-getMuT(), Xml\_\-getNbIters(), Xml\_\-getNbSpecies(), Xml\_\-getNbTriesSa(), Xml\_\-getStepSize(), Xml\_\-getTinitial(), and Xml\_\-getTmin().
+
+
+
+Referenced by compute\_\-mpi().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{mpi__load_8h_a73a3042b31e240b5785eed805f963212_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{mpi__load_8h_a4cf3597a859457305000e2168f205993}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-writer@{Mpi\_\-writer}}
+\index{Mpi\_\-writer@{Mpi\_\-writer}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-writer}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-writer (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{allone, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{activity, }
+\item[{int}]{group, }
+\item[{int}]{myid}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_a4cf3597a859457305000e2168f205993}
+
+
+Master process. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em allone} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em activity} & Chosen activity \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em myid} & Id of the thread \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 273 of file mpi\_\-load.c.
+
+
+
+References ListParameters::conf, ListParameters::model, Mpi\_\-allocResultTab(), Mpi\_\-sizeResultTab(), Mpi\_\-writeSdFile(), Mpi\_\-writeSimFile(), and Xml\_\-getNbSpecies().
+
+
+
+Referenced by compute\_\-mpi().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{mpi__load_8h_a4cf3597a859457305000e2168f205993_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{mpi__load_8h_a3f0c05e595da1760ed46a5f5f978a704}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-writeSdFile@{Mpi\_\-writeSdFile}}
+\index{Mpi\_\-writeSdFile@{Mpi\_\-writeSdFile}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-writeSdFile}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-writeSdFile (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{out, }
+\item[{double $\ast$}]{result\_\-tab, }
+\item[{int}]{tailleTab}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_a3f0c05e595da1760ed46a5f5f978a704}
+
+
+Determine the size of the result tab. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Result file \\
+\hline
+{\em result\_\-tab} & Result table \\
+\hline
+{\em tailleTab} & Size of result table \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 421 of file mpi\_\-load.c.
+
+
+
+Referenced by Mpi\_\-writer().
+
+\hypertarget{mpi__load_8h_aa753112f6c21ff66c1c63f511ccbb325}{
+\index{mpi\_\-load.h@{mpi\_\-load.h}!Mpi\_\-writeSimFile@{Mpi\_\-writeSimFile}}
+\index{Mpi\_\-writeSimFile@{Mpi\_\-writeSimFile}!mpi_load.h@{mpi\_\-load.h}}
+\subsubsection[{Mpi\_\-writeSimFile}]{\setlength{\rightskip}{0pt plus 5cm}void Mpi\_\-writeSimFile (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{allone, }
+\item[{FILE $\ast$}]{out, }
+\item[{FILE $\ast$}]{logOut, }
+\item[{double $\ast$}]{result\_\-tab, }
+\item[{int}]{group, }
+\item[{int}]{tailleSpecies, }
+\item[{int}]{nb\_\-species}
+\end{DoxyParamCaption}
+)}}
+\label{mpi__load_8h_aa753112f6c21ff66c1c63f511ccbb325}
+
+
+Determine the size of the result tab. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em allone} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em out} & Result file \\
+\hline
+{\em logOut} & Log file \\
+\hline
+{\em result\_\-tab} & Result table \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em tailleSpecies} & Number of species \\
+\hline
+{\em nb\_\-species} & Number of interest species \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 375 of file mpi\_\-load.c.
+
+
+
+References ListParameters::nb\_\-parameters.
+
+
+
+Referenced by Mpi\_\-writer().
+

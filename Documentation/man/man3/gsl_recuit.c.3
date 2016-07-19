@@ -1,0 +1,416 @@
+.TH "metaboflux/src/gsl_recuit.c" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/src/gsl_recuit.c \- 
+.PP
+Compute the simulated annealing.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <assert.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <math.h>\fP
+.br
+\fC#include <sys/types.h>\fP
+.br
+\fC#include <unistd.h>\fP
+.br
+\fC#include <gsl/gsl_blas.h>\fP
+.br
+\fC#include <gsl/gsl_multimin.h>\fP
+.br
+\fC#include <gsl/gsl_math.h>\fP
+.br
+\fC#include <gsl/gsl_rng.h>\fP
+.br
+\fC#include <gsl/gsl_siman.h>\fP
+.br
+\fC#include <gsl/gsl_ieee_utils.h>\fP
+.br
+\fC#include <sbml/SBMLTypes.h>\fP
+.br
+\fC#include <libxml/parser.h>\fP
+.br
+\fC#include <libxml/xpath.h>\fP
+.br
+\fC#include 'xml_parameter.h'\fP
+.br
+\fC#include 'especes.h'\fP
+.br
+\fC#include 'equations.h'\fP
+.br
+\fC#include 'simulation.h'\fP
+.br
+\fC#include 'data_parameters.h'\fP
+.br
+\fC#include 'gsl_recuit.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_GNU_SOURCE\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBRecuit_energyFunction\fP (void *xp)"
+.br
+.RI "\fISimulate the petri net and compute the energy. \fP"
+.ti -1c
+.RI "double \fBRecuit_metricDistance\fP (void *xp, void *yp)"
+.br
+.RI "\fICompute the distance between the two table. \fP"
+.ti -1c
+.RI "void \fBRecuit_takeStep\fP (const gsl_rng *r, void *xp, double step_size)"
+.br
+.RI "\fITake a step through the solution space TSP. \fP"
+.ti -1c
+.RI "void \fBRecuit_printPosition\fP (void *xp)"
+.br
+.RI "\fIPrint the table of reaction parameters. \fP"
+.ti -1c
+.RI "FILE * \fBRecuit_redirectionFlux\fP (\fBxmlConfig_t\fP *conf, FILE *f, char **files_path, int number)"
+.br
+.RI "\fIRedirect stdout flux. \fP"
+.ti -1c
+.RI "void \fBRecuit_verifParameters\fP (double *x_initial, const gsl_rng *r, int debut, int max)"
+.br
+.RI "\fIChoice of parameters and verification of their value. \fP"
+.ti -1c
+.RI "void \fBRecuit_verifParameters_2\fP (double *new_x, double *old_x, const gsl_rng *r, int debut, int max, double step_size)"
+.br
+.RI "\fIChoice of parameters and verification of their value. \fP"
+.ti -1c
+.RI "void \fBRecuit_defParametre\fP (double *x_initial, const gsl_rng *r)"
+.br
+.RI "\fIDefinition of the initial parameters of the simulation. \fP"
+.ti -1c
+.RI "void \fBRecuit_printParametre\fP (double *x_initial)"
+.br
+.RI "\fIPrint initial parameters. \fP"
+.ti -1c
+.RI "void \fBRecuit_compute_recuit\fP (char **files_path, int debug, int number, \fBpListParameters\fP allone, gsl_siman_params_t params)"
+.br
+.RI "\fICompute the simulated annealing. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBpListParameters\fP \fBall\fP"
+.br
+.ti -1c
+.RI "\fBpSimParameters\fP \fBsim\fP"
+.br
+.ti -1c
+.RI "\fBpScore\fP \fBresultemp\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Compute the simulated annealing. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+9 novembre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBgsl_recuit.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define _GNU_SOURCE"
+.PP
+Definition at line 26 of file gsl_recuit.c.
+.SH "Function Documentation"
+.PP 
+.SS "void Recuit_compute_recuit (char **files_path, intdebug, intnumber, \fBpListParameters\fPallone, gsl_siman_params_tparams)"
+.PP
+Compute the simulated annealing. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfiles_path\fP List of paths 
+.br
+\fIdebug\fP Debug flag 
+.br
+\fInumber\fP Number of the simulation 
+.br
+\fIallone\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIparams\fP Gsl parameters 
+.RE
+.PP
+
+.PP
+Definition at line 304 of file gsl_recuit.c.
+.PP
+References ListParameters::conf, Data_desallocSim(), Data_scoreAlloc(), Data_scoreFree(), Data_simParameters(), ListParameters::interest_parameters, SimParameters::r, Recuit_defParametre(), Recuit_energyFunction(), Recuit_metricDistance(), Recuit_printParametre(), Recuit_printPosition(), Recuit_redirectionFlux(), and Recuit_takeStep().
+.PP
+Referenced by Mpi_slave().
+.SS "void Recuit_defParametre (double *x_initial, const gsl_rng *r)"
+.PP
+Definition of the initial parameters of the simulation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx_initial\fP table of reaction parameters 
+.br
+\fIr\fP Random number generator 
+.RE
+.PP
+
+.PP
+Definition at line 261 of file gsl_recuit.c.
+.PP
+References ListParameters::nb_couples, ListParameters::parameters, and Recuit_verifParameters().
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "double Recuit_energyFunction (void *xp)"
+.PP
+Simulate the petri net and compute the energy. double \fBRecuit_energyFunction(void *xp)\fP 
+.PP
+\fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxp\fP Short table of reaction parameters 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Energy value 
+.RE
+.PP
+
+.PP
+Definition at line 65 of file gsl_recuit.c.
+.PP
+References ListParameters::banned, Data_equationsAlloc(), Data_equationsInit(), Data_scoreInit(), Data_updateTab(), SimParameters::debugFile, Equations_calcul(), Equations_finalQuantite(), ListParameters::model, Score::name, ListParameters::nb_banned, ListParameters::nb_equations, Score::nb_species, ListParameters::nb_triesSa, SimParameters::out, SimParameters::pile, Score::quantite, SimParameters::r, SBML_compute_simulation_mean(), SBML_debugPrint(), Score::species, Score::species_amount, Score::species_weight, Score::taille, Score::tailleSpecies, and SimParameters::y.
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "double Recuit_metricDistance (void *xp, void *yp)"
+.PP
+Compute the distance between the two table. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxp\fP Past short table of reaction parameters 
+.br
+\fIyp\fP New short table of reaction parameters 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Distance between the two table 
+.RE
+.PP
+
+.PP
+Definition at line 115 of file gsl_recuit.c.
+.PP
+References ListParameters::interest_parameters.
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "void Recuit_printParametre (double *x_initial)"
+.PP
+Print initial parameters. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx_initial\fP table of reaction parameters 
+.RE
+.PP
+
+.PP
+Definition at line 279 of file gsl_recuit.c.
+.PP
+References ListParameters::conf, ListParameters::interest_parameters, Xml_getBoltzmann(), Xml_getMuT(), Xml_getNbIters(), Xml_getNbTriesSa(), Xml_getStepSize(), Xml_getTinitial(), and Xml_getTmin().
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "void Recuit_printPosition (void *xp)"
+.PP
+Print the table of reaction parameters. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxp\fP Short table of reaction parameters 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file gsl_recuit.c.
+.PP
+References Data_updateTab(), ListParameters::nb_parameters, and SimParameters::y.
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "FILE * Recuit_redirectionFlux (\fBxmlConfig_t\fP *conf, FILE *f, char **files_path, intnumber)"
+.PP
+Redirect stdout flux. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIf\fP File name 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fInumber\fP Index of out repertory 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Out flux 
+.RE
+.PP
+
+.PP
+Definition at line 184 of file gsl_recuit.c.
+.PP
+References Xml_getString().
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "void Recuit_takeStep (const gsl_rng *r, void *xp, doublestep_size)"
+.PP
+Take a step through the solution space TSP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP Random number generator 
+.br
+\fIxp\fP Short table of reaction parameters 
+.br
+\fIstep_size\fP Size of step 
+.RE
+.PP
+
+.PP
+Definition at line 136 of file gsl_recuit.c.
+.PP
+References ListParameters::interest_parameters, ListParameters::nb_couples, ListParameters::parameters, and Recuit_verifParameters_2().
+.PP
+Referenced by Recuit_compute_recuit().
+.SS "void Recuit_verifParameters (double *x_initial, const gsl_rng *r, intdebut, intmax)"
+.PP
+Choice of parameters and verification of their value. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx_initial\fP table of reaction parameters 
+.br
+\fIr\fP Random number generator 
+.br
+\fIdebut\fP Beginning 
+.br
+\fImax\fP End 
+.RE
+.PP
+
+.PP
+Definition at line 207 of file gsl_recuit.c.
+.PP
+Referenced by Recuit_defParametre().
+.SS "void Recuit_verifParameters_2 (double *new_x, double *old_x, const gsl_rng *r, intdebut, intmax, doublestep_size)"
+.PP
+Choice of parameters and verification of their value. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInew_x\fP table of reaction parameters 
+.br
+\fIold_x\fP table of reaction parameters 
+.br
+\fIr\fP Random number generator 
+.br
+\fIdebut\fP Beginning 
+.br
+\fImax\fP End 
+.br
+\fIstep_size\fP Size of the step 
+.RE
+.PP
+
+.PP
+Definition at line 235 of file gsl_recuit.c.
+.PP
+Referenced by Recuit_takeStep().
+.SH "Variable Documentation"
+.PP 
+.SS "\fBpListParameters\fP \fBall\fP"
+.PP
+Definition at line 52 of file gsl_recuit.c.
+.PP
+Referenced by Xml_getKineticLaw().
+.SS "\fBpScore\fP \fBresultemp\fP"
+.PP
+Definition at line 54 of file gsl_recuit.c.
+.SS "\fBpSimParameters\fP \fBsim\fP"
+.PP
+Definition at line 53 of file gsl_recuit.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

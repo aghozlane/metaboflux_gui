@@ -1,0 +1,407 @@
+\hypertarget{MetaBoFlux_8c}{
+\section{metaboflux/src/MetaBoFlux.c File Reference}
+\label{MetaBoFlux_8c}\index{metaboflux/src/MetaBoFlux.c@{metaboflux/src/MetaBoFlux.c}}
+}
+
+
+Program for simulated annealing analysis.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$assert.h$>$}\par
+{\ttfamily \#include $<$getopt.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-blas.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-multimin.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-math.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-rng.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-siman.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-ieee\_\-utils.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-statistics\_\-double.h$>$}\par
+{\ttfamily \#include $<$sbml/SBMLTypes.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+{\ttfamily \#include $<$libxml/xpath.h$>$}\par
+{\ttfamily \#include \char`\"{}mpi.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}especes.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}equations.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}simulation.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}xml\_\-parameter.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}data\_\-parameters.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}gsl\_\-recuit.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}gsl\_\-mod.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}gsl\_\-min.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}gsl\_\-sd.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mpi\_\-load.h\char`\"{}}\par
+Include dependency graph for MetaBoFlux.c:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{MetaBoFlux_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structListArguments}{ListArguments}
+\begin{DoxyCompactList}\small\item\em List of arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structListArguments}{pListArguments} \hyperlink{MetaBoFlux_8c_a3f4b8fabba96f804bce4d2788e5f358c}{alloc\_\-arguments} (void)
+\begin{DoxyCompactList}\small\item\em Alloc memory for the struct pListArguments. \end{DoxyCompactList}\item 
+void \hyperlink{MetaBoFlux_8c_aa7eafd280790b4a437b60ac15c2a6ec6}{free\_\-arguments} (\hyperlink{structListArguments}{pListArguments} args)
+\begin{DoxyCompactList}\small\item\em Free the struct pListArguments. \end{DoxyCompactList}\item 
+void \hyperlink{MetaBoFlux_8c_a6bb3d12e18c46b2a13a7194002e8fb09}{help\_\-print} (void)
+\begin{DoxyCompactList}\small\item\em Print the usage help. \end{DoxyCompactList}\item 
+void \hyperlink{MetaBoFlux_8c_af5bf4eba3c08aec77213c81dd1f60d31}{error\_\-activity} (int activity)
+\begin{DoxyCompactList}\small\item\em Print the error notification. \end{DoxyCompactList}\item 
+void \hyperlink{MetaBoFlux_8c_a9eaf6bb32d2021f08472ac42d4309342}{argument\_\-analysis} (int argc, char $\ast$$\ast$argv, \hyperlink{structListArguments}{pListArguments} args)
+\begin{DoxyCompactList}\small\item\em Print the error notification. \end{DoxyCompactList}\item 
+void \hyperlink{MetaBoFlux_8c_af8792bea8df799a759aad90b0b776db5}{check\_\-common} (\hyperlink{structListArguments}{pListArguments} args)
+\begin{DoxyCompactList}\small\item\em Check obligatory arguments. \end{DoxyCompactList}\item 
+void \hyperlink{MetaBoFlux_8c_ad123ef44ec4ef912b084c8b5715b9369}{check\_\-arguments} (\hyperlink{structListArguments}{pListArguments} args)
+\begin{DoxyCompactList}\small\item\em Check program arguments. \end{DoxyCompactList}\item 
+int \hyperlink{MetaBoFlux_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Enter in the program for simulated annealing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Program for simulated annealing analysis. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 novembre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{MetaBoFlux_8c_source}{MetaBoFlux.c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{MetaBoFlux_8c_a3f4b8fabba96f804bce4d2788e5f358c}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!alloc\_\-arguments@{alloc\_\-arguments}}
+\index{alloc\_\-arguments@{alloc\_\-arguments}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{alloc\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pListArguments} alloc\_\-arguments (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_a3f4b8fabba96f804bce4d2788e5f358c}
+
+
+Alloc memory for the struct pListArguments. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+
+Definition at line 103 of file MetaBoFlux.c.
+
+
+
+References ListArguments::activity, ListArguments::debug, ListArguments::files\_\-path, ListArguments::group, and ListArguments::port.
+
+
+
+Referenced by main().
+
+\hypertarget{MetaBoFlux_8c_a9eaf6bb32d2021f08472ac42d4309342}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!argument\_\-analysis@{argument\_\-analysis}}
+\index{argument\_\-analysis@{argument\_\-analysis}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{argument\_\-analysis}]{\setlength{\rightskip}{0pt plus 5cm}void argument\_\-analysis (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{{\bf pListArguments}}]{args}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_a9eaf6bb32d2021f08472ac42d4309342}
+
+
+Print the error notification. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & List of arguments \\
+\hline
+{\em args} & struct \hyperlink{structListArguments}{ListArguments} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 185 of file MetaBoFlux.c.
+
+
+
+References ListArguments::activity, ListArguments::debug, error\_\-activity(), ListArguments::files\_\-path, ListArguments::group, help\_\-print(), and ListArguments::port.
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=384pt]{MetaBoFlux_8c_a9eaf6bb32d2021f08472ac42d4309342_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{MetaBoFlux_8c_ad123ef44ec4ef912b084c8b5715b9369}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!check\_\-arguments@{check\_\-arguments}}
+\index{check\_\-arguments@{check\_\-arguments}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{check\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}void check\_\-arguments (
+\begin{DoxyParamCaption}
+\item[{{\bf pListArguments}}]{args}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_ad123ef44ec4ef912b084c8b5715b9369}
+
+
+Check program arguments. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & struct \hyperlink{structListArguments}{ListArguments} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 361 of file MetaBoFlux.c.
+
+
+
+References ListArguments::activity, check\_\-common(), ListArguments::files\_\-path, and help\_\-print().
+
+
+
+Referenced by main().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=392pt]{MetaBoFlux_8c_ad123ef44ec4ef912b084c8b5715b9369_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{MetaBoFlux_8c_af8792bea8df799a759aad90b0b776db5}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!check\_\-common@{check\_\-common}}
+\index{check\_\-common@{check\_\-common}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{check\_\-common}]{\setlength{\rightskip}{0pt plus 5cm}void check\_\-common (
+\begin{DoxyParamCaption}
+\item[{{\bf pListArguments}}]{args}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_af8792bea8df799a759aad90b0b776db5}
+
+
+Check obligatory arguments. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & struct \hyperlink{structListArguments}{ListArguments} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 332 of file MetaBoFlux.c.
+
+
+
+References ListArguments::files\_\-path, and help\_\-print().
+
+
+
+Referenced by check\_\-arguments().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{MetaBoFlux_8c_af8792bea8df799a759aad90b0b776db5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{MetaBoFlux_8c_af5bf4eba3c08aec77213c81dd1f60d31}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!error\_\-activity@{error\_\-activity}}
+\index{error\_\-activity@{error\_\-activity}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{error\_\-activity}]{\setlength{\rightskip}{0pt plus 5cm}void error\_\-activity (
+\begin{DoxyParamCaption}
+\item[{int}]{activity}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_af5bf4eba3c08aec77213c81dd1f60d31}
+
+
+Print the error notification. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em activity} & Activity chosen \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 170 of file MetaBoFlux.c.
+
+
+
+References help\_\-print().
+
+
+
+Referenced by argument\_\-analysis().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{MetaBoFlux_8c_af5bf4eba3c08aec77213c81dd1f60d31_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{MetaBoFlux_8c_aa7eafd280790b4a437b60ac15c2a6ec6}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!free\_\-arguments@{free\_\-arguments}}
+\index{free\_\-arguments@{free\_\-arguments}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{free\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}void free\_\-arguments (
+\begin{DoxyParamCaption}
+\item[{{\bf pListArguments}}]{arguments}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_aa7eafd280790b4a437b60ac15c2a6ec6}
+
+
+Free the struct pListArguments. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arguments} & struct pListArguments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file MetaBoFlux.c.
+
+
+
+References ListArguments::files\_\-path.
+
+
+
+Referenced by main().
+
+\hypertarget{MetaBoFlux_8c_a6bb3d12e18c46b2a13a7194002e8fb09}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!help\_\-print@{help\_\-print}}
+\index{help\_\-print@{help\_\-print}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{help\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void help\_\-print (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_a6bb3d12e18c46b2a13a7194002e8fb09}
+
+
+Print the usage help. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+
+Definition at line 142 of file MetaBoFlux.c.
+
+
+
+Referenced by argument\_\-analysis(), check\_\-arguments(), check\_\-common(), and error\_\-activity().
+
+\hypertarget{MetaBoFlux_8c_a3c04138a5bfe5d72780bb7e82a18e627}{
+\index{MetaBoFlux.c@{MetaBoFlux.c}!main@{main}}
+\index{main@{main}!MetaBoFlux.c@{MetaBoFlux.c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}
+\label{MetaBoFlux_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Enter in the program for simulated annealing. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & List of arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+EXIT\_\-SUCCESS Normal stop of the program 
+\end{DoxyReturn}
+
+
+Definition at line 399 of file MetaBoFlux.c.
+
+
+
+References ListArguments::activity, alloc\_\-arguments(), argument\_\-analysis(), check\_\-arguments(), compute\_\-mpi(), ListArguments::debug, ListArguments::files\_\-path, free\_\-arguments(), ListArguments::group, and ListArguments::port.
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{MetaBoFlux_8c_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+

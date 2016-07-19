@@ -1,0 +1,115 @@
+\hypertarget{structSimParameters}{
+\section{SimParameters Struct Reference}
+\label{structSimParameters}\index{SimParameters@{SimParameters}}
+}
+
+
+List of parameters specific to each simulation.  
+
+
+
+
+{\ttfamily \#include $<$data\_\-parameters.h$>$}
+
+
+
+Collaboration diagram for SimParameters:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{structSimParameters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structEquations}{Equations} $\ast$$\ast$ \hyperlink{structSimParameters_aecbff20f6647d4d348d3026e166a5c93}{pile}
+\item 
+\hyperlink{structScore}{pScore} \hyperlink{structSimParameters_a0dc198d74946f531dbf36860796bf108}{out}
+\item 
+gsl\_\-rng $\ast$ \hyperlink{structSimParameters_a3657bf540ffac966ca5e6e48595370ac}{r}
+\item 
+double $\ast$ \hyperlink{structSimParameters_aba46fa332475a2c74856712fa0ca10a0}{y}
+\item 
+FILE $\ast$ \hyperlink{structSimParameters_aad7fb1c37993627a2c2c04b7509ce3c0}{debugFile}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+List of parameters specific to each simulation. 
+
+Definition at line 58 of file data\_\-parameters.h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structSimParameters_aad7fb1c37993627a2c2c04b7509ce3c0}{
+\index{SimParameters@{SimParameters}!debugFile@{debugFile}}
+\index{debugFile@{debugFile}!SimParameters@{SimParameters}}
+\subsubsection[{debugFile}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ {\bf SimParameters::debugFile}}}
+\label{structSimParameters_aad7fb1c37993627a2c2c04b7509ce3c0}
+Debug file : storage of intermediate values of the simulations 
+
+Definition at line 64 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-desallocSim(), Data\_\-simParameters(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structSimParameters_a0dc198d74946f531dbf36860796bf108}{
+\index{SimParameters@{SimParameters}!out@{out}}
+\index{out@{out}!SimParameters@{SimParameters}}
+\subsubsection[{out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pScore} {\bf SimParameters::out}}}
+\label{structSimParameters_a0dc198d74946f531dbf36860796bf108}
+\hyperlink{structScore}{Score} 
+
+Definition at line 61 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-desallocSim(), Data\_\-simParameters(), Min\_\-getTampon(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structSimParameters_aecbff20f6647d4d348d3026e166a5c93}{
+\index{SimParameters@{SimParameters}!pile@{pile}}
+\index{pile@{pile}!SimParameters@{SimParameters}}
+\subsubsection[{pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equations}$\ast$$\ast$ {\bf SimParameters::pile}}}
+\label{structSimParameters_aecbff20f6647d4d348d3026e166a5c93}
+Interpreted \hyperlink{structEquations}{Equations} 
+
+Definition at line 60 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-simParameters(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structSimParameters_a3657bf540ffac966ca5e6e48595370ac}{
+\index{SimParameters@{SimParameters}!r@{r}}
+\index{r@{r}!SimParameters@{SimParameters}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-rng$\ast$ {\bf SimParameters::r}}}
+\label{structSimParameters_a3657bf540ffac966ca5e6e48595370ac}
+Random number generator 
+
+Definition at line 62 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-desallocSim(), Data\_\-simParameters(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-compute\_\-recuit(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structSimParameters_aba46fa332475a2c74856712fa0ca10a0}{
+\index{SimParameters@{SimParameters}!y@{y}}
+\index{y@{y}!SimParameters@{SimParameters}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ {\bf SimParameters::y}}}
+\label{structSimParameters_aba46fa332475a2c74856712fa0ca10a0}
+Table of reaction parameters 
+
+Definition at line 63 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-copieTab(), Data\_\-desallocSim(), Data\_\-simParameters(), Min\_\-compute\_\-minimization(), Min\_\-copieTab2(), Min\_\-copieTab3(), Min\_\-getTampon(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), Recuit\_\-printPosition(), Sd\_\-compute\_\-simulation(), and Sd\_\-compute\_\-standard\_\-deviation().
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+metaboflux/include/\hyperlink{data__parameters_8h}{data\_\-parameters.h}\end{DoxyCompactItemize}

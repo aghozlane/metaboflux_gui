@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$equations_8c.html#aadfa8a3c9e3c361367513bdc030d5068" title="Add two numbers." alt="" coords="196,5,239,35"/>
+<area shape="rect" id="node5" href="$equations_8c.html#aa1312b87a72d22e2bbebf101e292a9f9" title="Divide two numbers." alt="" coords="189,59,245,88"/>
+<area shape="rect" id="node7" href="$equations_8c.html#a67c2ddb47af2bd3b128dcea9bacf6400" title="Test the equality of two numbers." alt="" coords="184,112,251,141"/>
+<area shape="rect" id="node9" href="$equations_8c.html#a754ca014ba925b1c96920d21d7029ce2" title="Test the inferiority between two numbers." alt="" coords="199,165,236,195"/>
+<area shape="rect" id="node11" href="$equations_8c.html#a6638015dab123b16fe60b36e30169064" title="Test the inferiority or equality between two numbers." alt="" coords="180,219,255,248"/>
+<area shape="rect" id="node13" href="$equations_8c.html#afc6d7eeb06b30a5a37238e3b84c2176b" title="Multiply two numbers." alt="" coords="184,272,251,301"/>
+<area shape="rect" id="node15" href="$equations_8c.html#ad04157df89acd8d4e8bf80fd45dd00bb" title="Subtraction two numbers." alt="" coords="183,325,252,355"/>
+<area shape="rect" id="node17" href="$equations_8c.html#a513f2e0300d9efaaeb85e3a1c6483b59" title="Test the superiority between two numbers." alt="" coords="196,379,239,408"/>
+<area shape="rect" id="node19" href="$equations_8c.html#a363235573b747213d55920f8804445b4" title="Test the superiority or equality between two numbers." alt="" coords="177,432,257,461"/>
+</map>

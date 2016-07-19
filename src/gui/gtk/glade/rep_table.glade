@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkTable" id="table">
+    <property name="visible">True</property>
+    <property name="n_rows">3</property>
+    <property name="n_columns">5</property>
+    <property name="column_spacing">3</property>
+    <property name="row_spacing">5</property>
+    <child>
+      <object class="GtkLabel" id="label2">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Title : </property>
+      </object>
+      <packing>
+        <property name="x_options"></property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="title">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="invisible_char">&#x25CF;</property>
+        <signal name="focus_out_event" handler="update_representations"/>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkVSeparator" id="vseparator2">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+        <property name="x_padding">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkVSeparator" id="vseparator4">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+        <property name="x_padding">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkVSeparator" id="vseparator5">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+      </object>
+      <packing>
+        <property name="left_attach">2</property>
+        <property name="right_attach">3</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+        <property name="x_padding">8</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label3">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Subtitle : </property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="subtitle">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="invisible_char">&#x25CF;</property>
+        <signal name="focus_out_event" handler="update_representations"/>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label4">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">x legend : </property>
+      </object>
+      <packing>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="xtext">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="invisible_char">&#x25CF;</property>
+        <signal name="focus_out_event" handler="update_representations"/>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">2</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label5">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">y legend : </property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+        <property name="x_options"></property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="ytext">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="invisible_char">&#x25CF;</property>
+        <signal name="focus_out_event" handler="update_representations"/>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+        <property name="top_attach">1</property>
+        <property name="bottom_attach">2</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label_height">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">height : </property>
+      </object>
+      <packing>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+        <property name="x_options"></property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="height">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="invisible_char">&#x25CF;</property>
+        <property name="width_chars">6</property>
+        <signal name="key_press_event" handler="check_number"/>
+        <signal name="focus_out_event" handler="update_representations"/>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="right_attach">2</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+        <property name="x_options"></property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="label_width">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">width : </property>
+      </object>
+      <packing>
+        <property name="left_attach">3</property>
+        <property name="right_attach">4</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+        <property name="x_options"></property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkEntry" id="width">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="invisible_char">&#x25CF;</property>
+        <property name="width_chars">6</property>
+        <signal name="key_press_event" handler="check_number"/>
+        <signal name="focus_out_event" handler="update_representations"/>
+      </object>
+      <packing>
+        <property name="left_attach">4</property>
+        <property name="right_attach">5</property>
+        <property name="top_attach">2</property>
+        <property name="bottom_attach">3</property>
+        <property name="x_options"></property>
+      </packing>
+    </child>
+  </object>
+</interface>

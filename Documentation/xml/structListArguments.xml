@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structListArguments" kind="struct" prot="public">
+    <compoundname>ListArguments</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structListArguments_1ab970afa2b3e887fdacd7cce2b24f571c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListArguments::activity</definition>
+        <argsstring></argsstring>
+        <name>activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Activity chosen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="67" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" bodystart="67" bodyend="-1"/>
+        <referencedby refid="MetaBoFlux_8c_1a3f4b8fabba96f804bce4d2788e5f358c" compoundref="MetaBoFlux_8c" startline="103" endline="123">alloc_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a9eaf6bb32d2021f08472ac42d4309342" compoundref="MetaBoFlux_8c" startline="185" endline="324">argument_analysis</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1ad123ef44ec4ef912b084c8b5715b9369" compoundref="MetaBoFlux_8c" startline="361" endline="389">check_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="MetaBoFlux_8c" startline="399" endline="425">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListArguments_1a227eea65bc99120840063486d602fcbb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListArguments::debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Debug chosen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="68" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" bodystart="68" bodyend="-1"/>
+        <referencedby refid="MetaBoFlux_8c_1a3f4b8fabba96f804bce4d2788e5f358c" compoundref="MetaBoFlux_8c" startline="103" endline="123">alloc_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a9eaf6bb32d2021f08472ac42d4309342" compoundref="MetaBoFlux_8c" startline="185" endline="324">argument_analysis</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="MetaBoFlux_8c" startline="399" endline="425">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListArguments_1ae2ccfbcd131374f1eab65ddc65da7468" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListArguments::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port chosen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="69" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" bodystart="69" bodyend="-1"/>
+        <referencedby refid="MetaBoFlux_8c_1a3f4b8fabba96f804bce4d2788e5f358c" compoundref="MetaBoFlux_8c" startline="103" endline="123">alloc_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a9eaf6bb32d2021f08472ac42d4309342" compoundref="MetaBoFlux_8c" startline="185" endline="324">argument_analysis</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="MetaBoFlux_8c" startline="399" endline="425">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListArguments_1a6e6b46a5655953f6a68b5cd31da094fd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListArguments::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Group chosen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="70" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" bodystart="70" bodyend="-1"/>
+        <referencedby refid="MetaBoFlux_8c_1a3f4b8fabba96f804bce4d2788e5f358c" compoundref="MetaBoFlux_8c" startline="103" endline="123">alloc_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a9eaf6bb32d2021f08472ac42d4309342" compoundref="MetaBoFlux_8c" startline="185" endline="324">argument_analysis</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="MetaBoFlux_8c" startline="399" endline="425">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListArguments_1a06c7f7a5dee18ad6974749e892e01178" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** ListArguments::files_path</definition>
+        <argsstring></argsstring>
+        <name>files_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Path to files path : 0.SBML 1.PAR 2.OUT 3.RATIO_FILE 4.LOG 5.OUTPUT </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="71" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" bodystart="71" bodyend="-1"/>
+        <referencedby refid="MetaBoFlux_8c_1a3f4b8fabba96f804bce4d2788e5f358c" compoundref="MetaBoFlux_8c" startline="103" endline="123">alloc_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a9eaf6bb32d2021f08472ac42d4309342" compoundref="MetaBoFlux_8c" startline="185" endline="324">argument_analysis</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1ad123ef44ec4ef912b084c8b5715b9369" compoundref="MetaBoFlux_8c" startline="361" endline="389">check_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1af8792bea8df799a759aad90b0b776db5" compoundref="MetaBoFlux_8c" startline="332" endline="353">check_common</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1aa7eafd280790b4a437b60ac15c2a6ec6" compoundref="MetaBoFlux_8c" startline="131" endline="135">free_arguments</referencedby>
+        <referencedby refid="MetaBoFlux_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="MetaBoFlux_8c" startline="399" endline="425">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of arguments. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="66" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" bodystart="65" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structListArguments_1ab970afa2b3e887fdacd7cce2b24f571c" prot="public" virt="non-virtual"><scope>ListArguments</scope><name>activity</name></member>
+      <member refid="structListArguments_1a227eea65bc99120840063486d602fcbb" prot="public" virt="non-virtual"><scope>ListArguments</scope><name>debug</name></member>
+      <member refid="structListArguments_1a06c7f7a5dee18ad6974749e892e01178" prot="public" virt="non-virtual"><scope>ListArguments</scope><name>files_path</name></member>
+      <member refid="structListArguments_1a6e6b46a5655953f6a68b5cd31da094fd" prot="public" virt="non-virtual"><scope>ListArguments</scope><name>group</name></member>
+      <member refid="structListArguments_1ae2ccfbcd131374f1eab65ddc65da7468" prot="public" virt="non-virtual"><scope>ListArguments</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

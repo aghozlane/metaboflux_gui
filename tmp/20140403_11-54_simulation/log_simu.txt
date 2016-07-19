@@ -1,0 +1,97 @@
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+./bin/../src/gui/gtk/../../../metaboflux/bin/../lib/../bin/MetaBoFlux.exe: symbol lookup error: /usr/local/lib/libgsl.so.0: undefined symbol: cblas_daxpy
+--------------------------------------------------------------------------
+mpiexec has exited due to process rank 2 with PID 18258 on
+node leonidas exiting without calling "finalize". This may
+have caused other processes in the application to be
+terminated by signals sent by mpiexec (as reported here).
+--------------------------------------------------------------------------
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+KernSmooth 2.23 loaded
+Copyright M. P. Wand 1997-2009
+
+Attachement du package : ‘gplots’
+
+L'objet suivant est masqué from ‘package:stats’:
+
+    lowess
+
+Le chargement a nécessité le package : methods
+[1] "Estimation of the Standard deviation"
+null device 
+          1 
+[1] "Metabolites studied ..."
+pdf 
+  2 
+[1] "Groupment evaluation ..."
+[1] "Statistics of groups ..."
+[1] "Groups limit ..."
+pdf 
+  2 
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : Simulated annealing	Minimization	Statistics	
+Read parameters
+Parameter estimation by simulated annealing ....
+End of estimation
+Minimization ....
+End of minimization
+Minimization log : result classification ....
+End of Classification
+Minimization : result classification ....
+End of Classification
+Modeling test ....
+End of modeling
+Modeling : result classification....
+End of classification
+Modeling log: result classification....
+End of classification
+Estimation of the standard deviation ....
+End of Estimation
+Statistics
+End of Statistics
+Group analysis
+End of Group Analysis
+GroupLog : result classification ....
+End of Classification

@@ -1,0 +1,135 @@
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+Metaboflux chosen activity : [1] Simulated annealing
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+Metaboflux chosen activity : [2] Minimization
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+Metaboflux chosen activity : [4] Standard deviation
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Le chargement a nécessité le package : gtools
+Le chargement a nécessité le package : gdata
+gdata: read.xls support for 'XLS' (Excel 97-2004) files ENABLED.
+
+gdata: read.xls support for 'XLSX' (Excel 2007+) files ENABLED.
+
+Attachement du package : ‘gdata’
+
+The following object(s) are masked from ‘package:stats’:
+
+    nobs
+
+The following object(s) are masked from ‘package:utils’:
+
+    object.size
+
+Le chargement a nécessité le package : caTools
+Le chargement a nécessité le package : bitops
+Le chargement a nécessité le package : grid
+Le chargement a nécessité le package : KernSmooth
+KernSmooth 2.23 loaded
+Copyright M. P. Wand 1997-2009
+Le chargement a nécessité le package : MASS
+
+Attachement du package : ‘gplots’
+
+The following object(s) are masked from ‘package:stats’:
+
+    lowess
+
+Le chargement a nécessité le package : methods
+[1] "Estimation of the Standard deviation"
+null device 
+          1 
+[1] "Metabolites studied ..."
+null device 
+          1 
+[1] "Groupment evaluation ..."
+[1] "Statistics of groups ..."
+[1] "Groups limit ..."
+null device 
+          1 
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+Metaboflux chosen activity : [3] Modeling
+(1/4)
+(2/4)
+(3/4)
+(4/4)
+Metaboflux chosen activity : Simulated annealing	Minimization	Statistics	
+Read parameters
+Parameter estimation by simulated annealing ....
+End of estimation
+Minimization ....
+End of minimization
+Minimization log : result classification ....
+End of Classification
+Minimization : result classification ....
+End of Classification
+Modeling test ....
+End of modeling
+Modeling : result classification....
+End of classification
+Modeling log: result classification....
+End of classification
+Estimation of the standard deviation ....
+End of Estimation
+Statistics
+End of Statistics
+Group analysis
+End of Group Analysis
+GroupLog : result classification ....
+End of Classification

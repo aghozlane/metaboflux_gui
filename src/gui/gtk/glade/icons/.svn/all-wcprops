@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/MetaboFlux/!svn/ver/34/src/gui/gtk/glade/icons
+END
+sbml_toolbar.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/MetaboFlux/!svn/ver/24/src/gui/gtk/glade/icons/sbml_toolbar.png
+END
+export_xml.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/MetaboFlux/!svn/ver/24/src/gui/gtk/glade/icons/export_xml.png
+END
+sbml_menu.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/MetaboFlux/!svn/ver/24/src/gui/gtk/glade/icons/sbml_menu.png
+END
+mbf.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/MetaboFlux/!svn/ver/24/src/gui/gtk/glade/icons/mbf.png
+END
+logo_mbf.png
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/MetaboFlux/!svn/ver/34/src/gui/gtk/glade/icons/logo_mbf.png
+END
+mbf2.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/MetaboFlux/!svn/ver/24/src/gui/gtk/glade/icons/mbf2.png
+END
+import_xml.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/MetaboFlux/!svn/ver/24/src/gui/gtk/glade/icons/import_xml.png
+END

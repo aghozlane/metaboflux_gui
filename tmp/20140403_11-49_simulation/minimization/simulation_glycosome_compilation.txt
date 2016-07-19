@@ -1,0 +1,1 @@
+==> ./bin/../src/../tmp/20140403_11-49_simulation/simulation/simulation_glycosome_simulated_annealing_1.txt <==

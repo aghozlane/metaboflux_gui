@@ -1,0 +1,85 @@
+\hypertarget{structEspeces}{
+\section{Especes Struct Reference}
+\label{structEspeces}\index{Especes@{Especes}}
+}
+
+
+Molecules data.  
+
+
+
+
+{\ttfamily \#include $<$especes.h$>$}
+
+
+
+Collaboration diagram for Especes:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structEspeces__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{structEspeces_ab4d42c5e3bcb897311b17030db5b882e}{quantite}
+\item 
+const char $\ast$ \hyperlink{structEspeces_a2fbe0a8da0e7c223e27f9bf40e48f170}{id}
+\item 
+\hyperlink{structReaction}{pReaction} \hyperlink{structEspeces_a61d949a99599938950d1508d7cb86d4d}{system}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Molecules data. 
+
+Definition at line 45 of file especes.h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structEspeces_a2fbe0a8da0e7c223e27f9bf40e48f170}{
+\index{Especes@{Especes}!id@{id}}
+\index{id@{id}!Especes@{Especes}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf Especes::id}}}
+\label{structEspeces_a2fbe0a8da0e7c223e27f9bf40e48f170}
+Molecule id 
+
+Definition at line 47 of file especes.h.
+
+
+
+Referenced by Especes\_\-save().
+
+\hypertarget{structEspeces_ab4d42c5e3bcb897311b17030db5b882e}{
+\index{Especes@{Especes}!quantite@{quantite}}
+\index{quantite@{quantite}!Especes@{Especes}}
+\subsubsection[{quantite}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf Especes::quantite}}}
+\label{structEspeces_ab4d42c5e3bcb897311b17030db5b882e}
+Molecule quantity 
+
+Definition at line 46 of file especes.h.
+
+
+
+Referenced by Especes\_\-alloc(), Especes\_\-getQuantite(), Especes\_\-save(), Especes\_\-scoreSpecies(), and Especes\_\-setQuantite().
+
+\hypertarget{structEspeces_a61d949a99599938950d1508d7cb86d4d}{
+\index{Especes@{Especes}!system@{system}}
+\index{system@{system}!Especes@{Especes}}
+\subsubsection[{system}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pReaction} {\bf Especes::system}}}
+\label{structEspeces_a61d949a99599938950d1508d7cb86d4d}
+\hyperlink{structReaction}{Reaction} where the molecule is implicated 
+
+Definition at line 48 of file especes.h.
+
+
+
+Referenced by Especes\_\-alloc(), Especes\_\-allocReactions(), Especes\_\-freeReactions(), Especes\_\-getNbreactions(), Especes\_\-print(), SBML\_\-EstimationReaction(), SBML\_\-reactChoice(), and SBML\_\-simulate().
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+metaboflux/include/\hyperlink{especes_8h}{especes.h}\end{DoxyCompactItemize}

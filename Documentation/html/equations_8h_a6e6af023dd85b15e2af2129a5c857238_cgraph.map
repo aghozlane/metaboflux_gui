@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$equations_8c.html#a977051374a319d6bd60ef8ca2c03c952" title="Alloc memory and initialize the struct Equations." alt="" coords="193,5,308,35"/>
+<area shape="rect" id="node5" href="$equations_8c.html#a4c54e881f9153f6c8b0313f139ad1ade" title="Look for the first element of the struct Equations." alt="" coords="189,59,312,88"/>
+<area shape="rect" id="node7" href="$equations_8c.html#a3e550cf0e9190391a5c15b9edf1df721" title="Get the next element of the struct Equations." alt="" coords="177,112,324,141"/>
+<area shape="rect" id="node9" href="$equations_8c.html#a652cb08a19a4b10403a1751220d2de54" title="Unstack the last element of the struct Equations." alt="" coords="188,165,313,195"/>
+<area shape="rect" id="node11" href="$equations_8c.html#a51aa19b01714bc3ae728031b8748694a" title="Stack an element to the struct Equations." alt="" coords="187,219,315,248"/>
+<area shape="rect" id="node13" href="$equations_8c.html#ae2ab956dac833cf24b93305cfb79cfdf" title="Extract information on element of type Struct Equation." alt="" coords="373,297,528,327"/>
+<area shape="rect" id="node15" href="$equations_8c.html#aafe1cd5689dbec030ec792f43b40876b" title="Compute the result of two pile." alt="" coords="185,323,316,352"/>
+<area shape="rect" id="node18" href="$equations_8c.html#abc16d34fd78fc7bec99064ba06a0a27f" title="Test if the struct Equations is empty." alt="" coords="196,376,305,405"/>
+</map>

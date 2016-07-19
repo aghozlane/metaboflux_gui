@@ -1,0 +1,52 @@
+.TH "Equations" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Equations \- 
+.PP
+Function pointers used for operations.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <equations.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBEqutype\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "\fBEqudata\fP \fBinfo\fP"
+.br
+.ti -1c
+.RI "struct \fBEquations\fP * \fBsuiv\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Function pointers used for operations. 
+.PP
+Definition at line 68 of file equations.h.
+.SH "Field Documentation"
+.PP 
+.SS "\fBEqudata\fP \fBEquations::info\fP"Equation Data 
+.PP
+Definition at line 71 of file equations.h.
+.PP
+Referenced by Equations_print().
+.SS "struct \fBEquations\fP* \fBEquations::suiv\fP"
+.PP
+Definition at line 72 of file equations.h.
+.PP
+Referenced by Equations_addOp(), Equations_alloc(), Equations_calcul(), Equations_defilerSuiv(), Equations_depiler(), Equations_empiler(), Equations_emptyOp(), Equations_print(), Equations_sommet(), and Equations_vide().
+.SS "\fBEqutype\fP \fBEquations::type\fP"Operation constants 
+.PP
+Definition at line 70 of file equations.h.
+.PP
+Referenced by Equations_print(), and Equations_resultat().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

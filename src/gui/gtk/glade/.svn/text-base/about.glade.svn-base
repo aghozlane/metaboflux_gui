@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkAboutDialog" id="about">
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">About</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="icon">icons/mbf.png</property>
+    <property name="type_hint">normal</property>
+    <property name="has_separator">False</property>
+    <property name="program_name">MetaboFlux</property>
+    <property name="version">2.0</property>
+    <property name="website">http://www.cbib.u-bordeaux2.fr/metaboflux/</property>
+    <property name="license" translatable="yes">MetaBoFlux
+Copyright (C) 2010 See AUTHORS                                         
+                                                                       
+MetaBoFlux is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</property>
+    <property name="authors">Amine Ghozlane
+Laetitia Bourgeade
+Yoann Gloaguen
+Hadrien Mary
+Yoann Mouscaz
+Laurent Gil</property>
+    <property name="documenters">Amine Ghozlane
+Laetitia Bourgeade
+Yoann Gloaguen
+Hadrien Mary
+Yoann Mouscaz</property>
+    <property name="logo">icons/logo_mbf.png</property>
+    <property name="wrap_license">True</property>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="xpad">20</property>
+            <property name="ypad">20</property>
+            <property name="label" translatable="yes">MeTaBoFlux --  Network Analysis of Metabolism
+</property>
+            <property name="justify">center</property>
+            <property name="wrap">True</property>
+            <property name="width_chars">60</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$especes_8c.html#ad40ac9cd39a9c9b70657f8e87209bc4d" title="Alloc memory and initialize the struct Especes." alt="" coords="311,32,417,61"/>
+<area shape="rect" id="node5" href="$especes_8c.html#aa4c9945c5a0484f255ebe9ae6e1e7d30" title="Free the struct pEspeces." alt="" coords="313,85,415,115"/>
+<area shape="rect" id="node9" href="$simulation_8c.html#ab96386e57e0e58e356974d26ced8eeb2" title="Alloc memory and initialize the struct Especes." alt="" coords="275,139,453,168"/>
+<area shape="rect" id="node13" href="$simulation_8c.html#ad857fd679e78b0081d6c6898f6a51f52" title="Alloc memory and initialize the struct Especes." alt="" coords="316,192,412,221"/>
+<area shape="rect" id="node21" href="$simulation_8c.html#a4055d968d7db6b8f18d71f607a0d20d7" title="Add scores." alt="" coords="301,692,427,721"/>
+<area shape="rect" id="node27" href="$simulation_8c.html#ad331b2a26934ff926772cf4329c4e359" title="Mean quantities for score." alt="" coords="296,745,432,775"/>
+<area shape="rect" id="node29" href="$simulation_8c.html#a744147acf49de269630c456d0c5f4247" title="Alloc memory and initialize the struct Especes." alt="" coords="293,245,435,275"/>
+<area shape="rect" id="node37" href="$simulation_8c.html#a36a9d2b343c5fcf0f4d88e5720fb86ce" title="Simulate one step of petri net." alt="" coords="307,536,421,565"/>
+<area shape="rect" id="node7" href="$especes_8c.html#aff847305d7a79c95a9c8296276840529" title="Free the struct Reaction." alt="" coords="511,5,671,35"/>
+<area shape="rect" id="node11" href="$especes_8c.html#a4ca513fe43dc3919cab3044166d9f9fb" title="Save data on one molecule." alt="" coords="537,59,644,88"/>
+<area shape="rect" id="node15" href="$especes_8c.html#a13dfbbe353cc238a9f53e5a183904fa4" title="Save the quantite of all molecules for scoring." alt="" coords="512,112,669,141"/>
+<area shape="rect" id="node17" href="$simulation_8c.html#a2aee345900876fe3c6888dfc620265b0" title="Get the reaction ratio define in the sbml." alt="" coords="513,219,668,248"/>
+<area shape="rect" id="node19" href="$simulation_8c.html#a56b2d00e703b09b6c3f52e971517ecb3" title="Determine if the reaction is study." alt="" coords="521,165,660,195"/>
+<area shape="rect" id="node23" href="$simulation_8c.html#a792ef36e542159096d4567a125aee565" title="Print the debuf file." alt="" coords="528,848,653,877"/>
+<area shape="rect" id="node25" href="$simulation_8c.html#a8823ee151e44d0d0b6b977bcebc7463e" title="Print the head of the debug file." alt="" coords="512,795,669,824"/>
+<area shape="rect" id="node31" href="$especes_8c.html#ab485f86ce621d4a8aaec5d1bc78f6105" title="Alloc memory and initialize the struct Reaction for each molecule." alt="" coords="508,323,673,352"/>
+<area shape="rect" id="node33" href="$especes_8c.html#a1749f688ebd8c3ffb4f6c16e5093e351" title="Find a molecule thank to it ID." alt="" coords="948,583,1049,612"/>
+<area shape="rect" id="node39" href="$especes_8c.html#a3391146ab0a83b7db9cbe3bdaec9fdab" title="Get number of reaction where one molecule is used (like a reactif)" alt="" coords="507,741,675,771"/>
+<area shape="rect" id="node41" href="$especes_8c.html#a95287ee5ed282bd8842d2456b6c5a220" title="Get the quanty of one molecule by its number." alt="" coords="925,689,1072,719"/>
+<area shape="rect" id="node43" href="$simulation_8c.html#a11e6f95793902cf6d16dcd127d09ab7a" title="Alloc memory and initialize the struct pTestReaction." alt="" coords="532,376,649,405"/>
+<area shape="rect" id="node45" href="$simulation_8c.html#a5630aef6f927ffef62f6535977ae8200" title="Determine the number of reaction for one molecule." alt="" coords="728,584,877,613"/>
+<area shape="rect" id="node49" href="$simulation_8c.html#a26a3a6e92c8b51177e1e2c42c20fec30" title="Alloc memory and initialize the struct Especes." alt="" coords="501,536,680,565"/>
+<area shape="rect" id="node52" href="$simulation_8c.html#a583a492a3d9db3c0f15b581f9762e85b" title="Free memory of the struct TestReaction." alt="" coords="535,429,647,459"/>
+<area shape="rect" id="node54" href="$simulation_8c.html#ac9187b648cc6e8a588813ab31c12193f" title="Determine randomly the reaction to achieve for several nodes reactions." alt="" coords="524,483,657,512"/>
+<area shape="rect" id="node56" href="$simulation_8c.html#a463648eb9010400731a5ffc3a13e56dd" title="Simulation of a discrete transision." alt="" coords="748,637,857,667"/>
+<area shape="rect" id="node60" href="$especes_8c.html#a673f93f68d9ea2b84db4a73c2f4f5b39" title="Change the quantity of a molecule." alt="" coords="925,636,1072,665"/>
+</map>

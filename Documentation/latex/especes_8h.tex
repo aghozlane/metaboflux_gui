@@ -1,0 +1,534 @@
+\hypertarget{especes_8h}{
+\section{metaboflux/include/especes.h File Reference}
+\label{especes_8h}\index{metaboflux/include/especes.h@{metaboflux/include/especes.h}}
+}
+
+
+Modelize a molecule.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{especes_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structReaction}{Reaction}
+\begin{DoxyCompactList}\small\item\em Reactions data. \end{DoxyCompactList}\item 
+struct \hyperlink{structEspeces}{Especes}
+\begin{DoxyCompactList}\small\item\em Molecules data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structEspeces}{pEspeces} \hyperlink{especes_8h_a1610e9ef9702676f49dda6e338fc8ceb}{Especes\_\-alloc} (int)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_a622cfe5dc2bba2275a7316755ee08142}{Especes\_\-allocReactions} (\hyperlink{structEspeces}{pEspeces}, int, Reaction\_\-t $\ast$, double)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structReaction}{Reaction} for each molecule. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_a4e81e01f1f8e3b472bfdc2ea0dd5b769}{Especes\_\-free} (\hyperlink{structEspeces}{pEspeces}, int)
+\begin{DoxyCompactList}\small\item\em Free the struct pEspeces. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_a271e25633ee1c9081b1b8b46f441be04}{Especes\_\-freeReactions} (\hyperlink{structEspeces}{Especes})
+\begin{DoxyCompactList}\small\item\em Free the struct \hyperlink{structReaction}{Reaction}. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_abb8810a8cb8bd51a12838f893e58e97b}{Especes\_\-save} (\hyperlink{structEspeces}{pEspeces}, int, double, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em Save data on one molecule. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_a7f7d4b4764b583179bebcc86bbba09ed}{Especes\_\-scoreSpecies} (\hyperlink{structEspeces}{pEspeces}, int, char $\ast$$\ast$, double $\ast$)
+\begin{DoxyCompactList}\small\item\em Save the quantite of all molecules for scoring. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_a120630120d7c5a6cded061eab659048a}{Especes\_\-print} (\hyperlink{structEspeces}{pEspeces}, int)
+\begin{DoxyCompactList}\small\item\em Print data on each molecule. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_ad534ec7af1733aaf00880570d5fc99b2}{Especes\_\-print\_\-2} (\hyperlink{structEspeces}{pEspeces} molecules, int nbEspeces)
+\begin{DoxyCompactList}\small\item\em Print Id and quantity on each molecule. \end{DoxyCompactList}\item 
+int \hyperlink{especes_8h_a321b94dc8b65a8ff167218edb83df25e}{Especes\_\-find} (\hyperlink{structEspeces}{pEspeces}, const char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Find a molecule thank to it ID. \end{DoxyCompactList}\item 
+void \hyperlink{especes_8h_acfdb089ad290ca7a4b3bc4c58957c1ac}{Especes\_\-setQuantite} (\hyperlink{structEspeces}{pEspeces}, int, double)
+\begin{DoxyCompactList}\small\item\em Change the quantity of a molecule. \end{DoxyCompactList}\item 
+double \hyperlink{especes_8h_a25fe0df8949f57735787b5a4e5cf5a3c}{Especes\_\-getQuantite} (\hyperlink{structEspeces}{pEspeces}, int)
+\begin{DoxyCompactList}\small\item\em Get the quanty of one molecule by its number. \end{DoxyCompactList}\item 
+int \hyperlink{especes_8h_a3391146ab0a83b7db9cbe3bdaec9fdab}{Especes\_\-getNbreactions} (\hyperlink{structEspeces}{pEspeces} molecules, int ref)
+\begin{DoxyCompactList}\small\item\em Get number of reaction where one molecule is used (like a reactif) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Modelize a molecule. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27 octobre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{especes_8h_source}{especes.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{especes_8h_a1610e9ef9702676f49dda6e338fc8ceb}{
+\index{especes.h@{especes.h}!Especes\_\-alloc@{Especes\_\-alloc}}
+\index{Especes\_\-alloc@{Especes\_\-alloc}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-alloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEspeces} Especes\_\-alloc (
+\begin{DoxyParamCaption}
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a1610e9ef9702676f49dda6e338fc8ceb}
+
+
+Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated struct Espece 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file especes.c.
+
+
+
+References Especes::quantite, and Especes::system.
+
+
+
+Referenced by SBML\_\-compute\_\-simulation(), and SBML\_\-compute\_\-simulation\_\-mean().
+
+\hypertarget{especes_8h_a622cfe5dc2bba2275a7316755ee08142}{
+\index{especes.h@{especes.h}!Especes\_\-allocReactions@{Especes\_\-allocReactions}}
+\index{Especes\_\-allocReactions@{Especes\_\-allocReactions}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-allocReactions}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-allocReactions (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{Espece, }
+\item[{Reaction\_\-t $\ast$}]{local, }
+\item[{double}]{reactRatio}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a622cfe5dc2bba2275a7316755ee08142}
+
+
+Alloc memory and initialize the struct \hyperlink{structReaction}{Reaction} for each molecule. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em Espece} & Number of the selected molecule \\
+\hline
+{\em local} & \hyperlink{structReaction}{Reaction} sbml reference \\
+\hline
+{\em reactRatio} & Ratio of the reaction \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file especes.c.
+
+
+
+References Reaction::link, Reaction::suivant, and Especes::system.
+
+
+
+Referenced by SBML\_\-setReactions().
+
+\hypertarget{especes_8h_a321b94dc8b65a8ff167218edb83df25e}{
+\index{especes.h@{especes.h}!Especes\_\-find@{Especes\_\-find}}
+\index{Especes\_\-find@{Especes\_\-find}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-find}]{\setlength{\rightskip}{0pt plus 5cm}int Especes\_\-find (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{const char $\ast$}]{especeId, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a321b94dc8b65a8ff167218edb83df25e}
+
+
+Find a molecule thank to it ID. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em especeId} & SBML ID of the molecule \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of a selected molecule 
+\end{DoxyReturn}
+
+
+Definition at line 214 of file especes.c.
+
+
+
+Referenced by SBML\_\-checkQuantite(), SBML\_\-reaction(), and SBML\_\-setReactions().
+
+\hypertarget{especes_8h_a4e81e01f1f8e3b472bfdc2ea0dd5b769}{
+\index{especes.h@{especes.h}!Especes\_\-free@{Especes\_\-free}}
+\index{Especes\_\-free@{Especes\_\-free}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-free (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a4e81e01f1f8e3b472bfdc2ea0dd5b769}
+
+
+Free the struct pEspeces. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file especes.c.
+
+
+
+References Especes\_\-freeReactions().
+
+
+
+Referenced by SBML\_\-compute\_\-simulation(), and SBML\_\-compute\_\-simulation\_\-mean().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{especes_8h_a4e81e01f1f8e3b472bfdc2ea0dd5b769_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{especes_8h_a271e25633ee1c9081b1b8b46f441be04}{
+\index{especes.h@{especes.h}!Especes\_\-freeReactions@{Especes\_\-freeReactions}}
+\index{Especes\_\-freeReactions@{Especes\_\-freeReactions}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-freeReactions}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-freeReactions (
+\begin{DoxyParamCaption}
+\item[{{\bf Especes}}]{molecules}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a271e25633ee1c9081b1b8b46f441be04}
+
+
+Free the struct \hyperlink{structReaction}{Reaction}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file especes.c.
+
+
+
+References Reaction::suivant, and Especes::system.
+
+
+
+Referenced by Especes\_\-free().
+
+\hypertarget{especes_8h_a3391146ab0a83b7db9cbe3bdaec9fdab}{
+\index{especes.h@{especes.h}!Especes\_\-getNbreactions@{Especes\_\-getNbreactions}}
+\index{Especes\_\-getNbreactions@{Especes\_\-getNbreactions}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-getNbreactions}]{\setlength{\rightskip}{0pt plus 5cm}int Especes\_\-getNbreactions (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{ref}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a3391146ab0a83b7db9cbe3bdaec9fdab}
+
+
+Get number of reaction where one molecule is used (like a reactif) 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em ref} & Number of a selected molecule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of reactions 
+\end{DoxyReturn}
+
+
+Definition at line 265 of file especes.c.
+
+
+
+References Reaction::suivant, and Especes::system.
+
+
+
+Referenced by SBML\_\-simulate().
+
+\hypertarget{especes_8h_a25fe0df8949f57735787b5a4e5cf5a3c}{
+\index{especes.h@{especes.h}!Especes\_\-getQuantite@{Especes\_\-getQuantite}}
+\index{Especes\_\-getQuantite@{Especes\_\-getQuantite}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-getQuantite}]{\setlength{\rightskip}{0pt plus 5cm}double Especes\_\-getQuantite (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{Especes}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a25fe0df8949f57735787b5a4e5cf5a3c}
+
+
+Get the quanty of one molecule by its number. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em \hyperlink{structEspeces}{Especes}} & Number of a selected molecule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantity of a selected molecule 
+\end{DoxyReturn}
+
+
+Definition at line 252 of file especes.c.
+
+
+
+References Especes::quantite.
+
+
+
+Referenced by SBML\_\-checkQuantite(), SBML\_\-reaction(), and SBML\_\-simulate().
+
+\hypertarget{especes_8h_a120630120d7c5a6cded061eab659048a}{
+\index{especes.h@{especes.h}!Especes\_\-print@{Especes\_\-print}}
+\index{Especes\_\-print@{Especes\_\-print}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-print (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a120630120d7c5a6cded061eab659048a}
+
+
+Print data on each molecule. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 170 of file especes.c.
+
+
+
+References Reaction::link, Reaction::suivant, and Especes::system.
+
+\hypertarget{especes_8h_ad534ec7af1733aaf00880570d5fc99b2}{
+\index{especes.h@{especes.h}!Especes\_\-print\_\-2@{Especes\_\-print\_\-2}}
+\index{Especes\_\-print\_\-2@{Especes\_\-print\_\-2}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-print\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-print\_\-2 (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_ad534ec7af1733aaf00880570d5fc99b2}
+
+
+Print Id and quantity on each molecule. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 196 of file especes.c.
+
+\hypertarget{especes_8h_abb8810a8cb8bd51a12838f893e58e97b}{
+\index{especes.h@{especes.h}!Especes\_\-save@{Especes\_\-save}}
+\index{Especes\_\-save@{Especes\_\-save}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-save}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-save (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{i, }
+\item[{double}]{quant, }
+\item[{const char $\ast$}]{dye}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_abb8810a8cb8bd51a12838f893e58e97b}
+
+
+Save data on one molecule. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em i} & Number of the selected molecule \\
+\hline
+{\em quant} & Quantity of the molecule \\
+\hline
+{\em dye} & ID of the molecule \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file especes.c.
+
+
+
+References Especes::id, and Especes::quantite.
+
+
+
+Referenced by SBML\_\-initEspeceAmounts().
+
+\hypertarget{especes_8h_a7f7d4b4764b583179bebcc86bbba09ed}{
+\index{especes.h@{especes.h}!Especes\_\-scoreSpecies@{Especes\_\-scoreSpecies}}
+\index{Especes\_\-scoreSpecies@{Especes\_\-scoreSpecies}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-scoreSpecies}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-scoreSpecies (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{nbEspeces, }
+\item[{char $\ast$$\ast$}]{name, }
+\item[{double $\ast$}]{quantite}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_a7f7d4b4764b583179bebcc86bbba09ed}
+
+
+Save the quantite of all molecules for scoring. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+{\em name} & ID of the selected molecule \\
+\hline
+{\em quantite} & Table of molecule Quantity \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 149 of file especes.c.
+
+
+
+References Especes::quantite.
+
+
+
+Referenced by SBML\_\-score().
+
+\hypertarget{especes_8h_acfdb089ad290ca7a4b3bc4c58957c1ac}{
+\index{especes.h@{especes.h}!Especes\_\-setQuantite@{Especes\_\-setQuantite}}
+\index{Especes\_\-setQuantite@{Especes\_\-setQuantite}!especes.h@{especes.h}}
+\subsubsection[{Especes\_\-setQuantite}]{\setlength{\rightskip}{0pt plus 5cm}void Especes\_\-setQuantite (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{Especes, }
+\item[{double}]{quant}
+\end{DoxyParamCaption}
+)}}
+\label{especes_8h_acfdb089ad290ca7a4b3bc4c58957c1ac}
+
+
+Change the quantity of a molecule. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & List of molecules \\
+\hline
+{\em \hyperlink{structEspeces}{Especes}} & Number of a selected molecule \\
+\hline
+{\em quant} & Quantity of the molecule \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 239 of file especes.c.
+
+
+
+References Especes::quantite.
+
+
+
+Referenced by SBML\_\-reaction().
+

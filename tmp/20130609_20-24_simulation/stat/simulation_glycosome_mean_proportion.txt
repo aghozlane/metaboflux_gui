@@ -1,0 +1,4 @@
+Energy	transition_13	transition_15	transition_14	transition_70	transition_22	transition_17
+H1	 2.672	 0.940	90.070	 8.990	 0.150	77.720	22.130
+H2	 0.769	 0.630	31.150	68.220	11.890	16.900	71.220
+H3	 0.582	33.760	 2.470	63.765	45.100	 1.340	53.560

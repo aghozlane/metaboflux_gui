@@ -1,0 +1,408 @@
+.TH "metaboflux/include/especes.h" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/include/especes.h \- 
+.PP
+Modelize a molecule.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBReaction\fP"
+.br
+.RI "\fIReactions data. \fP"
+.ti -1c
+.RI "struct \fBEspeces\fP"
+.br
+.RI "\fIMolecules data. \fP"
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBReaction\fP \fBReaction\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBReaction\fP * \fBpReaction\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBEspeces\fP \fBEspeces\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBEspeces\fP * \fBpEspeces\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpEspeces\fP \fBEspeces_alloc\fP (int)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBEspeces\fP. \fP"
+.ti -1c
+.RI "void \fBEspeces_allocReactions\fP (\fBpEspeces\fP, int, Reaction_t *, double)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBReaction\fP for each molecule. \fP"
+.ti -1c
+.RI "void \fBEspeces_free\fP (\fBpEspeces\fP, int)"
+.br
+.RI "\fIFree the struct pEspeces. \fP"
+.ti -1c
+.RI "void \fBEspeces_freeReactions\fP (\fBEspeces\fP)"
+.br
+.RI "\fIFree the struct \fBReaction\fP. \fP"
+.ti -1c
+.RI "void \fBEspeces_save\fP (\fBpEspeces\fP, int, double, const char *)"
+.br
+.RI "\fISave data on one molecule. \fP"
+.ti -1c
+.RI "void \fBEspeces_scoreSpecies\fP (\fBpEspeces\fP, int, char **, double *)"
+.br
+.RI "\fISave the quantite of all molecules for scoring. \fP"
+.ti -1c
+.RI "void \fBEspeces_print\fP (\fBpEspeces\fP, int)"
+.br
+.RI "\fIPrint data on each molecule. \fP"
+.ti -1c
+.RI "void \fBEspeces_print_2\fP (\fBpEspeces\fP molecules, int nbEspeces)"
+.br
+.RI "\fIPrint Id and quantity on each molecule. \fP"
+.ti -1c
+.RI "int \fBEspeces_find\fP (\fBpEspeces\fP, const char *, int)"
+.br
+.RI "\fIFind a molecule thank to it ID. \fP"
+.ti -1c
+.RI "void \fBEspeces_setQuantite\fP (\fBpEspeces\fP, int, double)"
+.br
+.RI "\fIChange the quantity of a molecule. \fP"
+.ti -1c
+.RI "double \fBEspeces_getQuantite\fP (\fBpEspeces\fP, int)"
+.br
+.RI "\fIGet the quanty of one molecule by its number. \fP"
+.ti -1c
+.RI "int \fBEspeces_getNbreactions\fP (\fBpEspeces\fP molecules, int ref)"
+.br
+.RI "\fIGet number of reaction where one molecule is used (like a reactif) \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Modelize a molecule. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+27 octobre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBespeces.h\fP.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBEspeces\fP  \fBEspeces\fP"
+.SS "typedef struct \fBEspeces\fP * \fBpEspeces\fP"
+.SS "typedef struct \fBReaction\fP * \fBpReaction\fP"
+.SS "typedef struct \fBReaction\fP  \fBReaction\fP"
+.SH "Function Documentation"
+.PP 
+.SS "\fBpEspeces\fP Especes_alloc (intnbEspeces)"
+.PP
+Alloc memory and initialize the struct \fBEspeces\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Allocated struct Espece 
+.RE
+.PP
+
+.PP
+Definition at line 40 of file especes.c.
+.PP
+References Especes::quantite, and Especes::system.
+.PP
+Referenced by SBML_compute_simulation(), and SBML_compute_simulation_mean().
+.SS "void Especes_allocReactions (\fBpEspeces\fPmolecules, intEspece, Reaction_t *local, doublereactRatio)"
+.PP
+Alloc memory and initialize the struct \fBReaction\fP for each molecule. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fIEspece\fP Number of the selected molecule 
+.br
+\fIlocal\fP \fBReaction\fP sbml reference 
+.br
+\fIreactRatio\fP Ratio of the reaction 
+.RE
+.PP
+
+.PP
+Definition at line 64 of file especes.c.
+.PP
+References Reaction::link, Reaction::suivant, and Especes::system.
+.PP
+Referenced by SBML_setReactions().
+.SS "int Especes_find (\fBpEspeces\fPmolecules, const char *especeId, intnbEspeces)"
+.PP
+Find a molecule thank to it ID. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fIespeceId\fP SBML ID of the molecule 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of a selected molecule 
+.RE
+.PP
+
+.PP
+Definition at line 214 of file especes.c.
+.PP
+Referenced by SBML_checkQuantite(), SBML_reaction(), and SBML_setReactions().
+.SS "void Especes_free (\fBpEspeces\fPmolecules, intnbEspeces)"
+.PP
+Free the struct pEspeces. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 94 of file especes.c.
+.PP
+References Especes_freeReactions().
+.PP
+Referenced by SBML_compute_simulation(), and SBML_compute_simulation_mean().
+.SS "void Especes_freeReactions (\fBEspeces\fPmolecules)"
+.PP
+Free the struct \fBReaction\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 109 of file especes.c.
+.PP
+References Reaction::suivant, and Especes::system.
+.PP
+Referenced by Especes_free().
+.SS "int Especes_getNbreactions (\fBpEspeces\fPmolecules, intref)"
+.PP
+Get number of reaction where one molecule is used (like a reactif) \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fIref\fP Number of a selected molecule 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of reactions 
+.RE
+.PP
+
+.PP
+Definition at line 265 of file especes.c.
+.PP
+References Reaction::suivant, and Especes::system.
+.PP
+Referenced by SBML_simulate().
+.SS "double Especes_getQuantite (\fBpEspeces\fPmolecules, intEspeces)"
+.PP
+Get the quanty of one molecule by its number. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fI\fBEspeces\fP\fP Number of a selected molecule 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Quantity of a selected molecule 
+.RE
+.PP
+
+.PP
+Definition at line 252 of file especes.c.
+.PP
+References Especes::quantite.
+.PP
+Referenced by SBML_checkQuantite(), SBML_reaction(), and SBML_simulate().
+.SS "void Especes_print (\fBpEspeces\fPmolecules, intnbEspeces)"
+.PP
+Print data on each molecule. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 170 of file especes.c.
+.PP
+References Reaction::link, Reaction::ratio, Reaction::suivant, and Especes::system.
+.SS "void Especes_print_2 (\fBpEspeces\fPmolecules, intnbEspeces)"
+.PP
+Print Id and quantity on each molecule. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 196 of file especes.c.
+.SS "void Especes_save (\fBpEspeces\fPmolecules, inti, doublequant, const char *dye)"
+.PP
+Save data on one molecule. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fIi\fP Number of the selected molecule 
+.br
+\fIquant\fP Quantity of the molecule 
+.br
+\fIdye\fP ID of the molecule 
+.RE
+.PP
+
+.PP
+Definition at line 134 of file especes.c.
+.PP
+References Especes::id, and Especes::quantite.
+.PP
+Referenced by SBML_initEspeceAmounts().
+.SS "void Especes_scoreSpecies (\fBpEspeces\fPmolecules, intnbEspeces, char **name, double *quantite)"
+.PP
+Save the quantite of all molecules for scoring. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fInbEspeces\fP Number of molecules 
+.br
+\fIname\fP ID of the selected molecule 
+.br
+\fIquantite\fP Table of molecule Quantity 
+.RE
+.PP
+
+.PP
+Definition at line 149 of file especes.c.
+.PP
+References Especes::quantite.
+.PP
+Referenced by SBML_score().
+.SS "void Especes_setQuantite (\fBpEspeces\fPmolecules, intEspeces, doublequant)"
+.PP
+Change the quantity of a molecule. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP List of molecules 
+.br
+\fI\fBEspeces\fP\fP Number of a selected molecule 
+.br
+\fIquant\fP Quantity of the molecule 
+.RE
+.PP
+
+.PP
+Definition at line 239 of file especes.c.
+.PP
+References Especes::quantite.
+.PP
+Referenced by SBML_reaction().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

@@ -1,0 +1,196 @@
+\hypertarget{structScore}{
+\section{Score Struct Reference}
+\label{structScore}\index{Score@{Score}}
+}
+
+
+Structure containing all information from simulations.  
+
+
+
+
+{\ttfamily \#include $<$simulation.h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \hyperlink{structScore_a29547e98673d89a8964a747015b2c26c}{name}
+\item 
+double $\ast$ \hyperlink{structScore_aadd3a70f5dc0018739a48ff13cb9fa2d}{quantite}
+\item 
+char $\ast$$\ast$ \hyperlink{structScore_af8245823c6e659cee49999dd3452a301}{reaction}
+\item 
+int \hyperlink{structScore_a9676111bf63c8d420921fe1c9187670d}{nb\_\-reaction}
+\item 
+int \hyperlink{structScore_a103843cc09238d77051b5a6ca4e48173}{tailleReactions}
+\item 
+int \hyperlink{structScore_ac5a5af5f70e341fb42ea765394d86207}{tailleSpecies}
+\item 
+int \hyperlink{structScore_aee1e19fc90d330de6fced582dff7102c}{taille}
+\item 
+char $\ast$$\ast$ \hyperlink{structScore_ae22017a9e14dbbacbc7ef1a41f880ceb}{species}
+\item 
+int \hyperlink{structScore_a88d07328145c2565fb2fa50c31760dbe}{nb\_\-species}
+\item 
+int $\ast$ \hyperlink{structScore_abb78b9e380ec83ab8f0274480c420be7}{species\_\-amount}
+\item 
+int $\ast$ \hyperlink{structScore_a46e74b92b29101ec9dc68255ab71a480}{species\_\-weight}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure containing all information from simulations. 
+
+Definition at line 51 of file simulation.h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structScore_a29547e98673d89a8964a747015b2c26c}{
+\index{Score@{Score}!name@{name}}
+\index{name@{name}!Score@{Score}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf Score::name}}}
+\label{structScore_a29547e98673d89a8964a747015b2c26c}
+Molecules id 
+
+Definition at line 53 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), SBML\_\-score(), SBML\_\-score\_\-add(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_a9676111bf63c8d420921fe1c9187670d}{
+\index{Score@{Score}!nb\_\-reaction@{nb\_\-reaction}}
+\index{nb\_\-reaction@{nb\_\-reaction}!Score@{Score}}
+\subsubsection[{nb\_\-reaction}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Score::nb\_\-reaction}}}
+\label{structScore_a9676111bf63c8d420921fe1c9187670d}
+Number of reaction 
+
+Definition at line 56 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), SBML\_\-score(), and SBML\_\-setReactions().
+
+\hypertarget{structScore_a88d07328145c2565fb2fa50c31760dbe}{
+\index{Score@{Score}!nb\_\-species@{nb\_\-species}}
+\index{nb\_\-species@{nb\_\-species}!Score@{Score}}
+\subsubsection[{nb\_\-species}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Score::nb\_\-species}}}
+\label{structScore_a88d07328145c2565fb2fa50c31760dbe}
+Number of molecules 
+
+Definition at line 61 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_aadd3a70f5dc0018739a48ff13cb9fa2d}{
+\index{Score@{Score}!quantite@{quantite}}
+\index{quantite@{quantite}!Score@{Score}}
+\subsubsection[{quantite}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ {\bf Score::quantite}}}
+\label{structScore_aadd3a70f5dc0018739a48ff13cb9fa2d}
+Quantity of molecules 
+
+Definition at line 54 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), Data\_\-scoreInit(), Min\_\-getTampon(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), SBML\_\-score(), SBML\_\-score\_\-add(), SBML\_\-score\_\-mean(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_af8245823c6e659cee49999dd3452a301}{
+\index{Score@{Score}!reaction@{reaction}}
+\index{reaction@{reaction}!Score@{Score}}
+\subsubsection[{reaction}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf Score::reaction}}}
+\label{structScore_af8245823c6e659cee49999dd3452a301}
+Interest reaction 
+
+Definition at line 55 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), SBML\_\-score(), and SBML\_\-setReactions().
+
+\hypertarget{structScore_ae22017a9e14dbbacbc7ef1a41f880ceb}{
+\index{Score@{Score}!species@{species}}
+\index{species@{species}!Score@{Score}}
+\subsubsection[{species}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf Score::species}}}
+\label{structScore_ae22017a9e14dbbacbc7ef1a41f880ceb}
+Interest molecules 
+
+Definition at line 60 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_abb78b9e380ec83ab8f0274480c420be7}{
+\index{Score@{Score}!species\_\-amount@{species\_\-amount}}
+\index{species\_\-amount@{species\_\-amount}!Score@{Score}}
+\subsubsection[{species\_\-amount}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf Score::species\_\-amount}}}
+\label{structScore_abb78b9e380ec83ab8f0274480c420be7}
+Quantity of the interest molecules 
+
+Definition at line 62 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_a46e74b92b29101ec9dc68255ab71a480}{
+\index{Score@{Score}!species\_\-weight@{species\_\-weight}}
+\index{species\_\-weight@{species\_\-weight}!Score@{Score}}
+\subsubsection[{species\_\-weight}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf Score::species\_\-weight}}}
+\label{structScore_a46e74b92b29101ec9dc68255ab71a480}
+Weight of the interest molecules 
+
+Definition at line 63 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_aee1e19fc90d330de6fced582dff7102c}{
+\index{Score@{Score}!taille@{taille}}
+\index{taille@{taille}!Score@{Score}}
+\subsubsection[{taille}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Score::taille}}}
+\label{structScore_aee1e19fc90d330de6fced582dff7102c}
+Total of other two sizes 
+
+Definition at line 59 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Data\_\-desallocSim(), Data\_\-scoreFree(), Data\_\-scoreInit(), Min\_\-getTampon(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), SBML\_\-score\_\-add(), SBML\_\-score\_\-mean(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structScore_a103843cc09238d77051b5a6ca4e48173}{
+\index{Score@{Score}!tailleReactions@{tailleReactions}}
+\index{tailleReactions@{tailleReactions}!Score@{Score}}
+\subsubsection[{tailleReactions}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Score::tailleReactions}}}
+\label{structScore_a103843cc09238d77051b5a6ca4e48173}
+Number of reaction in the SBML file 
+
+Definition at line 57 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), and SBML\_\-compute\_\-simulation().
+
+\hypertarget{structScore_ac5a5af5f70e341fb42ea765394d86207}{
+\index{Score@{Score}!tailleSpecies@{tailleSpecies}}
+\index{tailleSpecies@{tailleSpecies}!Score@{Score}}
+\subsubsection[{tailleSpecies}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Score::tailleSpecies}}}
+\label{structScore_ac5a5af5f70e341fb42ea765394d86207}
+Number of molecules in the SBML file 
+
+Definition at line 58 of file simulation.h.
+
+
+
+Referenced by Data\_\-allocScore(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Recuit\_\-energyFunction(), SBML\_\-compute\_\-simulation(), SBML\_\-score\_\-add(), and Sd\_\-compute\_\-simulation().
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+metaboflux/include/\hyperlink{simulation_8h}{simulation.h}\end{DoxyCompactItemize}

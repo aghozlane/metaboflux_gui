@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$data__parameters_8c.html#ac6adf7017183beb79ae1511c65f669af" title="Free struct parameters specific to each simulation." alt="" coords="281,281,409,311"/>
+<area shape="rect" id="node5" href="$data__parameters_8c.html#a72112e95502d41a9b171e9d9fea2e8ab" title="Recording parameters specific to each simulation." alt="" coords="273,335,417,364"/>
+<area shape="rect" id="node34" href="$gsl__sd_8c.html#ad3a6822755dad511abb99b018c49699c" title="Enter in the program for standard deviation." alt="" coords="265,548,425,577"/>
+<area shape="rect" id="node112" href="$xml__parameter_8c.html#afeff8e3300946c36cea36ddd964e9265" title="Get number of tries for modelling." alt="" coords="275,707,416,736"/>
+<area shape="rect" id="node7" href="$data__parameters_8c.html#aafa73dbdb81fb526cdb945f7bd5ab5c4" title="Copy the partial table x in the full table y." alt="" coords="507,139,624,168"/>
+<area shape="rect" id="node30" href="$data__parameters_8c.html#a471111b1274ced0e59605c283c81108f" title="Allocation of tables needed for simulations." alt="" coords="479,281,652,311"/>
+<area shape="rect" id="node32" href="$data__parameters_8c.html#a01cffb5411305dc2bcedfda13c7532cd" title="Allocation of the random number generator." alt="" coords="513,335,617,364"/>
+<area shape="rect" id="node9" href="$xml__parameter_8c.html#ab64b5c70d3ad223797b8047c29b3a176" title="Get Table of species amount." alt="" coords="704,59,907,88"/>
+<area shape="rect" id="node13" href="$xml__parameter_8c.html#a2269733e284ffe4b8ff58248e060efea" title="Get list of species weight." alt="" coords="720,112,891,141"/>
+<area shape="rect" id="node17" href="$xml__parameter_8c.html#a1237b1ca7c942eb4db3bc5a3edae6dcb" title="Get the number of reactions." alt="" coords="981,219,1120,248"/>
+<area shape="rect" id="node21" href="$xml__parameter_8c.html#aa38353601b43859be1905fb37632fbf0" title="Get the number of species." alt="" coords="739,5,872,35"/>
+<area shape="rect" id="node24" href="$xml__parameter_8c.html#a3b6fb6f415a7542cd722d9d327eea7b8" title="Get name of reactions." alt="" coords="720,165,891,195"/>
+<area shape="rect" id="node11" href="$xml__parameter_8c.html#afda4f9b23fe11dd5d1d054f02b15f6e6" title="Get the final amount of one species." alt="" coords="956,59,1145,88"/>
+<area shape="rect" id="node15" href="$xml__parameter_8c.html#ae5b43caf011ecd4332145b1d5650ed9e" title="Get Species weight." alt="" coords="972,112,1129,141"/>
+<area shape="rect" id="node19" href="$xml__parameter_8c.html#ab341a0b1147a2c5866cab65f552f0817" title="Get count." alt="" coords="1217,165,1321,195"/>
+<area shape="rect" id="node26" href="$xml__parameter_8c.html#af2cfdc761c81f2a612b89c4287532b59" title="Get the number of couples." alt="" coords="984,165,1117,195"/>
+<area shape="rect" id="node36" href="$data__parameters_8c.html#a5cbbdc869f6afdad90fbc19e8cb71653" title="Allocate the struct Equations." alt="" coords="495,601,636,631"/>
+<area shape="rect" id="node38" href="$data__parameters_8c.html#ab87022ba396950a530c349d81e250cf4" title="Initialize equations." alt="" coords="500,655,631,684"/>
+<area shape="rect" id="node63" href="$data__parameters_8c.html#a85ac72a7daa9c81e510fbd8d09edb8b3" title="Initialize the struct Score." alt="" coords="512,708,619,737"/>
+<area shape="rect" id="node65" href="$equations_8c.html#ac44a002ce6003458f78db2b85bff29ef" title="Compute the score of the equation." alt="" coords="991,800,1111,829"/>
+<area shape="rect" id="node78" href="$equations_8c.html#a52f64995ddba108da9f528b20d373a2d" title="Compute the score of the quantity which means the difference between what is expected to what is simu..." alt="" coords="485,388,645,417"/>
+<area shape="rect" id="node82" href="$simulation_8c.html#a0eb4dda20b3a9cc639f50421f919f24e" title="Simulation of metabolic network." alt="" coords="475,441,656,471"/>
+<area shape="rect" id="node108" href="$simulation_8c.html#a792ef36e542159096d4567a125aee565" title="Print the debuf file." alt="" coords="503,495,628,524"/>
+<area shape="rect" id="node110" href="$simulation_8c.html#a8823ee151e44d0d0b6b977bcebc7463e" title="Print the head of the debug file." alt="" coords="487,548,644,577"/>
+<area shape="rect" id="node40" href="$equations_8c.html#adcc21952710a1783d451a42bd0448215" title="Build pile." alt="" coords="723,668,888,697"/>
+<area shape="rect" id="node42" href="$equations_8c.html#acfd75204575cdb598699e9599c24164e" title="Build the list of the Struct Equations result used to compute the equation." alt="" coords="988,640,1113,669"/>
+<area shape="rect" id="node46" href="$equations_8c.html#a51aa19b01714bc3ae728031b8748694a" title="Stack an element to the struct Equations." alt="" coords="1205,587,1333,616"/>
+<area shape="rect" id="node50" href="$equations_8c.html#a977051374a319d6bd60ef8ca2c03c952" title="Alloc memory and initialize the struct Equations." alt="" coords="1212,957,1327,987"/>
+<area shape="rect" id="node52" href="$equations_8c.html#a17d096394760f8a2f63e5e3523168304" title="Identify the mathematical operator used." alt="" coords="989,747,1112,776"/>
+<area shape="rect" id="node55" href="$equations_8c.html#a2265434c24c5db73dc45f4799f01fbb6" title="Empty the Struct Equations op for the struct Equation result." alt="" coords="981,693,1120,723"/>
+<area shape="rect" id="node44" href="$equations_8c.html#a652cb08a19a4b10403a1751220d2de54" title="Unstack the last element of the struct Equations." alt="" coords="1207,640,1332,669"/>
+<area shape="rect" id="node48" href="$equations_8c.html#abc16d34fd78fc7bec99064ba06a0a27f" title="Test if the struct Equations is empty." alt="" coords="1215,693,1324,723"/>
+<area shape="rect" id="node57" href="$equations_8c.html#a4c54e881f9153f6c8b0313f139ad1ade" title="Look for the first element of the struct Equations." alt="" coords="1208,800,1331,829"/>
+<area shape="rect" id="node59" href="$equations_8c.html#a3e550cf0e9190391a5c15b9edf1df721" title="Get the next element of the struct Equations." alt="" coords="1196,747,1343,776"/>
+<area shape="rect" id="node72" href="$equations_8c.html#ae2ab956dac833cf24b93305cfb79cfdf" title="Extract information on element of type Struct Equation." alt="" coords="1392,880,1547,909"/>
+<area shape="rect" id="node74" href="$equations_8c.html#aafe1cd5689dbec030ec792f43b40876b" title="Compute the result of two pile." alt="" coords="1204,853,1335,883"/>
+<area shape="rect" id="node80" href="$equations_8c.html#a93e7c3c0bd43ade391fa122589734816" title="Look for the quantity of a molecule in the list." alt="" coords="728,269,883,299"/>
+<area shape="rect" id="node84" href="$especes_8c.html#ad40ac9cd39a9c9b70657f8e87209bc4d" title="Alloc memory and initialize the struct Especes." alt="" coords="752,536,859,565"/>
+<area shape="rect" id="node86" href="$especes_8c.html#aa4c9945c5a0484f255ebe9ae6e1e7d30" title="Free the struct pEspeces." alt="" coords="755,323,856,352"/>
+<area shape="rect" id="node90" href="$simulation_8c.html#ab96386e57e0e58e356974d26ced8eeb2" title="Alloc memory and initialize the struct Especes." alt="" coords="716,376,895,405"/>
+<area shape="rect" id="node94" href="$simulation_8c.html#ad857fd679e78b0081d6c6898f6a51f52" title="Alloc memory and initialize the struct Especes." alt="" coords="757,589,853,619"/>
+<area shape="rect" id="node102" href="$simulation_8c.html#a744147acf49de269630c456d0c5f4247" title="Alloc memory and initialize the struct Especes." alt="" coords="735,429,876,459"/>
+<area shape="rect" id="node106" href="$simulation_8c.html#a36a9d2b343c5fcf0f4d88e5720fb86ce" title="Simulate one step of petri net." alt="" coords="748,483,863,512"/>
+<area shape="rect" id="node88" href="$especes_8c.html#aff847305d7a79c95a9c8296276840529" title="Free the struct Reaction." alt="" coords="971,323,1131,352"/>
+<area shape="rect" id="node92" href="$especes_8c.html#a4ca513fe43dc3919cab3044166d9f9fb" title="Save data on one molecule." alt="" coords="997,376,1104,405"/>
+<area shape="rect" id="node96" href="$especes_8c.html#a13dfbbe353cc238a9f53e5a183904fa4" title="Save the quantite of all molecules for scoring." alt="" coords="972,536,1129,565"/>
+<area shape="rect" id="node98" href="$simulation_8c.html#a2aee345900876fe3c6888dfc620265b0" title="Get the reaction ratio define in the sbml." alt="" coords="973,429,1128,459"/>
+<area shape="rect" id="node100" href="$simulation_8c.html#a56b2d00e703b09b6c3f52e971517ecb3" title="Determine if the reaction is study." alt="" coords="981,483,1120,512"/>
+<area shape="rect" id="node114" href="$xml__parameter_8c.html#a4024e4decc374dde9740834c575c2057" title="Get integer value." alt="" coords="508,812,623,841"/>
+</map>

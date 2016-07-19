@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_e45ac9270b73560e6fa9a87e707d2c00" kind="dir">
+    <compoundname>metaboflux/</compoundname>
+    <innerdir refid="dir_aad8a02e6fe16822d978c9ef221b868d">metaboflux/include/</innerdir>
+    <innerdir refid="dir_4f437cd2c9fe4aa68097b87f1a4866ed">metaboflux/src/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/"/>
+  </compounddef>
+</doxygen>

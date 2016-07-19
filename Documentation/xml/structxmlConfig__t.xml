@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structxmlConfig__t" kind="struct" prot="public">
+    <compoundname>xmlConfig_t</compoundname>
+    <includes refid="xml__parameter_8h" local="no">xml_parameter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxmlConfig__t_1a7a2f1cbf9d3b49f1b2debb85a8606658" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* xmlConfig_t::fichier</definition>
+        <argsstring></argsstring>
+        <name>fichier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the parameter file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="34" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="xml__parameter_8h_1ae8efb0436cd231ff904c662e662210f7" compoundref="xml__parameter_8c" startline="97" endline="105">Xml_freeConfig</referencedby>
+        <referencedby refid="xml__parameter_8h_1a4ea94aa6222a68813a163a5c01e160f6" compoundref="xml__parameter_8c" startline="42" endline="89">Xml_loadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structxmlConfig__t_1a35e7e8fc3398d0866fbf91b0245fd7b9" prot="public" static="no" mutable="no">
+        <type>xmlDocPtr</type>
+        <definition>xmlDocPtr xmlConfig_t::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Xml doc </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="35" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="xml__parameter_8h_1ae8efb0436cd231ff904c662e662210f7" compoundref="xml__parameter_8c" startline="97" endline="105">Xml_freeConfig</referencedby>
+        <referencedby refid="xml__parameter_8h_1a4ea94aa6222a68813a163a5c01e160f6" compoundref="xml__parameter_8c" startline="42" endline="89">Xml_loadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structxmlConfig__t_1a535cd8a3e33d4ae2a00ab29f32a442ff" prot="public" static="no" mutable="no">
+        <type>xmlNodePtr</type>
+        <definition>xmlNodePtr xmlConfig_t::racine</definition>
+        <argsstring></argsstring>
+        <name>racine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Xml root </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="36" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="xml__parameter_8h_1a4ea94aa6222a68813a163a5c01e160f6" compoundref="xml__parameter_8c" startline="42" endline="89">Xml_loadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" prot="public" static="no" mutable="no">
+        <type>xmlXPathContextPtr</type>
+        <definition>xmlXPathContextPtr xmlConfig_t::ctxt</definition>
+        <argsstring></argsstring>
+        <name>ctxt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Xml ctxt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="37" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="xml__parameter_8h_1ae8efb0436cd231ff904c662e662210f7" compoundref="xml__parameter_8c" startline="97" endline="105">Xml_freeConfig</referencedby>
+        <referencedby refid="xml__parameter_8h_1a4c7a3feb35dfee4b0003a396d064159a" compoundref="xml__parameter_8c" startline="624" endline="654">Xml_getBanned</referencedby>
+        <referencedby refid="xml__parameter_8h_1af5e51f22021d8e7d4fd57564747c87dd" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</referencedby>
+        <referencedby refid="xml__parameter_8h_1ae92f843acf0a723abf982d04d774aec7" compoundref="xml__parameter_8c" startline="153" endline="181">Xml_getDoubleNumber</referencedby>
+        <referencedby refid="xml__parameter_8h_1a5645a54d20bd3d2347f06b3167d1ed6a" compoundref="xml__parameter_8c" startline="854" endline="900">Xml_getKineticLaw</referencedby>
+        <referencedby refid="xml__parameter_8h_1ae14e8b44d2e2b750d81490c74e0659e0" compoundref="xml__parameter_8c" startline="813" endline="843">Xml_getKineticLawNodes</referencedby>
+        <referencedby refid="xml__parameter_8h_1a718b56ca89a1aba6bf2519b575394a72" compoundref="xml__parameter_8c" startline="115" endline="143">Xml_getNumber</referencedby>
+        <referencedby refid="xml__parameter_8h_1aff7d36c23f3ed9618037ae6de0706fd6" compoundref="xml__parameter_8c" startline="541" endline="576">Xml_getReactionsNames</referencedby>
+        <referencedby refid="xml__parameter_8h_1a569e99d4f8bdc2a9a9e69987690ab5bf" compoundref="xml__parameter_8c" startline="500" endline="532">Xml_getReactionsNamesinNoeud</referencedby>
+        <referencedby refid="xml__parameter_8h_1af6bd746aeab32ffb8ce8aca1eb39025c" compoundref="xml__parameter_8c" startline="585" endline="615">Xml_getSpecies</referencedby>
+        <referencedby refid="xml__parameter_8h_1a9d0d9ce69bd349b6b7344fbaa6a63fc0" compoundref="xml__parameter_8c" startline="665" endline="697">Xml_getSpeciesFinalAmount</referencedby>
+        <referencedby refid="xml__parameter_8h_1ac863f3b5d07ff53656292f8ae60ab56f" compoundref="xml__parameter_8c" startline="727" endline="759">Xml_getSpeciesWeight</referencedby>
+        <referencedby refid="xml__parameter_8h_1ac7cfe344dbbf799ef808fb9a4e8ec391" compoundref="xml__parameter_8c" startline="190" endline="218">Xml_getString</referencedby>
+        <referencedby refid="xml__parameter_8h_1a4ea94aa6222a68813a163a5c01e160f6" compoundref="xml__parameter_8c" startline="42" endline="89">Xml_loadConfig</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure containing all information from parameter.xml. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="33" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" bodystart="33" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" prot="public" virt="non-virtual"><scope>xmlConfig_t</scope><name>ctxt</name></member>
+      <member refid="structxmlConfig__t_1a35e7e8fc3398d0866fbf91b0245fd7b9" prot="public" virt="non-virtual"><scope>xmlConfig_t</scope><name>doc</name></member>
+      <member refid="structxmlConfig__t_1a7a2f1cbf9d3b49f1b2debb85a8606658" prot="public" virt="non-virtual"><scope>xmlConfig_t</scope><name>fichier</name></member>
+      <member refid="structxmlConfig__t_1a535cd8a3e33d4ae2a00ab29f32a442ff" prot="public" virt="non-virtual"><scope>xmlConfig_t</scope><name>racine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

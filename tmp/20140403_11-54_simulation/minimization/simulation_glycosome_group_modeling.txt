@@ -1,0 +1,6 @@
+Group	Energy	ATP	ADP	transition_13	transition_15	transition_14	transition_70	transition_22	transition_17	
+HX	0	2000	2000	NA	NA	NA	NA	NA	NA	
+H1	0.000	2000	2000	0.00	0.00	0.00	0.00	0.00	0.00	
+H2	0.000	2000	2000	0.00	0.00	0.00	0.00	0.00	0.00	
+H3	0.000	2000	2000	0.00	0.00	0.00	0.00	0.00	0.00	
+H4	0.000	2000	2000	0.00	0.00	0.00	0.00	0.00	0.00	

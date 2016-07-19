@@ -1,0 +1,1034 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="data__parameters_8h" kind="file">
+    <compoundname>data_parameters.h</compoundname>
+    <includedby refid="data__parameters_8c" local="yes">metaboflux/src/data_parameters.c</includedby>
+    <includedby refid="gsl__min_8c" local="yes">metaboflux/src/gsl_min.c</includedby>
+    <includedby refid="gsl__mod_8c" local="yes">metaboflux/src/gsl_mod.c</includedby>
+    <includedby refid="gsl__recuit_8c" local="yes">metaboflux/src/gsl_recuit.c</includedby>
+    <includedby refid="gsl__sd_8c" local="yes">metaboflux/src/gsl_sd.c</includedby>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <invincdepgraph>
+      <node id="292">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="287">
+        <label>metaboflux/src/data_parameters.c</label>
+        <link refid="data__parameters_8c"/>
+      </node>
+      <node id="293">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+      <node id="291">
+        <label>metaboflux/src/gsl_sd.c</label>
+        <link refid="gsl__sd_8c"/>
+      </node>
+      <node id="290">
+        <label>metaboflux/src/gsl_recuit.c</label>
+        <link refid="gsl__recuit_8c"/>
+      </node>
+      <node id="289">
+        <label>metaboflux/src/gsl_mod.c</label>
+        <link refid="gsl__mod_8c"/>
+      </node>
+      <node id="288">
+        <label>metaboflux/src/gsl_min.c</label>
+        <link refid="gsl__min_8c"/>
+      </node>
+      <node id="286">
+        <label>metaboflux/include/data_parameters.h</label>
+        <link refid="data_parameters.h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structListParameters" prot="public">ListParameters</innerclass>
+    <innerclass refid="structSimParameters" prot="public">SimParameters</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="data__parameters_8h_1aecc9022efc501cb6d5dfdea7752761ec" prot="public" static="no">
+        <type>struct <ref refid="structListParameters" kindref="compound">ListParameters</ref></type>
+        <definition>typedef struct ListParameters ListParameters</definition>
+        <argsstring></argsstring>
+        <name>ListParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="data__parameters_8h_1a2ba0d92b5cdc7e1714b06db48f9ec6a8" prot="public" static="no">
+        <type>struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> *</type>
+        <definition>typedef struct ListParameters * pListParameters</definition>
+        <argsstring></argsstring>
+        <name>pListParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="data__parameters_8h_1a7e395fbc356c4f9779b9eaec871c2122" prot="public" static="no">
+        <type>struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref></type>
+        <definition>typedef struct SimParameters SimParameters</definition>
+        <argsstring></argsstring>
+        <name>SimParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="65"/>
+      </memberdef>
+      <memberdef kind="typedef" id="data__parameters_8h_1ae9651e8001cc412f6a207d4d90b0132e" prot="public" static="no">
+        <type>struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> *</type>
+        <definition>typedef struct SimParameters * pSimParameters</definition>
+        <argsstring></argsstring>
+        <name>pSimParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="data__parameters_8h_1a6de2ffa5b44477da0d4a2e9e831c0c8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+        <definition>xmlConfig_t* Data_initXML</definition>
+        <argsstring>(char *)</argsstring>
+        <name>Data_initXML</name>
+        <param>
+          <type>char *</type>
+          <defname>xml_file</defname>
+        </param>
+        <briefdescription>
+<para>Load parameter file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xml_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the parameter file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Model of the parameter file =:Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="69" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="58" bodyend="71"/>
+        <references refid="xml__parameter_8c_1ab12b2036f57ce74c1c2ac44a19434bda" compoundref="xml__parameter_8c" startline="42" endline="89">Xml_loadConfig</references>
+        <referencedby refid="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a2c7c500f91d49ea904f26078df0c0410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Model_t *</type>
+        <definition>Model_t* Data_initSBML</definition>
+        <argsstring>(char *)</argsstring>
+        <name>Data_initSBML</name>
+        <param>
+          <type>char *</type>
+          <defname>sbml_file</defname>
+        </param>
+        <briefdescription>
+<para>Load SBML file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sbml_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the SBML file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Model of the SBML file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="73" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="81" bodyend="112"/>
+        <referencedby refid="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a82ec4869c2eb338089f664171740b07b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>gsl_rng *</type>
+        <definition>gsl_rng* Data_rngAlloc</definition>
+        <argsstring>(gsl_rng *)</argsstring>
+        <name>Data_rngAlloc</name>
+        <param>
+          <type>gsl_rng *</type>
+          <defname>r</defname>
+        </param>
+        <briefdescription>
+<para>Allocation of the random number generator. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Random number generator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="80" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="135" bodyend="157"/>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a0940064d850a6ea789bb94e0fd635d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">Equations</ref> **</type>
+        <definition>Equations** Data_equationsAlloc</definition>
+        <argsstring>(pListParameters, Equations **)</argsstring>
+        <name>Data_equationsAlloc</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>current</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">Equations</ref> **</type>
+          <defname>pile</defname>
+        </param>
+        <briefdescription>
+<para>Allocate the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pile des equations : struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="84" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="169" bodyend="175"/>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1ac0ac001f1fc3102e3ed07568cba5c570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_equationsInit</definition>
+        <argsstring>(pListParameters, Equations **)</argsstring>
+        <name>Data_equationsInit</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>current</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">Equations</ref> **</type>
+          <defname>pile</defname>
+        </param>
+        <briefdescription>
+<para>Initialize equations. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pile des equations : struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="87" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="184" bodyend="194"/>
+        <references refid="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" compoundref="data__parameters_8h" startline="39">ListParameters::equation</references>
+        <references refid="equations_8c_1adcc21952710a1783d451a42bd0448215" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" compoundref="data__parameters_8h" startline="45">ListParameters::noeud</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_allocEquations</definition>
+        <argsstring>(pListParameters a)</argsstring>
+        <name>Data_allocEquations</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Allocate the different elements related to he struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="90" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="202" bodyend="225"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" compoundref="data__parameters_8h" startline="39">ListParameters::equation</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" compoundref="data__parameters_8h" startline="45">ListParameters::noeud</references>
+        <references refid="xml__parameter_8c_1a62bde7fe978c5b428aedf7011ef5444f" compoundref="xml__parameter_8c" startline="854" endline="900">Xml_getKineticLaw</references>
+        <references refid="xml__parameter_8c_1aebbd1beeffa0d86d3fb414443579bd2c" compoundref="xml__parameter_8c" startline="813" endline="843">Xml_getKineticLawNodes</references>
+        <references refid="xml__parameter_8c_1a4cd7ca36e09a00f6eead68fa2fe9c181" compoundref="xml__parameter_8c" startline="473" endline="477">Xml_getNbEquations</references>
+        <referencedby refid="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_allocScore</definition>
+        <argsstring>(pScore, xmlConfig_t *, Model_t *)</argsstring>
+        <name>Data_allocScore</name>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>Model_t *</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+<para>Copy the partial table x in the full table y. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="94" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="238" bodyend="265"/>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structScore_1a9676111bf63c8d420921fe1c9187670d" compoundref="simulation_8h" startline="56">Score::nb_reaction</references>
+        <references refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" compoundref="simulation_8h" startline="61">Score::nb_species</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1af8245823c6e659cee49999dd3452a301" compoundref="simulation_8h" startline="55">Score::reaction</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1a103843cc09238d77051b5a6ca4e48173" compoundref="simulation_8h" startline="57">Score::tailleReactions</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <references refid="xml__parameter_8c_1ab64b5c70d3ad223797b8047c29b3a176" compoundref="xml__parameter_8c" startline="708" endline="717">Xml_getallSpeciesFinalAmount</references>
+        <references refid="xml__parameter_8c_1a2269733e284ffe4b8ff58248e060efea" compoundref="xml__parameter_8c" startline="770" endline="779">Xml_getallSpeciesWeight</references>
+        <references refid="xml__parameter_8c_1a1237b1ca7c942eb4db3bc5a3edae6dcb" compoundref="xml__parameter_8c" startline="447" endline="451">Xml_getNbReaction</references>
+        <references refid="xml__parameter_8c_1aa38353601b43859be1905fb37632fbf0" compoundref="xml__parameter_8c" startline="460" endline="464">Xml_getNbSpecies</references>
+        <references refid="xml__parameter_8c_1a3b6fb6f415a7542cd722d9d327eea7b8" compoundref="xml__parameter_8c" startline="541" endline="576">Xml_getReactionsNames</references>
+        <references refid="xml__parameter_8c_1ad0b6ab7f717b34351d9dfc0bfb39116f" compoundref="xml__parameter_8c" startline="585" endline="615">Xml_getSpecies</references>
+        <referencedby refid="data__parameters_8h_1a28bd10646fcc4410a1d1d6433e84ea95" compoundref="data__parameters_8c" startline="274" endline="282">Data_scoreAlloc</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a28bd10646fcc4410a1d1d6433e84ea95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+        <definition>pScore Data_scoreAlloc</definition>
+        <argsstring>(pListParameters)</argsstring>
+        <name>Data_scoreAlloc</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+<para>Allocation of the struct <ref refid="structScore" kindref="compound">Score</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated struct <ref refid="structScore" kindref="compound">Score</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="97" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="274" bodyend="282"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1aafa73dbdb81fb526cdb945f7bd5ab5c4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a9096849f5a525ee26634b2d98a497ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_scoreInit</definition>
+        <argsstring>(pScore)</argsstring>
+        <name>Data_scoreInit</name>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>out</defname>
+        </param>
+        <briefdescription>
+<para>Initialize the struct <ref refid="structScore" kindref="compound">Score</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Empty struct <ref refid="structScore" kindref="compound">Score</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="100" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="290" bodyend="299"/>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_scoreFree</definition>
+        <argsstring>(pScore)</argsstring>
+        <name>Data_scoreFree</name>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>out</defname>
+        </param>
+        <briefdescription>
+<para>Free the struct <ref refid="structScore" kindref="compound">Score</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct score </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="103" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="307" bodyend="333"/>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structScore_1a9676111bf63c8d420921fe1c9187670d" compoundref="simulation_8h" startline="56">Score::nb_reaction</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1af8245823c6e659cee49999dd3452a301" compoundref="simulation_8h" startline="55">Score::reaction</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a27598d9ebdecd23858dc015d34daa9f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Data_copieTab</definition>
+        <argsstring>(pSimParameters, double *, int, int, int)</argsstring>
+        <name>Data_copieTab</name>
+        <param>
+          <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+          <defname>simulated</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debut</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>fin</defname>
+        </param>
+        <briefdescription>
+<para>Copy the partial table x in the full table y. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simulated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simulation parameters : struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of copied element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="107" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="347" bodyend="361"/>
+        <references refid="gsl__min_8c_1a30c0e0cd742ae3ee221dc0c83a2a0752" compoundref="gsl__min_8c" startline="52">a</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="data__parameters_8h_1aedfc4262f7adadcd89741626ddcf0eef" compoundref="data__parameters_8c" startline="371" endline="381">Data_updateTab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1aedfc4262f7adadcd89741626ddcf0eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_updateTab</definition>
+        <argsstring>(pListParameters, pSimParameters, double *)</argsstring>
+        <name>Data_updateTab</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>current</defname>
+        </param>
+        <param>
+          <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+          <defname>simulated</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+<para>Copy table. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>simulated</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simulation parameters : struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="110" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="371" bodyend="381"/>
+        <references refid="gsl__min_8c_1a30c0e0cd742ae3ee221dc0c83a2a0752" compoundref="gsl__min_8c" startline="52">a</references>
+        <references refid="data__parameters_8c_1a007148bff8b5d1d6dd7c42eefbfeb1fb" compoundref="data__parameters_8c" startline="347" endline="361">Data_copieTab</references>
+        <references refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" compoundref="data__parameters_8h" startline="42">ListParameters::nb_couples</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__recuit_8h_1afd9db376bfecbe387f3836854c31f6d0" compoundref="gsl__recuit_8c" startline="158" endline="172">Recuit_printPosition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a7f131c19d7d1bc29db5ccf53b0517fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_allocSimParameters</definition>
+        <argsstring>(double *, pListParameters)</argsstring>
+        <name>Data_allocSimParameters</name>
+        <param>
+          <type>double *</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+<para>Allocation of tables needed for simulations. </para>        </briefdescription>
+        <detaileddescription>
+<para>void <ref refid="data__parameters_8h_1a7f131c19d7d1bc29db5ccf53b0517fdf" kindref="member">Data_allocSimParameters(double *y, pListParameters a)</ref> <simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="114" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="391" bodyend="400"/>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_allocParameters</definition>
+        <argsstring>(pListParameters)</argsstring>
+        <name>Data_allocParameters</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+<para>Copy the partial table x in the full table y. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="117" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="408" bodyend="433"/>
+        <references refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" compoundref="data__parameters_8h" startline="47">ListParameters::banned</references>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" compoundref="data__parameters_8h" startline="41">ListParameters::interest_parameters</references>
+        <references refid="structListParameters_1aae885063019b7630081d14786e3b48e9" compoundref="data__parameters_8h" startline="48">ListParameters::nb_banned</references>
+        <references refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" compoundref="data__parameters_8h" startline="42">ListParameters::nb_couples</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structListParameters_1a43227ba7fdca24b48e08a561d2c417b3" compoundref="data__parameters_8h" startline="49">ListParameters::nb_triesMod</references>
+        <references refid="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" compoundref="data__parameters_8h" startline="50">ListParameters::nb_triesSa</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <references refid="xml__parameter_8c_1a08ff3dcc547d1e4cd67fc5cdcf76207b" compoundref="xml__parameter_8c" startline="624" endline="654">Xml_getBanned</references>
+        <references refid="xml__parameter_8c_1a76777435e4d20d96bf38532590dde9df" compoundref="xml__parameter_8c" startline="486" endline="490">Xml_getNbBannedSpecies</references>
+        <references refid="xml__parameter_8c_1af2cfdc761c81f2a612b89c4287532b59" compoundref="xml__parameter_8c" startline="396" endline="400">Xml_getNbCouples</references>
+        <references refid="xml__parameter_8c_1a970461b8c6940e3446ae533b7ad02784" compoundref="xml__parameter_8c" startline="409" endline="413">Xml_getNbParameters</references>
+        <references refid="xml__parameter_8c_1abe3e4fdcc6be469255833ced99af8fd5" compoundref="xml__parameter_8c" startline="423" endline="438">Xml_getNbReactioninNoeud</references>
+        <references refid="xml__parameter_8c_1afeff8e3300946c36cea36ddd964e9265" compoundref="xml__parameter_8c" startline="240" endline="244">Xml_getNbTriesMod</references>
+        <references refid="xml__parameter_8c_1a7b67ce794add8c04563e07f9d25c6096" compoundref="xml__parameter_8c" startline="253" endline="257">Xml_getNbTriesSa</references>
+        <referencedby refid="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_parameters</definition>
+        <argsstring>(pListParameters, char **)</argsstring>
+        <name>Data_parameters</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <briefdescription>
+<para>Record parameters of the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="120" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="442" bodyend="455"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</references>
+        <references refid="data__parameters_8c_1ac934a73d670600f3dc8d3a6a6b398463" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</references>
+        <references refid="data__parameters_8c_1a9f9a132c1df2f3c60d773713b5f8f808" compoundref="data__parameters_8c" startline="81" endline="112">Data_initSBML</references>
+        <references refid="data__parameters_8c_1a9a36eeea775961ef075a27520e9d7c65" compoundref="data__parameters_8c" startline="58" endline="71">Data_initXML</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_desallocation</definition>
+        <argsstring>(pListParameters)</argsstring>
+        <name>Data_desallocation</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+<para>Free memory allocated to the various objects of the program. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="123" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="463" bodyend="492"/>
+        <references refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" compoundref="data__parameters_8h" startline="47">ListParameters::banned</references>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" compoundref="data__parameters_8h" startline="39">ListParameters::equation</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" compoundref="data__parameters_8h" startline="45">ListParameters::noeud</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <references refid="xml__parameter_8c_1a8b93c82fdf9f830d2170f8dfe1e206bd" compoundref="xml__parameter_8c" startline="97" endline="105">Xml_freeConfig</references>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_simParameters</definition>
+        <argsstring>(pListParameters, pSimParameters, char *, char *, int, int)</argsstring>
+        <name>Data_simParameters</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+          <defname>sim</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>texte</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>number</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debug</defname>
+        </param>
+        <briefdescription>
+<para>Recording parameters specific to each simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simulation parameters : struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output repertory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>texte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the debug file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determine debug </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="128" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="506" bodyend="541"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1aafa73dbdb81fb526cdb945f7bd5ab5c4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</references>
+        <references refid="data__parameters_8c_1a471111b1274ced0e59605c283c81108f" compoundref="data__parameters_8c" startline="391" endline="400">Data_allocSimParameters</references>
+        <references refid="data__parameters_8c_1a01cffb5411305dc2bcedfda13c7532cd" compoundref="data__parameters_8c" startline="135" endline="157">Data_rngAlloc</references>
+        <references refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" compoundref="data__parameters_8h" startline="64">SimParameters::debugFile</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" compoundref="data__parameters_8h" startline="60">SimParameters::pile</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data_desallocSim</definition>
+        <argsstring>(pSimParameters)</argsstring>
+        <name>Data_desallocSim</name>
+        <param>
+          <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+          <defname>sim</defname>
+        </param>
+        <briefdescription>
+<para>Free struct parameters specific to each simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simulation parameters : struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="131" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/data_parameters.c" bodystart="549" bodyend="583"/>
+        <references refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" compoundref="data__parameters_8h" startline="64">SimParameters::debugFile</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structScore_1a9676111bf63c8d420921fe1c9187670d" compoundref="simulation_8h" startline="56">Score::nb_reaction</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="structScore_1af8245823c6e659cee49999dd3452a301" compoundref="simulation_8h" startline="55">Score::reaction</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Load data parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>10 novembre 2010 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#ifndef<sp/>DATA_PARAMETERS_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DATA_PARAMETERS_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parametre<sp/>constant<sp/>a<sp/>donner<sp/>a<sp/>toutes<sp/>les<sp/>simulations<sp/>*/</highlight></codeline>
+<codeline lineno="35" refid="structListParameters" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">ListParameters</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37" refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" refkind="member"><highlight class="normal"><sp/><sp/>Model_t<sp/>*<ref refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" kindref="member">model</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>****<ref refid="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" kindref="member">equation</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" kindref="member">nb_parameters</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" kindref="member">interest_parameters</ref>;<sp/></highlight></codeline>
+<codeline lineno="42" refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" kindref="member">nb_couples</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" kindref="member">nb_equations</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="structListParameters_1a1bd4ac749f2642216552aa20a2305727" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1a1bd4ac749f2642216552aa20a2305727" kindref="member">nb_reaction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" kindref="member">noeud</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" kindref="member">parameters</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" kindref="member">banned</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structListParameters_1aae885063019b7630081d14786e3b48e9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1aae885063019b7630081d14786e3b48e9" kindref="member">nb_banned</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structListParameters_1a43227ba7fdca24b48e08a561d2c417b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1a43227ba7fdca24b48e08a561d2c417b3" kindref="member">nb_triesMod</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" kindref="member">nb_triesSa</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<ref refid="data__parameters_8h_1aecc9022efc501cb6d5dfdea7752761ec" kindref="member">ListParameters</ref>,<sp/>*<ref refid="data__parameters_8h_1a2ba0d92b5cdc7e1714b06db48f9ec6a8" kindref="member">pListParameters</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parametres<sp/>specifiques<sp/>a<sp/>chaque<sp/>simulation<sp/>*/</highlight></codeline>
+<codeline lineno="58" refid="structSimParameters" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">SimParameters</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref><sp/>**<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">pScore</ref><sp/><ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" refkind="member"><highlight class="normal"><sp/><sp/>gsl_rng<sp/>*<sp/><ref refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" kindref="member">r</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" kindref="member">y</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" refkind="member"><highlight class="normal"><sp/><sp/>FILE<sp/>*<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<ref refid="data__parameters_8h_1a7e395fbc356c4f9779b9eaec871c2122" kindref="member">SimParameters</ref>,<sp/>*<ref refid="data__parameters_8h_1ae9651e8001cc412f6a207d4d90b0132e" kindref="member">pSimParameters</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>XML<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialise<sp/>le<sp/>fichier<sp/>de<sp/>parametre<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*<ref refid="data__parameters_8c_1a9a36eeea775961ef075a27520e9d7c65" kindref="member" tooltip="Load parameter file.">Data_initXML</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SBML<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialise<sp/>le<sp/>fichier<sp/>SBML<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">Model_t<sp/>*<ref refid="data__parameters_8c_1a9f9a132c1df2f3c60d773713b5f8f808" kindref="member" tooltip="Load SBML file.">Data_initSBML</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ALEATOIRE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Preparation<sp/>pour<sp/>la<sp/>prochaine<sp/>utilisation<sp/>de<sp/>l&apos;aleatoire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*void<sp/>Data_newRng(gsl_rng<sp/>*);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Allocation<sp/>du<sp/>generateur<sp/>de<sp/>chiffre<sp/>aleatoire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">gsl_rng<sp/>*<ref refid="data__parameters_8c_1a01cffb5411305dc2bcedfda13c7532cd" kindref="member" tooltip="Allocation of the random number generator.">Data_rngAlloc</ref>(gsl_rng<sp/>*);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>EQUATIONS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Allocation<sp/>de<sp/>la<sp/>structure<sp/>pEquations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref><sp/>**<ref refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" kindref="member" tooltip="Allocate the struct Equations.">Data_equationsAlloc</ref>(pListParameters,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref><sp/>**);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" kindref="member" tooltip="Initialize equations.">Data_equationsInit</ref>(pListParameters,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref><sp/>**);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alloue<sp/>les<sp/>differents<sp/>elements<sp/>lies<sp/>aux<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a014a6fdcabd0d2dbfee53acf4a32e218" kindref="member" tooltip="Allocate the different elements related to he struct Equations.">Data_allocEquations</ref>(pListParameters<sp/><ref refid="gsl__min_8c_1a30c0e0cd742ae3ee221dc0c83a2a0752" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SCORE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alloue<sp/>les<sp/>differents<sp/>element<sp/>de<sp/>la<sp/>structure<sp/>pScore<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1aafa73dbdb81fb526cdb945f7bd5ab5c4" kindref="member" tooltip="Copy the partial table x in the full table y.">Data_allocScore</ref>(<ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">pScore</ref>,<sp/><ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/>Model_t<sp/>*);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialise<sp/>la<sp/>structure<sp/>de<sp/>score<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">pScore</ref><sp/><ref refid="data__parameters_8c_1ae4f85916052b0acfa763dd33e63336b6" kindref="member" tooltip="Allocation of the struct Score.">Data_scoreAlloc</ref>(pListParameters);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialise<sp/>la<sp/>structure<sp/>score<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" kindref="member" tooltip="Initialize the struct Score.">Data_scoreInit</ref>(<ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">pScore</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Libere<sp/>la<sp/>memoire<sp/>alloue<sp/>a<sp/>la<sp/>structure<sp/>de<sp/>score<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1ad65651512fd7fe4d41916573fd79b1aa" kindref="member" tooltip="Free the struct Score.">Data_scoreFree</ref>(<ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">pScore</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>TABLEAU<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copie<sp/>des<sp/>deux<sp/>tableaux<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a007148bff8b5d1d6dd7c42eefbfeb1fb" kindref="member" tooltip="Copy the partial table x in the full table y.">Data_copieTab</ref>(pSimParameters,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copie<sp/>les<sp/>donnees<sp/>du<sp/>tableau<sp/>dans<sp/>une<sp/>version<sp/>donnant<sp/>la<sp/>valeur<sp/>parametre<sp/>pour<sp/>les<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a707102f569c0db162aa724fe477d5e78" kindref="member" tooltip="Copy table.">Data_updateTab</ref>(pListParameters,<sp/>pSimParameters,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LISTPARAMETERS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Allocation<sp/>des<sp/>tableaux<sp/>necessaires<sp/>aux<sp/>simulations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a471111b1274ced0e59605c283c81108f" kindref="member" tooltip="Allocation of tables needed for simulations.">Data_allocSimParameters</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/>pListParameters);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alloue<sp/>les<sp/>differents<sp/>elements<sp/>de<sp/>parametre<sp/>de<sp/>la<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1ac934a73d670600f3dc8d3a6a6b398463" kindref="member" tooltip="Copy the partial table x in the full table y.">Data_allocParameters</ref>(pListParameters);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enregistrement<sp/>des<sp/>parametres<sp/>de<sp/>la<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a84a6f4f7e4b51ce3fe9e21f00698cd67" kindref="member" tooltip="Record parameters of the simulation.">Data_parameters</ref>(pListParameters,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Libere<sp/>la<sp/>memoire<sp/>alloue<sp/>aux<sp/>differents<sp/>objets<sp/>du<sp/>programme<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a2f07353fedc54fb1a4c41e2e63864582" kindref="member" tooltip="Free memory allocated to the various objects of the program.">Data_desallocation</ref>(pListParameters);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SIMPARAMETERS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enregistrement<sp/>des<sp/>parametres<sp/>specifiques<sp/>a<sp/>chaque<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" kindref="member" tooltip="Recording parameters specific to each simulation.">Data_simParameters</ref>(pListParameters,<sp/>pSimParameters,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="comment">/*,<sp/>int*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Desallocation<sp/>des<sp/>parametres<sp/>specifiques<sp/>a<sp/>chaque<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" kindref="member" tooltip="Free struct parameters specific to each simulation.">Data_desallocSim</ref>(pSimParameters);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DATA_PARAMETERS_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h"/>
+  </compounddef>
+</doxygen>

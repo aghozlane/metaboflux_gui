@@ -1,0 +1,8 @@
+{
+    "sbml_file": "glycosome_3.xml", 
+    "result": false, 
+    "simu_dir": {}, 
+    "graph_file": "graph.svg", 
+    "graphs_dir": "/new_graphs/", 
+    "param_file": ""
+}

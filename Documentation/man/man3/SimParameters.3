@@ -1,0 +1,68 @@
+.TH "SimParameters" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SimParameters \- 
+.PP
+List of parameters specific to each simulation.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <data_parameters.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBEquations\fP ** \fBpile\fP"
+.br
+.ti -1c
+.RI "\fBpScore\fP \fBout\fP"
+.br
+.ti -1c
+.RI "gsl_rng * \fBr\fP"
+.br
+.ti -1c
+.RI "double * \fBy\fP"
+.br
+.ti -1c
+.RI "FILE * \fBdebugFile\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+List of parameters specific to each simulation. 
+.PP
+Definition at line 58 of file data_parameters.h.
+.SH "Field Documentation"
+.PP 
+.SS "FILE* \fBSimParameters::debugFile\fP"Debug file : storage of intermediate values of the simulations 
+.PP
+Definition at line 64 of file data_parameters.h.
+.PP
+Referenced by Data_desallocSim(), Data_simParameters(), Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "\fBpScore\fP \fBSimParameters::out\fP"\fBScore\fP 
+.PP
+Definition at line 61 of file data_parameters.h.
+.PP
+Referenced by Data_desallocSim(), Data_simParameters(), Min_getTampon(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "\fBEquations\fP** \fBSimParameters::pile\fP"Interpreted \fBEquations\fP 
+.PP
+Definition at line 60 of file data_parameters.h.
+.PP
+Referenced by Data_simParameters(), Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "gsl_rng* \fBSimParameters::r\fP"Random number generator 
+.PP
+Definition at line 62 of file data_parameters.h.
+.PP
+Referenced by Data_desallocSim(), Data_simParameters(), Min_my_f(), Mod_compute_modeling(), Recuit_compute_recuit(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "double* \fBSimParameters::y\fP"Table of reaction parameters 
+.PP
+Definition at line 63 of file data_parameters.h.
+.PP
+Referenced by Data_copieTab(), Data_desallocSim(), Data_simParameters(), Min_compute_minimization(), Min_copieTab2(), Min_copieTab3(), Min_getTampon(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), Recuit_printPosition(), Sd_compute_simulation(), and Sd_compute_standard_deviation().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

@@ -1,0 +1,857 @@
+.TH "metaboflux/src/equations.c" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/src/equations.c \- 
+.PP
+Processes an equation in MathML format.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <math.h>\fP
+.br
+\fC#include <assert.h>\fP
+.br
+\fC#include 'equations.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_GNU_SOURCE\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBadd\fP (double arg1, double arg2)"
+.br
+.RI "\fIAdd two numbers. \fP"
+.ti -1c
+.RI "double \fBsubtract\fP (double arg1, double arg2)"
+.br
+.RI "\fISubtraction two numbers. \fP"
+.ti -1c
+.RI "double \fBmultiply\fP (double arg1, double arg2)"
+.br
+.RI "\fIMultiply two numbers. \fP"
+.ti -1c
+.RI "double \fBdivide\fP (double arg1, double arg2)"
+.br
+.RI "\fIDivide two numbers. \fP"
+.ti -1c
+.RI "double \fBequality\fP (double arg1, double arg2)"
+.br
+.RI "\fITest the equality of two numbers. \fP"
+.ti -1c
+.RI "double \fBsup\fP (double arg1, double arg2)"
+.br
+.RI "\fITest the superiority between two numbers. \fP"
+.ti -1c
+.RI "double \fBsup_equal\fP (double arg1, double arg2)"
+.br
+.RI "\fITest the superiority or equality between two numbers. \fP"
+.ti -1c
+.RI "double \fBinf\fP (double arg1, double arg2)"
+.br
+.RI "\fITest the inferiority between two numbers. \fP"
+.ti -1c
+.RI "double \fBinf_equal\fP (double arg1, double arg2)"
+.br
+.RI "\fITest the inferiority or equality between two numbers. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_alloc\fP (void)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "void \fBEquations_define\fP (\fBpEquations\fP new, char *operateur)"
+.br
+.RI "\fIIdentify the mathematical operator used. \fP"
+.ti -1c
+.RI "int \fBEquations_vide\fP (\fBpEquations\fP liste)"
+.br
+.RI "\fITest if the struct \fBEquations\fP is empty. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_empiler\fP (\fBpEquations\fP liste, \fBpEquations\fP new)"
+.br
+.RI "\fIStack an element to the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_depiler\fP (\fBpEquations\fP liste)"
+.br
+.RI "\fIUnstack the last element of the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_sommet\fP (\fBpEquations\fP liste)"
+.br
+.RI "\fILook for the last element of the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_defiler\fP (\fBpEquations\fP liste)"
+.br
+.RI "\fILook for the first element of the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_defilerSuiv\fP (\fBpEquations\fP liste)"
+.br
+.RI "\fIGet the next element of the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "int \fBEquations_priorite\fP (\fBpEquations\fP new)"
+.br
+.RI "\fIGive the priority of the operator. Multiplication and Division have higher priority than addition or subtration... \fP"
+.ti -1c
+.RI "void \fBEquations_print\fP (\fBpEquations\fP liste)"
+.br
+.RI "\fIPrint all information on the element of the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_addOp\fP (\fBpEquations\fP result, \fBpEquations\fP op, \fBpEquations\fP new)"
+.br
+.RI "\fIBuild the list of the Struct \fBEquations\fP result used to compute the equation. \fP"
+.ti -1c
+.RI "void \fBEquations_emptyOp\fP (\fBpEquations\fP result, \fBpEquations\fP op)"
+.br
+.RI "\fIEmpty the Struct \fBEquations\fP op for the struct Equation result. \fP"
+.ti -1c
+.RI "\fBpEquations\fP \fBEquations_pileFormation\fP (char ***equation, int nb_noeud)"
+.br
+.RI "\fIBuild pile. \fP"
+.ti -1c
+.RI "double \fBEquations_extractData\fP (\fBpEquations\fP new, char **name, double *quantite, int taille)"
+.br
+.RI "\fIExtract information on element of type Struct Equation. \fP"
+.ti -1c
+.RI "double \fBEquations_findSpecies\fP (char *species, char **name, double *quantite, int taille)"
+.br
+.RI "\fILook for the quantity of a molecule in the list. \fP"
+.ti -1c
+.RI "double \fBEquations_resultat\fP (\fBpEquations\fP result, \fBpEquations\fP result1, \fBpEquations\fP eq, char **name, double *quantite, int taille)"
+.br
+.RI "\fICompute the result of two pile. \fP"
+.ti -1c
+.RI "double \fBEquations_calcul\fP (\fBpEquations\fP liste, char **name, double *quantite, int taille)"
+.br
+.RI "\fICompute the score of the equation. \fP"
+.ti -1c
+.RI "double \fBEquations_finalQuantite\fP (int file_nb_especes, char **file_species, int *file_amount, int *file_weight, char **sim_name, double *sim_quantite, int sim_taille)"
+.br
+.RI "\fICompute the score of the quantity which means the difference between what is expected to what is simulated. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Processes an equation in MathML format. 
+
+This file is part of Metaboflux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+Metaboflux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+Metaboflux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+15 janvier 2010 
+.RE
+.PP
+
+.PP
+Definition in file \fBequations.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define _GNU_SOURCE"
+.PP
+Definition at line 27 of file equations.c.
+.SH "Function Documentation"
+.PP 
+.SS "double add (doublearg1, doublearg2)"
+.PP
+Add two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double divide (doublearg1, doublearg2)"
+.PP
+Divide two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double equality (doublearg1, doublearg2)"
+.PP
+Test the equality of two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 95 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "\fBpEquations\fP Equations_addOp (\fBpEquations\fPresult, \fBpEquations\fPop, \fBpEquations\fPnew)"
+.PP
+Build the list of the Struct \fBEquations\fP result used to compute the equation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult\fP Struct \fBEquations\fP used for computation 
+.br
+\fIop\fP Struct \fBEquations\fP used to store the operator 
+.br
+\fInew\fP One element of the Struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of operator 
+.RE
+.PP
+
+.PP
+Definition at line 383 of file equations.c.
+.PP
+References equal, Equations_depiler(), Equations_empiler(), Equations_priorite(), Equations_sommet(), Equations_vide(), inferior, inferior_equal, OUI, Equations::suiv, superior, and superior_equal.
+.PP
+Referenced by Equations_pileFormation().
+.SS "\fBpEquations\fP Equations_alloc (void)"
+.PP
+Alloc memory and initialize the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Allocated struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file equations.c.
+.PP
+References Equations::suiv.
+.PP
+Referenced by Equations_calcul(), and Equations_pileFormation().
+.SS "double Equations_calcul (\fBpEquations\fPliste, char **name, double *quantite, inttaille)"
+.PP
+Compute the score of the equation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP pile of type Struct \fBEquations\fP 
+.br
+\fIname\fP List of molecules 
+.br
+\fIquantite\fP List of the quantity of the molecules 
+.br
+\fItaille\fP Number of molecules in the list 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result of the equation (First part of the energy) 
+.RE
+.PP
+
+.PP
+Definition at line 614 of file equations.c.
+.PP
+References addition, constant, division, equal, Equations_alloc(), Equations_defiler(), Equations_defilerSuiv(), Equations_depiler(), Equations_empiler(), Equations_extractData(), Equations_resultat(), Equations_vide(), inferior, inferior_equal, multiplication, OUI, soustraction, Equations::suiv, superior, and superior_equal.
+.PP
+Referenced by Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "\fBpEquations\fP Equations_defiler (\fBpEquations\fPliste)"
+.PP
+Look for the first element of the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer on the first element of struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 320 of file equations.c.
+.PP
+Referenced by Equations_calcul(), and Equations_emptyOp().
+.SS "\fBpEquations\fP Equations_defilerSuiv (\fBpEquations\fPliste)"
+.PP
+Get the next element of the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer on the next element of struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 334 of file equations.c.
+.PP
+References Equations::suiv.
+.PP
+Referenced by Equations_calcul(), and Equations_emptyOp().
+.SS "void Equations_define (\fBpEquations\fPnew, char *operateur)"
+.PP
+Identify the mathematical operator used. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInew\fP Struct \fBEquations\fP 
+.br
+\fIoperateur\fP Read operator 
+.RE
+.PP
+
+.PP
+Definition at line 174 of file equations.c.
+.PP
+References add(), addition, divide(), division, equal, equality(), inf(), inf_equal(), inferior, inferior_equal, multiplication, multiply(), soustraction, subtract(), sup(), sup_equal(), superior, and superior_equal.
+.PP
+Referenced by Equations_pileFormation().
+.SS "\fBpEquations\fP Equations_depiler (\fBpEquations\fPliste)"
+.PP
+Unstack the last element of the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer on the 'unstack' element of struct \fBEquations\fP. 
+.RE
+.PP
+
+.PP
+Definition at line 282 of file equations.c.
+.PP
+References Equations::suiv.
+.PP
+Referenced by Equations_addOp(), and Equations_calcul().
+.SS "\fBpEquations\fP Equations_empiler (\fBpEquations\fPliste, \fBpEquations\fPnew)"
+.PP
+Stack an element to the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP 
+.br
+\fInew\fP New struct \fBEquations\fP element 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer on the last element of struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 258 of file equations.c.
+.PP
+References Equations::suiv.
+.PP
+Referenced by Equations_addOp(), Equations_calcul(), Equations_emptyOp(), and Equations_pileFormation().
+.SS "void Equations_emptyOp (\fBpEquations\fPresult, \fBpEquations\fPop)"
+.PP
+Empty the Struct \fBEquations\fP op for the struct Equation result. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult\fP Struct \fBEquations\fP used for computation 
+.br
+\fIop\fP Struct Equation used to store the operator 
+.RE
+.PP
+
+.PP
+Definition at line 421 of file equations.c.
+.PP
+References Equations_defiler(), Equations_defilerSuiv(), Equations_empiler(), Equations_vide(), OUI, and Equations::suiv.
+.PP
+Referenced by Equations_pileFormation().
+.SS "double Equations_extractData (\fBpEquations\fPnew, char **name, double *quantite, inttaille)"
+.PP
+Extract information on element of type Struct Equation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInew\fP Element of type Struct Equation 
+.br
+\fIname\fP Name of the interest element 
+.br
+\fIquantite\fP List of the quantity of the molecules 
+.br
+\fItaille\fP Number of molecules in the list 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Quantity of the molecule of interest 
+.RE
+.PP
+
+.PP
+Definition at line 497 of file equations.c.
+.PP
+References constant.
+.PP
+Referenced by Equations_calcul(), and Equations_resultat().
+.SS "double Equations_finalQuantite (intfile_nb_especes, char **file_species, int *file_amount, int *file_weight, char **sim_name, double *sim_quantite, intsim_taille)"
+.PP
+Compute the score of the quantity which means the difference between what is expected to what is simulated. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfile_nb_especes\fP Number of species in the parameter file 
+.br
+\fIfile_species\fP List of species in the parameter file 
+.br
+\fIfile_amount\fP List of species expected quantity 
+.br
+\fIfile_weight\fP Weight defined for the species 
+.br
+\fIsim_name\fP List of species simulated (sbml file) 
+.br
+\fIsim_quantite\fP List of the quantity of the species simulated (sbml file) 
+.br
+\fIsim_taille\fP Number of species simulated (sbml file) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result of the difference (Second part of the Energy) 
+.RE
+.PP
+
+.PP
+Definition at line 683 of file equations.c.
+.PP
+References Equations_findSpecies().
+.PP
+Referenced by Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "double Equations_findSpecies (char *species, char **name, double *quantite, inttaille)"
+.PP
+Look for the quantity of a molecule in the list. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspecies\fP Name of a molecule 
+.br
+\fIname\fP List of molecules 
+.br
+\fIquantite\fP List of the quantity of the molecules 
+.br
+\fItaille\fP Number of molecules in the list 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Quantity of the molecule of interest 
+.RE
+.PP
+
+.PP
+Definition at line 533 of file equations.c.
+.PP
+Referenced by Equations_finalQuantite(), Min_score_print_mean(), and Mod_score_print_mean().
+.SS "\fBpEquations\fP Equations_pileFormation (char ***equation, intnb_noeud)"
+.PP
+Build pile. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIequation\fP Table with the equation in Mathml format 
+.br
+\fInb_noeud\fP Number of element inside the equation 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Struct Equation needed for compute the equation 
+.RE
+.PP
+
+.PP
+Definition at line 441 of file equations.c.
+.PP
+References constant, Equations_addOp(), Equations_alloc(), Equations_define(), Equations_empiler(), Equations_emptyOp(), and variable.
+.PP
+Referenced by Data_equationsInit().
+.SS "void Equations_print (\fBpEquations\fPliste)"
+.PP
+Print all information on the element of the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 359 of file equations.c.
+.PP
+References constant, Equdata::data, Equations::info, Equations::suiv, Equations::type, Equdata::var, and variable.
+.SS "int Equations_priorite (\fBpEquations\fPnew)"
+.PP
+Give the priority of the operator. Multiplication and Division have higher priority than addition or subtration... \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fInew\fP One element of the struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Priority of the operator 
+.RE
+.PP
+
+.PP
+Definition at line 346 of file equations.c.
+.PP
+References addition, equal, inferior, inferior_equal, soustraction, superior, and superior_equal.
+.PP
+Referenced by Equations_addOp().
+.SS "double Equations_resultat (\fBpEquations\fPresult, \fBpEquations\fPresult1, \fBpEquations\fPeq, char **name, double *quantite, inttaille)"
+.PP
+Compute the result of two pile. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult\fP Struct Equation result 
+.br
+\fIresult1\fP Struct Equation result after the operator 
+.br
+\fIeq\fP Operator 
+.br
+\fIname\fP List of molecules 
+.br
+\fIquantite\fP List of the quantity of the molecules 
+.br
+\fItaille\fP Number of molecules in the list 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result of the two pile 
+.RE
+.PP
+
+.PP
+Definition at line 561 of file equations.c.
+.PP
+References equal, Equations_extractData(), inferior, inferior_equal, superior, superior_equal, and Equations::type.
+.PP
+Referenced by Equations_calcul().
+.SS "\fBpEquations\fP Equations_sommet (\fBpEquations\fPliste)"
+.PP
+Look for the last element of the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Pointer on the last element of struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 305 of file equations.c.
+.PP
+References Equations::suiv.
+.PP
+Referenced by Equations_addOp().
+.SS "int Equations_vide (\fBpEquations\fPliste)"
+.PP
+Test if the struct \fBEquations\fP is empty. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIliste\fP Struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of elements 
+.RE
+.PP
+
+.PP
+Definition at line 237 of file equations.c.
+.PP
+References Equations::suiv.
+.PP
+Referenced by Equations_addOp(), Equations_calcul(), and Equations_emptyOp().
+.SS "double inf (doublearg1, doublearg2)"
+.PP
+Test the inferiority between two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 134 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double inf_equal (doublearg1, doublearg2)"
+.PP
+Test the inferiority or equality between two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double multiply (doublearg1, doublearg2)"
+.PP
+Multiply two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double subtract (doublearg1, doublearg2)"
+.PP
+Subtraction two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double sup (doublearg1, doublearg2)"
+.PP
+Test the superiority between two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SS "double sup_equal (doublearg1, doublearg2)"
+.PP
+Test the superiority or equality between two numbers. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIarg1\fP Value 1 
+.br
+\fIarg2\fP Value 2 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Result 
+.RE
+.PP
+
+.PP
+Definition at line 121 of file equations.c.
+.PP
+Referenced by Equations_define().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

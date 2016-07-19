@@ -1,0 +1,6 @@
+/bin/sh: 1: mpirun: not found
+Metaboflux chosen activity : Simulated annealing	Minimization	Statistics	
+Read parameters
+Parameter estimation by simulated annealing ....
+End of estimation
+file ./../src/../tmp/20140403_11-43_simulation/simulation/simulation_glycosome_simulated_annealing_1.txt is missing

@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="mpi__load_8h" kind="file">
+    <compoundname>mpi_load.h</compoundname>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <invincdepgraph>
+      <node id="336">
+        <label>metaboflux/include/mpi_load.h</label>
+        <link refid="mpi_load.h"/>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="338">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mpi__load_8h_1afc95cdfc5153ccd5954a98aa7961a626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mpi_connectInterface</definition>
+        <argsstring>(int)</argsstring>
+        <name>Mpi_connectInterface</name>
+        <param>
+          <type>int</type>
+          <defname>port</defname>
+        </param>
+        <briefdescription>
+<para>Enter in the program for standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection port </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Socket </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="30" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="69" bodyend="101"/>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1ad7fe2a9dd47b4a4353fe4a95e443969a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_disconnectInterface</definition>
+        <argsstring>(int)</argsstring>
+        <name>Mpi_disconnectInterface</name>
+        <param>
+          <type>int</type>
+          <defname>desc</defname>
+        </param>
+        <briefdescription>
+<para>Disconnection to the interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Socket </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="33" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="109" bodyend="113"/>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1aa10a38be940ec3edbe44b5b5108e5e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_init</definition>
+        <argsstring>(int, char **, int *)</argsstring>
+        <name>Mpi_init</name>
+        <param>
+          <type>int</type>
+          <defname>argc</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>argv</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>tab</defname>
+        </param>
+        <briefdescription>
+<para>Enter in the program for standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="36" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="123" bodyend="140"/>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1afe1566fffd063e9faed704cd93f5d0fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Model_t *</type>
+        <definition>Model_t* Mpi_initSBML</definition>
+        <argsstring>(char *)</argsstring>
+        <name>Mpi_initSBML</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1a1659768b639892808e63bd68150a4be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+        <definition>xmlConfig_t* Mpi_initXML</definition>
+        <argsstring>(char *)</argsstring>
+        <name>Mpi_initXML</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="42"/>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1a49f24c98f9724a9d2d64bf3b41d7c101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_master</definition>
+        <argsstring>(pListParameters, char **, int, int, int, int, int)</argsstring>
+        <name>Mpi_master</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>allone</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>activity</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>myid</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>numprocs</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>desc</defname>
+        </param>
+        <briefdescription>
+<para>Master process. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chosen activity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the thread </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numprocs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of thread </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Socket </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="45" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="154" bodyend="261"/>
+        <references refid="gsl__min_8c_1a30c0e0cd742ae3ee221dc0c83a2a0752" compoundref="gsl__min_8c" startline="52">a</references>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="mpi__load_8c_1a4a2abf072bca55839a7b44d7fb8725cd" compoundref="mpi__load_8c" startline="59">MASTER_RANK</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="mpi__load_8c_1a33ea34b416087435ccea71727d4257cc" compoundref="mpi__load_8c" startline="60">WRITER_RANK</references>
+        <references refid="xml__parameter_8c_1ade93fd888d36e908c7386f25b2836137" compoundref="xml__parameter_8c" startline="279" endline="283">Xml_getNbGroup</references>
+        <references refid="xml__parameter_8c_1a503fd8e4167aef94fa22e0c71a5b6afa" compoundref="xml__parameter_8c" startline="227" endline="231">Xml_getNbSimulations</references>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1a4cf3597a859457305000e2168f205993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_writer</definition>
+        <argsstring>(pListParameters, char **, int, int, int)</argsstring>
+        <name>Mpi_writer</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>allone</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>activity</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>myid</defname>
+        </param>
+        <briefdescription>
+<para>Master process. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chosen activity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>myid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the thread </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="48" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="273" bodyend="322"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="mpi__load_8c_1a4a2abf072bca55839a7b44d7fb8725cd" compoundref="mpi__load_8c" startline="59">MASTER_RANK</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="mpi__load_8c_1a51abf0d1cf9db4db8341178dd9ecaba0" compoundref="mpi__load_8c" startline="355" endline="361">Mpi_allocResultTab</references>
+        <references refid="mpi__load_8c_1ada1c9a2e47c832b4c9e3d372d6caf9ee" compoundref="mpi__load_8c" startline="334" endline="346">Mpi_sizeResultTab</references>
+        <references refid="mpi__load_8c_1ade415599921ec51a178f328fcccbc361" compoundref="mpi__load_8c" startline="421" endline="429">Mpi_writeSdFile</references>
+        <references refid="mpi__load_8c_1a1edb1e7ef906877b974f06a2b6b0f617" compoundref="mpi__load_8c" startline="375" endline="411">Mpi_writeSimFile</references>
+        <references refid="xml__parameter_8c_1aa38353601b43859be1905fb37632fbf0" compoundref="xml__parameter_8c" startline="460" endline="464">Xml_getNbSpecies</references>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1ab4d2e0de3a14f863a405bddfa625b8bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mpi_sizeResultTab</definition>
+        <argsstring>(pListParameters, int, int, int)</argsstring>
+        <name>Mpi_sizeResultTab</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>allone</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>activity</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_species</defname>
+        </param>
+        <briefdescription>
+<para>Determine the size of the result tab. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chosen activity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of interest species </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size of Result tab </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="51" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="334" bodyend="346"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="xml__parameter_8c_1afeff8e3300946c36cea36ddd964e9265" compoundref="xml__parameter_8c" startline="240" endline="244">Xml_getNbTriesMod</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1aa305e4bef7acf975da871190b8e3e1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double* Mpi_allocResultTab</definition>
+        <argsstring>(int)</argsstring>
+        <name>Mpi_allocResultTab</name>
+        <param>
+          <type>int</type>
+          <defname>tailleTab</defname>
+        </param>
+        <briefdescription>
+<para>Allocate the result tab. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tailleTab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of Result tab </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Adress of the allocated space </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="54" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="355" bodyend="361"/>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1aa753112f6c21ff66c1c63f511ccbb325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_writeSimFile</definition>
+        <argsstring>(pListParameters, FILE *, FILE *, double *, int, int, int)</argsstring>
+        <name>Mpi_writeSimFile</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>allone</defname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <defname>logOut</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>result_tab</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tailleSpecies</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_species</defname>
+        </param>
+        <briefdescription>
+<para>Determine the size of the result tab. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tailleSpecies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of interest species </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="57" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="375" bodyend="411"/>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1a3f0c05e595da1760ed46a5f5f978a704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_writeSdFile</definition>
+        <argsstring>(FILE *, double *, int)</argsstring>
+        <name>Mpi_writeSdFile</name>
+        <param>
+          <type>FILE *</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>result_tab</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tailleTab</defname>
+        </param>
+        <briefdescription>
+<para>Determine the size of the result tab. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tailleTab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of result table </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="60" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="421" bodyend="429"/>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_slave</definition>
+        <argsstring>(pListParameters, char **, int, int, int)</argsstring>
+        <name>Mpi_slave</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>allone</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>activity</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debug</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Activity chosen </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug flag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="63" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="440" bodyend="520"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="mpi__load_8c_1a4a2abf072bca55839a7b44d7fb8725cd" compoundref="mpi__load_8c" startline="59">MASTER_RANK</references>
+        <references refid="gsl__min_8c_1a27da5814ca1f00e95f1a4ee550b8484b" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</references>
+        <references refid="gsl__mod_8c_1ae6b640decd2c333ae31603a88fc37c88" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</references>
+        <references refid="mpi__load_8c_1a51abf0d1cf9db4db8341178dd9ecaba0" compoundref="mpi__load_8c" startline="355" endline="361">Mpi_allocResultTab</references>
+        <references refid="mpi__load_8c_1ada1c9a2e47c832b4c9e3d372d6caf9ee" compoundref="mpi__load_8c" startline="334" endline="346">Mpi_sizeResultTab</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="gsl__recuit_8c_1a307fb17177314df2a79d0833be12e379" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</references>
+        <references refid="gsl__sd_8c_1a1379b501622f4bc112b49be952e19022" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</references>
+        <references refid="mpi__load_8c_1a33ea34b416087435ccea71727d4257cc" compoundref="mpi__load_8c" startline="60">WRITER_RANK</references>
+        <references refid="xml__parameter_8c_1af051a5017271240c72cad70ee82b6af7" compoundref="xml__parameter_8c" startline="305" endline="309">Xml_getBoltzmann</references>
+        <references refid="xml__parameter_8c_1a9e2c04caf11e5a95f5aa22f6f37f479d" compoundref="xml__parameter_8c" startline="331" endline="335">Xml_getMuT</references>
+        <references refid="xml__parameter_8c_1ae49d86627f34fb18c996a3060e2a297a" compoundref="xml__parameter_8c" startline="266" endline="270">Xml_getNbIters</references>
+        <references refid="xml__parameter_8c_1aa38353601b43859be1905fb37632fbf0" compoundref="xml__parameter_8c" startline="460" endline="464">Xml_getNbSpecies</references>
+        <references refid="xml__parameter_8c_1a7b67ce794add8c04563e07f9d25c6096" compoundref="xml__parameter_8c" startline="253" endline="257">Xml_getNbTriesSa</references>
+        <references refid="xml__parameter_8c_1a1770352729facbccf4b8fb288551ebbb" compoundref="xml__parameter_8c" startline="292" endline="296">Xml_getStepSize</references>
+        <references refid="xml__parameter_8c_1ab2406faab9296a45cc596beec457f268" compoundref="xml__parameter_8c" startline="318" endline="322">Xml_getTinitial</references>
+        <references refid="xml__parameter_8c_1a9401fbdd3c314c0e729c9a278a6e2805" compoundref="xml__parameter_8c" startline="344" endline="348">Xml_getTmin</references>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1a68f6a4d5212d2eb5e853f8ab5d3f0f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mpi_finalize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Mpi_finalize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>End MPI execution environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="66" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="527" bodyend="532"/>
+        <referencedby refid="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" compoundref="mpi__load_8c" startline="546" endline="579">compute_mpi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="mpi__load_8h_1afeea8538ec6091c216e0d58a4b4ac9f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void compute_mpi</definition>
+        <argsstring>(int, char **, char **, int, int, int, int)</argsstring>
+        <name>compute_mpi</name>
+        <param>
+          <type>int</type>
+          <defname>argc</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>argv</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>activity</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debug</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>port</defname>
+        </param>
+        <briefdescription>
+<para>Compute the simulated annealing through mpi. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chosen activity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>group</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Group flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interface port </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h" line="69" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/mpi_load.c" bodystart="546" bodyend="579"/>
+        <references refid="data__parameters_8c_1a2f07353fedc54fb1a4c41e2e63864582" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</references>
+        <references refid="data__parameters_8c_1a84a6f4f7e4b51ce3fe9e21f00698cd67" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</references>
+        <references refid="mpi__load_8c_1a4a2abf072bca55839a7b44d7fb8725cd" compoundref="mpi__load_8c" startline="59">MASTER_RANK</references>
+        <references refid="mpi__load_8c_1a29a0e94b1a53bfd1da2a10cb0b232444" compoundref="mpi__load_8c" startline="69" endline="101">Mpi_connectInterface</references>
+        <references refid="mpi__load_8c_1a39027f10a55694561083f05335d3cbbf" compoundref="mpi__load_8c" startline="109" endline="113">Mpi_disconnectInterface</references>
+        <references refid="mpi__load_8c_1a68f6a4d5212d2eb5e853f8ab5d3f0f97" compoundref="mpi__load_8c" startline="527" endline="532">Mpi_finalize</references>
+        <references refid="mpi__load_8c_1a15360d2e2ee4efbaa5dccd3a75510d09" compoundref="mpi__load_8c" startline="123" endline="140">Mpi_init</references>
+        <references refid="mpi__load_8c_1ab20c9a4b503fb163951ea00dea50f8d3" compoundref="mpi__load_8c" startline="154" endline="261">Mpi_master</references>
+        <references refid="mpi__load_8c_1a755d585e48a596f6599ce557b09c7164" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</references>
+        <references refid="mpi__load_8c_1a91c7d854c0f96844424b979434bcb1ab" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</references>
+        <references refid="mpi__load_8c_1a33ea34b416087435ccea71727d4257cc" compoundref="mpi__load_8c" startline="60">WRITER_RANK</references>
+        <referencedby refid="MetaBoFlux_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="MetaBoFlux_8c" startline="399" endline="425">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parallelize the program. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>9 novembre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>MPI_LOAD_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPI_LOAD_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Connexion<sp/>a<sp/>l&apos;interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a29a0e94b1a53bfd1da2a10cb0b232444" kindref="member" tooltip="Enter in the program for standard deviation.">Mpi_connectInterface</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Deconnexion<sp/>de<sp/>l&apos;interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a39027f10a55694561083f05335d3cbbf" kindref="member" tooltip="Disconnection to the interface.">Mpi_disconnectInterface</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>de<sp/>MPI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a15360d2e2ee4efbaa5dccd3a75510d09" kindref="member" tooltip="Enter in the program for standard deviation.">Mpi_init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialise<sp/>le<sp/>fichier<sp/>SBML<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">Model_t<sp/>*<ref refid="mpi__load_8h_1afe1566fffd063e9faed704cd93f5d0fa" kindref="member">Mpi_initSBML</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialise<sp/>le<sp/>fichier<sp/>de<sp/>parametre<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*<ref refid="mpi__load_8h_1a1659768b639892808e63bd68150a4be3" kindref="member">Mpi_initXML</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Processus<sp/>maitre<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1ab20c9a4b503fb163951ea00dea50f8d3" kindref="member" tooltip="Master process.">Mpi_master</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Processus<sp/>ecrivain<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a91c7d854c0f96844424b979434bcb1ab" kindref="member" tooltip="Master process.">Mpi_writer</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Determine<sp/>la<sp/>taille<sp/>du<sp/>tableau<sp/>de<sp/>resultat<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1ada1c9a2e47c832b4c9e3d372d6caf9ee" kindref="member" tooltip="Determine the size of the result tab.">Mpi_sizeResultTab</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Allocation<sp/>du<sp/>tableau<sp/>de<sp/>resultat<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="mpi__load_8c_1a51abf0d1cf9db4db8341178dd9ecaba0" kindref="member" tooltip="Allocate the result tab.">Mpi_allocResultTab</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Sortie<sp/>du<sp/>resultat<sp/>des<sp/>simulations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a1edb1e7ef906877b974f06a2b6b0f617" kindref="member" tooltip="Determine the size of the result tab.">Mpi_writeSimFile</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/>FILE<sp/>*,<sp/>FILE<sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Ecriture<sp/>standard<sp/>deviation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1ade415599921ec51a178f328fcccbc361" kindref="member" tooltip="Determine the size of the result tab.">Mpi_writeSdFile</ref>(FILE<sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Processus<sp/>esclave<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a755d585e48a596f6599ce557b09c7164" kindref="member">Mpi_slave</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Termine<sp/>l&apos;execution<sp/>de<sp/>l&apos;environnement<sp/>MPI<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1a68f6a4d5212d2eb5e853f8ab5d3f0f97" kindref="member" tooltip="End MPI execution environment.">Mpi_finalize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Lance<sp/>le<sp/>calcul<sp/>du<sp/>recuit<sp/>simule<sp/>par<sp/>les<sp/>methodes<sp/>mpi*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mpi__load_8c_1ab21a58c6a683b07418fdb9847021e973" kindref="member" tooltip="Compute the simulated annealing through mpi.">compute_mpi</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MPI_LOAD_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/mpi_load.h"/>
+  </compounddef>
+</doxygen>

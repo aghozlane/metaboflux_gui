@@ -1,0 +1,1392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="xml__parameter_8h" kind="file">
+    <compoundname>xml_parameter.h</compoundname>
+    <includedby refid="data__parameters_8c" local="yes">metaboflux/src/data_parameters.c</includedby>
+    <includedby refid="gsl__min_8c" local="yes">metaboflux/src/gsl_min.c</includedby>
+    <includedby refid="gsl__mod_8c" local="yes">metaboflux/src/gsl_mod.c</includedby>
+    <includedby refid="gsl__recuit_8c" local="yes">metaboflux/src/gsl_recuit.c</includedby>
+    <includedby refid="gsl__sd_8c" local="yes">metaboflux/src/gsl_sd.c</includedby>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <includedby refid="xml__parameter_8c" local="yes">metaboflux/src/xml_parameter.c</includedby>
+    <invincdepgraph>
+      <node id="358">
+        <label>metaboflux/src/xml_parameter.c</label>
+        <link refid="xml__parameter_8c"/>
+      </node>
+      <node id="356">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="351">
+        <label>metaboflux/src/data_parameters.c</label>
+        <link refid="data__parameters_8c"/>
+      </node>
+      <node id="357">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+      <node id="355">
+        <label>metaboflux/src/gsl_sd.c</label>
+        <link refid="gsl__sd_8c"/>
+      </node>
+      <node id="354">
+        <label>metaboflux/src/gsl_recuit.c</label>
+        <link refid="gsl__recuit_8c"/>
+      </node>
+      <node id="353">
+        <label>metaboflux/src/gsl_mod.c</label>
+        <link refid="gsl__mod_8c"/>
+      </node>
+      <node id="352">
+        <label>metaboflux/src/gsl_min.c</label>
+        <link refid="gsl__min_8c"/>
+      </node>
+      <node id="350">
+        <label>metaboflux/include/xml_parameter.h</label>
+        <link refid="xml_parameter.h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structxmlConfig__t" prot="public">xmlConfig_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="xml__parameter_8h_1a4ea94aa6222a68813a163a5c01e160f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+        <definition>xmlConfig_t* Xml_loadConfig</definition>
+        <argsstring>(char *)</argsstring>
+        <name>Xml_loadConfig</name>
+        <param>
+          <type>char *</type>
+          <defname>fichier</defname>
+        </param>
+        <briefdescription>
+<para>Initialize and load the parameter.xml. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fichier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Xml file name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="41" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="42" bodyend="89"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="structxmlConfig__t_1a35e7e8fc3398d0866fbf91b0245fd7b9" compoundref="xml__parameter_8h" startline="35">xmlConfig_t::doc</references>
+        <references refid="structxmlConfig__t_1a7a2f1cbf9d3b49f1b2debb85a8606658" compoundref="xml__parameter_8h" startline="34">xmlConfig_t::fichier</references>
+        <references refid="structxmlConfig__t_1a535cd8a3e33d4ae2a00ab29f32a442ff" compoundref="xml__parameter_8h" startline="36">xmlConfig_t::racine</references>
+        <references refid="xml__parameter_8c_1a8b93c82fdf9f830d2170f8dfe1e206bd" compoundref="xml__parameter_8c" startline="97" endline="105">Xml_freeConfig</references>
+        <referencedby refid="data__parameters_8h_1a6de2ffa5b44477da0d4a2e9e831c0c8a" compoundref="data__parameters_8c" startline="58" endline="71">Data_initXML</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ae8efb0436cd231ff904c662e662210f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Xml_freeConfig</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_freeConfig</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Free the Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="44" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="97" bodyend="105"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="structxmlConfig__t_1a35e7e8fc3398d0866fbf91b0245fd7b9" compoundref="xml__parameter_8h" startline="35">xmlConfig_t::doc</references>
+        <references refid="structxmlConfig__t_1a7a2f1cbf9d3b49f1b2debb85a8606658" compoundref="xml__parameter_8h" startline="34">xmlConfig_t::fichier</references>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="xml__parameter_8h_1a4ea94aa6222a68813a163a5c01e160f6" compoundref="xml__parameter_8c" startline="42" endline="89">Xml_loadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a718b56ca89a1aba6bf2519b575394a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNumber</definition>
+        <argsstring>(xmlConfig_t *, const char *)</argsstring>
+        <name>Xml_getNumber</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>requete</defname>
+        </param>
+        <briefdescription>
+<para>Get integer value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requete</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Xpath query </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Read integer value in the xml </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="47" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="115" bodyend="143"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="xml__parameter_8h_1afb1ba7f2d5ce467dc6a3e02219250a6f" compoundref="xml__parameter_8c" startline="279" endline="283">Xml_getNbGroup</referencedby>
+        <referencedby refid="xml__parameter_8h_1ab5ca046bc833b5caf81cf482f1b6f162" compoundref="xml__parameter_8c" startline="266" endline="270">Xml_getNbIters</referencedby>
+        <referencedby refid="xml__parameter_8h_1a895187a8d4080d24deaf71911b49b865" compoundref="xml__parameter_8c" startline="227" endline="231">Xml_getNbSimulations</referencedby>
+        <referencedby refid="xml__parameter_8h_1a61b2b14f1974b2da0977164a0eb7e647" compoundref="xml__parameter_8c" startline="240" endline="244">Xml_getNbTriesMod</referencedby>
+        <referencedby refid="xml__parameter_8h_1af202e24f690b234cc2c0a09a065e7de4" compoundref="xml__parameter_8c" startline="253" endline="257">Xml_getNbTriesSa</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ae92f843acf0a723abf982d04d774aec7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xml_getDoubleNumber</definition>
+        <argsstring>(xmlConfig_t *, const char *)</argsstring>
+        <name>Xml_getDoubleNumber</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>requete</defname>
+        </param>
+        <briefdescription>
+<para>Get double value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requete</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Xpath query </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Read double value in the xml </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="50" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="153" bodyend="181"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="xml__parameter_8h_1add80be509519cbdf7e259a17cbc89f59" compoundref="xml__parameter_8c" startline="305" endline="309">Xml_getBoltzmann</referencedby>
+        <referencedby refid="xml__parameter_8h_1a18841e8e468959cccb9acbd2dd364997" compoundref="xml__parameter_8c" startline="331" endline="335">Xml_getMuT</referencedby>
+        <referencedby refid="xml__parameter_8h_1a7274d52d77ad2ac704e5d1a21cb29b5b" compoundref="xml__parameter_8c" startline="292" endline="296">Xml_getStepSize</referencedby>
+        <referencedby refid="xml__parameter_8h_1a5a0bcc251114c768459436767f263df3" compoundref="xml__parameter_8c" startline="318" endline="322">Xml_getTinitial</referencedby>
+        <referencedby refid="xml__parameter_8h_1ac2fc806f9a568ba7272a8b1e235ba3e1" compoundref="xml__parameter_8c" startline="344" endline="348">Xml_getTmin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ac7cfe344dbbf799ef808fb9a4e8ec391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* Xml_getString</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getString</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get name value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Read name value in the xml </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="53" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="190" bodyend="218"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="gsl__recuit_8h_1a50384383f4c2a13a1f7dc85f69339bd6" compoundref="gsl__recuit_8c" startline="184" endline="196">Recuit_redirectionFlux</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a895187a8d4080d24deaf71911b49b865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbSimulations</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbSimulations</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get number of simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of simulation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="56" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="227" bodyend="231"/>
+        <references refid="xml__parameter_8c_1a4024e4decc374dde9740834c575c2057" compoundref="xml__parameter_8c" startline="115" endline="143">Xml_getNumber</references>
+        <referencedby refid="mpi__load_8h_1a49f24c98f9724a9d2d64bf3b41d7c101" compoundref="mpi__load_8c" startline="154" endline="261">Mpi_master</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a61b2b14f1974b2da0977164a0eb7e647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbTriesMod</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbTriesMod</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get number of tries for modelling. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of tries </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="59" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="240" bodyend="244"/>
+        <references refid="xml__parameter_8c_1a4024e4decc374dde9740834c575c2057" compoundref="xml__parameter_8c" startline="115" endline="143">Xml_getNumber</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="mpi__load_8h_1ab4d2e0de3a14f863a405bddfa625b8bd" compoundref="mpi__load_8c" startline="334" endline="346">Mpi_sizeResultTab</referencedby>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1af202e24f690b234cc2c0a09a065e7de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbTriesSa</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbTriesSa</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get number of tries for the simulated annealing and minimization. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of tries </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="62" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="253" bodyend="257"/>
+        <references refid="xml__parameter_8c_1a4024e4decc374dde9740834c575c2057" compoundref="xml__parameter_8c" startline="115" endline="143">Xml_getNumber</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ab5ca046bc833b5caf81cf482f1b6f162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbIters</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbIters</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get number of iteration. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of iteration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="65" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="266" bodyend="270"/>
+        <references refid="xml__parameter_8c_1a4024e4decc374dde9740834c575c2057" compoundref="xml__parameter_8c" startline="115" endline="143">Xml_getNumber</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1afb1ba7f2d5ce467dc6a3e02219250a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbGroup</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbGroup</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get number of group. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of iteration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="68" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="279" bodyend="283"/>
+        <references refid="xml__parameter_8c_1a4024e4decc374dde9740834c575c2057" compoundref="xml__parameter_8c" startline="115" endline="143">Xml_getNumber</references>
+        <referencedby refid="mpi__load_8h_1a49f24c98f9724a9d2d64bf3b41d7c101" compoundref="mpi__load_8c" startline="154" endline="261">Mpi_master</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a7274d52d77ad2ac704e5d1a21cb29b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xml_getStepSize</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getStepSize</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the step size. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Step size </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="71" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="292" bodyend="296"/>
+        <references refid="xml__parameter_8c_1a4f3a58135812977f4928052008e58713" compoundref="xml__parameter_8c" startline="153" endline="181">Xml_getDoubleNumber</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1add80be509519cbdf7e259a17cbc89f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xml_getBoltzmann</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getBoltzmann</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the Boltzmann value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boltzmann value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="74" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="305" bodyend="309"/>
+        <references refid="xml__parameter_8c_1a4f3a58135812977f4928052008e58713" compoundref="xml__parameter_8c" startline="153" endline="181">Xml_getDoubleNumber</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a5a0bcc251114c768459436767f263df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xml_getTinitial</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getTinitial</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the initial temperature. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Initial temperature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="77" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="318" bodyend="322"/>
+        <references refid="xml__parameter_8c_1a4f3a58135812977f4928052008e58713" compoundref="xml__parameter_8c" startline="153" endline="181">Xml_getDoubleNumber</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a18841e8e468959cccb9acbd2dd364997" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xml_getMuT</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getMuT</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the variation of temperature. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Variation of temperature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="80" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="331" bodyend="335"/>
+        <references refid="xml__parameter_8c_1a4f3a58135812977f4928052008e58713" compoundref="xml__parameter_8c" startline="153" endline="181">Xml_getDoubleNumber</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ac2fc806f9a568ba7272a8b1e235ba3e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Xml_getTmin</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getTmin</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the minimum temperature. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Minimum temperature </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="83" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="344" bodyend="348"/>
+        <references refid="xml__parameter_8c_1a4f3a58135812977f4928052008e58713" compoundref="xml__parameter_8c" startline="153" endline="181">Xml_getDoubleNumber</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1af5e51f22021d8e7d4fd57564747c87dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getCount</definition>
+        <argsstring>(xmlConfig_t *, const char *)</argsstring>
+        <name>Xml_getCount</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>requete</defname>
+        </param>
+        <briefdescription>
+<para>Get count. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requete</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Xpath query </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Count </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="86" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="358" bodyend="387"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="xml__parameter_8h_1ac3e0275bc7a3d63afc8d3b2d12c61bfa" compoundref="xml__parameter_8c" startline="486" endline="490">Xml_getNbBannedSpecies</referencedby>
+        <referencedby refid="xml__parameter_8h_1a6c64d19778a053565d856336edd34ed3" compoundref="xml__parameter_8c" startline="396" endline="400">Xml_getNbCouples</referencedby>
+        <referencedby refid="xml__parameter_8h_1add66857b0f3c13f0ebccde7b4a1ad891" compoundref="xml__parameter_8c" startline="473" endline="477">Xml_getNbEquations</referencedby>
+        <referencedby refid="xml__parameter_8h_1af3dadd102ea2be0a37f7095dc893092c" compoundref="xml__parameter_8c" startline="409" endline="413">Xml_getNbParameters</referencedby>
+        <referencedby refid="xml__parameter_8h_1a432969ec33658e167cb4337802044261" compoundref="xml__parameter_8c" startline="447" endline="451">Xml_getNbReaction</referencedby>
+        <referencedby refid="xml__parameter_8h_1a7d165cd94b7d59e4adb56c6d809e8b49" compoundref="xml__parameter_8c" startline="423" endline="438">Xml_getNbReactioninNoeud</referencedby>
+        <referencedby refid="xml__parameter_8h_1a5cef06e3ec85ec0f67e81658db7e0c42" compoundref="xml__parameter_8c" startline="460" endline="464">Xml_getNbSpecies</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a6c64d19778a053565d856336edd34ed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbCouples</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbCouples</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the number of couples. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of couples </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="89" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="396" bodyend="400"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="xml__parameter_8h_1aff7d36c23f3ed9618037ae6de0706fd6" compoundref="xml__parameter_8c" startline="541" endline="576">Xml_getReactionsNames</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1af3dadd102ea2be0a37f7095dc893092c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbParameters</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbParameters</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the number of parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of parameters </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="92" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="409" bodyend="413"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a7d165cd94b7d59e4adb56c6d809e8b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbReactioninNoeud</definition>
+        <argsstring>(xmlConfig_t *, int)</argsstring>
+        <name>Xml_getNbReactioninNoeud</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>noeud</defname>
+        </param>
+        <briefdescription>
+<para>Count the number of reaction in one node. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>noeud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of reaction in one node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="95" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="423" bodyend="438"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="xml__parameter_8h_1a569e99d4f8bdc2a9a9e69987690ab5bf" compoundref="xml__parameter_8c" startline="500" endline="532">Xml_getReactionsNamesinNoeud</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a432969ec33658e167cb4337802044261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbReaction</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbReaction</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the number of reactions. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of reactions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="98" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="447" bodyend="451"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="xml__parameter_8h_1aff7d36c23f3ed9618037ae6de0706fd6" compoundref="xml__parameter_8c" startline="541" endline="576">Xml_getReactionsNames</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a5cef06e3ec85ec0f67e81658db7e0c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbSpecies</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbSpecies</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the number of species. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of species </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="101" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="460" bodyend="464"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+        <referencedby refid="xml__parameter_8h_1af6bd746aeab32ffb8ce8aca1eb39025c" compoundref="xml__parameter_8c" startline="585" endline="615">Xml_getSpecies</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1add66857b0f3c13f0ebccde7b4a1ad891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbEquations</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbEquations</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the number of equations. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of equations </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="104" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="473" bodyend="477"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ac3e0275bc7a3d63afc8d3b2d12c61bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getNbBannedSpecies</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getNbBannedSpecies</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get the number of banned species. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of banned species </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="107" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="486" bodyend="490"/>
+        <references refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" compoundref="xml__parameter_8c" startline="358" endline="387">Xml_getCount</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="xml__parameter_8h_1a4c7a3feb35dfee4b0003a396d064159a" compoundref="xml__parameter_8c" startline="624" endline="654">Xml_getBanned</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a569e99d4f8bdc2a9a9e69987690ab5bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** Xml_getReactionsNamesinNoeud</definition>
+        <argsstring>(xmlConfig_t *, int)</argsstring>
+        <name>Xml_getReactionsNamesinNoeud</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>numero</defname>
+        </param>
+        <briefdescription>
+<para>Get list of reactions. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get list of species.</para><para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of reactions</para></simplesect>
+<simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of species </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="110" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="500" bodyend="532"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="xml__parameter_8c_1abe3e4fdcc6be469255833ced99af8fd5" compoundref="xml__parameter_8c" startline="423" endline="438">Xml_getNbReactioninNoeud</references>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1aff7d36c23f3ed9618037ae6de0706fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** Xml_getReactionsNames</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getReactionsNames</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <briefdescription>
+<para>Get name of reactions. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Name of reactions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="113" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="541" bodyend="576"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="xml__parameter_8c_1af2cfdc761c81f2a612b89c4287532b59" compoundref="xml__parameter_8c" startline="396" endline="400">Xml_getNbCouples</references>
+        <references refid="xml__parameter_8c_1a1237b1ca7c942eb4db3bc5a3edae6dcb" compoundref="xml__parameter_8c" startline="447" endline="451">Xml_getNbReaction</references>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1af6bd746aeab32ffb8ce8aca1eb39025c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** Xml_getSpecies</definition>
+        <argsstring>(xmlConfig_t *)</argsstring>
+        <name>Xml_getSpecies</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="116" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="585" bodyend="615"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="xml__parameter_8c_1aa38353601b43859be1905fb37632fbf0" compoundref="xml__parameter_8c" startline="460" endline="464">Xml_getNbSpecies</references>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a4c7a3feb35dfee4b0003a396d064159a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** Xml_getBanned</definition>
+        <argsstring>(xmlConfig_t *conf)</argsstring>
+        <name>Xml_getBanned</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <declname>conf</declname>
+        </param>
+        <briefdescription>
+<para>Get list of banned species. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of banned species </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="119" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="624" bodyend="654"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="xml__parameter_8c_1a76777435e4d20d96bf38532590dde9df" compoundref="xml__parameter_8c" startline="486" endline="490">Xml_getNbBannedSpecies</references>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a9d0d9ce69bd349b6b7344fbaa6a63fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getSpeciesFinalAmount</definition>
+        <argsstring>(xmlConfig_t *, char *)</argsstring>
+        <name>Xml_getSpeciesFinalAmount</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>species</defname>
+        </param>
+        <briefdescription>
+<para>Get the final amount of one species. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of one species </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Final amount of one species </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="122" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="665" bodyend="697"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="xml__parameter_8h_1a148b17c5cf3107548c515f285664c396" compoundref="xml__parameter_8c" startline="708" endline="717">Xml_getallSpeciesFinalAmount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a148b17c5cf3107548c515f285664c396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Xml_getallSpeciesFinalAmount</definition>
+        <argsstring>(xmlConfig_t *, char **, int)</argsstring>
+        <name>Xml_getallSpeciesFinalAmount</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>species</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <briefdescription>
+<para>Get Table of species amount. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table of species </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Table of species amount </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="125" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="708" bodyend="717"/>
+        <references refid="xml__parameter_8c_1afda4f9b23fe11dd5d1d054f02b15f6e6" compoundref="xml__parameter_8c" startline="665" endline="697">Xml_getSpeciesFinalAmount</references>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ac863f3b5d07ff53656292f8ae60ab56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getSpeciesWeight</definition>
+        <argsstring>(xmlConfig_t *, char *)</argsstring>
+        <name>Xml_getSpeciesWeight</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>species</defname>
+        </param>
+        <briefdescription>
+<para>Get Species weight. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of one species </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Species weight </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="128" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="727" bodyend="759"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="xml__parameter_8h_1ac461fdf86d516a60bd037eadc2dc492a" compoundref="xml__parameter_8c" startline="770" endline="779">Xml_getallSpeciesWeight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ac461fdf86d516a60bd037eadc2dc492a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Xml_getallSpeciesWeight</definition>
+        <argsstring>(xmlConfig_t *, char **, int)</argsstring>
+        <name>Xml_getallSpeciesWeight</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>species</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <briefdescription>
+<para>Get list of species weight. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table of species </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of species weight </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="131" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="770" bodyend="779"/>
+        <references refid="xml__parameter_8c_1ae5b43caf011ecd4332145b1d5650ed9e" compoundref="xml__parameter_8c" startline="727" endline="759">Xml_getSpeciesWeight</references>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a387b2b80fc518e2a7deb67558880bbf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** Xml_allocEquation</definition>
+        <argsstring>(char **, int)</argsstring>
+        <name>Xml_allocEquation</name>
+        <param>
+          <type>char **</type>
+          <defname>equation</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_noeud</defname>
+        </param>
+        <briefdescription>
+<para>Allocate memory for the list of equation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>equation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of equation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_noeud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of reactions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="134" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="789" bodyend="803"/>
+        <referencedby refid="xml__parameter_8h_1a5645a54d20bd3d2347f06b3167d1ed6a" compoundref="xml__parameter_8c" startline="854" endline="900">Xml_getKineticLaw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1ae14e8b44d2e2b750d81490c74e0659e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Xml_getKineticLawNodes</definition>
+        <argsstring>(xmlConfig_t *, int)</argsstring>
+        <name>Xml_getKineticLawNodes</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>num_equation</defname>
+        </param>
+        <briefdescription>
+<para>Get the kinetic law for one node. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_equation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ninetic law for one node </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="140" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="813" bodyend="843"/>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml__parameter_8h_1a5645a54d20bd3d2347f06b3167d1ed6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char ***</type>
+        <definition>char*** Xml_getKineticLaw</definition>
+        <argsstring>(xmlConfig_t *, int, int)</argsstring>
+        <name>Xml_getKineticLaw</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <defname>conf</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>num_equation</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_noeud</defname>
+        </param>
+        <briefdescription>
+<para>Get list of kinetic laws. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_equation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of equation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_noeud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number nodes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of kinetic laws </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h" line="143" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/xml_parameter.c" bodystart="854" bodyend="900"/>
+        <references refid="gsl__recuit_8c_1ae78b385d27f680dd0d0bd3b700776071" compoundref="gsl__recuit_8c" startline="52">all</references>
+        <references refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" compoundref="xml__parameter_8h" startline="37">xmlConfig_t::ctxt</references>
+        <references refid="xml__parameter_8c_1a33fc7308481aa2c6ceebbf6dffa2626d" compoundref="xml__parameter_8c" startline="789" endline="803">Xml_allocEquation</references>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Xml reader for parametre.xml. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>15 janvier 2010 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>_XML_PARAMETER_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_XML_PARAMETER_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="33" refid="structxmlConfig__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="structxmlConfig__t_1a7a2f1cbf9d3b49f1b2debb85a8606658" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structxmlConfig__t_1a7a2f1cbf9d3b49f1b2debb85a8606658" kindref="member">fichier</ref>;<sp/></highlight></codeline>
+<codeline lineno="35" refid="structxmlConfig__t_1a35e7e8fc3398d0866fbf91b0245fd7b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlDocPtr<sp/><ref refid="structxmlConfig__t_1a35e7e8fc3398d0866fbf91b0245fd7b9" kindref="member">doc</ref>;<sp/></highlight></codeline>
+<codeline lineno="36" refid="structxmlConfig__t_1a535cd8a3e33d4ae2a00ab29f32a442ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlNodePtr<sp/><ref refid="structxmlConfig__t_1a535cd8a3e33d4ae2a00ab29f32a442ff" kindref="member">racine</ref>;<sp/></highlight></codeline>
+<codeline lineno="37" refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>xmlXPathContextPtr<sp/><ref refid="structxmlConfig__t_1ae21311533cb59c9752bf21ffce5d5316" kindref="member">ctxt</ref>;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>et<sp/>chargement<sp/>du<sp/>fichier<sp/>XML<sp/>en<sp/>memoire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*<ref refid="xml__parameter_8c_1ab12b2036f57ce74c1c2ac44a19434bda" kindref="member" tooltip="Initialize and load the parameter.xml.">Xml_loadConfig</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Liberation<sp/>de<sp/>la<sp/>memoire<sp/>pour<sp/>la<sp/>structure<sp/>xmlConfig_t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a8b93c82fdf9f830d2170f8dfe1e206bd" kindref="member" tooltip="Free the Struct xmlConfig_t.">Xml_freeConfig</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Recherche<sp/>des<sp/>valeurs<sp/>entieres<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a4024e4decc374dde9740834c575c2057" kindref="member" tooltip="Get integer value.">Xml_getNumber</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Recherche<sp/>des<sp/>valeurs<sp/>double<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a4f3a58135812977f4928052008e58713" kindref="member" tooltip="Get double value.">Xml_getDoubleNumber</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Recherche<sp/>du<sp/>texte<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="xml__parameter_8c_1a2961477293ec8eb23f4b7f2c654932a0" kindref="member" tooltip="Get name value.">Xml_getString</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>simulation<sp/>a<sp/>effectuer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a503fd8e4167aef94fa22e0c71a5b6afa" kindref="member" tooltip="Get number of simulation.">Xml_getNbSimulations</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>d&apos;essai<sp/>a<sp/>effectuer<sp/>pour<sp/>les<sp/>modelisations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1afeff8e3300946c36cea36ddd964e9265" kindref="member" tooltip="Get number of tries for modelling.">Xml_getNbTriesMod</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>d&apos;essai<sp/>a<sp/>effectuer<sp/>pour<sp/>le<sp/>recuit<sp/>et<sp/>la<sp/>minimisation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a7b67ce794add8c04563e07f9d25c6096" kindref="member" tooltip="Get number of tries for the simulated annealing and minimization.">Xml_getNbTriesSa</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>d&apos;Iteration<sp/>a<sp/>effectuer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1ae49d86627f34fb18c996a3060e2a297a" kindref="member" tooltip="Get number of iteration.">Xml_getNbIters</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>groupe<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1ade93fd888d36e908c7386f25b2836137" kindref="member" tooltip="Get number of group.">Xml_getNbGroup</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>taille<sp/>du<sp/>pas<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a1770352729facbccf4b8fb288551ebbb" kindref="member" tooltip="Get the step size.">Xml_getStepSize</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>valeur<sp/>de<sp/>la<sp/>constante<sp/>de<sp/>boltzmann<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1af051a5017271240c72cad70ee82b6af7" kindref="member" tooltip="Get the Boltzmann value.">Xml_getBoltzmann</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>temperature<sp/>initiale<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1ab2406faab9296a45cc596beec457f268" kindref="member" tooltip="Get the initial temperature.">Xml_getTinitial</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>variation<sp/>de<sp/>temperature<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a9e2c04caf11e5a95f5aa22f6f37f479d" kindref="member" tooltip="Get the variation of temperature.">Xml_getMuT</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>temperature<sp/>minimum<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a9401fbdd3c314c0e729c9a278a6e2805" kindref="member" tooltip="Get the minimum temperature.">Xml_getTmin</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>des<sp/>decomptes<sp/>sur<sp/>l&apos;objet<sp/>xml<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1ab341a0b1147a2c5866cab65f552f0817" kindref="member" tooltip="Get count.">Xml_getCount</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>couples<sp/>de<sp/>parametres<sp/>en<sp/>jeu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1af2cfdc761c81f2a612b89c4287532b59" kindref="member" tooltip="Get the number of couples.">Xml_getNbCouples</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>couples<sp/>de<sp/>parametres<sp/>en<sp/>jeu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a970461b8c6940e3446ae533b7ad02784" kindref="member" tooltip="Get the number of parameters.">Xml_getNbParameters</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>reaction<sp/>dans<sp/>un<sp/>noeud<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1abe3e4fdcc6be469255833ced99af8fd5" kindref="member" tooltip="Count the number of reaction in one node.">Xml_getNbReactioninNoeud</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>reaction*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a1237b1ca7c942eb4db3bc5a3edae6dcb" kindref="member" tooltip="Get the number of reactions.">Xml_getNbReaction</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>especes<sp/>en<sp/>jeu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1aa38353601b43859be1905fb37632fbf0" kindref="member" tooltip="Get the number of species.">Xml_getNbSpecies</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>d&apos;equation<sp/>en<sp/>jeu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a4cd7ca36e09a00f6eead68fa2fe9c181" kindref="member" tooltip="Get the number of equations.">Xml_getNbEquations</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>de<sp/>molecules<sp/>bannies<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1a76777435e4d20d96bf38532590dde9df" kindref="member" tooltip="Get the number of banned species.">Xml_getNbBannedSpecies</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>liste<sp/>des<sp/>reactions<sp/>d&apos;un<sp/>noeud<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="xml__parameter_8c_1a5d5ca947e73c03c5be663e2d5e08b028" kindref="member" tooltip="Get list of reactions.">Xml_getReactionsNamesinNoeud</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>liste<sp/>des<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="xml__parameter_8c_1a3b6fb6f415a7542cd722d9d327eea7b8" kindref="member" tooltip="Get name of reactions.">Xml_getReactionsNames</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>liste<sp/>des<sp/>especes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="xml__parameter_8c_1ad0b6ab7f717b34351d9dfc0bfb39116f" kindref="member">Xml_getSpecies</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>liste<sp/>des<sp/>especes<sp/>bannies<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="xml__parameter_8c_1a08ff3dcc547d1e4cd67fc5cdcf76207b" kindref="member" tooltip="Get list of banned species.">Xml_getBanned</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*conf);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>la<sp/>quantite<sp/>final<sp/>de<sp/>l&apos;espece<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1afda4f9b23fe11dd5d1d054f02b15f6e6" kindref="member" tooltip="Get the final amount of one species.">Xml_getSpeciesFinalAmount</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>tableau<sp/>contenant<sp/>les<sp/>quantites<sp/>de<sp/>toutes<sp/>especes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="xml__parameter_8c_1ab64b5c70d3ad223797b8047c29b3a176" kindref="member" tooltip="Get Table of species amount.">Xml_getallSpeciesFinalAmount</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>poids<sp/>de<sp/>l&apos;espece<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1ae5b43caf011ecd4332145b1d5650ed9e" kindref="member" tooltip="Get Species weight.">Xml_getSpeciesWeight</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>tableau<sp/>contenant<sp/>les<sp/>poids<sp/>de<sp/>toutes<sp/>especes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="xml__parameter_8c_1a2269733e284ffe4b8ff58248e060efea" kindref="member" tooltip="Get list of species weight.">Xml_getallSpeciesWeight</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alloue<sp/>la<sp/>memoire<sp/>necessaire<sp/>aux<sp/>listes<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="xml__parameter_8c_1a33fc7308481aa2c6ceebbf6dffa2626d" kindref="member" tooltip="Allocate memory for the list of equation.">Xml_allocEquation</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Libere<sp/>la<sp/>memoire<sp/>necessaire<sp/>a<sp/>la<sp/>liste<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*void<sp/>Xml_freeEquation(char***,<sp/>int);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>nombre<sp/>d&apos;expressions<sp/>mathematiques<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml__parameter_8c_1aebbd1beeffa0d86d3fb414443579bd2c" kindref="member" tooltip="Get the kinetic law for one node.">Xml_getKineticLawNodes</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourn<sp/>les<sp/>expressions<sp/>mathematiques<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>***<ref refid="xml__parameter_8c_1a62bde7fe978c5b428aedf7011ef5444f" kindref="member" tooltip="Get list of kinetic laws.">Xml_getKineticLaw</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>XML_PARAMETER_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/xml_parameter.h"/>
+  </compounddef>
+</doxygen>

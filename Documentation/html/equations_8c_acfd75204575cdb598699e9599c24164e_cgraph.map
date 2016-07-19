@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$equations_8c.html#a652cb08a19a4b10403a1751220d2de54" title="Unstack the last element of the struct Equations." alt="" coords="184,5,309,35"/>
+<area shape="rect" id="node5" href="$equations_8c.html#a51aa19b01714bc3ae728031b8748694a" title="Stack an element to the struct Equations." alt="" coords="183,59,311,88"/>
+<area shape="rect" id="node7" href="$equations_8c.html#aafdce647fd1652f8cead7c6e90a0ee22" title="Give the priority of the operator. Multiplication and Division have higher priority than addition or ..." alt="" coords="184,112,309,141"/>
+<area shape="rect" id="node9" href="$equations_8c.html#a6cac5d605c548c5083d41d8140272201" title="Look for the last element of the struct Equations." alt="" coords="180,165,313,195"/>
+<area shape="rect" id="node11" href="$equations_8c.html#abc16d34fd78fc7bec99064ba06a0a27f" title="Test if the struct Equations is empty." alt="" coords="192,219,301,248"/>
+</map>

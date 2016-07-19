@@ -1,0 +1,138 @@
+.TH "ListParameters" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ListParameters \- 
+.PP
+Global list parameters.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <data_parameters.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "Model_t * \fBmodel\fP"
+.br
+.ti -1c
+.RI "\fBxmlConfig_t\fP * \fBconf\fP"
+.br
+.ti -1c
+.RI "char **** \fBequation\fP"
+.br
+.ti -1c
+.RI "int \fBnb_parameters\fP"
+.br
+.ti -1c
+.RI "int \fBinterest_parameters\fP"
+.br
+.ti -1c
+.RI "int \fBnb_couples\fP"
+.br
+.ti -1c
+.RI "int \fBnb_equations\fP"
+.br
+.ti -1c
+.RI "int \fBnb_reaction\fP"
+.br
+.ti -1c
+.RI "int * \fBnoeud\fP"
+.br
+.ti -1c
+.RI "int * \fBparameters\fP"
+.br
+.ti -1c
+.RI "char ** \fBbanned\fP"
+.br
+.ti -1c
+.RI "int \fBnb_banned\fP"
+.br
+.ti -1c
+.RI "int \fBnb_triesMod\fP"
+.br
+.ti -1c
+.RI "int \fBnb_triesSa\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Global list parameters. 
+.PP
+Definition at line 35 of file data_parameters.h.
+.SH "Field Documentation"
+.PP 
+.SS "char** \fBListParameters::banned\fP"Names of banned molecules : ex ATP, ADP ... 
+.PP
+Definition at line 47 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), Data_desallocation(), Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "\fBxmlConfig_t\fP* \fBListParameters::conf\fP"Parameter file 
+.PP
+Definition at line 38 of file data_parameters.h.
+.PP
+Referenced by Data_allocEquations(), Data_allocParameters(), Data_desallocation(), Data_parameters(), Data_scoreAlloc(), Data_simParameters(), Min_my_f(), Mod_compute_modeling(), Mpi_master(), Mpi_sizeResultTab(), Mpi_slave(), Mpi_writer(), Recuit_compute_recuit(), Recuit_printParametre(), and Sd_compute_standard_deviation().
+.SS "char**** \fBListParameters::equation\fP"\fBEquations\fP text 
+.PP
+Definition at line 39 of file data_parameters.h.
+.PP
+Referenced by Data_allocEquations(), Data_desallocation(), and Data_equationsInit().
+.SS "int \fBListParameters::interest_parameters\fP"Number of interest parameters 
+.PP
+Definition at line 41 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), Min_compute_minimization(), Recuit_compute_recuit(), Recuit_metricDistance(), Recuit_printParametre(), and Recuit_takeStep().
+.SS "Model_t* \fBListParameters::model\fP"SBML file 
+.PP
+Definition at line 37 of file data_parameters.h.
+.PP
+Referenced by Data_desallocation(), Data_parameters(), Data_scoreAlloc(), Data_simParameters(), Min_my_f(), Mod_compute_modeling(), Mpi_sizeResultTab(), Mpi_writer(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "int \fBListParameters::nb_banned\fP"Number of banned molecules 
+.PP
+Definition at line 48 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "int \fBListParameters::nb_couples\fP"Number of couples 
+.PP
+Definition at line 42 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), Data_updateTab(), Min_compute_minimization(), Min_my_f(), Recuit_defParametre(), and Recuit_takeStep().
+.SS "int \fBListParameters::nb_equations\fP"Number of equations 
+.PP
+Definition at line 43 of file data_parameters.h.
+.PP
+Referenced by Data_allocEquations(), Data_desallocation(), Data_equationsAlloc(), Data_equationsInit(), Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "int \fBListParameters::nb_parameters\fP"Number of parameters 
+.PP
+Definition at line 40 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), Data_allocSimParameters(), Data_simParameters(), Min_compute_minimization(), Min_getTampon(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Mpi_master(), Mpi_sizeResultTab(), Mpi_slave(), Mpi_writeSimFile(), Recuit_printPosition(), and Sd_compute_standard_deviation().
+.SS "int \fBListParameters::nb_reaction\fP"Number of reaction 
+.PP
+Definition at line 44 of file data_parameters.h.
+.SS "int \fBListParameters::nb_triesMod\fP"Number of tries for modelling 
+.PP
+Definition at line 49 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters().
+.SS "int \fBListParameters::nb_triesSa\fP"Number of tries for simulated annealing and minimization 
+.PP
+Definition at line 50 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), and Recuit_energyFunction().
+.SS "int* \fBListParameters::noeud\fP"Number of nodes in an equation 
+.PP
+Definition at line 45 of file data_parameters.h.
+.PP
+Referenced by Data_allocEquations(), Data_desallocation(), and Data_equationsInit().
+.SS "int* \fBListParameters::parameters\fP"Details on the parameters of reactions 
+.PP
+Definition at line 46 of file data_parameters.h.
+.PP
+Referenced by Data_allocParameters(), Data_desallocation(), Data_updateTab(), Min_compute_minimization(), Min_my_f(), Recuit_defParametre(), and Recuit_takeStep().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

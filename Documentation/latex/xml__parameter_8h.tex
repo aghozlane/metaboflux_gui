@@ -1,0 +1,1616 @@
+\hypertarget{xml__parameter_8h}{
+\section{metaboflux/include/xml\_\-parameter.h File Reference}
+\label{xml__parameter_8h}\index{metaboflux/include/xml\_\-parameter.h@{metaboflux/include/xml\_\-parameter.h}}
+}
+
+
+Xml reader for parametre.xml.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{xml__parameter_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure containing all information from parameter.xml. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$ \hyperlink{xml__parameter_8h_a4ea94aa6222a68813a163a5c01e160f6}{Xml\_\-loadConfig} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Initialize and load the parameter.xml. \end{DoxyCompactList}\item 
+void \hyperlink{xml__parameter_8h_ae8efb0436cd231ff904c662e662210f7}{Xml\_\-freeConfig} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Free the Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t}. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a718b56ca89a1aba6bf2519b575394a72}{Xml\_\-getNumber} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em Get integer value. \end{DoxyCompactList}\item 
+double \hyperlink{xml__parameter_8h_ae92f843acf0a723abf982d04d774aec7}{Xml\_\-getDoubleNumber} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em Get double value. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{xml__parameter_8h_ac7cfe344dbbf799ef808fb9a4e8ec391}{Xml\_\-getString} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get name value. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a895187a8d4080d24deaf71911b49b865}{Xml\_\-getNbSimulations} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get number of simulation. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a61b2b14f1974b2da0977164a0eb7e647}{Xml\_\-getNbTriesMod} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get number of tries for modelling. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_af202e24f690b234cc2c0a09a065e7de4}{Xml\_\-getNbTriesSa} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get number of tries for the simulated annealing and minimization. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_ab5ca046bc833b5caf81cf482f1b6f162}{Xml\_\-getNbIters} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get number of iteration. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_afb1ba7f2d5ce467dc6a3e02219250a6f}{Xml\_\-getNbGroup} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get number of group. \end{DoxyCompactList}\item 
+double \hyperlink{xml__parameter_8h_a7274d52d77ad2ac704e5d1a21cb29b5b}{Xml\_\-getStepSize} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the step size. \end{DoxyCompactList}\item 
+double \hyperlink{xml__parameter_8h_add80be509519cbdf7e259a17cbc89f59}{Xml\_\-getBoltzmann} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the Boltzmann value. \end{DoxyCompactList}\item 
+double \hyperlink{xml__parameter_8h_a5a0bcc251114c768459436767f263df3}{Xml\_\-getTinitial} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the initial temperature. \end{DoxyCompactList}\item 
+double \hyperlink{xml__parameter_8h_a18841e8e468959cccb9acbd2dd364997}{Xml\_\-getMuT} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the variation of temperature. \end{DoxyCompactList}\item 
+double \hyperlink{xml__parameter_8h_ac2fc806f9a568ba7272a8b1e235ba3e1}{Xml\_\-getTmin} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the minimum temperature. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_af5e51f22021d8e7d4fd57564747c87dd}{Xml\_\-getCount} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em Get count. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a6c64d19778a053565d856336edd34ed3}{Xml\_\-getNbCouples} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the number of couples. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_af3dadd102ea2be0a37f7095dc893092c}{Xml\_\-getNbParameters} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the number of parameters. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a7d165cd94b7d59e4adb56c6d809e8b49}{Xml\_\-getNbReactioninNoeud} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Count the number of reaction in one node. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a432969ec33658e167cb4337802044261}{Xml\_\-getNbReaction} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the number of reactions. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a5cef06e3ec85ec0f67e81658db7e0c42}{Xml\_\-getNbSpecies} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the number of species. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_add66857b0f3c13f0ebccde7b4a1ad891}{Xml\_\-getNbEquations} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the number of equations. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_ac3e0275bc7a3d63afc8d3b2d12c61bfa}{Xml\_\-getNbBannedSpecies} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the number of banned species. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{xml__parameter_8h_a569e99d4f8bdc2a9a9e69987690ab5bf}{Xml\_\-getReactionsNamesinNoeud} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Get list of reactions. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{xml__parameter_8h_aff7d36c23f3ed9618037ae6de0706fd6}{Xml\_\-getReactionsNames} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Get name of reactions. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{xml__parameter_8h_a4c7a3feb35dfee4b0003a396d064159a}{Xml\_\-getBanned} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$conf)
+\begin{DoxyCompactList}\small\item\em Get list of banned species. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_a9d0d9ce69bd349b6b7344fbaa6a63fc0}{Xml\_\-getSpeciesFinalAmount} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, char $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the final amount of one species. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{xml__parameter_8h_a148b17c5cf3107548c515f285664c396}{Xml\_\-getallSpeciesFinalAmount} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, char $\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Get Table of species amount. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_ac863f3b5d07ff53656292f8ae60ab56f}{Xml\_\-getSpeciesWeight} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, char $\ast$)
+\begin{DoxyCompactList}\small\item\em Get Species weight. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{xml__parameter_8h_ac461fdf86d516a60bd037eadc2dc492a}{Xml\_\-getallSpeciesWeight} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, char $\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Get list of species weight. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{xml__parameter_8h_a387b2b80fc518e2a7deb67558880bbf8}{Xml\_\-allocEquation} (char $\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Allocate memory for the list of equation. \end{DoxyCompactList}\item 
+int \hyperlink{xml__parameter_8h_ae14e8b44d2e2b750d81490c74e0659e0}{Xml\_\-getKineticLawNodes} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Get the kinetic law for one node. \end{DoxyCompactList}\item 
+char $\ast$$\ast$$\ast$ \hyperlink{xml__parameter_8h_a5645a54d20bd3d2347f06b3167d1ed6a}{Xml\_\-getKineticLaw} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Get list of kinetic laws. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Xml reader for parametre.xml. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+15 janvier 2010 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{xml__parameter_8h_source}{xml\_\-parameter.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{xml__parameter_8h_a387b2b80fc518e2a7deb67558880bbf8}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-allocEquation@{Xml\_\-allocEquation}}
+\index{Xml\_\-allocEquation@{Xml\_\-allocEquation}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-allocEquation}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ Xml\_\-allocEquation (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{equation, }
+\item[{int}]{nb\_\-noeud}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a387b2b80fc518e2a7deb67558880bbf8}
+
+
+Allocate memory for the list of equation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em equation} & list of equation \\
+\hline
+{\em nb\_\-noeud} & Number of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of reactions 
+\end{DoxyReturn}
+
+
+Definition at line 789 of file xml\_\-parameter.c.
+
+
+
+Referenced by Xml\_\-getKineticLaw().
+
+\hypertarget{xml__parameter_8h_ae8efb0436cd231ff904c662e662210f7}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-freeConfig@{Xml\_\-freeConfig}}
+\index{Xml\_\-freeConfig@{Xml\_\-freeConfig}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-freeConfig}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\_\-freeConfig (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ae8efb0436cd231ff904c662e662210f7}
+
+
+Free the Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt, xmlConfig\_\-t::doc, and xmlConfig\_\-t::fichier.
+
+
+
+Referenced by Data\_\-desallocation(), and Xml\_\-loadConfig().
+
+\hypertarget{xml__parameter_8h_a148b17c5cf3107548c515f285664c396}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getallSpeciesFinalAmount@{Xml\_\-getallSpeciesFinalAmount}}
+\index{Xml\_\-getallSpeciesFinalAmount@{Xml\_\-getallSpeciesFinalAmount}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getallSpeciesFinalAmount}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Xml\_\-getallSpeciesFinalAmount (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{char $\ast$$\ast$}]{species, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a148b17c5cf3107548c515f285664c396}
+
+
+Get Table of species amount. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em species} & Table of species \\
+\hline
+{\em taille} & Number of species \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Table of species amount 
+\end{DoxyReturn}
+
+
+Definition at line 708 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getSpeciesFinalAmount().
+
+
+
+Referenced by Data\_\-allocScore().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{xml__parameter_8h_a148b17c5cf3107548c515f285664c396_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_ac461fdf86d516a60bd037eadc2dc492a}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getallSpeciesWeight@{Xml\_\-getallSpeciesWeight}}
+\index{Xml\_\-getallSpeciesWeight@{Xml\_\-getallSpeciesWeight}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getallSpeciesWeight}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Xml\_\-getallSpeciesWeight (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{char $\ast$$\ast$}]{species, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ac461fdf86d516a60bd037eadc2dc492a}
+
+
+Get list of species weight. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em species} & Table of species \\
+\hline
+{\em taille} & Number of species \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of species weight 
+\end{DoxyReturn}
+
+
+Definition at line 770 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getSpeciesWeight().
+
+
+
+Referenced by Data\_\-allocScore().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=364pt]{xml__parameter_8h_ac461fdf86d516a60bd037eadc2dc492a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a4c7a3feb35dfee4b0003a396d064159a}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getBanned@{Xml\_\-getBanned}}
+\index{Xml\_\-getBanned@{Xml\_\-getBanned}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getBanned}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ Xml\_\-getBanned (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a4c7a3feb35dfee4b0003a396d064159a}
+
+
+Get list of banned species. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of banned species 
+\end{DoxyReturn}
+
+
+Definition at line 624 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt, and Xml\_\-getNbBannedSpecies().
+
+
+
+Referenced by Data\_\-allocParameters().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{xml__parameter_8h_a4c7a3feb35dfee4b0003a396d064159a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_add80be509519cbdf7e259a17cbc89f59}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getBoltzmann@{Xml\_\-getBoltzmann}}
+\index{Xml\_\-getBoltzmann@{Xml\_\-getBoltzmann}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getBoltzmann}]{\setlength{\rightskip}{0pt plus 5cm}double Xml\_\-getBoltzmann (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_add80be509519cbdf7e259a17cbc89f59}
+
+
+Get the Boltzmann value. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boltzmann value 
+\end{DoxyReturn}
+
+
+Definition at line 305 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getDoubleNumber().
+
+
+
+Referenced by Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{xml__parameter_8h_add80be509519cbdf7e259a17cbc89f59_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_af5e51f22021d8e7d4fd57564747c87dd}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getCount@{Xml\_\-getCount}}
+\index{Xml\_\-getCount@{Xml\_\-getCount}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getCount}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getCount (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{const char $\ast$}]{requete}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_af5e51f22021d8e7d4fd57564747c87dd}
+
+
+Get count. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em requete} & Xpath query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Count 
+\end{DoxyReturn}
+
+
+Definition at line 358 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Xml\_\-getNbBannedSpecies(), Xml\_\-getNbCouples(), Xml\_\-getNbEquations(), Xml\_\-getNbParameters(), Xml\_\-getNbReaction(), Xml\_\-getNbReactioninNoeud(), and Xml\_\-getNbSpecies().
+
+\hypertarget{xml__parameter_8h_ae92f843acf0a723abf982d04d774aec7}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getDoubleNumber@{Xml\_\-getDoubleNumber}}
+\index{Xml\_\-getDoubleNumber@{Xml\_\-getDoubleNumber}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getDoubleNumber}]{\setlength{\rightskip}{0pt plus 5cm}double Xml\_\-getDoubleNumber (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{const char $\ast$}]{requete}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ae92f843acf0a723abf982d04d774aec7}
+
+
+Get double value. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em requete} & Xpath query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Read double value in the xml 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Xml\_\-getBoltzmann(), Xml\_\-getMuT(), Xml\_\-getStepSize(), Xml\_\-getTinitial(), and Xml\_\-getTmin().
+
+\hypertarget{xml__parameter_8h_a5645a54d20bd3d2347f06b3167d1ed6a}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getKineticLaw@{Xml\_\-getKineticLaw}}
+\index{Xml\_\-getKineticLaw@{Xml\_\-getKineticLaw}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getKineticLaw}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$$\ast$ Xml\_\-getKineticLaw (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{int}]{num\_\-equation, }
+\item[{int}]{nb\_\-noeud}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a5645a54d20bd3d2347f06b3167d1ed6a}
+
+
+Get list of kinetic laws. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em num\_\-equation} & Number of equation \\
+\hline
+{\em nb\_\-noeud} & Number nodes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of kinetic laws 
+\end{DoxyReturn}
+
+
+Definition at line 854 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt, and Xml\_\-allocEquation().
+
+
+
+Referenced by Data\_\-allocEquations().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{xml__parameter_8h_a5645a54d20bd3d2347f06b3167d1ed6a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_ae14e8b44d2e2b750d81490c74e0659e0}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getKineticLawNodes@{Xml\_\-getKineticLawNodes}}
+\index{Xml\_\-getKineticLawNodes@{Xml\_\-getKineticLawNodes}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getKineticLawNodes}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getKineticLawNodes (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{int}]{num\_\-equation}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ae14e8b44d2e2b750d81490c74e0659e0}
+
+
+Get the kinetic law for one node. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em num\_\-equation} & Number of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ninetic law for one node 
+\end{DoxyReturn}
+
+
+Definition at line 813 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Data\_\-allocEquations().
+
+\hypertarget{xml__parameter_8h_a18841e8e468959cccb9acbd2dd364997}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getMuT@{Xml\_\-getMuT}}
+\index{Xml\_\-getMuT@{Xml\_\-getMuT}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getMuT}]{\setlength{\rightskip}{0pt plus 5cm}double Xml\_\-getMuT (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a18841e8e468959cccb9acbd2dd364997}
+
+
+Get the variation of temperature. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Variation of temperature 
+\end{DoxyReturn}
+
+
+Definition at line 331 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getDoubleNumber().
+
+
+
+Referenced by Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{xml__parameter_8h_a18841e8e468959cccb9acbd2dd364997_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_ac3e0275bc7a3d63afc8d3b2d12c61bfa}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbBannedSpecies@{Xml\_\-getNbBannedSpecies}}
+\index{Xml\_\-getNbBannedSpecies@{Xml\_\-getNbBannedSpecies}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbBannedSpecies}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbBannedSpecies (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ac3e0275bc7a3d63afc8d3b2d12c61bfa}
+
+
+Get the number of banned species. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of banned species 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocParameters(), and Xml\_\-getBanned().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{xml__parameter_8h_ac3e0275bc7a3d63afc8d3b2d12c61bfa_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a6c64d19778a053565d856336edd34ed3}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbCouples@{Xml\_\-getNbCouples}}
+\index{Xml\_\-getNbCouples@{Xml\_\-getNbCouples}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbCouples}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbCouples (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a6c64d19778a053565d856336edd34ed3}
+
+
+Get the number of couples. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of couples 
+\end{DoxyReturn}
+
+
+Definition at line 396 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocParameters(), and Xml\_\-getReactionsNames().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{xml__parameter_8h_a6c64d19778a053565d856336edd34ed3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_add66857b0f3c13f0ebccde7b4a1ad891}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbEquations@{Xml\_\-getNbEquations}}
+\index{Xml\_\-getNbEquations@{Xml\_\-getNbEquations}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbEquations}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbEquations (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_add66857b0f3c13f0ebccde7b4a1ad891}
+
+
+Get the number of equations. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of equations 
+\end{DoxyReturn}
+
+
+Definition at line 473 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocEquations().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{xml__parameter_8h_add66857b0f3c13f0ebccde7b4a1ad891_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_afb1ba7f2d5ce467dc6a3e02219250a6f}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbGroup@{Xml\_\-getNbGroup}}
+\index{Xml\_\-getNbGroup@{Xml\_\-getNbGroup}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbGroup}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbGroup (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_afb1ba7f2d5ce467dc6a3e02219250a6f}
+
+
+Get number of group. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of iteration 
+\end{DoxyReturn}
+
+
+Definition at line 279 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getNumber().
+
+
+
+Referenced by Mpi\_\-master().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{xml__parameter_8h_afb1ba7f2d5ce467dc6a3e02219250a6f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_ab5ca046bc833b5caf81cf482f1b6f162}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbIters@{Xml\_\-getNbIters}}
+\index{Xml\_\-getNbIters@{Xml\_\-getNbIters}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbIters}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbIters (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ab5ca046bc833b5caf81cf482f1b6f162}
+
+
+Get number of iteration. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of iteration 
+\end{DoxyReturn}
+
+
+Definition at line 266 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getNumber().
+
+
+
+Referenced by Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{xml__parameter_8h_ab5ca046bc833b5caf81cf482f1b6f162_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_af3dadd102ea2be0a37f7095dc893092c}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbParameters@{Xml\_\-getNbParameters}}
+\index{Xml\_\-getNbParameters@{Xml\_\-getNbParameters}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbParameters}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbParameters (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_af3dadd102ea2be0a37f7095dc893092c}
+
+
+Get the number of parameters. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of parameters 
+\end{DoxyReturn}
+
+
+Definition at line 409 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocParameters().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{xml__parameter_8h_af3dadd102ea2be0a37f7095dc893092c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a432969ec33658e167cb4337802044261}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbReaction@{Xml\_\-getNbReaction}}
+\index{Xml\_\-getNbReaction@{Xml\_\-getNbReaction}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbReaction}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbReaction (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a432969ec33658e167cb4337802044261}
+
+
+Get the number of reactions. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of reactions 
+\end{DoxyReturn}
+
+
+Definition at line 447 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocScore(), and Xml\_\-getReactionsNames().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{xml__parameter_8h_a432969ec33658e167cb4337802044261_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a7d165cd94b7d59e4adb56c6d809e8b49}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbReactioninNoeud@{Xml\_\-getNbReactioninNoeud}}
+\index{Xml\_\-getNbReactioninNoeud@{Xml\_\-getNbReactioninNoeud}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbReactioninNoeud}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbReactioninNoeud (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{int}]{noeud}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a7d165cd94b7d59e4adb56c6d809e8b49}
+
+
+Count the number of reaction in one node. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em noeud} & Number of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of reaction in one node 
+\end{DoxyReturn}
+
+
+Definition at line 423 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocParameters(), and Xml\_\-getReactionsNamesinNoeud().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{xml__parameter_8h_a7d165cd94b7d59e4adb56c6d809e8b49_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a895187a8d4080d24deaf71911b49b865}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbSimulations@{Xml\_\-getNbSimulations}}
+\index{Xml\_\-getNbSimulations@{Xml\_\-getNbSimulations}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbSimulations}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbSimulations (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a895187a8d4080d24deaf71911b49b865}
+
+
+Get number of simulation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of simulation 
+\end{DoxyReturn}
+
+
+Definition at line 227 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getNumber().
+
+
+
+Referenced by Mpi\_\-master().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{xml__parameter_8h_a895187a8d4080d24deaf71911b49b865_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a5cef06e3ec85ec0f67e81658db7e0c42}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbSpecies@{Xml\_\-getNbSpecies}}
+\index{Xml\_\-getNbSpecies@{Xml\_\-getNbSpecies}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbSpecies}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbSpecies (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a5cef06e3ec85ec0f67e81658db7e0c42}
+
+
+Get the number of species. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of species 
+\end{DoxyReturn}
+
+
+Definition at line 460 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getCount().
+
+
+
+Referenced by Data\_\-allocScore(), Mpi\_\-slave(), and Mpi\_\-writer().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{xml__parameter_8h_a5cef06e3ec85ec0f67e81658db7e0c42_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a61b2b14f1974b2da0977164a0eb7e647}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbTriesMod@{Xml\_\-getNbTriesMod}}
+\index{Xml\_\-getNbTriesMod@{Xml\_\-getNbTriesMod}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbTriesMod}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbTriesMod (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a61b2b14f1974b2da0977164a0eb7e647}
+
+
+Get number of tries for modelling. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of tries 
+\end{DoxyReturn}
+
+
+Definition at line 240 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getNumber().
+
+
+
+Referenced by Data\_\-allocParameters(), Mod\_\-compute\_\-modeling(), Mpi\_\-sizeResultTab(), and Sd\_\-compute\_\-standard\_\-deviation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{xml__parameter_8h_a61b2b14f1974b2da0977164a0eb7e647_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_af202e24f690b234cc2c0a09a065e7de4}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNbTriesSa@{Xml\_\-getNbTriesSa}}
+\index{Xml\_\-getNbTriesSa@{Xml\_\-getNbTriesSa}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNbTriesSa}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNbTriesSa (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_af202e24f690b234cc2c0a09a065e7de4}
+
+
+Get number of tries for the simulated annealing and minimization. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of tries 
+\end{DoxyReturn}
+
+
+Definition at line 253 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getNumber().
+
+
+
+Referenced by Data\_\-allocParameters(), Min\_\-my\_\-f(), Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{xml__parameter_8h_af202e24f690b234cc2c0a09a065e7de4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a718b56ca89a1aba6bf2519b575394a72}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getNumber@{Xml\_\-getNumber}}
+\index{Xml\_\-getNumber@{Xml\_\-getNumber}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getNumber}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getNumber (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{const char $\ast$}]{requete}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a718b56ca89a1aba6bf2519b575394a72}
+
+
+Get integer value. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em requete} & Xpath query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Read integer value in the xml 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Xml\_\-getNbGroup(), Xml\_\-getNbIters(), Xml\_\-getNbSimulations(), Xml\_\-getNbTriesMod(), and Xml\_\-getNbTriesSa().
+
+\hypertarget{xml__parameter_8h_aff7d36c23f3ed9618037ae6de0706fd6}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getReactionsNames@{Xml\_\-getReactionsNames}}
+\index{Xml\_\-getReactionsNames@{Xml\_\-getReactionsNames}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getReactionsNames}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ Xml\_\-getReactionsNames (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_aff7d36c23f3ed9618037ae6de0706fd6}
+
+
+Get name of reactions. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name of reactions 
+\end{DoxyReturn}
+
+
+Definition at line 541 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt, Xml\_\-getNbCouples(), and Xml\_\-getNbReaction().
+
+
+
+Referenced by Data\_\-allocScore().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{xml__parameter_8h_aff7d36c23f3ed9618037ae6de0706fd6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a569e99d4f8bdc2a9a9e69987690ab5bf}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getReactionsNamesinNoeud@{Xml\_\-getReactionsNamesinNoeud}}
+\index{Xml\_\-getReactionsNamesinNoeud@{Xml\_\-getReactionsNamesinNoeud}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getReactionsNamesinNoeud}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ Xml\_\-getReactionsNamesinNoeud (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{int}]{numero}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a569e99d4f8bdc2a9a9e69987690ab5bf}
+
+
+Get list of reactions. 
+
+Get list of species.
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em numero} & Number of the node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of reactions
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of species 
+\end{DoxyReturn}
+
+
+Definition at line 500 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt, and Xml\_\-getNbReactioninNoeud().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{xml__parameter_8h_a569e99d4f8bdc2a9a9e69987690ab5bf_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a9d0d9ce69bd349b6b7344fbaa6a63fc0}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getSpeciesFinalAmount@{Xml\_\-getSpeciesFinalAmount}}
+\index{Xml\_\-getSpeciesFinalAmount@{Xml\_\-getSpeciesFinalAmount}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getSpeciesFinalAmount}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getSpeciesFinalAmount (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{char $\ast$}]{species}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a9d0d9ce69bd349b6b7344fbaa6a63fc0}
+
+
+Get the final amount of one species. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em species} & Name of one species \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Final amount of one species 
+\end{DoxyReturn}
+
+
+Definition at line 665 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Xml\_\-getallSpeciesFinalAmount().
+
+\hypertarget{xml__parameter_8h_ac863f3b5d07ff53656292f8ae60ab56f}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getSpeciesWeight@{Xml\_\-getSpeciesWeight}}
+\index{Xml\_\-getSpeciesWeight@{Xml\_\-getSpeciesWeight}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getSpeciesWeight}]{\setlength{\rightskip}{0pt plus 5cm}int Xml\_\-getSpeciesWeight (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{char $\ast$}]{species}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ac863f3b5d07ff53656292f8ae60ab56f}
+
+
+Get Species weight. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em species} & Name of one species \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Species weight 
+\end{DoxyReturn}
+
+
+Definition at line 727 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Xml\_\-getallSpeciesWeight().
+
+\hypertarget{xml__parameter_8h_a7274d52d77ad2ac704e5d1a21cb29b5b}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getStepSize@{Xml\_\-getStepSize}}
+\index{Xml\_\-getStepSize@{Xml\_\-getStepSize}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getStepSize}]{\setlength{\rightskip}{0pt plus 5cm}double Xml\_\-getStepSize (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a7274d52d77ad2ac704e5d1a21cb29b5b}
+
+
+Get the step size. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Step size 
+\end{DoxyReturn}
+
+
+Definition at line 292 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getDoubleNumber().
+
+
+
+Referenced by Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{xml__parameter_8h_a7274d52d77ad2ac704e5d1a21cb29b5b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_ac7cfe344dbbf799ef808fb9a4e8ec391}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getString@{Xml\_\-getString}}
+\index{Xml\_\-getString@{Xml\_\-getString}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getString}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Xml\_\-getString (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ac7cfe344dbbf799ef808fb9a4e8ec391}
+
+
+Get name value. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Read name value in the xml 
+\end{DoxyReturn}
+
+
+Definition at line 190 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt.
+
+
+
+Referenced by Recuit\_\-redirectionFlux().
+
+\hypertarget{xml__parameter_8h_a5a0bcc251114c768459436767f263df3}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getTinitial@{Xml\_\-getTinitial}}
+\index{Xml\_\-getTinitial@{Xml\_\-getTinitial}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getTinitial}]{\setlength{\rightskip}{0pt plus 5cm}double Xml\_\-getTinitial (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a5a0bcc251114c768459436767f263df3}
+
+
+Get the initial temperature. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Initial temperature 
+\end{DoxyReturn}
+
+
+Definition at line 318 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getDoubleNumber().
+
+
+
+Referenced by Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{xml__parameter_8h_a5a0bcc251114c768459436767f263df3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_ac2fc806f9a568ba7272a8b1e235ba3e1}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-getTmin@{Xml\_\-getTmin}}
+\index{Xml\_\-getTmin@{Xml\_\-getTmin}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-getTmin}]{\setlength{\rightskip}{0pt plus 5cm}double Xml\_\-getTmin (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_ac2fc806f9a568ba7272a8b1e235ba3e1}
+
+
+Get the minimum temperature. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Minimum temperature 
+\end{DoxyReturn}
+
+
+Definition at line 344 of file xml\_\-parameter.c.
+
+
+
+References Xml\_\-getDoubleNumber().
+
+
+
+Referenced by Mpi\_\-slave(), and Recuit\_\-printParametre().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{xml__parameter_8h_ac2fc806f9a568ba7272a8b1e235ba3e1_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{xml__parameter_8h_a4ea94aa6222a68813a163a5c01e160f6}{
+\index{xml\_\-parameter.h@{xml\_\-parameter.h}!Xml\_\-loadConfig@{Xml\_\-loadConfig}}
+\index{Xml\_\-loadConfig@{Xml\_\-loadConfig}!xml_parameter.h@{xml\_\-parameter.h}}
+\subsubsection[{Xml\_\-loadConfig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xmlConfig\_\-t}$\ast$ Xml\_\-loadConfig (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{fichier}
+\end{DoxyParamCaption}
+)}}
+\label{xml__parameter_8h_a4ea94aa6222a68813a163a5c01e160f6}
+
+
+Initialize and load the parameter.xml. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em fichier} & Xml file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file xml\_\-parameter.c.
+
+
+
+References xmlConfig\_\-t::ctxt, xmlConfig\_\-t::doc, xmlConfig\_\-t::fichier, xmlConfig\_\-t::racine, and Xml\_\-freeConfig().
+
+
+
+Referenced by Data\_\-initXML().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{xml__parameter_8h_a4ea94aa6222a68813a163a5c01e160f6_cgraph}
+\end{center}
+\end{figure}
+
+

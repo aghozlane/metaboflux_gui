@@ -1,0 +1,1466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="simulation_8h" kind="file">
+    <compoundname>simulation.h</compoundname>
+    <includedby refid="data__parameters_8c" local="yes">metaboflux/src/data_parameters.c</includedby>
+    <includedby refid="gsl__min_8c" local="yes">metaboflux/src/gsl_min.c</includedby>
+    <includedby refid="gsl__mod_8c" local="yes">metaboflux/src/gsl_mod.c</includedby>
+    <includedby refid="gsl__recuit_8c" local="yes">metaboflux/src/gsl_recuit.c</includedby>
+    <includedby refid="gsl__sd_8c" local="yes">metaboflux/src/gsl_sd.c</includedby>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <includedby refid="simulation_8c" local="yes">metaboflux/src/simulation.c</includedby>
+    <invincdepgraph>
+      <node id="346">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="341">
+        <label>metaboflux/src/data_parameters.c</label>
+        <link refid="data__parameters_8c"/>
+      </node>
+      <node id="348">
+        <label>metaboflux/src/simulation.c</label>
+        <link refid="simulation_8c"/>
+      </node>
+      <node id="347">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+      <node id="345">
+        <label>metaboflux/src/gsl_sd.c</label>
+        <link refid="gsl__sd_8c"/>
+      </node>
+      <node id="344">
+        <label>metaboflux/src/gsl_recuit.c</label>
+        <link refid="gsl__recuit_8c"/>
+      </node>
+      <node id="340">
+        <label>metaboflux/include/simulation.h</label>
+        <link refid="simulation.h"/>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>metaboflux/src/gsl_mod.c</label>
+        <link refid="gsl__mod_8c"/>
+      </node>
+      <node id="342">
+        <label>metaboflux/src/gsl_min.c</label>
+        <link refid="gsl__min_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structTestReaction" prot="public">TestReaction</innerclass>
+    <innerclass refid="structScore" prot="public">Score</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="simulation_8h_1aba51915c87d64af47fb1cc59348961c9" prot="public" static="no">
+        <name>OK</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="30" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="simulation_8h_1acc2b5d50969ffb4eac4e86227f583b39" compoundref="simulation_8c" startline="69" endline="79">SBML_findReaction</referencedby>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" prot="public" static="no">
+        <name>END</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="31" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="simulation_8h_1a29d1d4fcf0dcc060769bf71e4e451b15" compoundref="simulation_8c" startline="158" endline="195">SBML_checkQuantite</referencedby>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="simulation_8h_1adfc3b19ea6cbce6f7cb2c54d16184974" prot="public" static="no">
+        <name>PURSUE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="32" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="simulation_8h_1a098f985acc1e888d45978407e2fdd3ed" prot="public" static="no">
+        <type>struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref></type>
+        <definition>typedef struct TestReaction TestReaction</definition>
+        <argsstring></argsstring>
+        <name>TestReaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="44"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simulation_8h_1ac810b29a03b8ad09c8483e56969e4a76" prot="public" static="no">
+        <type>struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref> *</type>
+        <definition>typedef struct TestReaction* pTestReaction</definition>
+        <argsstring></argsstring>
+        <name>pTestReaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="44"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simulation_8h_1a96a14e9308a8d1e59d380dc67b75f135" prot="public" static="no">
+        <type>struct <ref refid="structScore" kindref="compound">Score</ref></type>
+        <definition>typedef struct Score Score</definition>
+        <argsstring></argsstring>
+        <name>Score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="64"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simulation_8h_1ab4e2bc9a85e240d4c1a418b199638a61" prot="public" static="no">
+        <type>struct <ref refid="structScore" kindref="compound">Score</ref> *</type>
+        <definition>typedef struct Score * pScore</definition>
+        <argsstring></argsstring>
+        <name>pScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="simulation_8h_1a611031d9c60ad182fade6ae74e6b7e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_initEspeceAmounts</definition>
+        <argsstring>(Model_t *, pEspeces, int)</argsstring>
+        <name>SBML_initEspeceAmounts</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEspeces" kindref="compound">Especes</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="67" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="46" bodyend="58"/>
+        <references refid="especes_8c_1a4ca513fe43dc3919cab3044166d9f9fb" compoundref="especes_8c" startline="134" endline="138">Especes_save</references>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1acc2b5d50969ffb4eac4e86227f583b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SBML_findReaction</definition>
+        <argsstring>(char **, const char *, int)</argsstring>
+        <name>SBML_findReaction</name>
+        <param>
+          <type>char **</type>
+          <defname>reaction</defname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <defname>react</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_reaction</defname>
+        </param>
+        <briefdescription>
+<para>Determine if the reaction is study. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reaction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of reactions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>react</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structReaction" kindref="compound">Reaction</ref> of interest </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_reaction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of reactions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of the molecules if it&apos;s study </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="70" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="69" bodyend="79"/>
+        <references refid="simulation_8h_1aba51915c87d64af47fb1cc59348961c9" compoundref="simulation_8h" startline="30">OK</references>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a97ee89b0e47e49cdcf5579255b8cd3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double SBML_evalExpression</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>SBML_evalExpression</name>
+        <param>
+          <type>const char *</type>
+          <defname>formule</defname>
+        </param>
+        <briefdescription>
+<para>Get the reaction ratio define in the sbml. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>formule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Formule SBML </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return double value of the constraint </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="73" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="88" bodyend="92"/>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a4e69a993d7460adf46b17909e8991565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_setReactions</definition>
+        <argsstring>(Model_t *, pEspeces, pScore, double *, int, int)</argsstring>
+        <name>SBML_setReactions</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>reactions_ratio</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbReactions</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEspeces" kindref="compound">Especes</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reactions_ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of computed reaction ratio </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbReactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of reaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="76" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="105" bodyend="146"/>
+        <references refid="especes_8c_1ab485f86ce621d4a8aaec5d1bc78f6105" compoundref="especes_8c" startline="64" endline="85">Especes_allocReactions</references>
+        <references refid="especes_8c_1a1749f688ebd8c3ffb4f6c16e5093e351" compoundref="especes_8c" startline="214" endline="229">Especes_find</references>
+        <references refid="structScore_1a9676111bf63c8d420921fe1c9187670d" compoundref="simulation_8h" startline="56">Score::nb_reaction</references>
+        <references refid="simulation_8h_1aba51915c87d64af47fb1cc59348961c9" compoundref="simulation_8h" startline="30">OK</references>
+        <references refid="structScore_1af8245823c6e659cee49999dd3452a301" compoundref="simulation_8h" startline="55">Score::reaction</references>
+        <references refid="simulation_8c_1a2aee345900876fe3c6888dfc620265b0" compoundref="simulation_8c" startline="88" endline="92">SBML_evalExpression</references>
+        <references refid="simulation_8c_1a56b2d00e703b09b6c3f52e971517ecb3" compoundref="simulation_8c" startline="69" endline="79">SBML_findReaction</references>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a29d1d4fcf0dcc060769bf71e4e451b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SBML_checkQuantite</definition>
+        <argsstring>(Model_t *, Reaction_t *, int, pEspeces)</argsstring>
+        <name>SBML_checkQuantite</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type>Reaction_t *</type>
+          <defname>react</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <briefdescription>
+<para>Determine the number of reaction for one molecule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>react</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structReaction" kindref="compound">Reaction</ref> id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of reaction for one molecule </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="79" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="158" bodyend="195"/>
+        <references refid="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" compoundref="simulation_8h" startline="31">END</references>
+        <references refid="especes_8c_1a1749f688ebd8c3ffb4f6c16e5093e351" compoundref="especes_8c" startline="214" endline="229">Especes_find</references>
+        <references refid="especes_8c_1a95287ee5ed282bd8842d2456b6c5a220" compoundref="especes_8c" startline="252" endline="255">Especes_getQuantite</references>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a8d9458c6636b5b95598434453ad6e3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Reaction_t *</type>
+        <definition>Reaction_t* SBML_reactChoice</definition>
+        <argsstring>(pEspeces, const gsl_rng *, int)</argsstring>
+        <name>SBML_reactChoice</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type>const gsl_rng *</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ref</defname>
+        </param>
+        <briefdescription>
+<para>Determine randomly the reaction to achieve for several nodes reactions. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number reference of one molecule </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Id of the selected reaction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="82" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="206" bodyend="233"/>
+        <references refid="structReaction_1ac0afd1990830008577958aec1d974e5d" compoundref="especes_8h" startline="36">Reaction::link</references>
+        <references refid="structReaction_1a8f0edc9c1a0652917a5a18d3e9fe931a" compoundref="especes_8h" startline="37">Reaction::ratio</references>
+        <references refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" compoundref="especes_8h" startline="38">Reaction::suivant</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a0421946146569268a97c95c27e57a65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_reaction</definition>
+        <argsstring>(Model_t *, pEspeces, Reaction_t *, int)</argsstring>
+        <name>SBML_reaction</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type>Reaction_t *</type>
+          <defname>react</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <briefdescription>
+<para>Simulation of a discrete transision. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>react</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structReaction" kindref="compound">Reaction</ref> id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="85" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="244" bodyend="270"/>
+        <references refid="especes_8c_1a1749f688ebd8c3ffb4f6c16e5093e351" compoundref="especes_8c" startline="214" endline="229">Especes_find</references>
+        <references refid="especes_8c_1a95287ee5ed282bd8842d2456b6c5a220" compoundref="especes_8c" startline="252" endline="255">Especes_getQuantite</references>
+        <references refid="especes_8c_1a673f93f68d9ea2b84db4a73c2f4f5b39" compoundref="especes_8c" startline="239" endline="242">Especes_setQuantite</references>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1abb6b027abfcddf0b783bdb3bc29e47d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_allocTest</definition>
+        <argsstring>(pTestReaction, int)</argsstring>
+        <name>SBML_allocTest</name>
+        <param>
+          <type><ref refid="structTestReaction" kindref="compound">pTestReaction</ref></type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbReactions</defname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct pTestReaction. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Empty struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbReactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of reactions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="88" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="279" bodyend="296"/>
+        <references refid="structTestReaction_1a04037c90652dceaab2f416e099be460c" compoundref="simulation_8h" startline="43">TestReaction::minStepTab</references>
+        <references refid="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" compoundref="simulation_8h" startline="42">TestReaction::tabReactions</references>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a9103674f503bec1df341d62554e1a9c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_freeTest</definition>
+        <argsstring>(pTestReaction)</argsstring>
+        <name>SBML_freeTest</name>
+        <param>
+          <type><ref refid="structTestReaction" kindref="compound">pTestReaction</ref></type>
+          <defname>T</defname>
+        </param>
+        <briefdescription>
+<para>Free memory of the struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref> gives data on reaction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="91" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="304" bodyend="309"/>
+        <references refid="structTestReaction_1a04037c90652dceaab2f416e099be460c" compoundref="simulation_8h" startline="43">TestReaction::minStepTab</references>
+        <references refid="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" compoundref="simulation_8h" startline="42">TestReaction::tabReactions</references>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SBML_EstimationReaction</definition>
+        <argsstring>(Model_t *, pTestReaction, pEspeces, int, int)</argsstring>
+        <name>SBML_EstimationReaction</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structTestReaction" kindref="compound">pTestReaction</ref></type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ref</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEspeces" kindref="compound">Especes</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref> gives data on reaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number reference of one molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estimated number of feasible step by reaction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="94" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="322" bodyend="340"/>
+        <references refid="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" compoundref="simulation_8h" startline="31">END</references>
+        <references refid="structReaction_1ac0afd1990830008577958aec1d974e5d" compoundref="especes_8h" startline="36">Reaction::link</references>
+        <references refid="structTestReaction_1a04037c90652dceaab2f416e099be460c" compoundref="simulation_8h" startline="43">TestReaction::minStepTab</references>
+        <references refid="simulation_8c_1a5630aef6f927ffef62f6535977ae8200" compoundref="simulation_8c" startline="158" endline="195">SBML_checkQuantite</references>
+        <references refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" compoundref="especes_8h" startline="38">Reaction::suivant</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <references refid="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" compoundref="simulation_8h" startline="42">TestReaction::tabReactions</references>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SBML_simulate</definition>
+        <argsstring>(Model_t *, pEspeces, const gsl_rng *, pTestReaction, char **, int, int, int)</argsstring>
+        <name>SBML_simulate</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type>const gsl_rng *</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type><ref refid="structTestReaction" kindref="compound">pTestReaction</ref></type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>banned</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbBanned</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ref</defname>
+        </param>
+        <briefdescription>
+<para>Simulate one step of petri net. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structTestReaction" kindref="compound">TestReaction</ref> gives data on reaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>banned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of banned compound </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbBanned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of banned compound </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number reference of one molecule </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Condition of stop/pursue </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="97" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="356" bodyend="407"/>
+        <references refid="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" compoundref="simulation_8h" startline="31">END</references>
+        <references refid="especes_8c_1a3391146ab0a83b7db9cbe3bdaec9fdab" compoundref="especes_8c" startline="265" endline="281">Especes_getNbreactions</references>
+        <references refid="especes_8c_1a95287ee5ed282bd8842d2456b6c5a220" compoundref="especes_8c" startline="252" endline="255">Especes_getQuantite</references>
+        <references refid="structReaction_1ac0afd1990830008577958aec1d974e5d" compoundref="especes_8h" startline="36">Reaction::link</references>
+        <references refid="simulation_8h_1adfc3b19ea6cbce6f7cb2c54d16184974" compoundref="simulation_8h" startline="32">PURSUE</references>
+        <references refid="simulation_8c_1a11e6f95793902cf6d16dcd127d09ab7a" compoundref="simulation_8c" startline="279" endline="296">SBML_allocTest</references>
+        <references refid="simulation_8c_1a5630aef6f927ffef62f6535977ae8200" compoundref="simulation_8c" startline="158" endline="195">SBML_checkQuantite</references>
+        <references refid="simulation_8c_1a26a3a6e92c8b51177e1e2c42c20fec30" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</references>
+        <references refid="simulation_8c_1a583a492a3d9db3c0f15b581f9762e85b" compoundref="simulation_8c" startline="304" endline="309">SBML_freeTest</references>
+        <references refid="simulation_8c_1ac9187b648cc6e8a588813ab31c12193f" compoundref="simulation_8c" startline="206" endline="233">SBML_reactChoice</references>
+        <references refid="simulation_8c_1a463648eb9010400731a5ffc3a13e56dd" compoundref="simulation_8c" startline="244" endline="270">SBML_reaction</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_score</definition>
+        <argsstring>(Model_t *, pEspeces, pScore, double *, int, int)</argsstring>
+        <name>SBML_score</name>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <defname>molecules</defname>
+        </param>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>reactions_ratio</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbReactions</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbEspeces</defname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEspeces" kindref="compound">Especes</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEspeces" kindref="compound">Especes</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reactions_ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of computed reaction ratio </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbReactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of reactions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="100" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="420" bodyend="455"/>
+        <references refid="especes_8c_1a13dfbbe353cc238a9f53e5a183904fa4" compoundref="especes_8c" startline="149" endline="161">Especes_scoreSpecies</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structScore_1a9676111bf63c8d420921fe1c9187670d" compoundref="simulation_8h" startline="56">Score::nb_reaction</references>
+        <references refid="simulation_8h_1aba51915c87d64af47fb1cc59348961c9" compoundref="simulation_8h" startline="30">OK</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1af8245823c6e659cee49999dd3452a301" compoundref="simulation_8h" startline="55">Score::reaction</references>
+        <references refid="simulation_8c_1a2aee345900876fe3c6888dfc620265b0" compoundref="simulation_8c" startline="88" endline="92">SBML_evalExpression</references>
+        <references refid="simulation_8c_1a56b2d00e703b09b6c3f52e971517ecb3" compoundref="simulation_8c" startline="69" endline="79">SBML_findReaction</references>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a12fd385702f666987a4b569e84abed70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_debugPrintHead</definition>
+        <argsstring>(FILE *, int, char **)</argsstring>
+        <name>SBML_debugPrintHead</name>
+        <param>
+          <type>FILE *</type>
+          <defname>debugFile</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+<para>Print the head of the debug file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>debugFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File use for debug </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules/reactions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules/reactions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="103" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="465" bodyend="474"/>
+        <referencedby refid="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a69e2b7c32f7b66e66d28030d00917fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_debugPrint</definition>
+        <argsstring>(FILE *, int, int, double *, double)</argsstring>
+        <name>SBML_debugPrint</name>
+        <param>
+          <type>FILE *</type>
+          <defname>debugFile</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tailleSpecies</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>quantite</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>result</defname>
+        </param>
+        <briefdescription>
+<para>Print the debuf file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>debugFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File use for debug </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tailleSpecies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules/reactions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantity of molecules/reactions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Energy value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="106" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="486" bodyend="502"/>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_compute_simulation</definition>
+        <argsstring>(pScore, Model_t *, double *, gsl_rng *, char **, int)</argsstring>
+        <name>SBML_compute_simulation</name>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>reactions_ratio</defname>
+        </param>
+        <param>
+          <type>gsl_rng *</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>banned</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbBanned</defname>
+        </param>
+        <briefdescription>
+<para>Simulation of metabolic network. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reactions_ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of computed reaction ratio </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>banned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of banned compound </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbBanned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of banned compound </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="109" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="515" bodyend="550"/>
+        <references refid="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" compoundref="simulation_8h" startline="31">END</references>
+        <references refid="especes_8c_1ad40ac9cd39a9c9b70657f8e87209bc4d" compoundref="especes_8c" startline="40" endline="53">Especes_alloc</references>
+        <references refid="especes_8c_1aa4c9945c5a0484f255ebe9ae6e1e7d30" compoundref="especes_8c" startline="94" endline="101">Especes_free</references>
+        <references refid="simulation_8c_1ab96386e57e0e58e356974d26ced8eeb2" compoundref="simulation_8c" startline="46" endline="58">SBML_initEspeceAmounts</references>
+        <references refid="simulation_8c_1ad857fd679e78b0081d6c6898f6a51f52" compoundref="simulation_8c" startline="420" endline="455">SBML_score</references>
+        <references refid="simulation_8c_1a744147acf49de269630c456d0c5f4247" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</references>
+        <references refid="simulation_8c_1a36a9d2b343c5fcf0f4d88e5720fb86ce" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</references>
+        <references refid="structScore_1a103843cc09238d77051b5a6ca4e48173" compoundref="simulation_8h" startline="57">Score::tailleReactions</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_score_add</definition>
+        <argsstring>(pScore, pScore, FILE *)</argsstring>
+        <name>SBML_score_add</name>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result_temp</defname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <defname>debugFile</defname>
+        </param>
+        <briefdescription>
+<para>Add scores. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> used for all the simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> used at each simulation step </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debugFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File use for debug </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="112" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="560" bodyend="582"/>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="simulation_8c_1a792ef36e542159096d4567a125aee565" compoundref="simulation_8c" startline="486" endline="502">SBML_debugPrint</references>
+        <references refid="simulation_8c_1a8823ee151e44d0d0b6b977bcebc7463e" compoundref="simulation_8c" startline="465" endline="474">SBML_debugPrintHead</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a785b8432d885cc9e8ef50413c3643f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_score_mean</definition>
+        <argsstring>(pScore, int)</argsstring>
+        <name>SBML_score_mean</name>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+<para>Mean quantities for score. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of simulation step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="115" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="591" bodyend="598"/>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SBML_compute_simulation_mean</definition>
+        <argsstring>(FILE *, pScore, pScore, Model_t *, double *, gsl_rng *, char **, int, int)</argsstring>
+        <name>SBML_compute_simulation_mean</name>
+        <param>
+          <type>FILE *</type>
+          <defname>debugFile</defname>
+        </param>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+          <defname>result_temp</defname>
+        </param>
+        <param>
+          <type>Model_t *</type>
+          <defname>mod</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>reactions_ratio</defname>
+        </param>
+        <param>
+          <type>gsl_rng *</type>
+          <defname>r</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>banned</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nbBanned</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_simulation</defname>
+        </param>
+        <briefdescription>
+<para>X time simulation of metabolic network. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>debugFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File use for debug </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> used for all the simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structScore" kindref="compound">Score</ref> used at each simulation step </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Model of the SBML file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reactions_ratio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of computed reaction ratio </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>banned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of banned compound </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbBanned</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of banned compound </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_simulation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of simulation step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="118" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/simulation.c" bodystart="614" bodyend="659"/>
+        <references refid="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" compoundref="simulation_8h" startline="31">END</references>
+        <references refid="especes_8c_1ad40ac9cd39a9c9b70657f8e87209bc4d" compoundref="especes_8c" startline="40" endline="53">Especes_alloc</references>
+        <references refid="especes_8c_1aa4c9945c5a0484f255ebe9ae6e1e7d30" compoundref="especes_8c" startline="94" endline="101">Especes_free</references>
+        <references refid="simulation_8c_1ab96386e57e0e58e356974d26ced8eeb2" compoundref="simulation_8c" startline="46" endline="58">SBML_initEspeceAmounts</references>
+        <references refid="simulation_8c_1ad857fd679e78b0081d6c6898f6a51f52" compoundref="simulation_8c" startline="420" endline="455">SBML_score</references>
+        <references refid="simulation_8c_1a4055d968d7db6b8f18d71f607a0d20d7" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</references>
+        <references refid="simulation_8c_1ad331b2a26934ff926772cf4329c4e359" compoundref="simulation_8c" startline="591" endline="598">SBML_score_mean</references>
+        <references refid="simulation_8c_1a744147acf49de269630c456d0c5f4247" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</references>
+        <references refid="simulation_8c_1a36a9d2b343c5fcf0f4d88e5720fb86ce" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simulate a petri net. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>27 octobre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>SIMULATION_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIMULATION_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SBML<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="simulation_8h_1aba51915c87d64af47fb1cc59348961c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OK<sp/>-1</highlight></codeline>
+<codeline lineno="31" refid="simulation_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>END<sp/>0</highlight></codeline>
+<codeline lineno="32" refid="simulation_8h_1adfc3b19ea6cbce6f7cb2c54d16184974" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PURSUE<sp/>1</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Structure<sp/>de<sp/>test<sp/>des<sp/>reactions<sp/>*/</highlight></codeline>
+<codeline lineno="40" refid="structTestReaction" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structTestReaction" kindref="compound" tooltip="Structure used to test reactions.">TestReaction</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42" refid="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" refkind="member"><highlight class="normal"><sp/><sp/>Reaction_t<sp/>**<ref refid="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" kindref="member">tabReactions</ref>;<sp/></highlight></codeline>
+<codeline lineno="43" refid="structTestReaction_1a04037c90652dceaab2f416e099be460c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structTestReaction_1a04037c90652dceaab2f416e099be460c" kindref="member">minStepTab</ref>;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<ref refid="simulation_8h_1a098f985acc1e888d45978407e2fdd3ed" kindref="member">TestReaction</ref>,*<ref refid="simulation_8h_1ac810b29a03b8ad09c8483e56969e4a76" kindref="member">pTestReaction</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Structure<sp/>contenant<sp/>toutes<sp/>les<sp/>informations<sp/>issues<sp/>des<sp/>simulations<sp/>*/</highlight></codeline>
+<codeline lineno="51" refid="structScore" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">Score</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53" refid="structScore_1a29547e98673d89a8964a747015b2c26c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="structScore_1af8245823c6e659cee49999dd3452a301" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="structScore_1af8245823c6e659cee49999dd3452a301" kindref="member">reaction</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="structScore_1a9676111bf63c8d420921fe1c9187670d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structScore_1a9676111bf63c8d420921fe1c9187670d" kindref="member">nb_reaction</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="structScore_1a103843cc09238d77051b5a6ca4e48173" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structScore_1a103843cc09238d77051b5a6ca4e48173" kindref="member">tailleReactions</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" kindref="member">tailleSpecies</ref>;<sp/></highlight></codeline>
+<codeline lineno="59" refid="structScore_1aee1e19fc90d330de6fced582dff7102c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<ref refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" kindref="member">species</ref>;<sp/></highlight></codeline>
+<codeline lineno="61" refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" kindref="member">nb_species</ref>;<sp/></highlight></codeline>
+<codeline lineno="62" refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" kindref="member">species_amount</ref>;<sp/></highlight></codeline>
+<codeline lineno="63" refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" kindref="member">species_weight</ref>;<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<ref refid="simulation_8h_1a96a14e9308a8d1e59d380dc67b75f135" kindref="member">Score</ref>,<sp/>*<ref refid="simulation_8h_1ab4e2bc9a85e240d4c1a418b199638a61" kindref="member">pScore</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>de<sp/>la<sp/>quantite<sp/>des<sp/>especes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1ab96386e57e0e58e356974d26ced8eeb2" kindref="member" tooltip="Alloc memory and initialize the struct Especes.">SBML_initEspeceAmounts</ref>(Model_t<sp/>*,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Determine<sp/>si<sp/>la<sp/>reation<sp/>indique<sp/>est<sp/>etudiee<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a56b2d00e703b09b6c3f52e971517ecb3" kindref="member" tooltip="Determine if the reaction is study.">SBML_findReaction</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Caste<sp/>la<sp/>formule<sp/>en<sp/>double<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a2aee345900876fe3c6888dfc620265b0" kindref="member" tooltip="Get the reaction ratio define in the sbml.">SBML_evalExpression</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>des<sp/>reactions<sp/>et<sp/>des<sp/>ratios<sp/>auquelles<sp/>participent<sp/>chaque<sp/>espece<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a744147acf49de269630c456d0c5f4247" kindref="member" tooltip="Alloc memory and initialize the struct Especes.">SBML_setReactions</ref>(Model_t<sp/>*,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/>pScore,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Determine<sp/>le<sp/>nombre<sp/>de<sp/>reaction<sp/>possible<sp/>a<sp/>partir<sp/>de<sp/>la<sp/>quantite<sp/>des<sp/>reactifs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a5630aef6f927ffef62f6535977ae8200" kindref="member" tooltip="Determine the number of reaction for one molecule.">SBML_checkQuantite</ref>(Model_t<sp/>*,<sp/>Reaction_t<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Determine<sp/>aleatoire<sp/>la<sp/>reaction<sp/>a<sp/>realiser<sp/>pour<sp/>les<sp/>noeuds<sp/>de<sp/>plusieurs<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">Reaction_t<sp/>*<sp/><ref refid="simulation_8c_1ac9187b648cc6e8a588813ab31c12193f" kindref="member" tooltip="Determine randomly the reaction to achieve for several nodes reactions.">SBML_reactChoice</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_rng<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Simulation<sp/>d&apos;une<sp/>transision<sp/>discrete<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a463648eb9010400731a5ffc3a13e56dd" kindref="member" tooltip="Simulation of a discrete transision.">SBML_reaction</ref>(Model_t<sp/>*,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/>Reaction_t<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Alloue<sp/>la<sp/>memoire<sp/>necessaire<sp/>a<sp/>la<sp/>struture<sp/>de<sp/>test<sp/>des<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a11e6f95793902cf6d16dcd127d09ab7a" kindref="member" tooltip="Alloc memory and initialize the struct pTestReaction.">SBML_allocTest</ref>(pTestReaction,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Libere<sp/>la<sp/>memoire<sp/>allouee<sp/>a<sp/>la<sp/>struture<sp/>de<sp/>test<sp/>des<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a583a492a3d9db3c0f15b581f9762e85b" kindref="member" tooltip="Free memory of the struct TestReaction.">SBML_freeTest</ref>(pTestReaction);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Estimation<sp/>du<sp/>nombre<sp/>de<sp/>reaction<sp/>realisable<sp/>par<sp/>reaction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a26a3a6e92c8b51177e1e2c42c20fec30" kindref="member" tooltip="Alloc memory and initialize the struct Especes.">SBML_EstimationReaction</ref>(Model_t<sp/>*,<sp/>pTestReaction,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Simulation<sp/>des<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a36a9d2b343c5fcf0f4d88e5720fb86ce" kindref="member" tooltip="Simulate one step of petri net.">SBML_simulate</ref>(<sp/>Model_t<sp/>*,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_rng<sp/>*,<sp/>pTestReaction,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fonction<sp/>de<sp/>score<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1ad857fd679e78b0081d6c6898f6a51f52" kindref="member" tooltip="Alloc memory and initialize the struct Especes.">SBML_score</ref>(Model_t<sp/>*,<sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref>,<sp/>pScore,<sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Affichage<sp/>de<sp/>l&apos;entete<sp/>du<sp/>fichier<sp/>debug<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a8823ee151e44d0d0b6b977bcebc7463e" kindref="member" tooltip="Print the head of the debug file.">SBML_debugPrintHead</ref>(FILE<sp/>*,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Affiche<sp/>les<sp/>resultats<sp/>necessaires<sp/>au<sp/>calcul<sp/>de<sp/>l&apos;ecart<sp/>type*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a792ef36e542159096d4567a125aee565" kindref="member" tooltip="Print the debuf file.">SBML_debugPrint</ref>(FILE<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Simulation<sp/>du<sp/>reseau<sp/>metabolique<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a0eb4dda20b3a9cc639f50421f919f24e" kindref="member" tooltip="Simulation of metabolic network.">SBML_compute_simulation</ref>(pScore,<sp/>Model_t<sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/>gsl_rng<sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Addition<sp/>des<sp/>scores<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1a4055d968d7db6b8f18d71f607a0d20d7" kindref="member" tooltip="Add scores.">SBML_score_add</ref>(pScore,<sp/>pScore,<sp/>FILE<sp/>*);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Moyenne<sp/>des<sp/>resultats<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1ad331b2a26934ff926772cf4329c4e359" kindref="member" tooltip="Mean quantities for score.">SBML_score_mean</ref>(pScore,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Simulation<sp/>du<sp/>reseau<sp/>metabolique<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simulation_8c_1aeef27fa70d7f408e820193ef0a2c5496" kindref="member" tooltip="X time simulation of metabolic network.">SBML_compute_simulation_mean</ref>(FILE<sp/>*,<sp/>pScore,<sp/>pScore,<sp/>Model_t<sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/>gsl_rng<sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SIMULATION_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h"/>
+  </compounddef>
+</doxygen>

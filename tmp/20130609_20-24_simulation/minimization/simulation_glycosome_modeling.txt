@@ -1,0 +1,6 @@
+Energy	Succinate_2	Succinate_1	Acetate	transition_13	transition_15	transition_14	transition_70	transition_22	transition_17	
+0	400	1000	600	NA	NA	NA	NA	NA	NA	
+0.364	507	803	689	32.84	0.89	66.26	37.04	1.17	61.79	
+0.769	159	954	885	0.63	31.15	68.22	11.89	16.90	71.22	
+0.799	648	583	769	34.68	4.05	61.27	53.16	1.51	45.33	
+2.672	0	31	1968	0.94	90.07	8.99	0.15	77.72	22.13	

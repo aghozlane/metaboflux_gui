@@ -1,0 +1,3 @@
+line 26 -> Error : The <sbml> container element must declare the XML Namespace for SBML, and this declaration must be consistent with the values of the 'level' and 'version' attributes on the <sbml> element. 
+Reference: L3V1 Section 4.1
+

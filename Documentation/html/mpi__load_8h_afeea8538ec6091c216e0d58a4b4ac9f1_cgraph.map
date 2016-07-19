@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$data__parameters_8c.html#a2f07353fedc54fb1a4c41e2e63864582" title="Free memory allocated to the various objects of the program." alt="" coords="171,84,304,113"/>
+<area shape="rect" id="node7" href="$data__parameters_8c.html#a84a6f4f7e4b51ce3fe9e21f00698cd67" title="Record parameters of the simulation." alt="" coords="176,268,299,297"/>
+<area shape="rect" id="node44" href="$mpi__load_8c.html#a29a0e94b1a53bfd1da2a10cb0b232444" title="Enter in the program for standard deviation." alt="" coords="164,1431,311,1460"/>
+<area shape="rect" id="node46" href="$mpi__load_8c.html#a39027f10a55694561083f05335d3cbbf" title="Disconnection to the interface." alt="" coords="156,1484,319,1513"/>
+<area shape="rect" id="node48" href="$mpi__load_8c.html#a68f6a4d5212d2eb5e853f8ab5d3f0f97" title="End MPI execution environment." alt="" coords="192,1537,283,1567"/>
+<area shape="rect" id="node50" href="$mpi__load_8c.html#a15360d2e2ee4efbaa5dccd3a75510d09" title="Enter in the program for standard deviation." alt="" coords="204,1591,271,1620"/>
+<area shape="rect" id="node52" href="$mpi__load_8c.html#ab20c9a4b503fb163951ea00dea50f8d3" title="Master process." alt="" coords="675,1060,765,1089"/>
+<area shape="rect" id="node60" href="$mpi__load_8c.html#a755d585e48a596f6599ce557b09c7164" title="Mpi_slave" alt="" coords="197,927,277,956"/>
+<area shape="rect" id="node116" href="$mpi__load_8c.html#a91c7d854c0f96844424b979434bcb1ab" title="Master process." alt="" coords="196,1273,279,1303"/>
+<area shape="rect" id="node5" href="$xml__parameter_8c.html#a8b93c82fdf9f830d2170f8dfe1e206bd" title="Free the Struct xmlConfig_t." alt="" coords="895,5,1007,35"/>
+<area shape="rect" id="node9" href="$data__parameters_8c.html#a014a6fdcabd0d2dbfee53acf4a32e218" title="Allocate the different elements related to he struct Equations." alt="" coords="403,425,544,455"/>
+<area shape="rect" id="node17" href="$data__parameters_8c.html#ac934a73d670600f3dc8d3a6a6b398463" title="Copy the partial table x in the full table y." alt="" coords="399,268,548,297"/>
+<area shape="rect" id="node37" href="$data__parameters_8c.html#a9f9a132c1df2f3c60d773713b5f8f808" title="Load SBML file." alt="" coords="419,215,528,244"/>
+<area shape="rect" id="node39" href="$data__parameters_8c.html#a9a36eeea775961ef075a27520e9d7c65" title="Load parameter file." alt="" coords="423,109,524,139"/>
+<area shape="rect" id="node11" href="$xml__parameter_8c.html#a62bde7fe978c5b428aedf7011ef5444f" title="Get list of kinetic laws." alt="" coords="653,399,787,428"/>
+<area shape="rect" id="node13" href="$xml__parameter_8c.html#aebbd1beeffa0d86d3fb414443579bd2c" title="Get the kinetic law for one node." alt="" coords="635,452,805,481"/>
+<area shape="rect" id="node15" href="$xml__parameter_8c.html#a4cd7ca36e09a00f6eead68fa2fe9c181" title="Get the number of equations." alt="" coords="648,505,792,535"/>
+<area shape="rect" id="node19" href="$xml__parameter_8c.html#a08ff3dcc547d1e4cd67fc5cdcf76207b" title="Get list of banned species." alt="" coords="663,241,777,271"/>
+<area shape="rect" id="node21" href="$xml__parameter_8c.html#a76777435e4d20d96bf38532590dde9df" title="Get the number of banned species." alt="" coords="861,216,1040,245"/>
+<area shape="rect" id="node24" href="$xml__parameter_8c.html#af2cfdc761c81f2a612b89c4287532b59" title="Get the number of couples." alt="" coords="653,295,787,324"/>
+<area shape="rect" id="node26" href="$xml__parameter_8c.html#a970461b8c6940e3446ae533b7ad02784" title="Get the number of parameters." alt="" coords="643,84,797,113"/>
+<area shape="rect" id="node28" href="$xml__parameter_8c.html#abe3e4fdcc6be469255833ced99af8fd5" title="Count the number of reaction in one node." alt="" coords="627,137,813,167"/>
+<area shape="rect" id="node30" href="$xml__parameter_8c.html#afeff8e3300946c36cea36ddd964e9265" title="Get number of tries for modelling." alt="" coords="649,609,791,639"/>
+<area shape="rect" id="node34" href="$xml__parameter_8c.html#a7b67ce794add8c04563e07f9d25c6096" title="Get number of tries for the simulated annealing and minimization." alt="" coords="885,631,1016,660"/>
+<area shape="rect" id="node32" href="$xml__parameter_8c.html#a4024e4decc374dde9740834c575c2057" title="Get integer value." alt="" coords="1089,953,1204,983"/>
+<area shape="rect" id="node41" href="$xml__parameter_8c.html#ab12b2036f57ce74c1c2ac44a19434bda" title="Initialize and load the parameter.xml." alt="" coords="663,31,777,60"/>
+<area shape="rect" id="node54" href="$xml__parameter_8c.html#ade93fd888d36e908c7386f25b2836137" title="Get number of group." alt="" coords="889,1060,1012,1089"/>
+<area shape="rect" id="node57" href="$xml__parameter_8c.html#a503fd8e4167aef94fa22e0c71a5b6afa" title="Get number of simulation." alt="" coords="873,1007,1028,1036"/>
+<area shape="rect" id="node62" href="$gsl__min_8c.html#a27da5814ca1f00e95f1a4ee550b8484b" title="Compute the minimization." alt="" coords="384,823,563,852"/>
+<area shape="rect" id="node77" href="$gsl__mod_8c.html#ae6b640decd2c333ae31603a88fc37c88" title="Compute the modeling." alt="" coords="392,716,555,745"/>
+<area shape="rect" id="node84" href="$mpi__load_8c.html#a51abf0d1cf9db4db8341178dd9ecaba0" title="Allocate the result tab." alt="" coords="405,1247,541,1276"/>
+<area shape="rect" id="node86" href="$mpi__load_8c.html#ada1c9a2e47c832b4c9e3d372d6caf9ee" title="Determine the size of the result tab." alt="" coords="407,1193,540,1223"/>
+<area shape="rect" id="node89" href="$gsl__recuit_8c.html#a307fb17177314df2a79d0833be12e379" title="Compute the simulated annealing." alt="" coords="396,769,551,799"/>
+<area shape="rect" id="node95" href="$gsl__sd_8c.html#a1379b501622f4bc112b49be952e19022" title="Compute the standard deviation." alt="" coords="368,609,579,639"/>
+<area shape="rect" id="node100" href="$xml__parameter_8c.html#af051a5017271240c72cad70ee82b6af7" title="Get the Boltzmann value." alt="" coords="408,927,539,956"/>
+<area shape="rect" id="node102" href="$xml__parameter_8c.html#a9e2c04caf11e5a95f5aa22f6f37f479d" title="Get the variation of temperature." alt="" coords="425,980,521,1009"/>
+<area shape="rect" id="node104" href="$xml__parameter_8c.html#ae49d86627f34fb18c996a3060e2a297a" title="Get number of iteration." alt="" coords="895,953,1007,983"/>
+<area shape="rect" id="node107" href="$xml__parameter_8c.html#aa38353601b43859be1905fb37632fbf0" title="Get the number of species." alt="" coords="407,1140,540,1169"/>
+<area shape="rect" id="node110" href="$xml__parameter_8c.html#a1770352729facbccf4b8fb288551ebbb" title="Get the step size." alt="" coords="412,1033,535,1063"/>
+<area shape="rect" id="node112" href="$xml__parameter_8c.html#ab2406faab9296a45cc596beec457f268" title="Get the initial temperature." alt="" coords="420,1087,527,1116"/>
+<area shape="rect" id="node114" href="$xml__parameter_8c.html#a9401fbdd3c314c0e729c9a278a6e2805" title="Get the minimum temperature." alt="" coords="424,663,523,692"/>
+<area shape="rect" id="node64" href="$data__parameters_8c.html#ac6adf7017183beb79ae1511c65f669af" title="Free struct parameters specific to each simulation." alt="" coords="656,716,784,745"/>
+<area shape="rect" id="node66" href="$data__parameters_8c.html#ae4f85916052b0acfa763dd33e63336b6" title="Allocation of the struct Score." alt="" coords="661,769,779,799"/>
+<area shape="rect" id="node68" href="$data__parameters_8c.html#ad65651512fd7fe4d41916573fd79b1aa" title="Free the struct Score." alt="" coords="663,823,777,852"/>
+<area shape="rect" id="node70" href="$data__parameters_8c.html#a72112e95502d41a9b171e9d9fea2e8ab" title="Recording parameters specific to each simulation." alt="" coords="648,663,792,692"/>
+<area shape="rect" id="node72" href="$gsl__min_8c.html#afb072963e9cb6ff01c9c5e9d5d32ee03" title="Copy table of reaction parameters." alt="" coords="665,929,775,959"/>
+<area shape="rect" id="node74" href="$gsl__min_8c.html#aab43c48cf55713c2ba420ba4d354a27f" title="Enter in the program for standard deviation." alt="" coords="681,876,759,905"/>
+<area shape="rect" id="node120" href="$mpi__load_8c.html#ade415599921ec51a178f328fcccbc361" title="Determine the size of the result tab." alt="" coords="416,1300,531,1329"/>
+<area shape="rect" id="node122" href="$mpi__load_8c.html#a1edb1e7ef906877b974f06a2b6b0f617" title="Determine the size of the result tab." alt="" coords="412,1353,535,1383"/>
+</map>

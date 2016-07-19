@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$xml__parameter_8c.html#a62bde7fe978c5b428aedf7011ef5444f" title="Get list of kinetic laws." alt="" coords="217,5,351,35"/>
+<area shape="rect" id="node7" href="$xml__parameter_8c.html#aebbd1beeffa0d86d3fb414443579bd2c" title="Get the kinetic law for one node." alt="" coords="199,59,369,88"/>
+<area shape="rect" id="node9" href="$xml__parameter_8c.html#a4cd7ca36e09a00f6eead68fa2fe9c181" title="Get the number of equations." alt="" coords="212,112,356,141"/>
+<area shape="rect" id="node5" href="$xml__parameter_8c.html#a33fc7308481aa2c6ceebbf6dffa2626d" title="Allocate memory for the list of equation." alt="" coords="419,5,549,35"/>
+<area shape="rect" id="node11" href="$xml__parameter_8c.html#ab341a0b1147a2c5866cab65f552f0817" title="Get count." alt="" coords="432,112,536,141"/>
+</map>

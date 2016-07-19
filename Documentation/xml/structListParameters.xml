@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structListParameters" kind="struct" prot="public">
+    <compoundname>ListParameters</compoundname>
+    <includes refid="data__parameters_8h" local="no">data_parameters.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" prot="public" static="no" mutable="no">
+        <type>Model_t *</type>
+        <definition>Model_t* ListParameters::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SBML file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="37" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</referencedby>
+        <referencedby refid="data__parameters_8h_1a28bd10646fcc4410a1d1d6433e84ea95" compoundref="data__parameters_8c" startline="274" endline="282">Data_scoreAlloc</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="mpi__load_8h_1ab4d2e0de3a14f863a405bddfa625b8bd" compoundref="mpi__load_8c" startline="334" endline="346">Mpi_sizeResultTab</referencedby>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" prot="public" static="no" mutable="no">
+        <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+        <definition>xmlConfig_t* ListParameters::conf</definition>
+        <argsstring></argsstring>
+        <name>conf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="38" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="data__parameters_8h_1a9cfc3bfbb7f489152efcbfa77e23bcf6" compoundref="data__parameters_8c" startline="442" endline="455">Data_parameters</referencedby>
+        <referencedby refid="data__parameters_8h_1a28bd10646fcc4410a1d1d6433e84ea95" compoundref="data__parameters_8c" startline="274" endline="282">Data_scoreAlloc</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="mpi__load_8h_1a49f24c98f9724a9d2d64bf3b41d7c101" compoundref="mpi__load_8c" startline="154" endline="261">Mpi_master</referencedby>
+        <referencedby refid="mpi__load_8h_1ab4d2e0de3a14f863a405bddfa625b8bd" compoundref="mpi__load_8c" startline="334" endline="346">Mpi_sizeResultTab</referencedby>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="mpi__load_8h_1a4cf3597a859457305000e2168f205993" compoundref="mpi__load_8c" startline="273" endline="322">Mpi_writer</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" prot="public" static="no" mutable="no">
+        <type>char ****</type>
+        <definition>char**** ListParameters::equation</definition>
+        <argsstring></argsstring>
+        <name>equation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structEquations" kindref="compound">Equations</ref> text </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="39" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="data__parameters_8h_1ac0ac001f1fc3102e3ed07568cba5c570" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_parameters</definition>
+        <argsstring></argsstring>
+        <name>nb_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="40" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="data__parameters_8h_1a7f131c19d7d1bc29db5ccf53b0517fdf" compoundref="data__parameters_8c" startline="391" endline="400">Data_allocSimParameters</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__min_8h_1a843d6e8ed1d3354a55586c7734f60499" compoundref="gsl__min_8c" startline="208" endline="222">Min_getTampon</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="mpi__load_8h_1a49f24c98f9724a9d2d64bf3b41d7c101" compoundref="mpi__load_8c" startline="154" endline="261">Mpi_master</referencedby>
+        <referencedby refid="mpi__load_8h_1ab4d2e0de3a14f863a405bddfa625b8bd" compoundref="mpi__load_8c" startline="334" endline="346">Mpi_sizeResultTab</referencedby>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+        <referencedby refid="mpi__load_8h_1aa753112f6c21ff66c1c63f511ccbb325" compoundref="mpi__load_8c" startline="375" endline="411">Mpi_writeSimFile</referencedby>
+        <referencedby refid="gsl__recuit_8h_1afd9db376bfecbe387f3836854c31f6d0" compoundref="gsl__recuit_8c" startline="158" endline="172">Recuit_printPosition</referencedby>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::interest_parameters</definition>
+        <argsstring></argsstring>
+        <name>interest_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of interest parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="41" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a262f0cba7cb59023d3b45bc17c103aac" compoundref="gsl__recuit_8c" startline="115" endline="126">Recuit_metricDistance</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a992371555f490f726cbe4a1c90785a09" compoundref="gsl__recuit_8c" startline="136" endline="150">Recuit_takeStep</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a78464fa8003787f72be81b561fcd141a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_couples</definition>
+        <argsstring></argsstring>
+        <name>nb_couples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of couples </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="42" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="data__parameters_8h_1aedfc4262f7adadcd89741626ddcf0eef" compoundref="data__parameters_8c" startline="371" endline="381">Data_updateTab</referencedby>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__recuit_8h_1aa83d3ab8e9c0f5d45ddedf1b65a67f98" compoundref="gsl__recuit_8c" startline="261" endline="271">Recuit_defParametre</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a992371555f490f726cbe4a1c90785a09" compoundref="gsl__recuit_8c" startline="136" endline="150">Recuit_takeStep</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_equations</definition>
+        <argsstring></argsstring>
+        <name>nb_equations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of equations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="43" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="data__parameters_8h_1a0940064d850a6ea789bb94e0fd635d0d" compoundref="data__parameters_8c" startline="169" endline="175">Data_equationsAlloc</referencedby>
+        <referencedby refid="data__parameters_8h_1ac0ac001f1fc3102e3ed07568cba5c570" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a1bd4ac749f2642216552aa20a2305727" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_reaction</definition>
+        <argsstring></argsstring>
+        <name>nb_reaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of reaction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="44" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ListParameters::noeud</definition>
+        <argsstring></argsstring>
+        <name>noeud</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of nodes in an equation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="45" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a014a6fdcabd0d2dbfee53acf4a32e218" compoundref="data__parameters_8c" startline="202" endline="225">Data_allocEquations</referencedby>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="data__parameters_8h_1ac0ac001f1fc3102e3ed07568cba5c570" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ListParameters::parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Details on the parameters of reactions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="46" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="data__parameters_8h_1aedfc4262f7adadcd89741626ddcf0eef" compoundref="data__parameters_8c" startline="371" endline="381">Data_updateTab</referencedby>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__recuit_8h_1aa83d3ab8e9c0f5d45ddedf1b65a67f98" compoundref="gsl__recuit_8c" startline="261" endline="271">Recuit_defParametre</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a992371555f490f726cbe4a1c90785a09" compoundref="gsl__recuit_8c" startline="136" endline="150">Recuit_takeStep</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** ListParameters::banned</definition>
+        <argsstring></argsstring>
+        <name>banned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Names of banned molecules : ex ATP, ADP ... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="47" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="data__parameters_8h_1ab08889cc0af85b8a2e8938972107d645" compoundref="data__parameters_8c" startline="463" endline="492">Data_desallocation</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1aae885063019b7630081d14786e3b48e9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_banned</definition>
+        <argsstring></argsstring>
+        <name>nb_banned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of banned molecules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="48" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1a43227ba7fdca24b48e08a561d2c417b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_triesMod</definition>
+        <argsstring></argsstring>
+        <name>nb_triesMod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of tries for modelling </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="49" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ListParameters::nb_triesSa</definition>
+        <argsstring></argsstring>
+        <name>nb_triesSa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of tries for simulated annealing and minimization </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="50" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1ada6a0c0e47ea4e678bbd615c9371e8af" compoundref="data__parameters_8c" startline="408" endline="433">Data_allocParameters</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Global list parameters. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>xmlConfig_t</label>
+        <link refid="structxmlConfig__t"/>
+      </node>
+      <node id="39">
+        <label>ListParameters</label>
+        <link refid="structListParameters"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>conf</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="36" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="35" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>banned</name></member>
+      <member refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>conf</name></member>
+      <member refid="structListParameters_1a1d99e34efe708f0a4dee5f5de7a50c6c" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>equation</name></member>
+      <member refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>interest_parameters</name></member>
+      <member refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>model</name></member>
+      <member refid="structListParameters_1aae885063019b7630081d14786e3b48e9" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_banned</name></member>
+      <member refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_couples</name></member>
+      <member refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_equations</name></member>
+      <member refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_parameters</name></member>
+      <member refid="structListParameters_1a1bd4ac749f2642216552aa20a2305727" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_reaction</name></member>
+      <member refid="structListParameters_1a43227ba7fdca24b48e08a561d2c417b3" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_triesMod</name></member>
+      <member refid="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>nb_triesSa</name></member>
+      <member refid="structListParameters_1a1c994d58b286eb0b71a966c1bf079c65" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>noeud</name></member>
+      <member refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" prot="public" virt="non-virtual"><scope>ListParameters</scope><name>parameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

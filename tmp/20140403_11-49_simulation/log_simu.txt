@@ -1,0 +1,10 @@
+./bin/../src/gui/gtk/../../../metaboflux/bin/../lib/../bin/MetaBoFlux.exe: symbol lookup error: /usr/local/lib/libsbml.so.5: undefined symbol: _ZN9Validator13addConstraintEP11VConstraint
+./bin/../src/gui/gtk/../../../metaboflux/bin/../lib/../bin/MetaBoFlux.exe: symbol lookup error: /usr/local/lib/libsbml.so.5: undefined symbol: _ZN9Validator13addConstraintEP11VConstraint
+./bin/../src/gui/gtk/../../../metaboflux/bin/../lib/../bin/MetaBoFlux.exe: symbol lookup error: /usr/local/lib/libsbml.so.5: undefined symbol: _ZN9Validator13addConstraintEP11VConstraint
+./bin/../src/gui/gtk/../../../metaboflux/bin/../lib/../bin/MetaBoFlux.exe: symbol lookup error: /usr/local/lib/libsbml.so.5: undefined symbol: _ZN9Validator13addConstraintEP11VConstraint
+./bin/../src/gui/gtk/../../../metaboflux/bin/../lib/../bin/MetaBoFlux.exe: symbol lookup error: /usr/local/lib/libsbml.so.5: undefined symbol: _ZN9Validator13addConstraintEP11VConstraint
+Metaboflux chosen activity : Simulated annealing	Minimization	Statistics	
+Read parameters
+Parameter estimation by simulated annealing ....
+End of estimation
+file ./bin/../src/../tmp/20140403_11-49_simulation/simulation/simulation_glycosome_simulated_annealing_1.txt is missing

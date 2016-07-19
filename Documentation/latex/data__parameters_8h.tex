@@ -1,0 +1,854 @@
+\hypertarget{data__parameters_8h}{
+\section{metaboflux/include/data\_\-parameters.h File Reference}
+\label{data__parameters_8h}\index{metaboflux/include/data\_\-parameters.h@{metaboflux/include/data\_\-parameters.h}}
+}
+
+
+Load data parameters.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structListParameters}{ListParameters}
+\begin{DoxyCompactList}\small\item\em Global list parameters. \end{DoxyCompactList}\item 
+struct \hyperlink{structSimParameters}{SimParameters}
+\begin{DoxyCompactList}\small\item\em List of parameters specific to each simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$ \hyperlink{data__parameters_8h_a6de2ffa5b44477da0d4a2e9e831c0c8a}{Data\_\-initXML} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Load parameter file. \end{DoxyCompactList}\item 
+Model\_\-t $\ast$ \hyperlink{data__parameters_8h_a2c7c500f91d49ea904f26078df0c0410}{Data\_\-initSBML} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Load SBML file. \end{DoxyCompactList}\item 
+gsl\_\-rng $\ast$ \hyperlink{data__parameters_8h_a82ec4869c2eb338089f664171740b07b}{Data\_\-rngAlloc} (gsl\_\-rng $\ast$)
+\begin{DoxyCompactList}\small\item\em Allocation of the random number generator. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{Equations} $\ast$$\ast$ \hyperlink{data__parameters_8h_a0940064d850a6ea789bb94e0fd635d0d}{Data\_\-equationsAlloc} (\hyperlink{structListParameters}{pListParameters}, \hyperlink{structEquations}{Equations} $\ast$$\ast$)
+\begin{DoxyCompactList}\small\item\em Allocate the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_ac0ac001f1fc3102e3ed07568cba5c570}{Data\_\-equationsInit} (\hyperlink{structListParameters}{pListParameters}, \hyperlink{structEquations}{Equations} $\ast$$\ast$)
+\begin{DoxyCompactList}\small\item\em Initialize equations. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a014a6fdcabd0d2dbfee53acf4a32e218}{Data\_\-allocEquations} (\hyperlink{structListParameters}{pListParameters} a)
+\begin{DoxyCompactList}\small\item\em Allocate the different elements related to he struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a46e8fbe37a14a679690ad84c4a596cc4}{Data\_\-allocScore} (\hyperlink{structScore}{pScore}, \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, Model\_\-t $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy the partial table x in the full table y. \end{DoxyCompactList}\item 
+\hyperlink{structScore}{pScore} \hyperlink{data__parameters_8h_a28bd10646fcc4410a1d1d6433e84ea95}{Data\_\-scoreAlloc} (\hyperlink{structListParameters}{pListParameters})
+\begin{DoxyCompactList}\small\item\em Allocation of the struct \hyperlink{structScore}{Score}. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a9096849f5a525ee26634b2d98a497ded}{Data\_\-scoreInit} (\hyperlink{structScore}{pScore})
+\begin{DoxyCompactList}\small\item\em Initialize the struct \hyperlink{structScore}{Score}. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_af65c1571388a7669aaa18c4163dac2f1}{Data\_\-scoreFree} (\hyperlink{structScore}{pScore})
+\begin{DoxyCompactList}\small\item\em Free the struct \hyperlink{structScore}{Score}. \end{DoxyCompactList}\item 
+int \hyperlink{data__parameters_8h_a27598d9ebdecd23858dc015d34daa9f8}{Data\_\-copieTab} (\hyperlink{structSimParameters}{pSimParameters}, double $\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em Copy the partial table x in the full table y. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_aedfc4262f7adadcd89741626ddcf0eef}{Data\_\-updateTab} (\hyperlink{structListParameters}{pListParameters}, \hyperlink{structSimParameters}{pSimParameters}, double $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy table. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a7f131c19d7d1bc29db5ccf53b0517fdf}{Data\_\-allocSimParameters} (double $\ast$, \hyperlink{structListParameters}{pListParameters})
+\begin{DoxyCompactList}\small\item\em Allocation of tables needed for simulations. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_ada6a0c0e47ea4e678bbd615c9371e8af}{Data\_\-allocParameters} (\hyperlink{structListParameters}{pListParameters})
+\begin{DoxyCompactList}\small\item\em Copy the partial table x in the full table y. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a9cfc3bfbb7f489152efcbfa77e23bcf6}{Data\_\-parameters} (\hyperlink{structListParameters}{pListParameters}, char $\ast$$\ast$)
+\begin{DoxyCompactList}\small\item\em Record parameters of the simulation. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_ab08889cc0af85b8a2e8938972107d645}{Data\_\-desallocation} (\hyperlink{structListParameters}{pListParameters})
+\begin{DoxyCompactList}\small\item\em Free memory allocated to the various objects of the program. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a2f0df5c0de22994cb0aec62dba0e1bd5}{Data\_\-simParameters} (\hyperlink{structListParameters}{pListParameters}, \hyperlink{structSimParameters}{pSimParameters}, char $\ast$, char $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Recording parameters specific to each simulation. \end{DoxyCompactList}\item 
+void \hyperlink{data__parameters_8h_a77e81e9bc2cd1ffe83bb3b8b2ecc4454}{Data\_\-desallocSim} (\hyperlink{structSimParameters}{pSimParameters})
+\begin{DoxyCompactList}\small\item\em Free struct parameters specific to each simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Load data parameters. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+10 novembre 2010 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{data__parameters_8h_source}{data\_\-parameters.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{data__parameters_8h_a014a6fdcabd0d2dbfee53acf4a32e218}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-allocEquations@{Data\_\-allocEquations}}
+\index{Data\_\-allocEquations@{Data\_\-allocEquations}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-allocEquations}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-allocEquations (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a014a6fdcabd0d2dbfee53acf4a32e218}
+
+
+Allocate the different elements related to he struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 202 of file data\_\-parameters.c.
+
+
+
+References ListParameters::conf, ListParameters::equation, ListParameters::nb\_\-equations, ListParameters::noeud, Xml\_\-getKineticLaw(), Xml\_\-getKineticLawNodes(), and Xml\_\-getNbEquations().
+
+
+
+Referenced by Data\_\-parameters().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_a014a6fdcabd0d2dbfee53acf4a32e218_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_ada6a0c0e47ea4e678bbd615c9371e8af}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-allocParameters@{Data\_\-allocParameters}}
+\index{Data\_\-allocParameters@{Data\_\-allocParameters}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-allocParameters}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-allocParameters (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_ada6a0c0e47ea4e678bbd615c9371e8af}
+
+
+Copy the partial table x in the full table y. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 408 of file data\_\-parameters.c.
+
+
+
+References ListParameters::banned, ListParameters::conf, ListParameters::interest\_\-parameters, ListParameters::nb\_\-banned, ListParameters::nb\_\-couples, ListParameters::nb\_\-parameters, ListParameters::nb\_\-triesMod, ListParameters::nb\_\-triesSa, ListParameters::parameters, Xml\_\-getBanned(), Xml\_\-getNbBannedSpecies(), Xml\_\-getNbCouples(), Xml\_\-getNbParameters(), Xml\_\-getNbReactioninNoeud(), Xml\_\-getNbTriesMod(), and Xml\_\-getNbTriesSa().
+
+
+
+Referenced by Data\_\-parameters().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_ada6a0c0e47ea4e678bbd615c9371e8af_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_a46e8fbe37a14a679690ad84c4a596cc4}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-allocScore@{Data\_\-allocScore}}
+\index{Data\_\-allocScore@{Data\_\-allocScore}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-allocScore}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-allocScore (
+\begin{DoxyParamCaption}
+\item[{{\bf pScore}}]{out, }
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{Model\_\-t $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a46e8fbe37a14a679690ad84c4a596cc4}
+
+
+Copy the partial table x in the full table y. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Struct \hyperlink{structScore}{Score} \\
+\hline
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em model} & Model of the SBML file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 238 of file data\_\-parameters.c.
+
+
+
+References Score::name, Score::nb\_\-reaction, Score::nb\_\-species, Score::quantite, Score::reaction, Score::species, Score::species\_\-amount, Score::species\_\-weight, Score::taille, Score::tailleReactions, Score::tailleSpecies, Xml\_\-getallSpeciesFinalAmount(), Xml\_\-getallSpeciesWeight(), Xml\_\-getNbReaction(), Xml\_\-getNbSpecies(), and Xml\_\-getReactionsNames().
+
+
+
+Referenced by Data\_\-scoreAlloc(), and Data\_\-simParameters().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_a46e8fbe37a14a679690ad84c4a596cc4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_a7f131c19d7d1bc29db5ccf53b0517fdf}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-allocSimParameters@{Data\_\-allocSimParameters}}
+\index{Data\_\-allocSimParameters@{Data\_\-allocSimParameters}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-allocSimParameters}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-allocSimParameters (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{y, }
+\item[{{\bf pListParameters}}]{a}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a7f131c19d7d1bc29db5ccf53b0517fdf}
+
+
+Allocation of tables needed for simulations. 
+
+void \hyperlink{data__parameters_8h_a7f131c19d7d1bc29db5ccf53b0517fdf}{Data\_\-allocSimParameters(double $\ast$y, pListParameters a)} \begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em y} & table of reaction parameters \\
+\hline
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 391 of file data\_\-parameters.c.
+
+
+
+References ListParameters::nb\_\-parameters.
+
+
+
+Referenced by Data\_\-simParameters().
+
+\hypertarget{data__parameters_8h_a27598d9ebdecd23858dc015d34daa9f8}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-copieTab@{Data\_\-copieTab}}
+\index{Data\_\-copieTab@{Data\_\-copieTab}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-copieTab}]{\setlength{\rightskip}{0pt plus 5cm}int Data\_\-copieTab (
+\begin{DoxyParamCaption}
+\item[{{\bf pSimParameters}}]{simulated, }
+\item[{double $\ast$}]{x, }
+\item[{int}]{a, }
+\item[{int}]{debut, }
+\item[{int}]{fin}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a27598d9ebdecd23858dc015d34daa9f8}
+
+
+Copy the partial table x in the full table y. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em simulated} & Simulation parameters : struct \hyperlink{structSimParameters}{SimParameters} \\
+\hline
+{\em x} & Short table of reaction parameters \\
+\hline
+{\em a} & Line \\
+\hline
+{\em debut} & Beginning \\
+\hline
+{\em fin} & End \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of copied element 
+\end{DoxyReturn}
+
+
+Definition at line 347 of file data\_\-parameters.c.
+
+
+
+References SimParameters::y.
+
+
+
+Referenced by Data\_\-updateTab().
+
+\hypertarget{data__parameters_8h_ab08889cc0af85b8a2e8938972107d645}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-desallocation@{Data\_\-desallocation}}
+\index{Data\_\-desallocation@{Data\_\-desallocation}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-desallocation}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-desallocation (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_ab08889cc0af85b8a2e8938972107d645}
+
+
+Free memory allocated to the various objects of the program. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 463 of file data\_\-parameters.c.
+
+
+
+References ListParameters::banned, ListParameters::conf, ListParameters::equation, ListParameters::model, ListParameters::nb\_\-equations, ListParameters::noeud, ListParameters::parameters, and Xml\_\-freeConfig().
+
+
+
+Referenced by compute\_\-mpi().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{data__parameters_8h_ab08889cc0af85b8a2e8938972107d645_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_a77e81e9bc2cd1ffe83bb3b8b2ecc4454}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-desallocSim@{Data\_\-desallocSim}}
+\index{Data\_\-desallocSim@{Data\_\-desallocSim}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-desallocSim}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-desallocSim (
+\begin{DoxyParamCaption}
+\item[{{\bf pSimParameters}}]{sim}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a77e81e9bc2cd1ffe83bb3b8b2ecc4454}
+
+
+Free struct parameters specific to each simulation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em sim} & Simulation parameters : struct \hyperlink{structSimParameters}{SimParameters} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 549 of file data\_\-parameters.c.
+
+
+
+References SimParameters::debugFile, Score::name, Score::nb\_\-reaction, SimParameters::out, Score::quantite, SimParameters::r, Score::reaction, Score::species, Score::species\_\-amount, Score::species\_\-weight, Score::taille, and SimParameters::y.
+
+
+
+Referenced by Min\_\-compute\_\-minimization(), Mod\_\-compute\_\-modeling(), Recuit\_\-compute\_\-recuit(), and Sd\_\-compute\_\-standard\_\-deviation().
+
+\hypertarget{data__parameters_8h_a0940064d850a6ea789bb94e0fd635d0d}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-equationsAlloc@{Data\_\-equationsAlloc}}
+\index{Data\_\-equationsAlloc@{Data\_\-equationsAlloc}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-equationsAlloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Equations}$\ast$$\ast$ Data\_\-equationsAlloc (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{current, }
+\item[{{\bf Equations} $\ast$$\ast$}]{pile}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a0940064d850a6ea789bb94e0fd635d0d}
+
+
+Allocate the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Current parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em pile} & Pile des equations : struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated struct \hyperlink{structEquations}{Equations} 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file data\_\-parameters.c.
+
+
+
+References ListParameters::nb\_\-equations.
+
+
+
+Referenced by Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{data__parameters_8h_ac0ac001f1fc3102e3ed07568cba5c570}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-equationsInit@{Data\_\-equationsInit}}
+\index{Data\_\-equationsInit@{Data\_\-equationsInit}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-equationsInit}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-equationsInit (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{current, }
+\item[{{\bf Equations} $\ast$$\ast$}]{pile}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_ac0ac001f1fc3102e3ed07568cba5c570}
+
+
+Initialize equations. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Current parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em pile} & Pile des equations : struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 184 of file data\_\-parameters.c.
+
+
+
+References ListParameters::equation, Equations\_\-pileFormation(), ListParameters::nb\_\-equations, and ListParameters::noeud.
+
+
+
+Referenced by Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_ac0ac001f1fc3102e3ed07568cba5c570_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_a2c7c500f91d49ea904f26078df0c0410}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-initSBML@{Data\_\-initSBML}}
+\index{Data\_\-initSBML@{Data\_\-initSBML}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-initSBML}]{\setlength{\rightskip}{0pt plus 5cm}Model\_\-t$\ast$ Data\_\-initSBML (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sbml\_\-file}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a2c7c500f91d49ea904f26078df0c0410}
+
+
+Load SBML file. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em sbml\_\-file} & Name of the SBML file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Model of the SBML file 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file data\_\-parameters.c.
+
+
+
+Referenced by Data\_\-parameters().
+
+\hypertarget{data__parameters_8h_a6de2ffa5b44477da0d4a2e9e831c0c8a}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-initXML@{Data\_\-initXML}}
+\index{Data\_\-initXML@{Data\_\-initXML}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-initXML}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xmlConfig\_\-t}$\ast$ Data\_\-initXML (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{xml\_\-file}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a6de2ffa5b44477da0d4a2e9e831c0c8a}
+
+
+Load parameter file. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em xml\_\-file} & Name of the parameter file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Model of the parameter file =:Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file data\_\-parameters.c.
+
+
+
+References Xml\_\-loadConfig().
+
+
+
+Referenced by Data\_\-parameters().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=398pt]{data__parameters_8h_a6de2ffa5b44477da0d4a2e9e831c0c8a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_a9cfc3bfbb7f489152efcbfa77e23bcf6}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-parameters@{Data\_\-parameters}}
+\index{Data\_\-parameters@{Data\_\-parameters}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-parameters (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a, }
+\item[{char $\ast$$\ast$}]{files\_\-path}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a9cfc3bfbb7f489152efcbfa77e23bcf6}
+
+
+Record parameters of the simulation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 442 of file data\_\-parameters.c.
+
+
+
+References ListParameters::conf, Data\_\-allocEquations(), Data\_\-allocParameters(), Data\_\-initSBML(), Data\_\-initXML(), and ListParameters::model.
+
+
+
+Referenced by compute\_\-mpi().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_a9cfc3bfbb7f489152efcbfa77e23bcf6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_a82ec4869c2eb338089f664171740b07b}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-rngAlloc@{Data\_\-rngAlloc}}
+\index{Data\_\-rngAlloc@{Data\_\-rngAlloc}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-rngAlloc}]{\setlength{\rightskip}{0pt plus 5cm}gsl\_\-rng$\ast$ Data\_\-rngAlloc (
+\begin{DoxyParamCaption}
+\item[{gsl\_\-rng $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a82ec4869c2eb338089f664171740b07b}
+
+
+Allocation of the random number generator. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Random number generator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Random number generator 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file data\_\-parameters.c.
+
+
+
+Referenced by Data\_\-simParameters().
+
+\hypertarget{data__parameters_8h_a28bd10646fcc4410a1d1d6433e84ea95}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-scoreAlloc@{Data\_\-scoreAlloc}}
+\index{Data\_\-scoreAlloc@{Data\_\-scoreAlloc}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-scoreAlloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pScore} Data\_\-scoreAlloc (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a28bd10646fcc4410a1d1d6433e84ea95}
+
+
+Allocation of the struct \hyperlink{structScore}{Score}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated struct \hyperlink{structScore}{Score} 
+\end{DoxyReturn}
+
+
+Definition at line 274 of file data\_\-parameters.c.
+
+
+
+References ListParameters::conf, Data\_\-allocScore(), and ListParameters::model.
+
+
+
+Referenced by Min\_\-compute\_\-minimization(), Mod\_\-compute\_\-modeling(), and Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_a28bd10646fcc4410a1d1d6433e84ea95_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_af65c1571388a7669aaa18c4163dac2f1}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-scoreFree@{Data\_\-scoreFree}}
+\index{Data\_\-scoreFree@{Data\_\-scoreFree}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-scoreFree}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-scoreFree (
+\begin{DoxyParamCaption}
+\item[{{\bf pScore}}]{out}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_af65c1571388a7669aaa18c4163dac2f1}
+
+
+Free the struct \hyperlink{structScore}{Score}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Struct score \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 307 of file data\_\-parameters.c.
+
+
+
+References Score::name, Score::nb\_\-reaction, Score::quantite, Score::reaction, Score::species\_\-amount, Score::species\_\-weight, and Score::taille.
+
+
+
+Referenced by Min\_\-compute\_\-minimization(), Mod\_\-compute\_\-modeling(), and Recuit\_\-compute\_\-recuit().
+
+\hypertarget{data__parameters_8h_a9096849f5a525ee26634b2d98a497ded}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-scoreInit@{Data\_\-scoreInit}}
+\index{Data\_\-scoreInit@{Data\_\-scoreInit}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-scoreInit}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-scoreInit (
+\begin{DoxyParamCaption}
+\item[{{\bf pScore}}]{out}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a9096849f5a525ee26634b2d98a497ded}
+
+
+Initialize the struct \hyperlink{structScore}{Score}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Empty struct \hyperlink{structScore}{Score} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 290 of file data\_\-parameters.c.
+
+
+
+References Score::quantite, and Score::taille.
+
+
+
+Referenced by Min\_\-my\_\-f(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{data__parameters_8h_a2f0df5c0de22994cb0aec62dba0e1bd5}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-simParameters@{Data\_\-simParameters}}
+\index{Data\_\-simParameters@{Data\_\-simParameters}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-simParameters}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-simParameters (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a, }
+\item[{{\bf pSimParameters}}]{sim, }
+\item[{char $\ast$}]{out, }
+\item[{char $\ast$}]{texte, }
+\item[{int}]{number, }
+\item[{int}]{debug}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_a2f0df5c0de22994cb0aec62dba0e1bd5}
+
+
+Recording parameters specific to each simulation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em sim} & Simulation parameters : struct \hyperlink{structSimParameters}{SimParameters} \\
+\hline
+{\em out} & Output repertory \\
+\hline
+{\em texte} & File name \\
+\hline
+{\em number} & Number of the debug file \\
+\hline
+{\em debug} & Determine debug \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 506 of file data\_\-parameters.c.
+
+
+
+References ListParameters::conf, Data\_\-allocScore(), Data\_\-allocSimParameters(), Data\_\-rngAlloc(), SimParameters::debugFile, ListParameters::model, ListParameters::nb\_\-parameters, SimParameters::out, SimParameters::pile, SimParameters::r, and SimParameters::y.
+
+
+
+Referenced by Min\_\-compute\_\-minimization(), Mod\_\-compute\_\-modeling(), Recuit\_\-compute\_\-recuit(), and Sd\_\-compute\_\-standard\_\-deviation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{data__parameters_8h_a2f0df5c0de22994cb0aec62dba0e1bd5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{data__parameters_8h_aedfc4262f7adadcd89741626ddcf0eef}{
+\index{data\_\-parameters.h@{data\_\-parameters.h}!Data\_\-updateTab@{Data\_\-updateTab}}
+\index{Data\_\-updateTab@{Data\_\-updateTab}!data_parameters.h@{data\_\-parameters.h}}
+\subsubsection[{Data\_\-updateTab}]{\setlength{\rightskip}{0pt plus 5cm}void Data\_\-updateTab (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{current, }
+\item[{{\bf pSimParameters}}]{simulated, }
+\item[{double $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}
+\label{data__parameters_8h_aedfc4262f7adadcd89741626ddcf0eef}
+
+
+Copy table. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em current} & Current parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em simulated} & Simulation parameters : struct \hyperlink{structSimParameters}{SimParameters} \\
+\hline
+{\em x} & Short table of reaction parameters \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 371 of file data\_\-parameters.c.
+
+
+
+References Data\_\-copieTab(), ListParameters::nb\_\-couples, and ListParameters::parameters.
+
+
+
+Referenced by Min\_\-my\_\-f(), Recuit\_\-energyFunction(), and Recuit\_\-printPosition().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{data__parameters_8h_aedfc4262f7adadcd89741626ddcf0eef_cgraph}
+\end{center}
+\end{figure}
+
+

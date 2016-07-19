@@ -1,0 +1,373 @@
+\hypertarget{gsl__min_8h}{
+\section{metaboflux/include/gsl\_\-min.h File Reference}
+\label{gsl__min_8h}\index{metaboflux/include/gsl\_\-min.h@{metaboflux/include/gsl\_\-min.h}}
+}
+
+
+Compute minimization of scenarii.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__min_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{gsl__min_8h_a8d981de0373a06da9601e1b5eef379e1}{Min\_\-copieTab2} (double $\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em Copy table of reaction parameters. \end{DoxyCompactList}\item 
+int \hyperlink{gsl__min_8h_a1f1d9c640473d18e2c9c092428d7052f}{Min\_\-copieTab3} (gsl\_\-multimin\_\-fminimizer $\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em Copy short table of parameter into the larger table. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__min_8h_a2d2f0b8fd130c026d88c29339e3766fa}{Min\_\-verifValue} (gsl\_\-vector $\ast$, double $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Checking reaction ratio parameters. \end{DoxyCompactList}\item 
+double \hyperlink{gsl__min_8h_ac0cf1b97696b91752884777f11368223}{Min\_\-my\_\-f} (const gsl\_\-vector $\ast$, void $\ast$)
+\begin{DoxyCompactList}\small\item\em Enter in the program for standard deviation. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__min_8h_a843d6e8ed1d3354a55586c7734f60499}{Min\_\-getTampon} (double $\ast$, double)
+\begin{DoxyCompactList}\small\item\em Enter in the program for standard deviation. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__min_8h_a6fc9a31eec661815e3b5b83fc196d652}{Min\_\-score\_\-print\_\-mean} (double $\ast$)
+\begin{DoxyCompactList}\small\item\em Save the minimization result. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__min_8h_a016be27ae853d4d14d48d81c626b1e50}{Min\_\-compute\_\-minimization} (\hyperlink{structListParameters}{pListParameters}, double $\ast$, double $\ast$, char $\ast$$\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Compute the minimization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute minimization of scenarii. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 novembre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{gsl__min_8h_source}{gsl\_\-min.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{gsl__min_8h_a016be27ae853d4d14d48d81c626b1e50}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-compute\_\-minimization@{Min\_\-compute\_\-minimization}}
+\index{Min\_\-compute\_\-minimization@{Min\_\-compute\_\-minimization}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-compute\_\-minimization}]{\setlength{\rightskip}{0pt plus 5cm}void Min\_\-compute\_\-minimization (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{allone, }
+\item[{double $\ast$}]{fluxRatio, }
+\item[{double $\ast$}]{result\_\-tab, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{number\_\-arg, }
+\item[{int}]{debug}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_a016be27ae853d4d14d48d81c626b1e50}
+
+
+Compute the minimization. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em allone} & struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em fluxRatio} & Ratio parameters \\
+\hline
+{\em result\_\-tab} & Result table \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em number\_\-arg} & Number of simulation \\
+\hline
+{\em debug} & Debug flag \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 274 of file gsl\_\-min.c.
+
+
+
+References Data\_\-desallocSim(), Data\_\-scoreAlloc(), Data\_\-scoreFree(), Data\_\-simParameters(), ListParameters::interest\_\-parameters, Min\_\-copieTab2(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), ListParameters::nb\_\-couples, ListParameters::nb\_\-parameters, ListParameters::parameters, and SimParameters::y.
+
+
+
+Referenced by Mpi\_\-slave().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__min_8h_a016be27ae853d4d14d48d81c626b1e50_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__min_8h_a8d981de0373a06da9601e1b5eef379e1}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-copieTab2@{Min\_\-copieTab2}}
+\index{Min\_\-copieTab2@{Min\_\-copieTab2}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-copieTab2}]{\setlength{\rightskip}{0pt plus 5cm}int Min\_\-copieTab2 (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{int}]{current, }
+\item[{int}]{debut, }
+\item[{int}]{fin}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_a8d981de0373a06da9601e1b5eef379e1}
+
+
+Copy table of reaction parameters. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Short table of reaction parameters \\
+\hline
+{\em current} & Line \\
+\hline
+{\em debut} & Beginning \\
+\hline
+{\em fin} & End \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of copied element 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file gsl\_\-min.c.
+
+
+
+References SimParameters::y.
+
+
+
+Referenced by Min\_\-compute\_\-minimization().
+
+\hypertarget{gsl__min_8h_a1f1d9c640473d18e2c9c092428d7052f}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-copieTab3@{Min\_\-copieTab3}}
+\index{Min\_\-copieTab3@{Min\_\-copieTab3}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-copieTab3}]{\setlength{\rightskip}{0pt plus 5cm}int Min\_\-copieTab3 (
+\begin{DoxyParamCaption}
+\item[{gsl\_\-multimin\_\-fminimizer $\ast$}]{s, }
+\item[{int}]{current, }
+\item[{int}]{debut, }
+\item[{int}]{fin}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_a1f1d9c640473d18e2c9c092428d7052f}
+
+
+Copy short table of parameter into the larger table. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Minimizer parameter \\
+\hline
+{\em current} & Line \\
+\hline
+{\em debut} & Beginning \\
+\hline
+{\em fin} & End \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of copied element 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file gsl\_\-min.c.
+
+
+
+References SimParameters::y.
+
+\hypertarget{gsl__min_8h_a843d6e8ed1d3354a55586c7734f60499}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-getTampon@{Min\_\-getTampon}}
+\index{Min\_\-getTampon@{Min\_\-getTampon}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-getTampon}]{\setlength{\rightskip}{0pt plus 5cm}void Min\_\-getTampon (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{energie\_\-temp, }
+\item[{double}]{energie}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_a843d6e8ed1d3354a55586c7734f60499}
+
+
+Enter in the program for standard deviation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em energie\_\-temp} & Current energy \\
+\hline
+{\em energie} & Best energy \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 208 of file gsl\_\-min.c.
+
+
+
+References ListParameters::nb\_\-parameters, SimParameters::out, Score::quantite, Score::taille, and SimParameters::y.
+
+
+
+Referenced by Min\_\-my\_\-f().
+
+\hypertarget{gsl__min_8h_ac0cf1b97696b91752884777f11368223}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-my\_\-f@{Min\_\-my\_\-f}}
+\index{Min\_\-my\_\-f@{Min\_\-my\_\-f}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-my\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}double Min\_\-my\_\-f (
+\begin{DoxyParamCaption}
+\item[{const gsl\_\-vector $\ast$}]{v, }
+\item[{void $\ast$}]{params}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_ac0cf1b97696b91752884777f11368223}
+
+
+Enter in the program for standard deviation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector of reaction parameters \\
+\hline
+{\em params} & Unused parameter define by GSL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Energy value 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file gsl\_\-min.c.
+
+
+
+References ListParameters::banned, ListParameters::conf, Data\_\-equationsAlloc(), Data\_\-equationsInit(), Data\_\-scoreInit(), Data\_\-updateTab(), SimParameters::debugFile, Equations\_\-calcul(), Equations\_\-finalQuantite(), Min\_\-getTampon(), Min\_\-verifValue(), ListParameters::model, Score::name, ListParameters::nb\_\-banned, ListParameters::nb\_\-couples, ListParameters::nb\_\-equations, ListParameters::nb\_\-parameters, Score::nb\_\-species, SimParameters::out, ListParameters::parameters, SimParameters::pile, Score::quantite, SimParameters::r, SBML\_\-compute\_\-simulation\_\-mean(), SBML\_\-debugPrint(), Score::species, Score::species\_\-amount, Score::species\_\-weight, Score::taille, Score::tailleSpecies, Xml\_\-getNbTriesSa(), and SimParameters::y.
+
+
+
+Referenced by Min\_\-compute\_\-minimization().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__min_8h_ac0cf1b97696b91752884777f11368223_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__min_8h_a6fc9a31eec661815e3b5b83fc196d652}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-score\_\-print\_\-mean@{Min\_\-score\_\-print\_\-mean}}
+\index{Min\_\-score\_\-print\_\-mean@{Min\_\-score\_\-print\_\-mean}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-score\_\-print\_\-mean}]{\setlength{\rightskip}{0pt plus 5cm}void Min\_\-score\_\-print\_\-mean (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{result\_\-tab}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_a6fc9a31eec661815e3b5b83fc196d652}
+
+
+Save the minimization result. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result\_\-tab} & Result table \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 230 of file gsl\_\-min.c.
+
+
+
+References Equations\_\-findSpecies(), Score::name, ListParameters::nb\_\-parameters, Score::nb\_\-species, SimParameters::out, Score::quantite, Score::species, Score::species\_\-amount, Score::taille, Score::tailleSpecies, and SimParameters::y.
+
+
+
+Referenced by Min\_\-compute\_\-minimization().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{gsl__min_8h_a6fc9a31eec661815e3b5b83fc196d652_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__min_8h_a2d2f0b8fd130c026d88c29339e3766fa}{
+\index{gsl\_\-min.h@{gsl\_\-min.h}!Min\_\-verifValue@{Min\_\-verifValue}}
+\index{Min\_\-verifValue@{Min\_\-verifValue}!gsl_min.h@{gsl\_\-min.h}}
+\subsubsection[{Min\_\-verifValue}]{\setlength{\rightskip}{0pt plus 5cm}void Min\_\-verifValue (
+\begin{DoxyParamCaption}
+\item[{gsl\_\-vector $\ast$}]{v, }
+\item[{double $\ast$}]{x, }
+\item[{int}]{debut, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__min_8h_a2d2f0b8fd130c026d88c29339e3766fa}
+
+
+Checking reaction ratio parameters. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector of reaction parameters \\
+\hline
+{\em x} & Short table of reaction parameters \\
+\hline
+{\em debut} & Beginning \\
+\hline
+{\em max} & End \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file gsl\_\-min.c.
+
+
+
+Referenced by Min\_\-my\_\-f().
+

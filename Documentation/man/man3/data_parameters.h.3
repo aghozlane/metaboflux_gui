@@ -1,0 +1,560 @@
+.TH "metaboflux/include/data_parameters.h" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/include/data_parameters.h \- 
+.PP
+Load data parameters.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBListParameters\fP"
+.br
+.RI "\fIGlobal list parameters. \fP"
+.ti -1c
+.RI "struct \fBSimParameters\fP"
+.br
+.RI "\fIList of parameters specific to each simulation. \fP"
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBListParameters\fP \fBListParameters\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBListParameters\fP * \fBpListParameters\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBSimParameters\fP \fBSimParameters\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBSimParameters\fP * \fBpSimParameters\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBxmlConfig_t\fP * \fBData_initXML\fP (char *)"
+.br
+.RI "\fILoad parameter file. \fP"
+.ti -1c
+.RI "Model_t * \fBData_initSBML\fP (char *)"
+.br
+.RI "\fILoad SBML file. \fP"
+.ti -1c
+.RI "gsl_rng * \fBData_rngAlloc\fP (gsl_rng *)"
+.br
+.RI "\fIAllocation of the random number generator. \fP"
+.ti -1c
+.RI "\fBEquations\fP ** \fBData_equationsAlloc\fP (\fBpListParameters\fP, \fBEquations\fP **)"
+.br
+.RI "\fIAllocate the struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "void \fBData_equationsInit\fP (\fBpListParameters\fP, \fBEquations\fP **)"
+.br
+.RI "\fIInitialize equations. \fP"
+.ti -1c
+.RI "void \fBData_allocEquations\fP (\fBpListParameters\fP \fBa\fP)"
+.br
+.RI "\fIAllocate the different elements related to he struct \fBEquations\fP. \fP"
+.ti -1c
+.RI "void \fBData_allocScore\fP (\fBpScore\fP, \fBxmlConfig_t\fP *, Model_t *)"
+.br
+.RI "\fICopy the partial table x in the full table y. \fP"
+.ti -1c
+.RI "\fBpScore\fP \fBData_scoreAlloc\fP (\fBpListParameters\fP)"
+.br
+.RI "\fIAllocation of the struct \fBScore\fP. \fP"
+.ti -1c
+.RI "void \fBData_scoreInit\fP (\fBpScore\fP)"
+.br
+.RI "\fIInitialize the struct \fBScore\fP. \fP"
+.ti -1c
+.RI "void \fBData_scoreFree\fP (\fBpScore\fP)"
+.br
+.RI "\fIFree the struct \fBScore\fP. \fP"
+.ti -1c
+.RI "int \fBData_copieTab\fP (\fBpSimParameters\fP, double *, int, int, int)"
+.br
+.RI "\fICopy the partial table x in the full table y. \fP"
+.ti -1c
+.RI "void \fBData_updateTab\fP (\fBpListParameters\fP, \fBpSimParameters\fP, double *)"
+.br
+.RI "\fICopy table. \fP"
+.ti -1c
+.RI "void \fBData_allocSimParameters\fP (double *, \fBpListParameters\fP)"
+.br
+.RI "\fIAllocation of tables needed for simulations. \fP"
+.ti -1c
+.RI "void \fBData_allocParameters\fP (\fBpListParameters\fP)"
+.br
+.RI "\fICopy the partial table x in the full table y. \fP"
+.ti -1c
+.RI "void \fBData_parameters\fP (\fBpListParameters\fP, char **)"
+.br
+.RI "\fIRecord parameters of the simulation. \fP"
+.ti -1c
+.RI "void \fBData_desallocation\fP (\fBpListParameters\fP)"
+.br
+.RI "\fIFree memory allocated to the various objects of the program. \fP"
+.ti -1c
+.RI "void \fBData_simParameters\fP (\fBpListParameters\fP, \fBpSimParameters\fP, char *, char *, int, int)"
+.br
+.RI "\fIRecording parameters specific to each simulation. \fP"
+.ti -1c
+.RI "void \fBData_desallocSim\fP (\fBpSimParameters\fP)"
+.br
+.RI "\fIFree struct parameters specific to each simulation. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Load data parameters. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+10 novembre 2010 
+.RE
+.PP
+
+.PP
+Definition in file \fBdata_parameters.h\fP.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBListParameters\fP \fBListParameters\fP"
+.SS "typedef struct \fBListParameters\fP * \fBpListParameters\fP"
+.SS "typedef struct \fBSimParameters\fP * \fBpSimParameters\fP"
+.SS "typedef struct \fBSimParameters\fP \fBSimParameters\fP"
+.SH "Function Documentation"
+.PP 
+.SS "void Data_allocEquations (\fBpListParameters\fPa)"
+.PP
+Allocate the different elements related to he struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.RE
+.PP
+
+.PP
+Definition at line 202 of file data_parameters.c.
+.PP
+References ListParameters::conf, ListParameters::equation, ListParameters::nb_equations, ListParameters::noeud, Xml_getKineticLaw(), Xml_getKineticLawNodes(), and Xml_getNbEquations().
+.PP
+Referenced by Data_parameters().
+.SS "void Data_allocParameters (\fBpListParameters\fPa)"
+.PP
+Copy the partial table x in the full table y. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.RE
+.PP
+
+.PP
+Definition at line 408 of file data_parameters.c.
+.PP
+References ListParameters::banned, ListParameters::conf, ListParameters::interest_parameters, ListParameters::nb_banned, ListParameters::nb_couples, ListParameters::nb_parameters, ListParameters::nb_triesMod, ListParameters::nb_triesSa, ListParameters::parameters, Xml_getBanned(), Xml_getNbBannedSpecies(), Xml_getNbCouples(), Xml_getNbParameters(), Xml_getNbReactioninNoeud(), Xml_getNbTriesMod(), and Xml_getNbTriesSa().
+.PP
+Referenced by Data_parameters().
+.SS "void Data_allocScore (\fBpScore\fPout, \fBxmlConfig_t\fP *conf, Model_t *model)"
+.PP
+Copy the partial table x in the full table y. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Struct \fBScore\fP 
+.br
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fImodel\fP Model of the SBML file 
+.RE
+.PP
+
+.PP
+Definition at line 238 of file data_parameters.c.
+.PP
+References Score::name, Score::nb_reaction, Score::nb_species, Score::quantite, Score::reaction, Score::species, Score::species_amount, Score::species_weight, Score::taille, Score::tailleReactions, Score::tailleSpecies, Xml_getallSpeciesFinalAmount(), Xml_getallSpeciesWeight(), Xml_getNbReaction(), Xml_getNbSpecies(), Xml_getReactionsNames(), and Xml_getSpecies().
+.PP
+Referenced by Data_scoreAlloc(), and Data_simParameters().
+.SS "void Data_allocSimParameters (double *y, \fBpListParameters\fPa)"
+.PP
+Allocation of tables needed for simulations. void \fBData_allocSimParameters(double *y, pListParameters a)\fP 
+.PP
+\fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIy\fP table of reaction parameters 
+.br
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.RE
+.PP
+
+.PP
+Definition at line 391 of file data_parameters.c.
+.PP
+References ListParameters::nb_parameters.
+.PP
+Referenced by Data_simParameters().
+.SS "int Data_copieTab (\fBpSimParameters\fPsimulated, double *x, inta, intdebut, intfin)"
+.PP
+Copy the partial table x in the full table y. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsimulated\fP Simulation parameters : struct \fBSimParameters\fP 
+.br
+\fIx\fP Short table of reaction parameters 
+.br
+\fIa\fP Line 
+.br
+\fIdebut\fP Beginning 
+.br
+\fIfin\fP End 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of copied element 
+.RE
+.PP
+
+.PP
+Definition at line 347 of file data_parameters.c.
+.PP
+References a, and SimParameters::y.
+.PP
+Referenced by Data_updateTab().
+.SS "void Data_desallocation (\fBpListParameters\fPa)"
+.PP
+Free memory allocated to the various objects of the program. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.RE
+.PP
+
+.PP
+Definition at line 463 of file data_parameters.c.
+.PP
+References ListParameters::banned, ListParameters::conf, ListParameters::equation, ListParameters::model, ListParameters::nb_equations, ListParameters::noeud, ListParameters::parameters, and Xml_freeConfig().
+.PP
+Referenced by compute_mpi().
+.SS "void Data_desallocSim (\fBpSimParameters\fPsim)"
+.PP
+Free struct parameters specific to each simulation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsim\fP Simulation parameters : struct \fBSimParameters\fP 
+.RE
+.PP
+
+.PP
+Definition at line 549 of file data_parameters.c.
+.PP
+References SimParameters::debugFile, Score::name, Score::nb_reaction, SimParameters::out, Score::quantite, SimParameters::r, Score::reaction, Score::species, Score::species_amount, Score::species_weight, Score::taille, and SimParameters::y.
+.PP
+Referenced by Min_compute_minimization(), Mod_compute_modeling(), Recuit_compute_recuit(), and Sd_compute_standard_deviation().
+.SS "\fBEquations\fP** Data_equationsAlloc (\fBpListParameters\fPcurrent, \fBEquations\fP **pile)"
+.PP
+Allocate the struct \fBEquations\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcurrent\fP Current parameters : struct \fBListParameters\fP 
+.br
+\fIpile\fP Pile des equations : struct \fBEquations\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Allocated struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 169 of file data_parameters.c.
+.PP
+References ListParameters::nb_equations.
+.PP
+Referenced by Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "void Data_equationsInit (\fBpListParameters\fPcurrent, \fBEquations\fP **pile)"
+.PP
+Initialize equations. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcurrent\fP Current parameters : struct \fBListParameters\fP 
+.br
+\fIpile\fP Pile des equations : struct \fBEquations\fP 
+.RE
+.PP
+
+.PP
+Definition at line 184 of file data_parameters.c.
+.PP
+References ListParameters::equation, Equations_pileFormation(), ListParameters::nb_equations, and ListParameters::noeud.
+.PP
+Referenced by Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "Model_t* Data_initSBML (char *sbml_file)"
+.PP
+Load SBML file. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsbml_file\fP Name of the SBML file 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Model of the SBML file 
+.RE
+.PP
+
+.PP
+Definition at line 81 of file data_parameters.c.
+.PP
+Referenced by Data_parameters().
+.SS "\fBxmlConfig_t\fP* Data_initXML (char *xml_file)"
+.PP
+Load parameter file. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxml_file\fP Name of the parameter file 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Model of the parameter file =:Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file data_parameters.c.
+.PP
+References Xml_loadConfig().
+.PP
+Referenced by Data_parameters().
+.SS "void Data_parameters (\fBpListParameters\fPa, char **files_path)"
+.PP
+Record parameters of the simulation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIfiles_path\fP List of paths 
+.RE
+.PP
+
+.PP
+Definition at line 442 of file data_parameters.c.
+.PP
+References ListParameters::conf, Data_allocEquations(), Data_allocParameters(), Data_initSBML(), Data_initXML(), and ListParameters::model.
+.PP
+Referenced by compute_mpi().
+.SS "gsl_rng* Data_rngAlloc (gsl_rng *r)"
+.PP
+Allocation of the random number generator. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP Random number generator 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Random number generator 
+.RE
+.PP
+
+.PP
+Definition at line 135 of file data_parameters.c.
+.PP
+Referenced by Data_simParameters().
+.SS "\fBpScore\fP Data_scoreAlloc (\fBpListParameters\fPa)"
+.PP
+Allocation of the struct \fBScore\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Allocated struct \fBScore\fP 
+.RE
+.PP
+
+.PP
+Definition at line 274 of file data_parameters.c.
+.PP
+References ListParameters::conf, Data_allocScore(), and ListParameters::model.
+.PP
+Referenced by Min_compute_minimization(), Mod_compute_modeling(), and Recuit_compute_recuit().
+.SS "void Data_scoreFree (\fBpScore\fPout)"
+.PP
+Free the struct \fBScore\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Struct score 
+.RE
+.PP
+
+.PP
+Definition at line 307 of file data_parameters.c.
+.PP
+References Score::name, Score::nb_reaction, Score::quantite, Score::reaction, Score::species_amount, Score::species_weight, and Score::taille.
+.PP
+Referenced by Min_compute_minimization(), Mod_compute_modeling(), and Recuit_compute_recuit().
+.SS "void Data_scoreInit (\fBpScore\fPout)"
+.PP
+Initialize the struct \fBScore\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Empty struct \fBScore\fP 
+.RE
+.PP
+
+.PP
+Definition at line 290 of file data_parameters.c.
+.PP
+References Score::quantite, and Score::taille.
+.PP
+Referenced by Min_my_f(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "void Data_simParameters (\fBpListParameters\fPa, \fBpSimParameters\fPsim, char *out, char *texte, intnumber, intdebug)"
+.PP
+Recording parameters specific to each simulation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIsim\fP Simulation parameters : struct \fBSimParameters\fP 
+.br
+\fIout\fP Output repertory 
+.br
+\fItexte\fP File name 
+.br
+\fInumber\fP Number of the debug file 
+.br
+\fIdebug\fP Determine debug 
+.RE
+.PP
+
+.PP
+Definition at line 506 of file data_parameters.c.
+.PP
+References ListParameters::conf, Data_allocScore(), Data_allocSimParameters(), Data_rngAlloc(), SimParameters::debugFile, ListParameters::model, ListParameters::nb_parameters, SimParameters::out, SimParameters::pile, SimParameters::r, and SimParameters::y.
+.PP
+Referenced by Min_compute_minimization(), Mod_compute_modeling(), Recuit_compute_recuit(), and Sd_compute_standard_deviation().
+.SS "void Data_updateTab (\fBpListParameters\fPcurrent, \fBpSimParameters\fPsimulated, double *x)"
+.PP
+Copy table. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcurrent\fP Current parameters : struct \fBListParameters\fP 
+.br
+\fIsimulated\fP Simulation parameters : struct \fBSimParameters\fP 
+.br
+\fIx\fP Short table of reaction parameters 
+.RE
+.PP
+
+.PP
+Definition at line 371 of file data_parameters.c.
+.PP
+References a, Data_copieTab(), ListParameters::nb_couples, and ListParameters::parameters.
+.PP
+Referenced by Min_my_f(), Recuit_energyFunction(), and Recuit_printPosition().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

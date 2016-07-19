@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="unionEqudata" kind="union" prot="public">
+    <compoundname>Equdata</compoundname>
+    <includes refid="equations_8h" local="no">equations.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionEqudata_1a8dc088dcf334467249e93a946a2c3070" prot="public" static="no" mutable="no">
+        <type>double(*</type>
+        <definition>double(* Equdata::op)(double, double)</definition>
+        <argsstring>)(double, double)</argsstring>
+        <name>op</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="59" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Equdata::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="60" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="equations_8h_1ab5545fa4c945c64285e91687d90767f4" compoundref="equations_8c" startline="359" endline="372">Equations_print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Equdata::var</definition>
+        <argsstring></argsstring>
+        <name>var</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="61" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="equations_8h_1ab5545fa4c945c64285e91687d90767f4" compoundref="equations_8c" startline="359" endline="372">Equations_print</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Equation data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="58" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="57" bodyend="62"/>
+    <listofallmembers>
+      <member refid="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" prot="public" virt="non-virtual"><scope>Equdata</scope><name>data</name></member>
+      <member refid="unionEqudata_1a8dc088dcf334467249e93a946a2c3070" prot="public" virt="non-virtual"><scope>Equdata</scope><name>op</name></member>
+      <member refid="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" prot="public" virt="non-virtual"><scope>Equdata</scope><name>var</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

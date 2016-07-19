@@ -1,0 +1,60 @@
+.TH "xmlConfig_t" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+xmlConfig_t \- 
+.PP
+Structure containing all information from parameter.xml.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <xml_parameter.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "char * \fBfichier\fP"
+.br
+.ti -1c
+.RI "xmlDocPtr \fBdoc\fP"
+.br
+.ti -1c
+.RI "xmlNodePtr \fBracine\fP"
+.br
+.ti -1c
+.RI "xmlXPathContextPtr \fBctxt\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure containing all information from parameter.xml. 
+.PP
+Definition at line 33 of file xml_parameter.h.
+.SH "Field Documentation"
+.PP 
+.SS "xmlXPathContextPtr \fBxmlConfig_t::ctxt\fP"Xml ctxt 
+.PP
+Definition at line 37 of file xml_parameter.h.
+.PP
+Referenced by Xml_freeConfig(), Xml_getBanned(), Xml_getCount(), Xml_getDoubleNumber(), Xml_getKineticLaw(), Xml_getKineticLawNodes(), Xml_getNumber(), Xml_getReactionsNames(), Xml_getReactionsNamesinNoeud(), Xml_getSpecies(), Xml_getSpeciesFinalAmount(), Xml_getSpeciesWeight(), Xml_getString(), and Xml_loadConfig().
+.SS "xmlDocPtr \fBxmlConfig_t::doc\fP"Xml doc 
+.PP
+Definition at line 35 of file xml_parameter.h.
+.PP
+Referenced by Xml_freeConfig(), and Xml_loadConfig().
+.SS "char* \fBxmlConfig_t::fichier\fP"Name of the parameter file 
+.PP
+Definition at line 34 of file xml_parameter.h.
+.PP
+Referenced by Xml_freeConfig(), and Xml_loadConfig().
+.SS "xmlNodePtr \fBxmlConfig_t::racine\fP"Xml root 
+.PP
+Definition at line 36 of file xml_parameter.h.
+.PP
+Referenced by Xml_loadConfig().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

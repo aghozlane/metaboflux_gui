@@ -1,0 +1,1012 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="gsl__recuit_8c" kind="file">
+    <compoundname>gsl_recuit.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">gsl/gsl_blas.h</includes>
+    <includes local="no">gsl/gsl_multimin.h</includes>
+    <includes local="no">gsl/gsl_math.h</includes>
+    <includes local="no">gsl/gsl_rng.h</includes>
+    <includes local="no">gsl/gsl_siman.h</includes>
+    <includes local="no">gsl/gsl_ieee_utils.h</includes>
+    <includes local="no">sbml/SBMLTypes.h</includes>
+    <includes local="no">libxml/parser.h</includes>
+    <includes local="no">libxml/xpath.h</includes>
+    <includes refid="xml__parameter_8h" local="yes">xml_parameter.h</includes>
+    <includes refid="especes_8h" local="yes">especes.h</includes>
+    <includes refid="equations_8h" local="yes">equations.h</includes>
+    <includes refid="simulation_8h" local="yes">simulation.h</includes>
+    <includes refid="data__parameters_8h" local="yes">data_parameters.h</includes>
+    <includes refid="gsl__recuit_8h" local="yes">gsl_recuit.h</includes>
+    <incdepgraph>
+      <node id="452">
+        <label>gsl/gsl_blas.h</label>
+      </node>
+      <node id="447">
+        <label>assert.h</label>
+      </node>
+      <node id="457">
+        <label>gsl/gsl_ieee_utils.h</label>
+      </node>
+      <node id="456">
+        <label>gsl/gsl_siman.h</label>
+      </node>
+      <node id="445">
+        <label>stdlib.h</label>
+      </node>
+      <node id="459">
+        <label>libxml/parser.h</label>
+      </node>
+      <node id="462">
+        <label>especes.h</label>
+        <link refid="especes_8h"/>
+      </node>
+      <node id="458">
+        <label>sbml/SBMLTypes.h</label>
+      </node>
+      <node id="450">
+        <label>sys/types.h</label>
+      </node>
+      <node id="446">
+        <label>string.h</label>
+      </node>
+      <node id="451">
+        <label>unistd.h</label>
+      </node>
+      <node id="453">
+        <label>gsl/gsl_multimin.h</label>
+      </node>
+      <node id="443">
+        <label>metaboflux/src/gsl_recuit.c</label>
+        <link refid="gsl_recuit.c"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>time.h</label>
+      </node>
+      <node id="449">
+        <label>math.h</label>
+      </node>
+      <node id="463">
+        <label>equations.h</label>
+        <link refid="equations_8h"/>
+      </node>
+      <node id="460">
+        <label>libxml/xpath.h</label>
+      </node>
+      <node id="464">
+        <label>simulation.h</label>
+        <link refid="simulation_8h"/>
+      </node>
+      <node id="454">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="455">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="465">
+        <label>data_parameters.h</label>
+        <link refid="data__parameters_8h"/>
+      </node>
+      <node id="444">
+        <label>stdio.h</label>
+      </node>
+      <node id="461">
+        <label>xml_parameter.h</label>
+        <link refid="xml__parameter_8h"/>
+      </node>
+      <node id="466">
+        <label>gsl_recuit.h</label>
+        <link refid="gsl__recuit_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gsl__recuit_8c_1a369266c24eacffb87046522897a570d5" prot="public" static="no">
+        <name>_GNU_SOURCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="26" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gsl__recuit_8c_1ae78b385d27f680dd0d0bd3b700776071" prot="public" static="no" mutable="no">
+        <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+        <definition>pListParameters all</definition>
+        <argsstring></argsstring>
+        <name>all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="52" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="52" bodyend="-1"/>
+        <referencedby refid="xml__parameter_8h_1a5645a54d20bd3d2347f06b3167d1ed6a" compoundref="xml__parameter_8c" startline="854" endline="900">Xml_getKineticLaw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="gsl__recuit_8c_1ac5741f1199033e1f7d3809762d7b3b8b" prot="public" static="no" mutable="no">
+        <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+        <definition>pSimParameters sim</definition>
+        <argsstring></argsstring>
+        <name>sim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="53" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gsl__recuit_8c_1a3207f642ce30307aa2f306ad8eab9f4a" prot="public" static="no" mutable="no">
+        <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+        <definition>pScore resultemp</definition>
+        <argsstring></argsstring>
+        <name>resultemp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="54" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gsl__recuit_8c_1a89c76a53c82e9e4082b6816ae9156847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Recuit_energyFunction</definition>
+        <argsstring>(void *xp)</argsstring>
+        <name>Recuit_energyFunction</name>
+        <param>
+          <type>void *</type>
+          <declname>xp</declname>
+        </param>
+        <briefdescription>
+<para>Simulate the petri net and compute the energy. </para>        </briefdescription>
+        <detaileddescription>
+<para>double <ref refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" kindref="member">Recuit_energyFunction(void *xp)</ref> <simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Energy value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="66" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="65" bodyend="105"/>
+        <references refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" compoundref="data__parameters_8h" startline="47">ListParameters::banned</references>
+        <references refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" compoundref="data__parameters_8c" startline="169" endline="175">Data_equationsAlloc</references>
+        <references refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</references>
+        <references refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" compoundref="data__parameters_8c" startline="290" endline="299">Data_scoreInit</references>
+        <references refid="data__parameters_8c_1a707102f569c0db162aa724fe477d5e78" compoundref="data__parameters_8c" startline="371" endline="381">Data_updateTab</references>
+        <references refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" compoundref="data__parameters_8h" startline="64">SimParameters::debugFile</references>
+        <references refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</references>
+        <references refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" compoundref="equations_8c" startline="683" endline="698">Equations_finalQuantite</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structListParameters_1aae885063019b7630081d14786e3b48e9" compoundref="data__parameters_8h" startline="48">ListParameters::nb_banned</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" compoundref="simulation_8h" startline="61">Score::nb_species</references>
+        <references refid="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" compoundref="data__parameters_8h" startline="50">ListParameters::nb_triesSa</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" compoundref="data__parameters_8h" startline="60">SimParameters::pile</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="simulation_8c_1aeef27fa70d7f408e820193ef0a2c5496" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</references>
+        <references refid="simulation_8c_1a792ef36e542159096d4567a125aee565" compoundref="simulation_8c" startline="486" endline="502">SBML_debugPrint</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1a7d7ba6e6ed671b3bb39a9badfd4e0289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Recuit_metricDistance</definition>
+        <argsstring>(void *xp, void *yp)</argsstring>
+        <name>Recuit_metricDistance</name>
+        <param>
+          <type>void *</type>
+          <declname>xp</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>yp</declname>
+        </param>
+        <briefdescription>
+<para>Compute the distance between the two table. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Past short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Distance between the two table </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="116" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="115" bodyend="126"/>
+        <references refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" compoundref="data__parameters_8h" startline="41">ListParameters::interest_parameters</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1adc78fde056663ea47deb34141271d036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_takeStep</definition>
+        <argsstring>(const gsl_rng *r, void *xp, double step_size)</argsstring>
+        <name>Recuit_takeStep</name>
+        <param>
+          <type>const gsl_rng *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>xp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step_size</declname>
+        </param>
+        <briefdescription>
+<para>Take a step through the solution space TSP. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="137" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="136" bodyend="150"/>
+        <references refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" compoundref="data__parameters_8h" startline="41">ListParameters::interest_parameters</references>
+        <references refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" compoundref="data__parameters_8h" startline="42">ListParameters::nb_couples</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <references refid="gsl__recuit_8c_1a421d0cc9a2d5ab2cbbfd476bfa4980d6" compoundref="gsl__recuit_8c" startline="235" endline="252">Recuit_verifParameters_2</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1a4a6f6b6fe31febebc2805c9cabfc9b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_printPosition</definition>
+        <argsstring>(void *xp)</argsstring>
+        <name>Recuit_printPosition</name>
+        <param>
+          <type>void *</type>
+          <declname>xp</declname>
+        </param>
+        <briefdescription>
+<para>Print the table of reaction parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="159" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="158" bodyend="172"/>
+        <references refid="data__parameters_8c_1a707102f569c0db162aa724fe477d5e78" compoundref="data__parameters_8c" startline="371" endline="381">Data_updateTab</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1a79f5b519a9246972864c8150c07aa3b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE * Recuit_redirectionFlux</definition>
+        <argsstring>(xmlConfig_t *conf, FILE *f, char **files_path, int number)</argsstring>
+        <name>Recuit_redirectionFlux</name>
+        <param>
+          <type><ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> *</type>
+          <declname>conf</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>files_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Redirect stdout flux. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structxmlConfig__t" kindref="compound">xmlConfig_t</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of out repertory </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Out flux </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="185" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="184" bodyend="196"/>
+        <references refid="xml__parameter_8c_1a2961477293ec8eb23f4b7f2c654932a0" compoundref="xml__parameter_8c" startline="190" endline="218">Xml_getString</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1aa90b2d48221559744a10dc6bb9441b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_verifParameters</definition>
+        <argsstring>(double *x_initial, const gsl_rng *r, int debut, int max)</argsstring>
+        <name>Recuit_verifParameters</name>
+        <param>
+          <type>double *</type>
+          <declname>x_initial</declname>
+        </param>
+        <param>
+          <type>const gsl_rng *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>debut</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Choice of parameters and verification of their value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_initial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="208" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="207" bodyend="222"/>
+        <referencedby refid="gsl__recuit_8h_1aa83d3ab8e9c0f5d45ddedf1b65a67f98" compoundref="gsl__recuit_8c" startline="261" endline="271">Recuit_defParametre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1a421d0cc9a2d5ab2cbbfd476bfa4980d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_verifParameters_2</definition>
+        <argsstring>(double *new_x, double *old_x, const gsl_rng *r, int debut, int max, double step_size)</argsstring>
+        <name>Recuit_verifParameters_2</name>
+        <param>
+          <type>double *</type>
+          <declname>new_x</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>old_x</declname>
+        </param>
+        <param>
+          <type>const gsl_rng *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>debut</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>step_size</declname>
+        </param>
+        <briefdescription>
+<para>Choice of parameters and verification of their value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>old_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the step </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="236" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="235" bodyend="252"/>
+        <referencedby refid="gsl__recuit_8h_1a992371555f490f726cbe4a1c90785a09" compoundref="gsl__recuit_8c" startline="136" endline="150">Recuit_takeStep</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1aba216c03f79fce2efa085a08eff3d1b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_defParametre</definition>
+        <argsstring>(double *x_initial, const gsl_rng *r)</argsstring>
+        <name>Recuit_defParametre</name>
+        <param>
+          <type>double *</type>
+          <declname>x_initial</declname>
+        </param>
+        <param>
+          <type>const gsl_rng *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Definition of the initial parameters of the simulation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_initial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="262" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="261" bodyend="271"/>
+        <references refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" compoundref="data__parameters_8h" startline="42">ListParameters::nb_couples</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <references refid="gsl__recuit_8c_1aa90b2d48221559744a10dc6bb9441b0b" compoundref="gsl__recuit_8c" startline="207" endline="222">Recuit_verifParameters</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1accb4bccfdfa93478c6cb6400f18ba9a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_printParametre</definition>
+        <argsstring>(double *x_initial)</argsstring>
+        <name>Recuit_printParametre</name>
+        <param>
+          <type>double *</type>
+          <declname>x_initial</declname>
+        </param>
+        <briefdescription>
+<para>Print initial parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_initial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table of reaction parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="280" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="279" bodyend="291"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" compoundref="data__parameters_8h" startline="41">ListParameters::interest_parameters</references>
+        <references refid="xml__parameter_8c_1af051a5017271240c72cad70ee82b6af7" compoundref="xml__parameter_8c" startline="305" endline="309">Xml_getBoltzmann</references>
+        <references refid="xml__parameter_8c_1a9e2c04caf11e5a95f5aa22f6f37f479d" compoundref="xml__parameter_8c" startline="331" endline="335">Xml_getMuT</references>
+        <references refid="xml__parameter_8c_1ae49d86627f34fb18c996a3060e2a297a" compoundref="xml__parameter_8c" startline="266" endline="270">Xml_getNbIters</references>
+        <references refid="xml__parameter_8c_1a7b67ce794add8c04563e07f9d25c6096" compoundref="xml__parameter_8c" startline="253" endline="257">Xml_getNbTriesSa</references>
+        <references refid="xml__parameter_8c_1a1770352729facbccf4b8fb288551ebbb" compoundref="xml__parameter_8c" startline="292" endline="296">Xml_getStepSize</references>
+        <references refid="xml__parameter_8c_1ab2406faab9296a45cc596beec457f268" compoundref="xml__parameter_8c" startline="318" endline="322">Xml_getTinitial</references>
+        <references refid="xml__parameter_8c_1a9401fbdd3c314c0e729c9a278a6e2805" compoundref="xml__parameter_8c" startline="344" endline="348">Xml_getTmin</references>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__recuit_8c_1a307fb17177314df2a79d0833be12e379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Recuit_compute_recuit</definition>
+        <argsstring>(char **files_path, int debug, int number, pListParameters allone, gsl_siman_params_t params)</argsstring>
+        <name>Recuit_compute_recuit</name>
+        <param>
+          <type>char **</type>
+          <declname>files_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <declname>allone</declname>
+        </param>
+        <param>
+          <type>gsl_siman_params_t</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Compute the simulated annealing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug flag </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gsl parameters </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" line="305" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c" bodystart="304" bodyend="353"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</references>
+        <references refid="data__parameters_8c_1ae4f85916052b0acfa763dd33e63336b6" compoundref="data__parameters_8c" startline="274" endline="282">Data_scoreAlloc</references>
+        <references refid="data__parameters_8c_1ad65651512fd7fe4d41916573fd79b1aa" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</references>
+        <references refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</references>
+        <references refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" compoundref="data__parameters_8h" startline="41">ListParameters::interest_parameters</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="gsl__recuit_8c_1aba216c03f79fce2efa085a08eff3d1b2" compoundref="gsl__recuit_8c" startline="261" endline="271">Recuit_defParametre</references>
+        <references refid="gsl__recuit_8c_1a89c76a53c82e9e4082b6816ae9156847" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</references>
+        <references refid="gsl__recuit_8c_1a7d7ba6e6ed671b3bb39a9badfd4e0289" compoundref="gsl__recuit_8c" startline="115" endline="126">Recuit_metricDistance</references>
+        <references refid="gsl__recuit_8c_1accb4bccfdfa93478c6cb6400f18ba9a1" compoundref="gsl__recuit_8c" startline="279" endline="291">Recuit_printParametre</references>
+        <references refid="gsl__recuit_8c_1a4a6f6b6fe31febebc2805c9cabfc9b10" compoundref="gsl__recuit_8c" startline="158" endline="172">Recuit_printPosition</references>
+        <references refid="gsl__recuit_8c_1a79f5b519a9246972864c8150c07aa3b9" compoundref="gsl__recuit_8c" startline="184" endline="196">Recuit_redirectionFlux</references>
+        <references refid="gsl__recuit_8c_1adc78fde056663ea47deb34141271d036" compoundref="gsl__recuit_8c" startline="136" endline="150">Recuit_takeStep</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compute the simulated annealing. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>9 novembre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26" refid="gsl__recuit_8c_1a369266c24eacffb87046522897a570d5" refkind="member"><highlight class="preprocessor">#define<sp/>_GNU_SOURCE</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_blas.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_multimin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_rng.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_siman.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_ieee_utils.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sbml/SBMLTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/parser.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xpath.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="xml__parameter_8h" kindref="compound" tooltip="Xml reader for parametre.xml.">xml_parameter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="especes_8h" kindref="compound" tooltip="Modelize a molecule.">especes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="equations_8h" kindref="compound" tooltip="Processes an equation in MathML format.">equations.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="simulation_8h" kindref="compound" tooltip="Simulate a petri net.">simulation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__parameters_8h" kindref="compound" tooltip="Load data parameters.">data_parameters.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gsl__recuit_8h" kindref="compound" tooltip="Compute the simulated annealing.">gsl_recuit.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>parametre<sp/>global<sp/>Recuit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="gsl__recuit_8c_1ae78b385d27f680dd0d0bd3b700776071" refkind="member"><highlight class="normal"><ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref><sp/><ref refid="gsl__recuit_8c_1ae78b385d27f680dd0d0bd3b700776071" kindref="member">all</ref>;</highlight></codeline>
+<codeline lineno="53" refid="gsl__recuit_8c_1ac5741f1199033e1f7d3809762d7b3b8b" refkind="member"><highlight class="normal"><ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">pSimParameters</ref><sp/><ref refid="gsl__recuit_8c_1ac5741f1199033e1f7d3809762d7b3b8b" kindref="member">sim</ref>;</highlight></codeline>
+<codeline lineno="54" refid="gsl__recuit_8c_1a3207f642ce30307aa2f306ad8eab9f4a" refkind="member"><highlight class="normal"><ref refid="structScore" kindref="compound" tooltip="Structure containing all information from simulations.">pScore</ref><sp/><ref refid="gsl__recuit_8c_1a3207f642ce30307aa2f306ad8eab9f4a" kindref="member">resultemp</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1a89c76a53c82e9e4082b6816ae9156847" kindref="member" tooltip="Simulate the petri net and compute the energy.">Recuit_energyFunction</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*xp)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fonction<sp/>d&apos;energie<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>xp,<sp/>energy=0.0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>du<sp/>tableau<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" kindref="member" tooltip="Initialize the struct Score.">Data_scoreInit</ref>(resultemp);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" kindref="member" tooltip="Initialize the struct Score.">Data_scoreInit</ref>(sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Mise<sp/>a<sp/>jour<sp/>du<sp/>tableau<sp/>complet<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a707102f569c0db162aa724fe477d5e78" kindref="member" tooltip="Copy table.">Data_updateTab</ref>(all,<sp/>sim,<sp/>x);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>=<ref refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" kindref="member" tooltip="Allocate the struct Equations.">Data_equationsAlloc</ref>(all,<sp/>sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" kindref="member" tooltip="Initialize equations.">Data_equationsInit</ref>(all,<sp/>sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="simulation_8c_1aeef27fa70d7f408e820193ef0a2c5496" kindref="member" tooltip="X time simulation of metabolic network.">SBML_compute_simulation_mean</ref>(sim-&gt;<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>,<sp/>resultemp,<sp/>all-&gt;<ref refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" kindref="member">model</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" kindref="member">y</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" kindref="member">r</ref>,<sp/>all-&gt;<ref refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" kindref="member">banned</ref>,<sp/>all-&gt;<ref refid="structListParameters_1aae885063019b7630081d14786e3b48e9" kindref="member">nb_banned</ref>,<sp/>all-&gt;<ref refid="structListParameters_1afb96e3b0b020bfb8d52448fac7447d3a" kindref="member">nb_triesSa</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>score<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;all-&gt;<ref refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" kindref="member">nb_equations</ref>;i++){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>energy+=<ref refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" kindref="member" tooltip="Compute the score of the equation.">Equations_calcul</ref>(sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>[i],<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*fprintf(stderr,&quot;Energy<sp/>%f\n&quot;,energy);</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/>if(sim-&gt;pile[i]!=NULL){</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,&quot;yoo\n&quot;);</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>free(sim-&gt;pile[i]);</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>energy+=<ref refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" kindref="member" tooltip="Compute the score of the quantity which means the difference between what is expected to what is simu...">Equations_finalQuantite</ref>(sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" kindref="member">nb_species</ref>,sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" kindref="member">species</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" kindref="member">species_amount</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" kindref="member">species_weight</ref>,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>,sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>energy=sqrt(energy);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Debug<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sim-&gt;<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>!=NULL)<sp/><ref refid="simulation_8c_1a792ef36e542159096d4567a125aee565" kindref="member" tooltip="Print the debuf file.">SBML_debugPrint</ref>(sim-&gt;<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" kindref="member">tailleSpecies</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>,<sp/>energy);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reinitialisation<sp/>des<sp/>equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>!=NULL)<sp/>free(sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>energy;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="gsl__recuit_8h_1a262f0cba7cb59023d3b45bc17c103aac" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1a7d7ba6e6ed671b3bb39a9badfd4e0289" kindref="member" tooltip="Compute the distance between the two table.">Recuit_metricDistance</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*xp,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*yp)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Distance<sp/>entre<sp/>les<sp/>variables*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*route1<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>xp,<sp/>*route2<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>yp;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>distance<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>all-&gt;<ref refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" kindref="member">interest_parameters</ref>;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>distance<sp/>+=<sp/>fabs(route1[i]-route2[i]);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>distance;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="gsl__recuit_8h_1a992371555f490f726cbe4a1c90785a09" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1adc78fde056663ea47deb34141271d036" kindref="member" tooltip="Take a step through the solution space TSP.">Recuit_takeStep</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_rng<sp/>*<sp/>r,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*xp,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step_size)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Prend<sp/>un<sp/>pas<sp/>à<sp/>travers<sp/>l&apos;espace<sp/>des<sp/>solutions<sp/>TSP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*old_x<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>xp;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*new_x=(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)malloc(all-&gt;<ref refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" kindref="member">interest_parameters</ref>*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>act=0;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Selection<sp/>des<sp/>pas<sp/>dans<sp/>l&apos;espace<sp/>des<sp/>valeurs<sp/>que<sp/>peuvent<sp/>prendre<sp/>les<sp/>parametres<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;all-&gt;<ref refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" kindref="member">nb_couples</ref>;i++){</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gsl__recuit_8c_1a421d0cc9a2d5ab2cbbfd476bfa4980d6" kindref="member" tooltip="Choice of parameters and verification of their value.">Recuit_verifParameters_2</ref>(new_x,old_x,r,act,(act+all-&gt;<ref refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" kindref="member">parameters</ref>[i]),<sp/>step_size);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>act+=all-&gt;<ref refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" kindref="member">parameters</ref>[i];</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Copie<sp/>du<sp/>nouveau<sp/>tableau<sp/>de<sp/>ratio<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>memcpy(xp,<sp/>new_x,<sp/>act*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*new_x));</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="gsl__recuit_8h_1afd9db376bfecbe387f3836854c31f6d0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1a4a6f6b6fe31febebc2805c9cabfc9b10" kindref="member" tooltip="Print the table of reaction parameters.">Recuit_printPosition</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*xp)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Affichage<sp/>des<sp/>valeurs<sp/>prises<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*route<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>xp;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>[&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Mise<sp/>a<sp/>jour<sp/>du<sp/>tableau<sp/>long<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a707102f569c0db162aa724fe477d5e78" kindref="member" tooltip="Copy table.">Data_updateTab</ref>(all,<sp/>sim,<sp/>route);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Affiche<sp/>les<sp/>ratios<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;all-&gt;<ref refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" kindref="member">nb_parameters</ref>;i++){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;<sp/>%.2f<sp/>&quot;</highlight><highlight class="normal">,<sp/>sim-&gt;<ref refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" kindref="member">y</ref>[i]);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;]<sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="gsl__recuit_8h_1a50384383f4c2a13a1f7dc85f69339bd6" refkind="member"><highlight class="normal">FILE<sp/>*<sp/><ref refid="gsl__recuit_8c_1a79f5b519a9246972864c8150c07aa3b9" kindref="member" tooltip="Redirect stdout flux.">Recuit_redirectionFlux</ref>(<ref refid="structxmlConfig__t" kindref="compound" tooltip="Structure containing all information from parameter.xml.">xmlConfig_t</ref><sp/>*conf,<sp/>FILE<sp/>*f,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**files_path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Redirection<sp/>du<sp/>flux<sp/>stdout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sortie[200];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allocation<sp/>du<sp/>message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>sprintf(sortie,</highlight><highlight class="stringliteral">&quot;%s%s_simulated_annealing_%d.txt&quot;</highlight><highlight class="normal">,files_path[2],<ref refid="xml__parameter_8c_1a2961477293ec8eb23f4b7f2c654932a0" kindref="member" tooltip="Get name value.">Xml_getString</ref>(conf),number);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Redirection<sp/>des<sp/>flux<sp/>stdout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>f=<sp/>freopen(sortie,</highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">,stdout)<sp/>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(f==NULL){</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;Erreur<sp/>de<sp/>redirection<sp/>du<sp/>flux\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="gsl__recuit_8h_1acc458cd24422d89b326a1b4bb7940cbf" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1aa90b2d48221559744a10dc6bb9441b0b" kindref="member" tooltip="Choice of parameters and verification of their value.">Recuit_verifParameters</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x_initial,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_rng<sp/>*<sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debut,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Choix<sp/>des<sp/>parametres<sp/>et<sp/>verification<sp/>de<sp/>leur<sp/>valeur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp2,i;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>temp=0.0;<sp/>temp2=0;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=debut;i&lt;max;i++){</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x_initial[i]<sp/>=<sp/>gsl_rng_uniform(r)*100.0;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp+=x_initial[i];</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(x_initial[i]&lt;0.0)<sp/>temp2=1;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((temp&gt;100.0)||(temp2==1));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="gsl__recuit_8h_1a389f2f70421b758b2eaea08d8ef9033a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1a421d0cc9a2d5ab2cbbfd476bfa4980d6" kindref="member" tooltip="Choice of parameters and verification of their value.">Recuit_verifParameters_2</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*new_x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*old_x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_rng<sp/>*<sp/>r,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debut,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step_size)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Choix<sp/>des<sp/>parametres<sp/>et<sp/>verification<sp/>de<sp/>leur<sp/>valeur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp,<sp/>u<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp2,i;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Choix<sp/>et<sp/>verification<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>temp=0.0;<sp/>temp2=0;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>u=gsl_rng_uniform(r);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=debut;i&lt;max;i++){</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>new_x[i]<sp/>=<sp/>u<sp/>*<sp/>2<sp/>*<sp/>step_size<sp/>-<sp/>step_size<sp/>+<sp/>old_x[i];</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp+=new_x[i];</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(new_x[i]&lt;0.0)<sp/>temp2=1;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((temp&gt;100.0)||(temp2==1));</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="gsl__recuit_8h_1aa83d3ab8e9c0f5d45ddedf1b65a67f98" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1aba216c03f79fce2efa085a08eff3d1b2" kindref="member" tooltip="Definition of the initial parameters of the simulation.">Recuit_defParametre</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x_initial,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_rng<sp/>*<sp/>r)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Definition<sp/>des<sp/>parametres<sp/>initiaux<sp/>de<sp/>la<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>act=0;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Selection<sp/>aleatoire<sp/>des<sp/>parametres<sp/>initiaux<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;all-&gt;<ref refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" kindref="member">nb_couples</ref>;i++){</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gsl__recuit_8c_1aa90b2d48221559744a10dc6bb9441b0b" kindref="member" tooltip="Choice of parameters and verification of their value.">Recuit_verifParameters</ref>(x_initial,r,act,(act+all-&gt;<ref refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" kindref="member">parameters</ref>[i]));</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>act+=all-&gt;<ref refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" kindref="member">parameters</ref>[i];</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="gsl__recuit_8h_1a41e47a5713188f196ebc7a66a9052d3d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1accb4bccfdfa93478c6cb6400f18ba9a1" kindref="member" tooltip="Print initial parameters.">Recuit_printParametre</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x_initial)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Affichage<sp/>des<sp/>parametres<sp/>initiaux<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;******************Parametres<sp/>initiaux***********************\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Points<sp/>do<sp/>we<sp/>try<sp/>before<sp/>stepping<sp/>:N_TRIES=%d\nIterations<sp/>for<sp/>each<sp/>T<sp/>:ITERS_FIXED_T=%d\nStep<sp/>size<sp/>in<sp/>random<sp/>walk<sp/>:STEP_SIZE=%f\nBoltzmann<sp/>constant<sp/>:K=%f\nInitial<sp/>temperature<sp/>:T_INITIAL=%f\nDamping<sp/>factor<sp/>for<sp/>temperature<sp/>MU_T=%f\nMinimal<sp/>Temperature<sp/>T_MIN=%e\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="xml__parameter_8c_1a7b67ce794add8c04563e07f9d25c6096" kindref="member" tooltip="Get number of tries for the simulated annealing and minimization.">Xml_getNbTriesSa</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>),<sp/><ref refid="xml__parameter_8c_1ae49d86627f34fb18c996a3060e2a297a" kindref="member" tooltip="Get number of iteration.">Xml_getNbIters</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>),<sp/><ref refid="xml__parameter_8c_1a1770352729facbccf4b8fb288551ebbb" kindref="member" tooltip="Get the step size.">Xml_getStepSize</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>),</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="xml__parameter_8c_1af051a5017271240c72cad70ee82b6af7" kindref="member" tooltip="Get the Boltzmann value.">Xml_getBoltzmann</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>),<sp/><ref refid="xml__parameter_8c_1ab2406faab9296a45cc596beec457f268" kindref="member" tooltip="Get the initial temperature.">Xml_getTinitial</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>),<sp/><ref refid="xml__parameter_8c_1a9e2c04caf11e5a95f5aa22f6f37f479d" kindref="member" tooltip="Get the variation of temperature.">Xml_getMuT</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>),<sp/><ref refid="xml__parameter_8c_1a9401fbdd3c314c0e729c9a278a6e2805" kindref="member" tooltip="Get the minimum temperature.">Xml_getTmin</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>));</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Systeme<sp/>initial<sp/>:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;all-&gt;<ref refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" kindref="member">interest_parameters</ref>;i++)<sp/>printf(</highlight><highlight class="stringliteral">&quot;%.2f\t&quot;</highlight><highlight class="normal">,x_initial[i]);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;*************************************************************\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__recuit_8c_1a307fb17177314df2a79d0833be12e379" kindref="member" tooltip="Compute the simulated annealing.">Recuit_compute_recuit</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**files_path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debug,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/><ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref><sp/>allone,<sp/>gsl_siman_params_t<sp/>params)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Realise<sp/>le<sp/>recuit<sp/>simule<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>FILE<sp/>*f=NULL;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x_initial=NULL;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>sim=NULL;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>resultemp=NULL;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Debut<sp/>d&apos;application<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Les<sp/>parametres<sp/>sont<sp/>ainsi<sp/>accessible<sp/>aux<sp/>fonctions<sp/>gsl<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/>all=allone;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tableau<sp/>des<sp/>parametres<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/>x_initial=(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)malloc((all-&gt;<ref refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" kindref="member">interest_parameters</ref>)*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(double));</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/>assert(x_initial!=NULL);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allocation<sp/>de<sp/>la<sp/>memoire<sp/>aux<sp/>parametres<sp/>simules<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/>sim=(<ref refid="data__parameters_8h_1ae9651e8001cc412f6a207d4d90b0132e" kindref="member">pSimParameters</ref>)malloc(1*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">SimParameters</ref>));</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/>assert(sim!=NULL);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Intialisation<sp/>des<sp/>parametres<sp/>de<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" kindref="member" tooltip="Recording parameters specific to each simulation.">Data_simParameters</ref>(all,<sp/>sim,<sp/>files_path[2],<sp/></highlight><highlight class="stringliteral">&quot;simulated_annealing&quot;</highlight><highlight class="normal">,<sp/>(number+1),<sp/>debug);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>de<sp/>la<sp/>structure<sp/>de<sp/>score<sp/>temporaire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>resultemp=<ref refid="data__parameters_8c_1ae4f85916052b0acfa763dd33e63336b6" kindref="member" tooltip="Allocation of the struct Score.">Data_scoreAlloc</ref>(all);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Redirection<sp/>du<sp/>flux<sp/>stdout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/>f=<ref refid="gsl__recuit_8c_1a79f5b519a9246972864c8150c07aa3b9" kindref="member" tooltip="Redirect stdout flux.">Recuit_redirectionFlux</ref>(all-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>,<sp/>f,<sp/>files_path,<sp/>(number+1));</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Definition<sp/>des<sp/>parametres<sp/>initiaux<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><ref refid="gsl__recuit_8c_1aba216c03f79fce2efa085a08eff3d1b2" kindref="member" tooltip="Definition of the initial parameters of the simulation.">Recuit_defParametre</ref>(x_initial,sim-&gt;<ref refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" kindref="member">r</ref>);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Affichage<sp/>des<sp/>parametres<sp/>(des<sp/>reactions)<sp/>de<sp/>la<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><ref refid="gsl__recuit_8c_1accb4bccfdfa93478c6cb6400f18ba9a1" kindref="member" tooltip="Print initial parameters.">Recuit_printParametre</ref>(x_initial);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Resolution<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>gsl_siman_solve(sim-&gt;<ref refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" kindref="member">r</ref>,<sp/>x_initial,<sp/><ref refid="gsl__recuit_8c_1a89c76a53c82e9e4082b6816ae9156847" kindref="member" tooltip="Simulate the petri net and compute the energy.">Recuit_energyFunction</ref>,<sp/><ref refid="gsl__recuit_8c_1adc78fde056663ea47deb34141271d036" kindref="member" tooltip="Take a step through the solution space TSP.">Recuit_takeStep</ref>,<sp/><ref refid="gsl__recuit_8c_1a7d7ba6e6ed671b3bb39a9badfd4e0289" kindref="member" tooltip="Compute the distance between the two table.">Recuit_metricDistance</ref>,<sp/><ref refid="gsl__recuit_8c_1a4a6f6b6fe31febebc2805c9cabfc9b10" kindref="member" tooltip="Print the table of reaction parameters.">Recuit_printPosition</ref>,NULL,<sp/>NULL,<sp/>NULL,all-&gt;<ref refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" kindref="member">interest_parameters</ref>*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),<sp/>params);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fin<sp/>de<sp/>redirection<sp/>du<sp/>flux<sp/>stdout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/>fclose(f);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Desallocation<sp/>de<sp/>la<sp/>structure<sp/>de<sp/>score<sp/>temporaire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1ad65651512fd7fe4d41916573fd79b1aa" kindref="member" tooltip="Free the struct Score.">Data_scoreFree</ref>(resultemp);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Desallocation<sp/>memoire<sp/>de<sp/>la<sp/>structure<sp/>Sim*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" kindref="member" tooltip="Free struct parameters specific to each simulation.">Data_desallocSim</ref>(sim);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Desallocation<sp/>de<sp/>la<sp/>structure<sp/>des<sp/>valeurs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(x_initial!=NULL)<sp/>free(x_initial);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_recuit.c"/>
+  </compounddef>
+</doxygen>

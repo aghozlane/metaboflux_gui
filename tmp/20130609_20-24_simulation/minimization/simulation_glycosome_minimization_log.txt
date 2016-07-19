@@ -1,0 +1,5 @@
+Energy	AcetylCoa	Malate_mito	Acetate	NADH	Succinate_2	NADPH	NADPplus	Pyruvate	Succinate_1	Fumarate	Malate	Oxac	PEP	ATP_2	ATP	ADP_2	PGA	ADP	NADplus	BPGA	Glycerol	Gly_3_P	G_3_P	DHAP	FBP	Fructose_6_phosphate	Glucose_6_phosphate	Dglucose	transition_13	transition_15	transition_14	transition_70	transition_22	transition_17	
+0.267	0	0	676	1806	473	2019	1981	0	851	0	0	0	0	4645	1355	1355	0	2645	2194	0	0	0	0	0	0	0	0	0	32.84	0.89	66.26	37.04	1.17	61.79	
+0.625	0	0	821	1632	198	2208	1792	0	981	0	0	0	0	4016	1984	1984	0	2016	2368	0	0	0	0	0	0	0	0	0	0.63	31.15	68.22	11.89	16.90	71.22	
+0.735	0	0	779	2160	617	2015	1985	0	604	0	0	0	0	4671	1329	1329	0	2671	1840	0	0	0	0	0	0	0	0	0	34.68	4.05	61.27	53.16	1.51	45.33	
+2.625	0	0	1942	3736	0	2148	1852	0	58	0	0	0	0	4029	1971	1971	0	2029	264	0	0	0	0	0	0	0	0	0	0.94	90.07	8.99	0.15	77.72	22.13	

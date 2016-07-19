@@ -1,0 +1,1030 @@
+.TH "metaboflux/include/xml_parameter.h" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/include/xml_parameter.h \- 
+.PP
+Xml reader for parametre.xml.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBxmlConfig_t\fP"
+.br
+.RI "\fIStructure containing all information from parameter.xml. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBxmlConfig_t\fP * \fBXml_loadConfig\fP (char *)"
+.br
+.RI "\fIInitialize and load the parameter.xml. \fP"
+.ti -1c
+.RI "void \fBXml_freeConfig\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIFree the Struct \fBxmlConfig_t\fP. \fP"
+.ti -1c
+.RI "int \fBXml_getNumber\fP (\fBxmlConfig_t\fP *, const char *)"
+.br
+.RI "\fIGet integer value. \fP"
+.ti -1c
+.RI "double \fBXml_getDoubleNumber\fP (\fBxmlConfig_t\fP *, const char *)"
+.br
+.RI "\fIGet double value. \fP"
+.ti -1c
+.RI "char * \fBXml_getString\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet name value. \fP"
+.ti -1c
+.RI "int \fBXml_getNbSimulations\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet number of simulation. \fP"
+.ti -1c
+.RI "int \fBXml_getNbTriesMod\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet number of tries for modelling. \fP"
+.ti -1c
+.RI "int \fBXml_getNbTriesSa\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet number of tries for the simulated annealing and minimization. \fP"
+.ti -1c
+.RI "int \fBXml_getNbIters\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet number of iteration. \fP"
+.ti -1c
+.RI "int \fBXml_getNbGroup\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet number of group. \fP"
+.ti -1c
+.RI "double \fBXml_getStepSize\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the step size. \fP"
+.ti -1c
+.RI "double \fBXml_getBoltzmann\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the Boltzmann value. \fP"
+.ti -1c
+.RI "double \fBXml_getTinitial\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the initial temperature. \fP"
+.ti -1c
+.RI "double \fBXml_getMuT\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the variation of temperature. \fP"
+.ti -1c
+.RI "double \fBXml_getTmin\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the minimum temperature. \fP"
+.ti -1c
+.RI "int \fBXml_getCount\fP (\fBxmlConfig_t\fP *, const char *)"
+.br
+.RI "\fIGet count. \fP"
+.ti -1c
+.RI "int \fBXml_getNbCouples\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the number of couples. \fP"
+.ti -1c
+.RI "int \fBXml_getNbParameters\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the number of parameters. \fP"
+.ti -1c
+.RI "int \fBXml_getNbReactioninNoeud\fP (\fBxmlConfig_t\fP *, int)"
+.br
+.RI "\fICount the number of reaction in one node. \fP"
+.ti -1c
+.RI "int \fBXml_getNbReaction\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the number of reactions. \fP"
+.ti -1c
+.RI "int \fBXml_getNbSpecies\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the number of species. \fP"
+.ti -1c
+.RI "int \fBXml_getNbEquations\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the number of equations. \fP"
+.ti -1c
+.RI "int \fBXml_getNbBannedSpecies\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet the number of banned species. \fP"
+.ti -1c
+.RI "char ** \fBXml_getReactionsNamesinNoeud\fP (\fBxmlConfig_t\fP *, int)"
+.br
+.RI "\fIGet list of reactions. \fP"
+.ti -1c
+.RI "char ** \fBXml_getReactionsNames\fP (\fBxmlConfig_t\fP *)"
+.br
+.RI "\fIGet name of reactions. \fP"
+.ti -1c
+.RI "char ** \fBXml_getSpecies\fP (\fBxmlConfig_t\fP *)"
+.br
+.ti -1c
+.RI "char ** \fBXml_getBanned\fP (\fBxmlConfig_t\fP *conf)"
+.br
+.RI "\fIGet list of banned species. \fP"
+.ti -1c
+.RI "int \fBXml_getSpeciesFinalAmount\fP (\fBxmlConfig_t\fP *, char *)"
+.br
+.RI "\fIGet the final amount of one species. \fP"
+.ti -1c
+.RI "int * \fBXml_getallSpeciesFinalAmount\fP (\fBxmlConfig_t\fP *, char **, int)"
+.br
+.RI "\fIGet Table of species amount. \fP"
+.ti -1c
+.RI "int \fBXml_getSpeciesWeight\fP (\fBxmlConfig_t\fP *, char *)"
+.br
+.RI "\fIGet Species weight. \fP"
+.ti -1c
+.RI "int * \fBXml_getallSpeciesWeight\fP (\fBxmlConfig_t\fP *, char **, int)"
+.br
+.RI "\fIGet list of species weight. \fP"
+.ti -1c
+.RI "char ** \fBXml_allocEquation\fP (char **, int)"
+.br
+.RI "\fIAllocate memory for the list of equation. \fP"
+.ti -1c
+.RI "int \fBXml_getKineticLawNodes\fP (\fBxmlConfig_t\fP *, int)"
+.br
+.RI "\fIGet the kinetic law for one node. \fP"
+.ti -1c
+.RI "char *** \fBXml_getKineticLaw\fP (\fBxmlConfig_t\fP *, int, int)"
+.br
+.RI "\fIGet list of kinetic laws. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Xml reader for parametre.xml. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+15 janvier 2010 
+.RE
+.PP
+
+.PP
+Definition in file \fBxml_parameter.h\fP.
+.SH "Function Documentation"
+.PP 
+.SS "char** Xml_allocEquation (char **equation, intnb_noeud)"
+.PP
+Allocate memory for the list of equation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIequation\fP list of equation 
+.br
+\fInb_noeud\fP Number of the node 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of reactions 
+.RE
+.PP
+
+.PP
+Definition at line 789 of file xml_parameter.c.
+.PP
+Referenced by Xml_getKineticLaw().
+.SS "void Xml_freeConfig (\fBxmlConfig_t\fP *conf)"
+.PP
+Free the Struct \fBxmlConfig_t\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+
+.PP
+Definition at line 97 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt, xmlConfig_t::doc, and xmlConfig_t::fichier.
+.PP
+Referenced by Data_desallocation(), and Xml_loadConfig().
+.SS "int* Xml_getallSpeciesFinalAmount (\fBxmlConfig_t\fP *conf, char **species, inttaille)"
+.PP
+Get Table of species amount. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIspecies\fP Table of species 
+.br
+\fItaille\fP Number of species 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Table of species amount 
+.RE
+.PP
+
+.PP
+Definition at line 708 of file xml_parameter.c.
+.PP
+References Xml_getSpeciesFinalAmount().
+.PP
+Referenced by Data_allocScore().
+.SS "int* Xml_getallSpeciesWeight (\fBxmlConfig_t\fP *conf, char **species, inttaille)"
+.PP
+Get list of species weight. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIspecies\fP Table of species 
+.br
+\fItaille\fP Number of species 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of species weight 
+.RE
+.PP
+
+.PP
+Definition at line 770 of file xml_parameter.c.
+.PP
+References Xml_getSpeciesWeight().
+.PP
+Referenced by Data_allocScore().
+.SS "char** Xml_getBanned (\fBxmlConfig_t\fP *conf)"
+.PP
+Get list of banned species. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of banned species 
+.RE
+.PP
+
+.PP
+Definition at line 624 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt, and Xml_getNbBannedSpecies().
+.PP
+Referenced by Data_allocParameters().
+.SS "double Xml_getBoltzmann (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the Boltzmann value. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Boltzmann value 
+.RE
+.PP
+
+.PP
+Definition at line 305 of file xml_parameter.c.
+.PP
+References Xml_getDoubleNumber().
+.PP
+Referenced by Mpi_slave(), and Recuit_printParametre().
+.SS "int Xml_getCount (\fBxmlConfig_t\fP *conf, const char *requete)"
+.PP
+Get count. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIrequete\fP Xpath query 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Count 
+.RE
+.PP
+
+.PP
+Definition at line 358 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Xml_getNbBannedSpecies(), Xml_getNbCouples(), Xml_getNbEquations(), Xml_getNbParameters(), Xml_getNbReaction(), Xml_getNbReactioninNoeud(), and Xml_getNbSpecies().
+.SS "double Xml_getDoubleNumber (\fBxmlConfig_t\fP *conf, const char *requete)"
+.PP
+Get double value. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIrequete\fP Xpath query 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Read double value in the xml 
+.RE
+.PP
+
+.PP
+Definition at line 153 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Xml_getBoltzmann(), Xml_getMuT(), Xml_getStepSize(), Xml_getTinitial(), and Xml_getTmin().
+.SS "char*** Xml_getKineticLaw (\fBxmlConfig_t\fP *conf, intnum_equation, intnb_noeud)"
+.PP
+Get list of kinetic laws. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fInum_equation\fP Number of equation 
+.br
+\fInb_noeud\fP Number nodes 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of kinetic laws 
+.RE
+.PP
+
+.PP
+Definition at line 854 of file xml_parameter.c.
+.PP
+References all, xmlConfig_t::ctxt, and Xml_allocEquation().
+.PP
+Referenced by Data_allocEquations().
+.SS "int Xml_getKineticLawNodes (\fBxmlConfig_t\fP *conf, intnum_equation)"
+.PP
+Get the kinetic law for one node. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fInum_equation\fP Number of the node 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Ninetic law for one node 
+.RE
+.PP
+
+.PP
+Definition at line 813 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Data_allocEquations().
+.SS "double Xml_getMuT (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the variation of temperature. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Variation of temperature 
+.RE
+.PP
+
+.PP
+Definition at line 331 of file xml_parameter.c.
+.PP
+References Xml_getDoubleNumber().
+.PP
+Referenced by Mpi_slave(), and Recuit_printParametre().
+.SS "int Xml_getNbBannedSpecies (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the number of banned species. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of banned species 
+.RE
+.PP
+
+.PP
+Definition at line 486 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocParameters(), and Xml_getBanned().
+.SS "int Xml_getNbCouples (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the number of couples. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of couples 
+.RE
+.PP
+
+.PP
+Definition at line 396 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocParameters(), and Xml_getReactionsNames().
+.SS "int Xml_getNbEquations (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the number of equations. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of equations 
+.RE
+.PP
+
+.PP
+Definition at line 473 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocEquations().
+.SS "int Xml_getNbGroup (\fBxmlConfig_t\fP *conf)"
+.PP
+Get number of group. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of iteration 
+.RE
+.PP
+
+.PP
+Definition at line 279 of file xml_parameter.c.
+.PP
+References Xml_getNumber().
+.PP
+Referenced by Mpi_master().
+.SS "int Xml_getNbIters (\fBxmlConfig_t\fP *conf)"
+.PP
+Get number of iteration. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of iteration 
+.RE
+.PP
+
+.PP
+Definition at line 266 of file xml_parameter.c.
+.PP
+References Xml_getNumber().
+.PP
+Referenced by Mpi_slave(), and Recuit_printParametre().
+.SS "int Xml_getNbParameters (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the number of parameters. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of parameters 
+.RE
+.PP
+
+.PP
+Definition at line 409 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocParameters().
+.SS "int Xml_getNbReaction (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the number of reactions. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of reactions 
+.RE
+.PP
+
+.PP
+Definition at line 447 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocScore(), and Xml_getReactionsNames().
+.SS "int Xml_getNbReactioninNoeud (\fBxmlConfig_t\fP *conf, intnoeud)"
+.PP
+Count the number of reaction in one node. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fInoeud\fP Number of the node 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of reaction in one node 
+.RE
+.PP
+
+.PP
+Definition at line 423 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocParameters(), and Xml_getReactionsNamesinNoeud().
+.SS "int Xml_getNbSimulations (\fBxmlConfig_t\fP *conf)"
+.PP
+Get number of simulation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of simulation 
+.RE
+.PP
+
+.PP
+Definition at line 227 of file xml_parameter.c.
+.PP
+References Xml_getNumber().
+.PP
+Referenced by Mpi_master().
+.SS "int Xml_getNbSpecies (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the number of species. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of species 
+.RE
+.PP
+
+.PP
+Definition at line 460 of file xml_parameter.c.
+.PP
+References Xml_getCount().
+.PP
+Referenced by Data_allocScore(), Mpi_slave(), Mpi_writer(), and Xml_getSpecies().
+.SS "int Xml_getNbTriesMod (\fBxmlConfig_t\fP *conf)"
+.PP
+Get number of tries for modelling. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of tries 
+.RE
+.PP
+
+.PP
+Definition at line 240 of file xml_parameter.c.
+.PP
+References Xml_getNumber().
+.PP
+Referenced by Data_allocParameters(), Mod_compute_modeling(), Mpi_sizeResultTab(), and Sd_compute_standard_deviation().
+.SS "int Xml_getNbTriesSa (\fBxmlConfig_t\fP *conf)"
+.PP
+Get number of tries for the simulated annealing and minimization. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of tries 
+.RE
+.PP
+
+.PP
+Definition at line 253 of file xml_parameter.c.
+.PP
+References Xml_getNumber().
+.PP
+Referenced by Data_allocParameters(), Min_my_f(), Mpi_slave(), and Recuit_printParametre().
+.SS "int Xml_getNumber (\fBxmlConfig_t\fP *conf, const char *requete)"
+.PP
+Get integer value. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIrequete\fP Xpath query 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Read integer value in the xml 
+.RE
+.PP
+
+.PP
+Definition at line 115 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Xml_getNbGroup(), Xml_getNbIters(), Xml_getNbSimulations(), Xml_getNbTriesMod(), and Xml_getNbTriesSa().
+.SS "char** Xml_getReactionsNames (\fBxmlConfig_t\fP *conf)"
+.PP
+Get name of reactions. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Name of reactions 
+.RE
+.PP
+
+.PP
+Definition at line 541 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt, Xml_getNbCouples(), and Xml_getNbReaction().
+.PP
+Referenced by Data_allocScore().
+.SS "char** Xml_getReactionsNamesinNoeud (\fBxmlConfig_t\fP *conf, intnumero)"
+.PP
+Get list of reactions. Get list of species.
+.PP
+\fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fInumero\fP Number of the node 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of reactions
+.RE
+.PP
+\fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+List of species 
+.RE
+.PP
+
+.PP
+Definition at line 500 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt, and Xml_getNbReactioninNoeud().
+.SS "char** Xml_getSpecies (\fBxmlConfig_t\fP *)"
+.PP
+Definition at line 585 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt, and Xml_getNbSpecies().
+.PP
+Referenced by Data_allocScore().
+.SS "int Xml_getSpeciesFinalAmount (\fBxmlConfig_t\fP *conf, char *species)"
+.PP
+Get the final amount of one species. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIspecies\fP Name of one species 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Final amount of one species 
+.RE
+.PP
+
+.PP
+Definition at line 665 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Xml_getallSpeciesFinalAmount().
+.SS "int Xml_getSpeciesWeight (\fBxmlConfig_t\fP *conf, char *species)"
+.PP
+Get Species weight. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.br
+\fIspecies\fP Name of one species 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Species weight 
+.RE
+.PP
+
+.PP
+Definition at line 727 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Xml_getallSpeciesWeight().
+.SS "double Xml_getStepSize (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the step size. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Step size 
+.RE
+.PP
+
+.PP
+Definition at line 292 of file xml_parameter.c.
+.PP
+References Xml_getDoubleNumber().
+.PP
+Referenced by Mpi_slave(), and Recuit_printParametre().
+.SS "char* Xml_getString (\fBxmlConfig_t\fP *conf)"
+.PP
+Get name value. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Read name value in the xml 
+.RE
+.PP
+
+.PP
+Definition at line 190 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt.
+.PP
+Referenced by Recuit_redirectionFlux().
+.SS "double Xml_getTinitial (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the initial temperature. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Initial temperature 
+.RE
+.PP
+
+.PP
+Definition at line 318 of file xml_parameter.c.
+.PP
+References Xml_getDoubleNumber().
+.PP
+Referenced by Mpi_slave(), and Recuit_printParametre().
+.SS "double Xml_getTmin (\fBxmlConfig_t\fP *conf)"
+.PP
+Get the minimum temperature. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIconf\fP Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Minimum temperature 
+.RE
+.PP
+
+.PP
+Definition at line 344 of file xml_parameter.c.
+.PP
+References Xml_getDoubleNumber().
+.PP
+Referenced by Mpi_slave(), and Recuit_printParametre().
+.SS "\fBxmlConfig_t\fP* Xml_loadConfig (char *fichier)"
+.PP
+Initialize and load the parameter.xml. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfichier\fP Xml file name 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Struct \fBxmlConfig_t\fP 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file xml_parameter.c.
+.PP
+References xmlConfig_t::ctxt, xmlConfig_t::doc, xmlConfig_t::fichier, xmlConfig_t::racine, and Xml_freeConfig().
+.PP
+Referenced by Data_initXML().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

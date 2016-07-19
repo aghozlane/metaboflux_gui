@@ -1,0 +1,246 @@
+\hypertarget{structListParameters}{
+\section{ListParameters Struct Reference}
+\label{structListParameters}\index{ListParameters@{ListParameters}}
+}
+
+
+Global list parameters.  
+
+
+
+
+{\ttfamily \#include $<$data\_\-parameters.h$>$}
+
+
+
+Collaboration diagram for ListParameters:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{structListParameters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Model\_\-t $\ast$ \hyperlink{structListParameters_ad167c56ffa16ae7c55245c7c683bbc1c}{model}
+\item 
+\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$ \hyperlink{structListParameters_a96adc4ee0346b24efd2139d3768be76e}{conf}
+\item 
+char $\ast$$\ast$$\ast$$\ast$ \hyperlink{structListParameters_a1d99e34efe708f0a4dee5f5de7a50c6c}{equation}
+\item 
+int \hyperlink{structListParameters_a079cdc6651256ac5ee10e546fc01ebba}{nb\_\-parameters}
+\item 
+int \hyperlink{structListParameters_ae9a1f821ed712556e68fe4d2d91ca1a0}{interest\_\-parameters}
+\item 
+int \hyperlink{structListParameters_a78464fa8003787f72be81b561fcd141a}{nb\_\-couples}
+\item 
+int \hyperlink{structListParameters_a45a3376021fb8e41738aa3452d7c0dbb}{nb\_\-equations}
+\item 
+int \hyperlink{structListParameters_a1bd4ac749f2642216552aa20a2305727}{nb\_\-reaction}
+\item 
+int $\ast$ \hyperlink{structListParameters_a1c994d58b286eb0b71a966c1bf079c65}{noeud}
+\item 
+int $\ast$ \hyperlink{structListParameters_a20e9f07e2dc0f0024591b185bd126cb0}{parameters}
+\item 
+char $\ast$$\ast$ \hyperlink{structListParameters_ab0d2940b00e8d0d8ae31606f79ce6373}{banned}
+\item 
+int \hyperlink{structListParameters_aae885063019b7630081d14786e3b48e9}{nb\_\-banned}
+\item 
+int \hyperlink{structListParameters_a43227ba7fdca24b48e08a561d2c417b3}{nb\_\-triesMod}
+\item 
+int \hyperlink{structListParameters_afb96e3b0b020bfb8d52448fac7447d3a}{nb\_\-triesSa}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Global list parameters. 
+
+Definition at line 35 of file data\_\-parameters.h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structListParameters_ab0d2940b00e8d0d8ae31606f79ce6373}{
+\index{ListParameters@{ListParameters}!banned@{banned}}
+\index{banned@{banned}!ListParameters@{ListParameters}}
+\subsubsection[{banned}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf ListParameters::banned}}}
+\label{structListParameters_ab0d2940b00e8d0d8ae31606f79ce6373}
+Names of banned molecules : ex ATP, ADP ... 
+
+Definition at line 47 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), Data\_\-desallocation(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structListParameters_a96adc4ee0346b24efd2139d3768be76e}{
+\index{ListParameters@{ListParameters}!conf@{conf}}
+\index{conf@{conf}!ListParameters@{ListParameters}}
+\subsubsection[{conf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xmlConfig\_\-t}$\ast$ {\bf ListParameters::conf}}}
+\label{structListParameters_a96adc4ee0346b24efd2139d3768be76e}
+Parameter file 
+
+Definition at line 38 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocEquations(), Data\_\-allocParameters(), Data\_\-desallocation(), Data\_\-parameters(), Data\_\-scoreAlloc(), Data\_\-simParameters(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Mpi\_\-master(), Mpi\_\-sizeResultTab(), Mpi\_\-slave(), Mpi\_\-writer(), Recuit\_\-compute\_\-recuit(), Recuit\_\-printParametre(), and Sd\_\-compute\_\-standard\_\-deviation().
+
+\hypertarget{structListParameters_a1d99e34efe708f0a4dee5f5de7a50c6c}{
+\index{ListParameters@{ListParameters}!equation@{equation}}
+\index{equation@{equation}!ListParameters@{ListParameters}}
+\subsubsection[{equation}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$$\ast$$\ast$ {\bf ListParameters::equation}}}
+\label{structListParameters_a1d99e34efe708f0a4dee5f5de7a50c6c}
+\hyperlink{structEquations}{Equations} text 
+
+Definition at line 39 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocEquations(), Data\_\-desallocation(), and Data\_\-equationsInit().
+
+\hypertarget{structListParameters_ae9a1f821ed712556e68fe4d2d91ca1a0}{
+\index{ListParameters@{ListParameters}!interest\_\-parameters@{interest\_\-parameters}}
+\index{interest\_\-parameters@{interest\_\-parameters}!ListParameters@{ListParameters}}
+\subsubsection[{interest\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::interest\_\-parameters}}}
+\label{structListParameters_ae9a1f821ed712556e68fe4d2d91ca1a0}
+Number of interest parameters 
+
+Definition at line 41 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), Min\_\-compute\_\-minimization(), Recuit\_\-compute\_\-recuit(), Recuit\_\-metricDistance(), Recuit\_\-printParametre(), and Recuit\_\-takeStep().
+
+\hypertarget{structListParameters_ad167c56ffa16ae7c55245c7c683bbc1c}{
+\index{ListParameters@{ListParameters}!model@{model}}
+\index{model@{model}!ListParameters@{ListParameters}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}Model\_\-t$\ast$ {\bf ListParameters::model}}}
+\label{structListParameters_ad167c56ffa16ae7c55245c7c683bbc1c}
+SBML file 
+
+Definition at line 37 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-desallocation(), Data\_\-parameters(), Data\_\-scoreAlloc(), Data\_\-simParameters(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Mpi\_\-sizeResultTab(), Mpi\_\-writer(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structListParameters_aae885063019b7630081d14786e3b48e9}{
+\index{ListParameters@{ListParameters}!nb\_\-banned@{nb\_\-banned}}
+\index{nb\_\-banned@{nb\_\-banned}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-banned}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-banned}}}
+\label{structListParameters_aae885063019b7630081d14786e3b48e9}
+Number of banned molecules 
+
+Definition at line 48 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structListParameters_a78464fa8003787f72be81b561fcd141a}{
+\index{ListParameters@{ListParameters}!nb\_\-couples@{nb\_\-couples}}
+\index{nb\_\-couples@{nb\_\-couples}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-couples}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-couples}}}
+\label{structListParameters_a78464fa8003787f72be81b561fcd141a}
+Number of couples 
+
+Definition at line 42 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), Data\_\-updateTab(), Min\_\-compute\_\-minimization(), Min\_\-my\_\-f(), Recuit\_\-defParametre(), and Recuit\_\-takeStep().
+
+\hypertarget{structListParameters_a45a3376021fb8e41738aa3452d7c0dbb}{
+\index{ListParameters@{ListParameters}!nb\_\-equations@{nb\_\-equations}}
+\index{nb\_\-equations@{nb\_\-equations}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-equations}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-equations}}}
+\label{structListParameters_a45a3376021fb8e41738aa3452d7c0dbb}
+Number of equations 
+
+Definition at line 43 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocEquations(), Data\_\-desallocation(), Data\_\-equationsAlloc(), Data\_\-equationsInit(), Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{structListParameters_a079cdc6651256ac5ee10e546fc01ebba}{
+\index{ListParameters@{ListParameters}!nb\_\-parameters@{nb\_\-parameters}}
+\index{nb\_\-parameters@{nb\_\-parameters}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-parameters}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-parameters}}}
+\label{structListParameters_a079cdc6651256ac5ee10e546fc01ebba}
+Number of parameters 
+
+Definition at line 40 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), Data\_\-allocSimParameters(), Data\_\-simParameters(), Min\_\-compute\_\-minimization(), Min\_\-getTampon(), Min\_\-my\_\-f(), Min\_\-score\_\-print\_\-mean(), Mod\_\-compute\_\-modeling(), Mod\_\-score\_\-print\_\-mean(), Mpi\_\-master(), Mpi\_\-sizeResultTab(), Mpi\_\-slave(), Mpi\_\-writeSimFile(), Recuit\_\-printPosition(), and Sd\_\-compute\_\-standard\_\-deviation().
+
+\hypertarget{structListParameters_a1bd4ac749f2642216552aa20a2305727}{
+\index{ListParameters@{ListParameters}!nb\_\-reaction@{nb\_\-reaction}}
+\index{nb\_\-reaction@{nb\_\-reaction}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-reaction}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-reaction}}}
+\label{structListParameters_a1bd4ac749f2642216552aa20a2305727}
+Number of reaction 
+
+Definition at line 44 of file data\_\-parameters.h.
+
+\hypertarget{structListParameters_a43227ba7fdca24b48e08a561d2c417b3}{
+\index{ListParameters@{ListParameters}!nb\_\-triesMod@{nb\_\-triesMod}}
+\index{nb\_\-triesMod@{nb\_\-triesMod}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-triesMod}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-triesMod}}}
+\label{structListParameters_a43227ba7fdca24b48e08a561d2c417b3}
+Number of tries for modelling 
+
+Definition at line 49 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters().
+
+\hypertarget{structListParameters_afb96e3b0b020bfb8d52448fac7447d3a}{
+\index{ListParameters@{ListParameters}!nb\_\-triesSa@{nb\_\-triesSa}}
+\index{nb\_\-triesSa@{nb\_\-triesSa}!ListParameters@{ListParameters}}
+\subsubsection[{nb\_\-triesSa}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ListParameters::nb\_\-triesSa}}}
+\label{structListParameters_afb96e3b0b020bfb8d52448fac7447d3a}
+Number of tries for simulated annealing and minimization 
+
+Definition at line 50 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), and Recuit\_\-energyFunction().
+
+\hypertarget{structListParameters_a1c994d58b286eb0b71a966c1bf079c65}{
+\index{ListParameters@{ListParameters}!noeud@{noeud}}
+\index{noeud@{noeud}!ListParameters@{ListParameters}}
+\subsubsection[{noeud}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf ListParameters::noeud}}}
+\label{structListParameters_a1c994d58b286eb0b71a966c1bf079c65}
+Number of nodes in an equation 
+
+Definition at line 45 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocEquations(), Data\_\-desallocation(), and Data\_\-equationsInit().
+
+\hypertarget{structListParameters_a20e9f07e2dc0f0024591b185bd126cb0}{
+\index{ListParameters@{ListParameters}!parameters@{parameters}}
+\index{parameters@{parameters}!ListParameters@{ListParameters}}
+\subsubsection[{parameters}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf ListParameters::parameters}}}
+\label{structListParameters_a20e9f07e2dc0f0024591b185bd126cb0}
+Details on the parameters of reactions 
+
+Definition at line 46 of file data\_\-parameters.h.
+
+
+
+Referenced by Data\_\-allocParameters(), Data\_\-desallocation(), Data\_\-updateTab(), Min\_\-compute\_\-minimization(), Min\_\-my\_\-f(), Recuit\_\-defParametre(), and Recuit\_\-takeStep().
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+metaboflux/include/\hyperlink{data__parameters_8h}{data\_\-parameters.h}\end{DoxyCompactItemize}

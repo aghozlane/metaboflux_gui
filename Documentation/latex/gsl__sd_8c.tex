@@ -1,0 +1,179 @@
+\hypertarget{gsl__sd_8c}{
+\section{metaboflux/src/gsl\_\-sd.c File Reference}
+\label{gsl__sd_8c}\index{metaboflux/src/gsl\_\-sd.c@{metaboflux/src/gsl\_\-sd.c}}
+}
+
+
+Compute the standard deviation analysis of the simulations.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$assert.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-math.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-rng.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-siman.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-ieee\_\-utils.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-statistics\_\-double.h$>$}\par
+{\ttfamily \#include $<$sbml/SBMLTypes.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+{\ttfamily \#include $<$libxml/xpath.h$>$}\par
+{\ttfamily \#include \char`\"{}especes.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}equations.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}simulation.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}xml\_\-parameter.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}data\_\-parameters.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}gsl\_\-sd.h\char`\"{}}\par
+Include dependency graph for gsl\_\-sd.c:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__sd_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{gsl__sd_8c_ad3a6822755dad511abb99b018c49699c}{Sd\_\-compute\_\-simulation} (\hyperlink{structListParameters}{pListParameters} all, \hyperlink{structSimParameters}{pSimParameters} sim)
+\begin{DoxyCompactList}\small\item\em Enter in the program for standard deviation. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__sd_8c_a1379b501622f4bc112b49be952e19022}{Sd\_\-compute\_\-standard\_\-deviation} (\hyperlink{structListParameters}{pListParameters} a, double $\ast$fluxRatio, double $\ast$result\_\-tab, char $\ast$$\ast$files\_\-path, int number\_\-arg, int debug)
+\begin{DoxyCompactList}\small\item\em Compute the standard deviation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute the standard deviation analysis of the simulations. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 novembre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{gsl__sd_8c_source}{gsl\_\-sd.c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{gsl__sd_8c_ad3a6822755dad511abb99b018c49699c}{
+\index{gsl\_\-sd.c@{gsl\_\-sd.c}!Sd\_\-compute\_\-simulation@{Sd\_\-compute\_\-simulation}}
+\index{Sd\_\-compute\_\-simulation@{Sd\_\-compute\_\-simulation}!gsl_sd.c@{gsl\_\-sd.c}}
+\subsubsection[{Sd\_\-compute\_\-simulation}]{\setlength{\rightskip}{0pt plus 5cm}double Sd\_\-compute\_\-simulation (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{all, }
+\item[{{\bf pSimParameters}}]{sim}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__sd_8c_ad3a6822755dad511abb99b018c49699c}
+
+
+Enter in the program for standard deviation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em all} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em sim} & Simulation parameters : struct \hyperlink{structSimParameters}{SimParameters} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Energy value 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file gsl\_\-sd.c.
+
+
+
+References ListParameters::banned, Data\_\-equationsAlloc(), Data\_\-equationsInit(), Data\_\-scoreInit(), SimParameters::debugFile, Equations\_\-calcul(), Equations\_\-finalQuantite(), ListParameters::model, Score::name, ListParameters::nb\_\-banned, ListParameters::nb\_\-equations, Score::nb\_\-species, SimParameters::out, SimParameters::pile, Score::quantite, SimParameters::r, SBML\_\-compute\_\-simulation(), SBML\_\-debugPrint(), SBML\_\-debugPrintHead(), Score::species, Score::species\_\-amount, Score::species\_\-weight, Score::taille, Score::tailleSpecies, and SimParameters::y.
+
+
+
+Referenced by Sd\_\-compute\_\-standard\_\-deviation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__sd_8c_ad3a6822755dad511abb99b018c49699c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__sd_8c_a1379b501622f4bc112b49be952e19022}{
+\index{gsl\_\-sd.c@{gsl\_\-sd.c}!Sd\_\-compute\_\-standard\_\-deviation@{Sd\_\-compute\_\-standard\_\-deviation}}
+\index{Sd\_\-compute\_\-standard\_\-deviation@{Sd\_\-compute\_\-standard\_\-deviation}!gsl_sd.c@{gsl\_\-sd.c}}
+\subsubsection[{Sd\_\-compute\_\-standard\_\-deviation}]{\setlength{\rightskip}{0pt plus 5cm}void Sd\_\-compute\_\-standard\_\-deviation (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a, }
+\item[{double $\ast$}]{fluxRatio, }
+\item[{double $\ast$}]{result\_\-tab, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{number\_\-arg, }
+\item[{int}]{debug}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__sd_8c_a1379b501622f4bc112b49be952e19022}
+
+
+Compute the standard deviation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em fluxRatio} & Ratio parameters \\
+\hline
+{\em result\_\-tab} & Result table \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em number\_\-arg} & Number of simulation \\
+\hline
+{\em debug} & Debug flag \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file gsl\_\-sd.c.
+
+
+
+References ListParameters::conf, Data\_\-desallocSim(), Data\_\-simParameters(), ListParameters::nb\_\-parameters, Sd\_\-compute\_\-simulation(), Xml\_\-getNbTriesMod(), and SimParameters::y.
+
+
+
+Referenced by Mpi\_\-slave().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__sd_8c_a1379b501622f4bc112b49be952e19022_cgraph}
+\end{center}
+\end{figure}
+
+

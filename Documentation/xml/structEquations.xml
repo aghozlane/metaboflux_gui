@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structEquations" kind="struct" prot="public">
+    <compoundname>Equations</compoundname>
+    <includes refid="equations_8h" local="no">equations.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEquations_1add825d3104abf54c01421c67536d0991" prot="public" static="no" mutable="no">
+        <type><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0" kindref="member">Equtype</ref></type>
+        <definition>Equtype Equations::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operation constants </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="70" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="equations_8h_1ab5545fa4c945c64285e91687d90767f4" compoundref="equations_8c" startline="359" endline="372">Equations_print</referencedby>
+        <referencedby refid="equations_8h_1af09f4513d82b106e8e9157f30c909529" compoundref="equations_8c" startline="561" endline="602">Equations_resultat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" prot="public" static="no" mutable="no">
+        <type><ref refid="unionEqudata" kindref="compound">Equdata</ref></type>
+        <definition>Equdata Equations::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Equation Data </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="71" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="equations_8h_1ab5545fa4c945c64285e91687d90767f4" compoundref="equations_8c" startline="359" endline="372">Equations_print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structEquations" kindref="compound">Equations</ref> *</type>
+        <definition>struct Equations* Equations::suiv</definition>
+        <argsstring></argsstring>
+        <name>suiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="72" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a977051374a319d6bd60ef8ca2c03c952" compoundref="equations_8c" startline="158" endline="165">Equations_alloc</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1a2c6acfd549462cb3be5a53775767429a" compoundref="equations_8c" startline="334" endline="337">Equations_defilerSuiv</referencedby>
+        <referencedby refid="equations_8h_1ae69932ae59f7f39d19b16efdcd0ba814" compoundref="equations_8c" startline="282" endline="296">Equations_depiler</referencedby>
+        <referencedby refid="equations_8h_1ab8d4e4c2f309e68abe8dbcae96a240d5" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+        <referencedby refid="equations_8h_1ab5545fa4c945c64285e91687d90767f4" compoundref="equations_8c" startline="359" endline="372">Equations_print</referencedby>
+        <referencedby refid="equations_8h_1a25cc9b41f25936e9d67a650554dc875d" compoundref="equations_8c" startline="305" endline="311">Equations_sommet</referencedby>
+        <referencedby refid="equations_8h_1a7aa0efc05d71c770b8aaf4ad6d677be2" compoundref="equations_8c" startline="237" endline="248">Equations_vide</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function pointers used for operations. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="29">
+        <label>Equations</label>
+        <link refid="structEquations"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>suiv</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Equdata</label>
+        <link refid="unionEqudata"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="69" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="68" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" prot="public" virt="non-virtual"><scope>Equations</scope><name>info</name></member>
+      <member refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" prot="public" virt="non-virtual"><scope>Equations</scope><name>suiv</name></member>
+      <member refid="structEquations_1add825d3104abf54c01421c67536d0991" prot="public" virt="non-virtual"><scope>Equations</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

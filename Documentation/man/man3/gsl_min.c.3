@@ -1,0 +1,353 @@
+.TH "metaboflux/src/gsl_min.c" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/src/gsl_min.c \- 
+.PP
+Compute minimization of scenarii.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <assert.h>\fP
+.br
+\fC#include <math.h>\fP
+.br
+\fC#include <gsl/gsl_blas.h>\fP
+.br
+\fC#include <gsl/gsl_multimin.h>\fP
+.br
+\fC#include <gsl/gsl_ieee_utils.h>\fP
+.br
+\fC#include <gsl/gsl_rng.h>\fP
+.br
+\fC#include <gsl/gsl_math.h>\fP
+.br
+\fC#include <gsl/gsl_siman.h>\fP
+.br
+\fC#include <sbml/SBMLTypes.h>\fP
+.br
+\fC#include <libxml/parser.h>\fP
+.br
+\fC#include <libxml/xpath.h>\fP
+.br
+\fC#include 'especes.h'\fP
+.br
+\fC#include 'equations.h'\fP
+.br
+\fC#include 'simulation.h'\fP
+.br
+\fC#include 'xml_parameter.h'\fP
+.br
+\fC#include 'data_parameters.h'\fP
+.br
+\fC#include 'gsl_min.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_GNU_SOURCE\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBMin_copieTab2\fP (double *x, int current, int debut, int fin)"
+.br
+.RI "\fICopy table of reaction parameters. \fP"
+.ti -1c
+.RI "int \fBMin_copieTab3\fP (gsl_multimin_fminimizer *s, int current, int debut, int fin)"
+.br
+.RI "\fICopy short table of parameter into the larger table. \fP"
+.ti -1c
+.RI "void \fBMin_verifValue\fP (gsl_vector *v, double *x, int debut, int max)"
+.br
+.RI "\fIChecking reaction ratio parameters. \fP"
+.ti -1c
+.RI "double \fBMin_my_f\fP (const gsl_vector *v, void *params)"
+.br
+.RI "\fIEnter in the program for standard deviation. \fP"
+.ti -1c
+.RI "void \fBMin_getTampon\fP (double *\fBenergie_temp\fP, double energie)"
+.br
+.RI "\fIEnter in the program for standard deviation. \fP"
+.ti -1c
+.RI "void \fBMin_score_print_mean\fP (double *result_tab)"
+.br
+.RI "\fISave the minimization result. \fP"
+.ti -1c
+.RI "void \fBMin_compute_minimization\fP (\fBpListParameters\fP allone, double *fluxRatio, double *result_tab, char **files_path, int number_arg, int debug)"
+.br
+.RI "\fICompute the minimization. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBpListParameters\fP \fBa\fP"
+.br
+.ti -1c
+.RI "\fBpSimParameters\fP \fBsimu\fP"
+.br
+.ti -1c
+.RI "\fBpSimParameters\fP \fBsimu_tampon\fP"
+.br
+.ti -1c
+.RI "\fBpScore\fP \fBresult_temp\fP"
+.br
+.ti -1c
+.RI "double * \fBenergie_temp\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Compute minimization of scenarii. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+9 novembre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBgsl_min.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define _GNU_SOURCE"
+.PP
+Definition at line 26 of file gsl_min.c.
+.SH "Function Documentation"
+.PP 
+.SS "void Min_compute_minimization (\fBpListParameters\fPallone, double *fluxRatio, double *result_tab, char **files_path, intnumber_arg, intdebug)"
+.PP
+Compute the minimization. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIallone\fP struct \fBListParameters\fP 
+.br
+\fIfluxRatio\fP Ratio parameters 
+.br
+\fIresult_tab\fP Result table 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fInumber_arg\fP Number of simulation 
+.br
+\fIdebug\fP Debug flag 
+.RE
+.PP
+
+.PP
+Definition at line 274 of file gsl_min.c.
+.PP
+References Data_desallocSim(), Data_scoreAlloc(), Data_scoreFree(), Data_simParameters(), energie_temp, ListParameters::interest_parameters, Min_copieTab2(), Min_my_f(), Min_score_print_mean(), ListParameters::nb_couples, ListParameters::nb_parameters, ListParameters::parameters, and SimParameters::y.
+.PP
+Referenced by Mpi_slave().
+.SS "int Min_copieTab2 (double *x, intcurrent, intdebut, intfin)"
+.PP
+Copy table of reaction parameters. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP Short table of reaction parameters 
+.br
+\fIcurrent\fP Line 
+.br
+\fIdebut\fP Beginning 
+.br
+\fIfin\fP End 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of copied element 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file gsl_min.c.
+.PP
+References SimParameters::y.
+.PP
+Referenced by Min_compute_minimization().
+.SS "int Min_copieTab3 (gsl_multimin_fminimizer *s, intcurrent, intdebut, intfin)"
+.PP
+Copy short table of parameter into the larger table. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP Minimizer parameter 
+.br
+\fIcurrent\fP Line 
+.br
+\fIdebut\fP Beginning 
+.br
+\fIfin\fP End 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of copied element 
+.RE
+.PP
+
+.PP
+Definition at line 90 of file gsl_min.c.
+.PP
+References SimParameters::y.
+.SS "void Min_getTampon (double *energie_temp, doubleenergie)"
+.PP
+Enter in the program for standard deviation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIenergie_temp\fP Current energy 
+.br
+\fIenergie\fP Best energy 
+.RE
+.PP
+
+.PP
+Definition at line 208 of file gsl_min.c.
+.PP
+References ListParameters::nb_parameters, SimParameters::out, Score::quantite, Score::taille, and SimParameters::y.
+.PP
+Referenced by Min_my_f().
+.SS "double Min_my_f (const gsl_vector *v, void *params)"
+.PP
+Enter in the program for standard deviation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIv\fP Vector of reaction parameters 
+.br
+\fIparams\fP Unused parameter define by GSL 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Energy value 
+.RE
+.PP
+
+.PP
+Definition at line 149 of file gsl_min.c.
+.PP
+References ListParameters::banned, ListParameters::conf, Data_equationsAlloc(), Data_equationsInit(), Data_scoreInit(), Data_updateTab(), SimParameters::debugFile, energie_temp, Equations_calcul(), Equations_finalQuantite(), Min_getTampon(), Min_verifValue(), ListParameters::model, Score::name, ListParameters::nb_banned, ListParameters::nb_couples, ListParameters::nb_equations, ListParameters::nb_parameters, Score::nb_species, SimParameters::out, ListParameters::parameters, SimParameters::pile, Score::quantite, SimParameters::r, SBML_compute_simulation_mean(), SBML_debugPrint(), Score::species, Score::species_amount, Score::species_weight, Score::taille, Score::tailleSpecies, Xml_getNbTriesSa(), and SimParameters::y.
+.PP
+Referenced by Min_compute_minimization().
+.SS "void Min_score_print_mean (double *result_tab)"
+.PP
+Save the minimization result. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult_tab\fP Result table 
+.RE
+.PP
+
+.PP
+Definition at line 230 of file gsl_min.c.
+.PP
+References Equations_findSpecies(), Score::name, ListParameters::nb_parameters, Score::nb_species, SimParameters::out, Score::quantite, Score::species, Score::species_amount, Score::taille, Score::tailleSpecies, and SimParameters::y.
+.PP
+Referenced by Min_compute_minimization().
+.SS "void Min_verifValue (gsl_vector *v, double *x, intdebut, intmax)"
+.PP
+Checking reaction ratio parameters. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIv\fP Vector of reaction parameters 
+.br
+\fIx\fP Short table of reaction parameters 
+.br
+\fIdebut\fP Beginning 
+.br
+\fImax\fP End 
+.RE
+.PP
+
+.PP
+Definition at line 114 of file gsl_min.c.
+.PP
+Referenced by Min_my_f().
+.SH "Variable Documentation"
+.PP 
+.SS "\fBpListParameters\fP \fBa\fP"
+.PP
+Definition at line 52 of file gsl_min.c.
+.PP
+Referenced by Data_copieTab(), Data_updateTab(), help_print(), and Mpi_master().
+.SS "double* \fBenergie_temp\fP"
+.PP
+Definition at line 55 of file gsl_min.c.
+.PP
+Referenced by Min_compute_minimization(), and Min_my_f().
+.SS "\fBpScore\fP \fBresult_temp\fP"
+.PP
+Definition at line 54 of file gsl_min.c.
+.PP
+Referenced by Mod_compute_modeling().
+.SS "\fBpSimParameters\fP \fBsimu\fP"
+.PP
+Definition at line 53 of file gsl_min.c.
+.PP
+Referenced by Mod_compute_modeling(), and Sd_compute_standard_deviation().
+.SS "\fBpSimParameters\fP \fBsimu_tampon\fP"
+.PP
+Definition at line 53 of file gsl_min.c.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

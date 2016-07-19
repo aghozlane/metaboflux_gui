@@ -1,0 +1,1213 @@
+\hypertarget{equations_8h}{
+\section{metaboflux/include/equations.h File Reference}
+\label{equations_8h}\index{metaboflux/include/equations.h@{metaboflux/include/equations.h}}
+}
+
+
+Processes an equation in MathML format.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{equations_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionEqudata}{Equdata}
+\begin{DoxyCompactList}\small\item\em Equation data. \end{DoxyCompactList}\item 
+struct \hyperlink{structEquations}{Equations}
+\begin{DoxyCompactList}\small\item\em Function pointers used for operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0}{Equtype} \{ \par
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519}{constant}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf}{variable}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f}{addition}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0}{soustraction}, 
+\par
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287}{multiplication}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26}{division}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27}{equal}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0}{superior}, 
+\par
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b}{superior\_\-equal}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8}{inferior}, 
+\hyperlink{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c}{inferior\_\-equal}
+ \}
+\begin{DoxyCompactList}\small\item\em Operation constants. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{equations_8h_abaee43b91c808de325abcfa4cf1b6698}{add} (double, double)
+\begin{DoxyCompactList}\small\item\em Add two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a8c90ae25e75adcfeeaf307cc2df2f360}{subtract} (double, double)
+\begin{DoxyCompactList}\small\item\em Subtraction two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a6081051f0fa134ecbd577740cbb92220}{multiply} (double, double)
+\begin{DoxyCompactList}\small\item\em Multiply two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a004a98a2cd96d70101b27be400dc4a5c}{divide} (double, double)
+\begin{DoxyCompactList}\small\item\em Divide two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_ae22300bfd59f7b0a12d56b5cb32b9429}{equality} (double, double)
+\begin{DoxyCompactList}\small\item\em Test the equality of two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a0ce3f625ded68dd2b0a927b1c3d85471}{sup} (double, double)
+\begin{DoxyCompactList}\small\item\em Test the superiority between two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a26bbff8f2c38ba14fea7a9d6067329b2}{sup\_\-equal} (double, double)
+\begin{DoxyCompactList}\small\item\em Test the superiority or equality between two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a3a5c2f0eec28c21db099d689bbcc5b14}{inf} (double, double)
+\begin{DoxyCompactList}\small\item\em Test the inferiority between two numbers. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_aa6c076aacdfbdd13d6f25e0f36d6406b}{inf\_\-equal} (double, double)
+\begin{DoxyCompactList}\small\item\em Test the inferiority or equality between two numbers. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_a977051374a319d6bd60ef8ca2c03c952}{Equations\_\-alloc} (void)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+void \hyperlink{equations_8h_afa3dcf131c38609646bd0ff79aef41d7}{Equations\_\-define} (\hyperlink{structEquations}{pEquations}, char $\ast$)
+\begin{DoxyCompactList}\small\item\em Identify the mathematical operator used. \end{DoxyCompactList}\item 
+int \hyperlink{equations_8h_a7aa0efc05d71c770b8aaf4ad6d677be2}{Equations\_\-vide} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Test if the struct \hyperlink{structEquations}{Equations} is empty. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_ab8d4e4c2f309e68abe8dbcae96a240d5}{Equations\_\-empiler} (\hyperlink{structEquations}{pEquations}, \hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Stack an element to the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_ae69932ae59f7f39d19b16efdcd0ba814}{Equations\_\-depiler} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Unstack the last element of the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_a25cc9b41f25936e9d67a650554dc875d}{Equations\_\-sommet} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Look for the last element of the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_a7b5cc03bbac246e28d61714dc2931a92}{Equations\_\-defiler} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Look for the first element of the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_a2c6acfd549462cb3be5a53775767429a}{Equations\_\-defilerSuiv} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Get the next element of the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+int \hyperlink{equations_8h_a9107be336f525ee8ee8bb0d56bc91d8b}{Equations\_\-priorite} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Give the priority of the operator. Multiplication and Division have higher priority than addition or subtration... \end{DoxyCompactList}\item 
+void \hyperlink{equations_8h_ab5545fa4c945c64285e91687d90767f4}{Equations\_\-print} (\hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Print all information on the element of the struct \hyperlink{structEquations}{Equations}. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_aa1fb3994a7c6fdf69e7aab84414f467c}{Equations\_\-addOp} (\hyperlink{structEquations}{pEquations}, \hyperlink{structEquations}{pEquations}, \hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Build the list of the Struct \hyperlink{structEquations}{Equations} result used to compute the equation. \end{DoxyCompactList}\item 
+void \hyperlink{equations_8h_ae188053c785ea42afda7a9a604140b44}{Equations\_\-emptyOp} (\hyperlink{structEquations}{pEquations}, \hyperlink{structEquations}{pEquations})
+\begin{DoxyCompactList}\small\item\em Empty the Struct \hyperlink{structEquations}{Equations} op for the struct Equation result. \end{DoxyCompactList}\item 
+\hyperlink{structEquations}{pEquations} \hyperlink{equations_8h_ae0f5b302dbd7d0bb1524b48aa38bec6c}{Equations\_\-pileFormation} (char $\ast$$\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Build pile. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_acacabe612b4e956d3db6d1677dac4037}{Equations\_\-findSpecies} (char $\ast$, char $\ast$$\ast$, double $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Look for the quantity of a molecule in the list. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_af09f4513d82b106e8e9157f30c909529}{Equations\_\-resultat} (\hyperlink{structEquations}{pEquations}, \hyperlink{structEquations}{pEquations}, \hyperlink{structEquations}{pEquations}, char $\ast$$\ast$, double $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Compute the result of two pile. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a6e6af023dd85b15e2af2129a5c857238}{Equations\_\-calcul} (\hyperlink{structEquations}{pEquations}, char $\ast$$\ast$, double $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Compute the score of the equation. \end{DoxyCompactList}\item 
+double \hyperlink{equations_8h_a543044646be5d2086c3301f7db2a0c1f}{Equations\_\-finalQuantite} (int, char $\ast$$\ast$, int $\ast$, int $\ast$, char $\ast$$\ast$, double $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Compute the score of the quantity which means the difference between what is expected to what is simulated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processes an equation in MathML format. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+15 janvier 2010 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{equations_8h_source}{equations.h}.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0}{
+\index{equations.h@{equations.h}!Equtype@{Equtype}}
+\index{Equtype@{Equtype}!equations.h@{equations.h}}
+\subsubsection[{Equtype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Equtype}}}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0}
+
+
+Operation constants. 
+
+Equtype is a set of predefined constants for the different operators. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{constant@{constant}!equations.h@{equations.h}}\index{equations.h@{equations.h}!constant@{constant}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519}{
+constant}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519}
+}]Constant \index{variable@{variable}!equations.h@{equations.h}}\index{equations.h@{equations.h}!variable@{variable}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf}{
+variable}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf}
+}]Variable : ex. transition\_\-x ... \index{addition@{addition}!equations.h@{equations.h}}\index{equations.h@{equations.h}!addition@{addition}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f}{
+addition}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f}
+}]Addition \index{soustraction@{soustraction}!equations.h@{equations.h}}\index{equations.h@{equations.h}!soustraction@{soustraction}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0}{
+soustraction}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0}
+}]Substraction \index{multiplication@{multiplication}!equations.h@{equations.h}}\index{equations.h@{equations.h}!multiplication@{multiplication}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287}{
+multiplication}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287}
+}]Multiply \index{division@{division}!equations.h@{equations.h}}\index{equations.h@{equations.h}!division@{division}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26}{
+division}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26}
+}]Divide \index{equal@{equal}!equations.h@{equations.h}}\index{equations.h@{equations.h}!equal@{equal}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27}{
+equal}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27}
+}]Equality \index{superior@{superior}!equations.h@{equations.h}}\index{equations.h@{equations.h}!superior@{superior}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0}{
+superior}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0}
+}]Superiority \index{superior\_\-equal@{superior\_\-equal}!equations.h@{equations.h}}\index{equations.h@{equations.h}!superior\_\-equal@{superior\_\-equal}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b}{
+superior\_\-equal}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b}
+}]Sup\_\-equality \index{inferior@{inferior}!equations.h@{equations.h}}\index{equations.h@{equations.h}!inferior@{inferior}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8}{
+inferior}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8}
+}]Inferiority \index{inferior\_\-equal@{inferior\_\-equal}!equations.h@{equations.h}}\index{equations.h@{equations.h}!inferior\_\-equal@{inferior\_\-equal}}\item[{\em 
+\hypertarget{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c}{
+inferior\_\-equal}
+\label{equations_8h_adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c}
+}]Inf\_\-equality \end{description}
+\end{Desc}
+
+
+
+Definition at line 38 of file equations.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{equations_8h_abaee43b91c808de325abcfa4cf1b6698}{
+\index{equations.h@{equations.h}!add@{add}}
+\index{add@{add}!equations.h@{equations.h}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}double add (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_abaee43b91c808de325abcfa4cf1b6698}
+
+
+Add two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_a004a98a2cd96d70101b27be400dc4a5c}{
+\index{equations.h@{equations.h}!divide@{divide}}
+\index{divide@{divide}!equations.h@{equations.h}}
+\subsubsection[{divide}]{\setlength{\rightskip}{0pt plus 5cm}double divide (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a004a98a2cd96d70101b27be400dc4a5c}
+
+
+Divide two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_ae22300bfd59f7b0a12d56b5cb32b9429}{
+\index{equations.h@{equations.h}!equality@{equality}}
+\index{equality@{equality}!equations.h@{equations.h}}
+\subsubsection[{equality}]{\setlength{\rightskip}{0pt plus 5cm}double equality (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_ae22300bfd59f7b0a12d56b5cb32b9429}
+
+
+Test the equality of two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_aa1fb3994a7c6fdf69e7aab84414f467c}{
+\index{equations.h@{equations.h}!Equations\_\-addOp@{Equations\_\-addOp}}
+\index{Equations\_\-addOp@{Equations\_\-addOp}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-addOp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-addOp (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{result, }
+\item[{{\bf pEquations}}]{op, }
+\item[{{\bf pEquations}}]{new}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_aa1fb3994a7c6fdf69e7aab84414f467c}
+
+
+Build the list of the Struct \hyperlink{structEquations}{Equations} result used to compute the equation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Struct \hyperlink{structEquations}{Equations} used for computation \\
+\hline
+{\em op} & Struct \hyperlink{structEquations}{Equations} used to store the operator \\
+\hline
+{\em new} & One element of the Struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of operator 
+\end{DoxyReturn}
+
+
+Definition at line 383 of file equations.c.
+
+
+
+References equal, Equations\_\-depiler(), Equations\_\-empiler(), Equations\_\-priorite(), Equations\_\-sommet(), Equations\_\-vide(), inferior, inferior\_\-equal, superior, and superior\_\-equal.
+
+
+
+Referenced by Equations\_\-pileFormation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{equations_8h_aa1fb3994a7c6fdf69e7aab84414f467c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_a977051374a319d6bd60ef8ca2c03c952}{
+\index{equations.h@{equations.h}!Equations\_\-alloc@{Equations\_\-alloc}}
+\index{Equations\_\-alloc@{Equations\_\-alloc}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-alloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-alloc (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a977051374a319d6bd60ef8ca2c03c952}
+
+
+Alloc memory and initialize the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Allocated struct \hyperlink{structEquations}{Equations} 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file equations.c.
+
+
+
+Referenced by Equations\_\-calcul(), and Equations\_\-pileFormation().
+
+\hypertarget{equations_8h_a6e6af023dd85b15e2af2129a5c857238}{
+\index{equations.h@{equations.h}!Equations\_\-calcul@{Equations\_\-calcul}}
+\index{Equations\_\-calcul@{Equations\_\-calcul}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-calcul}]{\setlength{\rightskip}{0pt plus 5cm}double Equations\_\-calcul (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste, }
+\item[{char $\ast$$\ast$}]{name, }
+\item[{double $\ast$}]{quantite, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a6e6af023dd85b15e2af2129a5c857238}
+
+
+Compute the score of the equation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & pile of type Struct \hyperlink{structEquations}{Equations} \\
+\hline
+{\em name} & List of molecules \\
+\hline
+{\em quantite} & List of the quantity of the molecules \\
+\hline
+{\em taille} & Number of molecules in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the equation (First part of the energy) 
+\end{DoxyReturn}
+
+
+Definition at line 614 of file equations.c.
+
+
+
+References addition, constant, division, equal, Equations\_\-alloc(), Equations\_\-defiler(), Equations\_\-defilerSuiv(), Equations\_\-depiler(), Equations\_\-empiler(), Equations\_\-extractData(), Equations\_\-resultat(), Equations\_\-vide(), inferior, inferior\_\-equal, multiplication, soustraction, superior, and superior\_\-equal.
+
+
+
+Referenced by Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{equations_8h_a6e6af023dd85b15e2af2129a5c857238_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_a7b5cc03bbac246e28d61714dc2931a92}{
+\index{equations.h@{equations.h}!Equations\_\-defiler@{Equations\_\-defiler}}
+\index{Equations\_\-defiler@{Equations\_\-defiler}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-defiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-defiler (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a7b5cc03bbac246e28d61714dc2931a92}
+
+
+Look for the first element of the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the first element of struct \hyperlink{structEquations}{Equations} 
+\end{DoxyReturn}
+
+
+Definition at line 320 of file equations.c.
+
+
+
+Referenced by Equations\_\-calcul(), and Equations\_\-emptyOp().
+
+\hypertarget{equations_8h_a2c6acfd549462cb3be5a53775767429a}{
+\index{equations.h@{equations.h}!Equations\_\-defilerSuiv@{Equations\_\-defilerSuiv}}
+\index{Equations\_\-defilerSuiv@{Equations\_\-defilerSuiv}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-defilerSuiv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-defilerSuiv (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a2c6acfd549462cb3be5a53775767429a}
+
+
+Get the next element of the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the next element of struct \hyperlink{structEquations}{Equations} 
+\end{DoxyReturn}
+
+
+Definition at line 334 of file equations.c.
+
+
+
+Referenced by Equations\_\-calcul(), and Equations\_\-emptyOp().
+
+\hypertarget{equations_8h_afa3dcf131c38609646bd0ff79aef41d7}{
+\index{equations.h@{equations.h}!Equations\_\-define@{Equations\_\-define}}
+\index{Equations\_\-define@{Equations\_\-define}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-define}]{\setlength{\rightskip}{0pt plus 5cm}void Equations\_\-define (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{new, }
+\item[{char $\ast$}]{operateur}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_afa3dcf131c38609646bd0ff79aef41d7}
+
+
+Identify the mathematical operator used. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+{\em operateur} & Read operator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file equations.c.
+
+
+
+References add(), addition, divide(), division, equal, equality(), inf(), inf\_\-equal(), inferior, inferior\_\-equal, multiplication, multiply(), soustraction, subtract(), sup(), sup\_\-equal(), superior, and superior\_\-equal.
+
+
+
+Referenced by Equations\_\-pileFormation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{equations_8h_afa3dcf131c38609646bd0ff79aef41d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_ae69932ae59f7f39d19b16efdcd0ba814}{
+\index{equations.h@{equations.h}!Equations\_\-depiler@{Equations\_\-depiler}}
+\index{Equations\_\-depiler@{Equations\_\-depiler}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-depiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-depiler (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_ae69932ae59f7f39d19b16efdcd0ba814}
+
+
+Unstack the last element of the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the \char`\"{}unstack\char`\"{} element of struct \hyperlink{structEquations}{Equations}. 
+\end{DoxyReturn}
+
+
+Definition at line 282 of file equations.c.
+
+
+
+Referenced by Equations\_\-addOp(), and Equations\_\-calcul().
+
+\hypertarget{equations_8h_ab8d4e4c2f309e68abe8dbcae96a240d5}{
+\index{equations.h@{equations.h}!Equations\_\-empiler@{Equations\_\-empiler}}
+\index{Equations\_\-empiler@{Equations\_\-empiler}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-empiler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-empiler (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste, }
+\item[{{\bf pEquations}}]{new}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_ab8d4e4c2f309e68abe8dbcae96a240d5}
+
+
+Stack an element to the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+{\em new} & New struct \hyperlink{structEquations}{Equations} element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the last element of struct \hyperlink{structEquations}{Equations} 
+\end{DoxyReturn}
+
+
+Definition at line 258 of file equations.c.
+
+
+
+Referenced by Equations\_\-addOp(), Equations\_\-calcul(), Equations\_\-emptyOp(), and Equations\_\-pileFormation().
+
+\hypertarget{equations_8h_ae188053c785ea42afda7a9a604140b44}{
+\index{equations.h@{equations.h}!Equations\_\-emptyOp@{Equations\_\-emptyOp}}
+\index{Equations\_\-emptyOp@{Equations\_\-emptyOp}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-emptyOp}]{\setlength{\rightskip}{0pt plus 5cm}void Equations\_\-emptyOp (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{result, }
+\item[{{\bf pEquations}}]{op}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_ae188053c785ea42afda7a9a604140b44}
+
+
+Empty the Struct \hyperlink{structEquations}{Equations} op for the struct Equation result. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Struct \hyperlink{structEquations}{Equations} used for computation \\
+\hline
+{\em op} & Struct Equation used to store the operator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 421 of file equations.c.
+
+
+
+References Equations\_\-defiler(), Equations\_\-defilerSuiv(), Equations\_\-empiler(), and Equations\_\-vide().
+
+
+
+Referenced by Equations\_\-pileFormation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{equations_8h_ae188053c785ea42afda7a9a604140b44_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_a543044646be5d2086c3301f7db2a0c1f}{
+\index{equations.h@{equations.h}!Equations\_\-finalQuantite@{Equations\_\-finalQuantite}}
+\index{Equations\_\-finalQuantite@{Equations\_\-finalQuantite}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-finalQuantite}]{\setlength{\rightskip}{0pt plus 5cm}double Equations\_\-finalQuantite (
+\begin{DoxyParamCaption}
+\item[{int}]{file\_\-nb\_\-especes, }
+\item[{char $\ast$$\ast$}]{file\_\-species, }
+\item[{int $\ast$}]{file\_\-amount, }
+\item[{int $\ast$}]{file\_\-weight, }
+\item[{char $\ast$$\ast$}]{sim\_\-name, }
+\item[{double $\ast$}]{sim\_\-quantite, }
+\item[{int}]{sim\_\-taille}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a543044646be5d2086c3301f7db2a0c1f}
+
+
+Compute the score of the quantity which means the difference between what is expected to what is simulated. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em file\_\-nb\_\-especes} & Number of species in the parameter file \\
+\hline
+{\em file\_\-species} & List of species in the parameter file \\
+\hline
+{\em file\_\-amount} & List of species expected quantity \\
+\hline
+{\em file\_\-weight} & Weight defined for the species \\
+\hline
+{\em sim\_\-name} & List of species simulated (sbml file) \\
+\hline
+{\em sim\_\-quantite} & List of the quantity of the species simulated (sbml file) \\
+\hline
+{\em sim\_\-taille} & Number of species simulated (sbml file) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the difference (Second part of the Energy) 
+\end{DoxyReturn}
+
+
+Definition at line 683 of file equations.c.
+
+
+
+References Equations\_\-findSpecies().
+
+
+
+Referenced by Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), and Sd\_\-compute\_\-simulation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=352pt]{equations_8h_a543044646be5d2086c3301f7db2a0c1f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_acacabe612b4e956d3db6d1677dac4037}{
+\index{equations.h@{equations.h}!Equations\_\-findSpecies@{Equations\_\-findSpecies}}
+\index{Equations\_\-findSpecies@{Equations\_\-findSpecies}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-findSpecies}]{\setlength{\rightskip}{0pt plus 5cm}double Equations\_\-findSpecies (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{species, }
+\item[{char $\ast$$\ast$}]{name, }
+\item[{double $\ast$}]{quantite, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_acacabe612b4e956d3db6d1677dac4037}
+
+
+Look for the quantity of a molecule in the list. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em species} & Name of a molecule \\
+\hline
+{\em name} & List of molecules \\
+\hline
+{\em quantite} & List of the quantity of the molecules \\
+\hline
+{\em taille} & Number of molecules in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quantity of the molecule of interest 
+\end{DoxyReturn}
+
+
+Definition at line 533 of file equations.c.
+
+
+
+Referenced by Equations\_\-finalQuantite(), Min\_\-score\_\-print\_\-mean(), and Mod\_\-score\_\-print\_\-mean().
+
+\hypertarget{equations_8h_ae0f5b302dbd7d0bb1524b48aa38bec6c}{
+\index{equations.h@{equations.h}!Equations\_\-pileFormation@{Equations\_\-pileFormation}}
+\index{Equations\_\-pileFormation@{Equations\_\-pileFormation}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-pileFormation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-pileFormation (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$$\ast$}]{equation, }
+\item[{int}]{nb\_\-noeud}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_ae0f5b302dbd7d0bb1524b48aa38bec6c}
+
+
+Build pile. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em equation} & Table with the equation in Mathml format \\
+\hline
+{\em nb\_\-noeud} & Number of element inside the equation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Struct Equation needed for compute the equation 
+\end{DoxyReturn}
+
+
+Definition at line 441 of file equations.c.
+
+
+
+References constant, Equations\_\-addOp(), Equations\_\-alloc(), Equations\_\-define(), Equations\_\-empiler(), Equations\_\-emptyOp(), and variable.
+
+
+
+Referenced by Data\_\-equationsInit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{equations_8h_ae0f5b302dbd7d0bb1524b48aa38bec6c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_ab5545fa4c945c64285e91687d90767f4}{
+\index{equations.h@{equations.h}!Equations\_\-print@{Equations\_\-print}}
+\index{Equations\_\-print@{Equations\_\-print}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}void Equations\_\-print (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_ab5545fa4c945c64285e91687d90767f4}
+
+
+Print all information on the element of the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 359 of file equations.c.
+
+
+
+References constant, Equdata::data, Equations::info, Equations::type, Equdata::var, and variable.
+
+\hypertarget{equations_8h_a9107be336f525ee8ee8bb0d56bc91d8b}{
+\index{equations.h@{equations.h}!Equations\_\-priorite@{Equations\_\-priorite}}
+\index{Equations\_\-priorite@{Equations\_\-priorite}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-priorite}]{\setlength{\rightskip}{0pt plus 5cm}int Equations\_\-priorite (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{new}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a9107be336f525ee8ee8bb0d56bc91d8b}
+
+
+Give the priority of the operator. Multiplication and Division have higher priority than addition or subtration... 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new} & One element of the struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Priority of the operator 
+\end{DoxyReturn}
+
+
+Definition at line 346 of file equations.c.
+
+
+
+References addition, equal, inferior, inferior\_\-equal, soustraction, superior, and superior\_\-equal.
+
+
+
+Referenced by Equations\_\-addOp().
+
+\hypertarget{equations_8h_af09f4513d82b106e8e9157f30c909529}{
+\index{equations.h@{equations.h}!Equations\_\-resultat@{Equations\_\-resultat}}
+\index{Equations\_\-resultat@{Equations\_\-resultat}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-resultat}]{\setlength{\rightskip}{0pt plus 5cm}double Equations\_\-resultat (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{result, }
+\item[{{\bf pEquations}}]{result1, }
+\item[{{\bf pEquations}}]{eq, }
+\item[{char $\ast$$\ast$}]{name, }
+\item[{double $\ast$}]{quantite, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_af09f4513d82b106e8e9157f30c909529}
+
+
+Compute the result of two pile. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Struct Equation result \\
+\hline
+{\em result1} & Struct Equation result after the operator \\
+\hline
+{\em eq} & Operator \\
+\hline
+{\em name} & List of molecules \\
+\hline
+{\em quantite} & List of the quantity of the molecules \\
+\hline
+{\em taille} & Number of molecules in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of the two pile 
+\end{DoxyReturn}
+
+
+Definition at line 561 of file equations.c.
+
+
+
+References equal, Equations\_\-extractData(), inferior, inferior\_\-equal, superior, superior\_\-equal, and Equations::type.
+
+
+
+Referenced by Equations\_\-calcul().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{equations_8h_af09f4513d82b106e8e9157f30c909529_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{equations_8h_a25cc9b41f25936e9d67a650554dc875d}{
+\index{equations.h@{equations.h}!Equations\_\-sommet@{Equations\_\-sommet}}
+\index{Equations\_\-sommet@{Equations\_\-sommet}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-sommet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pEquations} Equations\_\-sommet (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a25cc9b41f25936e9d67a650554dc875d}
+
+
+Look for the last element of the struct \hyperlink{structEquations}{Equations}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer on the last element of struct \hyperlink{structEquations}{Equations} 
+\end{DoxyReturn}
+
+
+Definition at line 305 of file equations.c.
+
+
+
+Referenced by Equations\_\-addOp().
+
+\hypertarget{equations_8h_a7aa0efc05d71c770b8aaf4ad6d677be2}{
+\index{equations.h@{equations.h}!Equations\_\-vide@{Equations\_\-vide}}
+\index{Equations\_\-vide@{Equations\_\-vide}!equations.h@{equations.h}}
+\subsubsection[{Equations\_\-vide}]{\setlength{\rightskip}{0pt plus 5cm}int Equations\_\-vide (
+\begin{DoxyParamCaption}
+\item[{{\bf pEquations}}]{liste}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a7aa0efc05d71c770b8aaf4ad6d677be2}
+
+
+Test if the struct \hyperlink{structEquations}{Equations} is empty. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & Struct \hyperlink{structEquations}{Equations} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of elements 
+\end{DoxyReturn}
+
+
+Definition at line 237 of file equations.c.
+
+
+
+Referenced by Equations\_\-addOp(), Equations\_\-calcul(), and Equations\_\-emptyOp().
+
+\hypertarget{equations_8h_a3a5c2f0eec28c21db099d689bbcc5b14}{
+\index{equations.h@{equations.h}!inf@{inf}}
+\index{inf@{inf}!equations.h@{equations.h}}
+\subsubsection[{inf}]{\setlength{\rightskip}{0pt plus 5cm}double inf (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a3a5c2f0eec28c21db099d689bbcc5b14}
+
+
+Test the inferiority between two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_aa6c076aacdfbdd13d6f25e0f36d6406b}{
+\index{equations.h@{equations.h}!inf\_\-equal@{inf\_\-equal}}
+\index{inf\_\-equal@{inf\_\-equal}!equations.h@{equations.h}}
+\subsubsection[{inf\_\-equal}]{\setlength{\rightskip}{0pt plus 5cm}double inf\_\-equal (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_aa6c076aacdfbdd13d6f25e0f36d6406b}
+
+
+Test the inferiority or equality between two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_a6081051f0fa134ecbd577740cbb92220}{
+\index{equations.h@{equations.h}!multiply@{multiply}}
+\index{multiply@{multiply}!equations.h@{equations.h}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}double multiply (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a6081051f0fa134ecbd577740cbb92220}
+
+
+Multiply two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_a8c90ae25e75adcfeeaf307cc2df2f360}{
+\index{equations.h@{equations.h}!subtract@{subtract}}
+\index{subtract@{subtract}!equations.h@{equations.h}}
+\subsubsection[{subtract}]{\setlength{\rightskip}{0pt plus 5cm}double subtract (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a8c90ae25e75adcfeeaf307cc2df2f360}
+
+
+Subtraction two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_a0ce3f625ded68dd2b0a927b1c3d85471}{
+\index{equations.h@{equations.h}!sup@{sup}}
+\index{sup@{sup}!equations.h@{equations.h}}
+\subsubsection[{sup}]{\setlength{\rightskip}{0pt plus 5cm}double sup (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a0ce3f625ded68dd2b0a927b1c3d85471}
+
+
+Test the superiority between two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+
+\hypertarget{equations_8h_a26bbff8f2c38ba14fea7a9d6067329b2}{
+\index{equations.h@{equations.h}!sup\_\-equal@{sup\_\-equal}}
+\index{sup\_\-equal@{sup\_\-equal}!equations.h@{equations.h}}
+\subsubsection[{sup\_\-equal}]{\setlength{\rightskip}{0pt plus 5cm}double sup\_\-equal (
+\begin{DoxyParamCaption}
+\item[{double}]{arg1, }
+\item[{double}]{arg2}
+\end{DoxyParamCaption}
+)}}
+\label{equations_8h_a26bbff8f2c38ba14fea7a9d6067329b2}
+
+
+Test the superiority or equality between two numbers. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em arg1} & Value 1 \\
+\hline
+{\em arg2} & Value 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file equations.c.
+
+
+
+Referenced by Equations\_\-define().
+

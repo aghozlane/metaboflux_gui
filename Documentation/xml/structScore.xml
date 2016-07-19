@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structScore" kind="struct" prot="public">
+    <compoundname>Score</compoundname>
+    <includes refid="simulation_8h" local="no">simulation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structScore_1a29547e98673d89a8964a747015b2c26c" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** Score::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Molecules id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="53" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Score::quantite</definition>
+        <argsstring></argsstring>
+        <name>quantite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantity of molecules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="54" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="data__parameters_8h_1a9096849f5a525ee26634b2d98a497ded" compoundref="data__parameters_8c" startline="290" endline="299">Data_scoreInit</referencedby>
+        <referencedby refid="gsl__min_8h_1a843d6e8ed1d3354a55586c7734f60499" compoundref="gsl__min_8c" startline="208" endline="222">Min_getTampon</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</referencedby>
+        <referencedby refid="simulation_8h_1a785b8432d885cc9e8ef50413c3643f6a" compoundref="simulation_8c" startline="591" endline="598">SBML_score_mean</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1af8245823c6e659cee49999dd3452a301" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** Score::reaction</definition>
+        <argsstring></argsstring>
+        <name>reaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interest reaction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="55" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1a9676111bf63c8d420921fe1c9187670d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::nb_reaction</definition>
+        <argsstring></argsstring>
+        <name>nb_reaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of reaction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="56" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1a103843cc09238d77051b5a6ca4e48173" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::tailleReactions</definition>
+        <argsstring></argsstring>
+        <name>tailleReactions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of reaction in the SBML file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="57" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1ac5a5af5f70e341fb42ea765394d86207" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::tailleSpecies</definition>
+        <argsstring></argsstring>
+        <name>tailleSpecies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of molecules in the SBML file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="58" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1aee1e19fc90d330de6fced582dff7102c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::taille</definition>
+        <argsstring></argsstring>
+        <name>taille</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total of other two sizes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="59" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="data__parameters_8h_1a9096849f5a525ee26634b2d98a497ded" compoundref="data__parameters_8c" startline="290" endline="299">Data_scoreInit</referencedby>
+        <referencedby refid="gsl__min_8h_1a843d6e8ed1d3354a55586c7734f60499" compoundref="gsl__min_8c" startline="208" endline="222">Min_getTampon</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="simulation_8h_1a97ba6b434d34399d17103fbb366afd74" compoundref="simulation_8c" startline="560" endline="582">SBML_score_add</referencedby>
+        <referencedby refid="simulation_8h_1a785b8432d885cc9e8ef50413c3643f6a" compoundref="simulation_8c" startline="591" endline="598">SBML_score_mean</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** Score::species</definition>
+        <argsstring></argsstring>
+        <name>species</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interest molecules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="60" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1a88d07328145c2565fb2fa50c31760dbe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::nb_species</definition>
+        <argsstring></argsstring>
+        <name>nb_species</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of molecules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="61" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1abb78b9e380ec83ab8f0274480c420be7" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* Score::species_amount</definition>
+        <argsstring></argsstring>
+        <name>species_amount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantity of the interest molecules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="62" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structScore_1a46e74b92b29101ec9dc68255ab71a480" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* Score::species_weight</definition>
+        <argsstring></argsstring>
+        <name>species_weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Weight of the interest molecules </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="63" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a46e8fbe37a14a679690ad84c4a596cc4" compoundref="data__parameters_8c" startline="238" endline="265">Data_allocScore</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1af65c1571388a7669aaa18c4163dac2f1" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure containing all information from simulations. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="52" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="51" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structScore_1a29547e98673d89a8964a747015b2c26c" prot="public" virt="non-virtual"><scope>Score</scope><name>name</name></member>
+      <member refid="structScore_1a9676111bf63c8d420921fe1c9187670d" prot="public" virt="non-virtual"><scope>Score</scope><name>nb_reaction</name></member>
+      <member refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" prot="public" virt="non-virtual"><scope>Score</scope><name>nb_species</name></member>
+      <member refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" prot="public" virt="non-virtual"><scope>Score</scope><name>quantite</name></member>
+      <member refid="structScore_1af8245823c6e659cee49999dd3452a301" prot="public" virt="non-virtual"><scope>Score</scope><name>reaction</name></member>
+      <member refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" prot="public" virt="non-virtual"><scope>Score</scope><name>species</name></member>
+      <member refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" prot="public" virt="non-virtual"><scope>Score</scope><name>species_amount</name></member>
+      <member refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" prot="public" virt="non-virtual"><scope>Score</scope><name>species_weight</name></member>
+      <member refid="structScore_1aee1e19fc90d330de6fced582dff7102c" prot="public" virt="non-virtual"><scope>Score</scope><name>taille</name></member>
+      <member refid="structScore_1a103843cc09238d77051b5a6ca4e48173" prot="public" virt="non-virtual"><scope>Score</scope><name>tailleReactions</name></member>
+      <member refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" prot="public" virt="non-virtual"><scope>Score</scope><name>tailleSpecies</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

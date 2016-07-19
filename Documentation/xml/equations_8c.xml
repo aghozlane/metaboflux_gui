@@ -1,0 +1,1764 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="equations_8c" kind="file">
+    <compoundname>equations.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes refid="equations_8h" local="yes">equations.h</includes>
+    <incdepgraph>
+      <node id="388">
+        <label>assert.h</label>
+      </node>
+      <node id="385">
+        <label>stdlib.h</label>
+      </node>
+      <node id="383">
+        <label>metaboflux/src/equations.c</label>
+        <link refid="equations.c"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>string.h</label>
+      </node>
+      <node id="387">
+        <label>math.h</label>
+      </node>
+      <node id="389">
+        <label>equations.h</label>
+        <link refid="equations_8h"/>
+      </node>
+      <node id="384">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="equations_8c_1a369266c24eacffb87046522897a570d5" prot="public" static="no">
+        <name>_GNU_SOURCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="27" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="equations_8c_1aadfa8a3c9e3c361367513bdc030d5068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double add</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>add</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Add two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="44" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="43" bodyend="46"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1ad04157df89acd8d4e8bf80fd45dd00bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double subtract</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>subtract</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Subtraction two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="57" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="56" bodyend="59"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1afc6d7eeb06b30a5a37238e3b84c2176b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double multiply</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Multiply two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="70" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="69" bodyend="72"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1aa1312b87a72d22e2bbebf101e292a9f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double divide</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>divide</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Divide two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="83" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="82" bodyend="85"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a67c2ddb47af2bd3b128dcea9bacf6400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double equality</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>equality</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Test the equality of two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="96" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="95" bodyend="98"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a513f2e0300d9efaaeb85e3a1c6483b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sup</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>sup</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Test the superiority between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="109" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="108" bodyend="111"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a363235573b747213d55920f8804445b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sup_equal</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>sup_equal</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Test the superiority or equality between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="122" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="121" bodyend="124"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a754ca014ba925b1c96920d21d7029ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double inf</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>inf</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Test the inferiority between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="135" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="134" bodyend="137"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a6638015dab123b16fe60b36e30169064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double inf_equal</definition>
+        <argsstring>(double arg1, double arg2)</argsstring>
+        <name>inf_equal</name>
+        <param>
+          <type>double</type>
+          <declname>arg1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>arg2</declname>
+        </param>
+        <briefdescription>
+<para>Test the inferiority or equality between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="148" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="147" bodyend="150"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>Equations_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<simplesect kind="return"><para>Allocated struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="159" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="158" bodyend="165"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a17d096394760f8a2f63e5e3523168304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equations_define</definition>
+        <argsstring>(pEquations new, char *operateur)</argsstring>
+        <name>Equations_define</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>operateur</declname>
+        </param>
+        <briefdescription>
+<para>Identify the mathematical operator used. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>operateur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read operator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="175" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="174" bodyend="228"/>
+        <references refid="equations_8c_1aadfa8a3c9e3c361367513bdc030d5068" compoundref="equations_8c" startline="43" endline="46">add</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" compoundref="equations_8h" startline="42">addition</references>
+        <references refid="equations_8c_1aa1312b87a72d22e2bbebf101e292a9f9" compoundref="equations_8c" startline="82" endline="85">divide</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" compoundref="equations_8h" startline="45">division</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1a67c2ddb47af2bd3b128dcea9bacf6400" compoundref="equations_8c" startline="95" endline="98">equality</references>
+        <references refid="equations_8c_1a754ca014ba925b1c96920d21d7029ce2" compoundref="equations_8c" startline="134" endline="137">inf</references>
+        <references refid="equations_8c_1a6638015dab123b16fe60b36e30169064" compoundref="equations_8c" startline="147" endline="150">inf_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" compoundref="equations_8h" startline="44">multiplication</references>
+        <references refid="equations_8c_1afc6d7eeb06b30a5a37238e3b84c2176b" compoundref="equations_8c" startline="69" endline="72">multiply</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" compoundref="equations_8h" startline="43">soustraction</references>
+        <references refid="equations_8c_1ad04157df89acd8d4e8bf80fd45dd00bb" compoundref="equations_8c" startline="56" endline="59">subtract</references>
+        <references refid="equations_8c_1a513f2e0300d9efaaeb85e3a1c6483b59" compoundref="equations_8c" startline="108" endline="111">sup</references>
+        <references refid="equations_8c_1a363235573b747213d55920f8804445b4" compoundref="equations_8c" startline="121" endline="124">sup_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Equations_vide</definition>
+        <argsstring>(pEquations liste)</argsstring>
+        <name>Equations_vide</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+<para>Test if the struct <ref refid="structEquations" kindref="compound">Equations</ref> is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of elements </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="238" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="237" bodyend="248"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a51aa19b01714bc3ae728031b8748694a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_empiler</definition>
+        <argsstring>(pEquations liste, pEquations new)</argsstring>
+        <name>Equations_empiler</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+<para>Stack an element to the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New struct <ref refid="structEquations" kindref="compound">Equations</ref> element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the last element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="259" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="258" bodyend="272"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a652cb08a19a4b10403a1751220d2de54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_depiler</definition>
+        <argsstring>(pEquations liste)</argsstring>
+        <name>Equations_depiler</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+<para>Unstack the last element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the &quot;unstack&quot; element of struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="283" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="282" bodyend="296"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a6cac5d605c548c5083d41d8140272201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_sommet</definition>
+        <argsstring>(pEquations liste)</argsstring>
+        <name>Equations_sommet</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+<para>Look for the last element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the last element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="306" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="305" bodyend="311"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_defiler</definition>
+        <argsstring>(pEquations liste)</argsstring>
+        <name>Equations_defiler</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+<para>Look for the first element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the first element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="321" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="320" bodyend="325"/>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_defilerSuiv</definition>
+        <argsstring>(pEquations liste)</argsstring>
+        <name>Equations_defilerSuiv</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+<para>Get the next element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the next element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="335" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="334" bodyend="337"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Equations_priorite</definition>
+        <argsstring>(pEquations new)</argsstring>
+        <name>Equations_priorite</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+<para>Give the priority of the operator. Multiplication and Division have higher priority than addition or subtration... </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One element of the struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Priority of the operator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="347" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="346" bodyend="351"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" compoundref="equations_8h" startline="42">addition</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" compoundref="equations_8h" startline="43">soustraction</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a0318c81313bd6f492aaeaaeb705e7a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equations_print</definition>
+        <argsstring>(pEquations liste)</argsstring>
+        <name>Equations_print</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <briefdescription>
+<para>Print all information on the element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="360" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="359" bodyend="372"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <references refid="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" compoundref="equations_8h" startline="60">Equdata::data</references>
+        <references refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" compoundref="equations_8h" startline="71">Equations::info</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <references refid="structEquations_1add825d3104abf54c01421c67536d0991" compoundref="equations_8h" startline="70">Equations::type</references>
+        <references refid="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" compoundref="equations_8h" startline="61">Equdata::var</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" compoundref="equations_8h" startline="41">variable</references>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1acfd75204575cdb598699e9599c24164e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_addOp</definition>
+        <argsstring>(pEquations result, pEquations op, pEquations new)</argsstring>
+        <name>Equations_addOp</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+<para>Build the list of the Struct <ref refid="structEquations" kindref="compound">Equations</ref> result used to compute the equation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> used for computation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> used to store the operator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One element of the Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of operator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="384" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="383" bodyend="412"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" compoundref="equations_8c" startline="282" endline="296">Equations_depiler</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" compoundref="equations_8c" startline="346" endline="351">Equations_priorite</references>
+        <references refid="equations_8c_1a6cac5d605c548c5083d41d8140272201" compoundref="equations_8c" startline="305" endline="311">Equations_sommet</references>
+        <references refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" compoundref="equations_8c" startline="237" endline="248">Equations_vide</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" compoundref="equations_8h" startline="30">OUI</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a2265434c24c5db73dc45f4799f01fbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equations_emptyOp</definition>
+        <argsstring>(pEquations result, pEquations op)</argsstring>
+        <name>Equations_emptyOp</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Empty the Struct <ref refid="structEquations" kindref="compound">Equations</ref> op for the struct Equation result. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> used for computation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct Equation used to store the operator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="422" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="421" bodyend="431"/>
+        <references refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" compoundref="equations_8c" startline="320" endline="325">Equations_defiler</references>
+        <references refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" compoundref="equations_8c" startline="334" endline="337">Equations_defilerSuiv</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" compoundref="equations_8c" startline="237" endline="248">Equations_vide</references>
+        <references refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" compoundref="equations_8h" startline="30">OUI</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1adcc21952710a1783d451a42bd0448215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_pileFormation</definition>
+        <argsstring>(char ***equation, int nb_noeud)</argsstring>
+        <name>Equations_pileFormation</name>
+        <param>
+          <type>char ***</type>
+          <declname>equation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_noeud</declname>
+        </param>
+        <briefdescription>
+<para>Build pile. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>equation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table with the equation in Mathml format </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_noeud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of element inside the equation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Struct Equation needed for compute the equation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="442" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="441" bodyend="485"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <references refid="equations_8c_1acfd75204575cdb598699e9599c24164e" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</references>
+        <references refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" compoundref="equations_8c" startline="158" endline="165">Equations_alloc</references>
+        <references refid="equations_8c_1a17d096394760f8a2f63e5e3523168304" compoundref="equations_8c" startline="174" endline="228">Equations_define</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1a2265434c24c5db73dc45f4799f01fbb6" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" compoundref="equations_8h" startline="41">variable</references>
+        <referencedby refid="data__parameters_8h_1ac0ac001f1fc3102e3ed07568cba5c570" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_extractData</definition>
+        <argsstring>(pEquations new, char **name, double *quantite, int taille)</argsstring>
+        <name>Equations_extractData</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>quantite</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille</declname>
+        </param>
+        <briefdescription>
+<para>Extract information on element of type Struct Equation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element of type Struct Equation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the interest element </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Quantity of the molecule of interest </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="498" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="497" bodyend="521"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1af09f4513d82b106e8e9157f30c909529" compoundref="equations_8c" startline="561" endline="602">Equations_resultat</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a93e7c3c0bd43ade391fa122589734816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_findSpecies</definition>
+        <argsstring>(char *species, char **name, double *quantite, int taille)</argsstring>
+        <name>Equations_findSpecies</name>
+        <param>
+          <type>char *</type>
+          <declname>species</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>quantite</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille</declname>
+        </param>
+        <briefdescription>
+<para>Look for the quantity of a molecule in the list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of a molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Quantity of the molecule of interest </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="534" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="533" bodyend="547"/>
+        <referencedby refid="equations_8h_1a543044646be5d2086c3301f7db2a0c1f" compoundref="equations_8c" startline="683" endline="698">Equations_finalQuantite</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1aafe1cd5689dbec030ec792f43b40876b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_resultat</definition>
+        <argsstring>(pEquations result, pEquations result1, pEquations eq, char **name, double *quantite, int taille)</argsstring>
+        <name>Equations_resultat</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>result1</declname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>eq</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>quantite</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille</declname>
+        </param>
+        <briefdescription>
+<para>Compute the result of two pile. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct Equation result </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct Equation result after the operator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of the two pile </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="562" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="561" bodyend="602"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" compoundref="equations_8c" startline="497" endline="521">Equations_extractData</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <references refid="structEquations_1add825d3104abf54c01421c67536d0991" compoundref="equations_8h" startline="70">Equations::type</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_calcul</definition>
+        <argsstring>(pEquations liste, char **name, double *quantite, int taille)</argsstring>
+        <name>Equations_calcul</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <declname>liste</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>quantite</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>taille</declname>
+        </param>
+        <briefdescription>
+<para>Compute the score of the equation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pile of type Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of the equation (First part of the energy) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="615" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="614" bodyend="668"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" compoundref="equations_8h" startline="42">addition</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" compoundref="equations_8h" startline="45">division</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" compoundref="equations_8c" startline="158" endline="165">Equations_alloc</references>
+        <references refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" compoundref="equations_8c" startline="320" endline="325">Equations_defiler</references>
+        <references refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" compoundref="equations_8c" startline="334" endline="337">Equations_defilerSuiv</references>
+        <references refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" compoundref="equations_8c" startline="282" endline="296">Equations_depiler</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" compoundref="equations_8c" startline="497" endline="521">Equations_extractData</references>
+        <references refid="equations_8c_1aafe1cd5689dbec030ec792f43b40876b" compoundref="equations_8c" startline="561" endline="602">Equations_resultat</references>
+        <references refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" compoundref="equations_8c" startline="237" endline="248">Equations_vide</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" compoundref="equations_8h" startline="44">multiplication</references>
+        <references refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" compoundref="equations_8h" startline="30">OUI</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" compoundref="equations_8h" startline="43">soustraction</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8c_1a52f64995ddba108da9f528b20d373a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_finalQuantite</definition>
+        <argsstring>(int file_nb_especes, char **file_species, int *file_amount, int *file_weight, char **sim_name, double *sim_quantite, int sim_taille)</argsstring>
+        <name>Equations_finalQuantite</name>
+        <param>
+          <type>int</type>
+          <declname>file_nb_especes</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>file_species</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>file_amount</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>file_weight</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>sim_name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>sim_quantite</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sim_taille</declname>
+        </param>
+        <briefdescription>
+<para>Compute the score of the quantity which means the difference between what is expected to what is simulated. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_nb_especes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species in the parameter file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of species in the parameter file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of species expected quantity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight defined for the species </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of species simulated (sbml file) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim_quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the species simulated (sbml file) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim_taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species simulated (sbml file) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of the difference (Second part of the Energy) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" line="685" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="683" bodyend="698"/>
+        <references refid="equations_8c_1a93e7c3c0bd43ade391fa122589734816" compoundref="equations_8c" startline="533" endline="547">Equations_findSpecies</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Processes an equation in MathML format. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of Metaboflux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>Metaboflux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>Metaboflux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>15 janvier 2010 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="27" refid="equations_8c_1a369266c24eacffb87046522897a570d5" refkind="member"><highlight class="preprocessor">#define<sp/>_GNU_SOURCE</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="equations_8h" kindref="compound" tooltip="Processes an equation in MathML format.">equations.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="equations_8h_1abaee43b91c808de325abcfa4cf1b6698" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aadfa8a3c9e3c361367513bdc030d5068" kindref="member" tooltip="Add two numbers.">add</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>+<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="equations_8h_1a8c90ae25e75adcfeeaf307cc2df2f360" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1ad04157df89acd8d4e8bf80fd45dd00bb" kindref="member" tooltip="Subtraction two numbers.">subtract</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>-<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="equations_8h_1a6081051f0fa134ecbd577740cbb92220" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1afc6d7eeb06b30a5a37238e3b84c2176b" kindref="member" tooltip="Multiply two numbers.">multiply</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>*<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="equations_8h_1a004a98a2cd96d70101b27be400dc4a5c" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aa1312b87a72d22e2bbebf101e292a9f9" kindref="member" tooltip="Divide two numbers.">divide</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>/<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="equations_8h_1ae22300bfd59f7b0a12d56b5cb32b9429" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a67c2ddb47af2bd3b128dcea9bacf6400" kindref="member" tooltip="Test the equality of two numbers.">equality</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>==<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="equations_8h_1a0ce3f625ded68dd2b0a927b1c3d85471" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a513f2e0300d9efaaeb85e3a1c6483b59" kindref="member" tooltip="Test the superiority between two numbers.">sup</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>&gt;<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="equations_8h_1a26bbff8f2c38ba14fea7a9d6067329b2" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a363235573b747213d55920f8804445b4" kindref="member" tooltip="Test the superiority or equality between two numbers.">sup_equal</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>&gt;=<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="equations_8h_1a3a5c2f0eec28c21db099d689bbcc5b14" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a754ca014ba925b1c96920d21d7029ce2" kindref="member" tooltip="Test the inferiority between two numbers.">inf</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>&lt;<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="equations_8h_1aa6c076aacdfbdd13d6f25e0f36d6406b" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a6638015dab123b16fe60b36e30169064" kindref="member" tooltip="Test the inferiority or equality between two numbers.">inf_equal</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>arg2)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">(<sp/>arg1<sp/>&lt;=<sp/>arg2<sp/>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="equations_8h_1a977051374a319d6bd60ef8ca2c03c952" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" kindref="member" tooltip="Alloc memory and initialize the struct Equations.">Equations_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>map;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>map=(<ref refid="equations_8h_1af62075f284d37edbae87d829356860cb" kindref="member">pEquations</ref>)<sp/>malloc(1*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref>));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>assert(map!=NULL);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>map-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>=NULL;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a17d096394760f8a2f63e5e3523168304" kindref="member" tooltip="Identify the mathematical operator used.">Equations_define</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*operateur)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Addition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>on<sp/>indique<sp/>le<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" kindref="member">addition</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>on<sp/>pointe<sp/>sur<sp/>la<sp/>fonction<sp/>add<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1aadfa8a3c9e3c361367513bdc030d5068" kindref="member" tooltip="Add two numbers.">add</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Subtraction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" kindref="member">soustraction</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1ad04157df89acd8d4e8bf80fd45dd00bb" kindref="member" tooltip="Subtraction two numbers.">subtract</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Multiplication<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;*&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" kindref="member">multiplication</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1afc6d7eeb06b30a5a37238e3b84c2176b" kindref="member" tooltip="Multiply two numbers.">multiply</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Division<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" kindref="member">division</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1aa1312b87a72d22e2bbebf101e292a9f9" kindref="member" tooltip="Divide two numbers.">divide</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Egality<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;=&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" kindref="member">equal</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1a67c2ddb47af2bd3b128dcea9bacf6400" kindref="member" tooltip="Test the equality of two numbers.">equality</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Superiority<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" kindref="member">superior</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1a513f2e0300d9efaaeb85e3a1c6483b59" kindref="member" tooltip="Test the superiority between two numbers.">sup</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Sup-equality<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;&gt;=&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" kindref="member">superior_equal</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1a363235573b747213d55920f8804445b4" kindref="member" tooltip="Test the superiority or equality between two numbers.">sup_equal</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Inferiority<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;&lt;&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" kindref="member">inferior</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1a754ca014ba925b1c96920d21d7029ce2" kindref="member" tooltip="Test the inferiority between two numbers.">inf</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Inf-equality<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(operateur,</highlight><highlight class="stringliteral">&quot;&lt;=&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" kindref="member">inferior_equal</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.op=&amp;<ref refid="equations_8c_1a6638015dab123b16fe60b36e30169064" kindref="member" tooltip="Test the inferiority or equality between two numbers.">inf_equal</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operator<sp/>non<sp/>recognize<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;ERREUR<sp/>:<sp/>operateur<sp/>\&quot;%s\&quot;non<sp/>gere\n&quot;</highlight><highlight class="normal">,operateur);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="equations_8h_1a7aa0efc05d71c770b8aaf4ad6d677be2" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" kindref="member" tooltip="Test if the struct Equations is empty.">Equations_vide</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_elements=0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Decompte<sp/>des<sp/>elements<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(liste!=NULL){</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nb_elements++;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>liste=liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nb_elements;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="equations_8h_1ab8d4e4c2f309e68abe8dbcae96a240d5" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>temp=liste;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>la<sp/>liste<sp/>est<sp/>vide<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(liste==NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Deplacement<sp/>jusqu&apos;au<sp/>dernier<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>!=NULL){</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>liste=liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="equations_8h_1ae69932ae59f7f39d19b16efdcd0ba814" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" kindref="member" tooltip="Unstack the last element of the struct Equations.">Equations_depiler</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>dernier_element=NULL;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Deplacement<sp/>jusqu&apos;a<sp/>l&apos;avant<sp/>dernier<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>!=NULL){</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>liste=liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Le<sp/>dernier<sp/>element<sp/>est<sp/>retire<sp/>de<sp/>la<sp/>pile<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>dernier_element=liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>=NULL;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dernier_element;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="equations_8h_1a25cc9b41f25936e9d67a650554dc875d" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1a6cac5d605c548c5083d41d8140272201" kindref="member" tooltip="Look for the last element of the struct Equations.">Equations_sommet</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste)</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>!=NULL){</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>liste=liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>liste;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="equations_8h_1a7b5cc03bbac246e28d61714dc2931a92" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" kindref="member" tooltip="Look for the first element of the struct Equations.">Equations_defiler</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>top=NULL;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/>top=liste;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>top;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="equations_8h_1a2c6acfd549462cb3be5a53775767429a" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" kindref="member" tooltip="Get the next element of the struct Equations.">Equations_defilerSuiv</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste)</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="equations_8h_1a9107be336f525ee8ee8bb0d56bc91d8b" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" kindref="member" tooltip="Give the priority of the operator. Multiplication and Division have higher priority than addition or ...">Equations_priorite</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Les<sp/>operateurs<sp/>d&apos;addition,<sp/>soustraction<sp/>et<sp/>egalite<sp/>sont<sp/>de<sp/>priorite<sp/>inferieure<sp/>que<sp/>ceux<sp/>de<sp/>division<sp/>et<sp/>multiplication*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" kindref="member">addition</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" kindref="member">soustraction</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" kindref="member">equal</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" kindref="member">superior</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" kindref="member">superior_equal</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" kindref="member">inferior</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" kindref="member">inferior_equal</ref><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="equations_8h_1ab5545fa4c945c64285e91687d90767f4" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a0318c81313bd6f492aaeaaeb705e7a0d" kindref="member" tooltip="Print all information on the element of the struct Equations.">Equations_print</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste)</highlight></codeline>
+<codeline lineno="360"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Affichage<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(liste!=NULL){</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(liste-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>){</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" kindref="member">constant</ref>:<sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;constante<sp/>:<sp/>%f\n&quot;</highlight><highlight class="normal">,liste-&gt;<ref refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" kindref="member">info</ref>.<ref refid="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" kindref="member">variable</ref>:<sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;variable<sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,liste-&gt;<ref refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" kindref="member">info</ref>.<ref refid="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" kindref="member">var</ref>);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;operateur<sp/>:<sp/>%d\n&quot;</highlight><highlight class="normal">,liste-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>liste=liste-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1acfd75204575cdb598699e9599c24164e" kindref="member" tooltip="Build the list of the Struct Equations result used to compute the equation.">Equations_addOp</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>result,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>op,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="384"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>temp=NULL;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fonction<sp/>qui<sp/>permet<sp/>placer<sp/>correctement<sp/>les<sp/>operateurs<sp/>dans<sp/>la<sp/>liste<sp/>chainee<sp/>de<sp/>l&apos;equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/><ref refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" kindref="member" tooltip="Test if the struct Equations is empty.">Equations_vide</ref>(op)<sp/>!=<sp/><ref refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" kindref="member">OUI</ref><sp/>&amp;&amp;<sp/><sp/><ref refid="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" kindref="member" tooltip="Give the priority of the operator. Multiplication and Division have higher priority than addition or ...">Equations_priorite</ref>(<ref refid="equations_8c_1a6cac5d605c548c5083d41d8140272201" kindref="member" tooltip="Look for the last element of the struct Equations.">Equations_sommet</ref>(op))&gt;=<ref refid="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" kindref="member" tooltip="Give the priority of the operator. Multiplication and Division have higher priority than addition or ...">Equations_priorite</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal">)<sp/>){</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>il<sp/>faut<sp/>depiler<sp/>le<sp/>dernier<sp/>element<sp/>de<sp/>la<sp/>liste<sp/>operateur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(op-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>==NULL){</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp=op;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op=NULL;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,temp);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>On<sp/>place<sp/>le<sp/>dernier<sp/>element<sp/>de<sp/>liste<sp/>operateur<sp/>(non<sp/>vide)<sp/>dans<sp/>la<sp/>liste<sp/>result<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>temp=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,<ref refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" kindref="member" tooltip="Unstack the last element of the struct Equations.">Equations_depiler</ref>(op));</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>la<sp/>pile<sp/>operateur<sp/>est<sp/>vide<sp/>ou<sp/>que<sp/>l&apos;operateur<sp/>est<sp/>de<sp/>priorite<sp/>faible<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" kindref="member">equal</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" kindref="member">superior</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" kindref="member">superior_equal</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" kindref="member">inferior</ref><sp/>||<sp/>new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" kindref="member">inferior_equal</ref>){</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>la<sp/>pile<sp/>des<sp/>operateurs<sp/>est<sp/>vide*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>temp=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(op,</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>la<sp/>pile<sp/>des<sp/>operateurs<sp/>est<sp/>vide*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(op==NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;<sp/></highlight><highlight class="comment">/*TODO<sp/>Mention<sp/>a<sp/>retirer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>op;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421" refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a2265434c24c5db73dc45f4799f01fbb6" kindref="member" tooltip="Empty the Struct Equations op for the struct Equation result.">Equations_emptyOp</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>result,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>op)</highlight></codeline>
+<codeline lineno="422"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>top=NULL;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Transfuge<sp/>le<sp/>contenu<sp/>de<sp/>op<sp/>dans<sp/>result<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" kindref="member" tooltip="Test if the struct Equations is empty.">Equations_vide</ref>(op)!=<ref refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" kindref="member">OUI</ref>){</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>top=<sp/><ref refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" kindref="member" tooltip="Look for the first element of the struct Equations.">Equations_defiler</ref>(op);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>op=<sp/><ref refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" kindref="member" tooltip="Get the next element of the struct Equations.">Equations_defilerSuiv</ref>(op);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>top-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>=NULL;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,top);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441" refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" refkind="member"><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/><ref refid="equations_8c_1adcc21952710a1783d451a42bd0448215" kindref="member" tooltip="Build pile.">Equations_pileFormation</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>***equation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_noeud)</highlight></codeline>
+<codeline lineno="442"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>op=NULL,<sp/>result=NULL,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">=NULL;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>On<sp/>considere<sp/>chaque<sp/>noeud<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;nb_noeud;i++){</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">=<ref refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" kindref="member" tooltip="Alloc memory and initialize the struct Equations.">Equations_alloc</ref>();</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operateur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!strcmp(equation[0][i],</highlight><highlight class="stringliteral">&quot;mo&quot;</highlight><highlight class="normal">)<sp/>){</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Define<sp/>the<sp/>type<sp/>of<sp/>the<sp/>operator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="equations_8c_1a17d096394760f8a2f63e5e3523168304" kindref="member" tooltip="Identify the mathematical operator used.">Equations_define</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/>equation[1][i]);</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Place<sp/>the<sp/>operateur<sp/>inside<sp/>the<sp/>equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op=<ref refid="equations_8c_1acfd75204575cdb598699e9599c24164e" kindref="member" tooltip="Build the list of the Struct Equations result used to compute the equation.">Equations_addOp</ref>(result,op,</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Variable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(equation[0][i],</highlight><highlight class="stringliteral">&quot;mi&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Definition<sp/>du<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" kindref="member">variable</ref>;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Stockage<sp/>de<sp/>la<sp/>variable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.var=(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)strlen(equation[1][i])+1)*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char));</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(new-&gt;info.var,equation[1][i]);</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Empilement<sp/>dans<sp/>la<sp/>structure<sp/>result<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Constante<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(equation[0][i],</highlight><highlight class="stringliteral">&quot;mn&quot;</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Definition<sp/>du<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" kindref="member">constant</ref>;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Stockage<sp/>de<sp/>la<sp/>variable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.data=atof(equation[1][i]);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Empilement<sp/>dans<sp/>la<sp/>structure<sp/>result<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Noeud<sp/>au<sp/>format<sp/>inconnu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;Erreur<sp/>de<sp/>typage<sp/>des<sp/>balises<sp/>Mathml<sp/>du<sp/>fichier\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><ref refid="equations_8c_1a2265434c24c5db73dc45f4799f01fbb6" kindref="member" tooltip="Empty the Struct Equations op for the struct Equation result.">Equations_emptyOp</ref>(result,op);</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497" refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" kindref="member" tooltip="Extract information on element of type Struct Equation.">Equations_extractData</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*quantite,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille)</highlight></codeline>
+<codeline lineno="498"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extraction<sp/>d&apos;infos<sp/>sur<sp/>valeur<sp/>disposee<sp/>dans<sp/>la<sp/>pile<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>l&apos;element<sp/>est<sp/>une<sp/>constante<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(new-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" kindref="member">constant</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.data;</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>c&apos;est<sp/>une<sp/>variable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;taille;<sp/>i++){</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cherche<sp/>la<sp/>molecule<sp/>en<sp/>question<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(new-&gt;info.var,name[i])){</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Detruit<sp/>l&apos;element<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keyword">new</highlight><highlight class="normal">!=NULL){</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">=NULL;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Retourne<sp/>sa<sp/>quantite<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>quantite[i];</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Erreur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;ERREUR<sp/>:<sp/>Molecule<sp/>non<sp/>retrouvee<sp/>dans<sp/>la<sp/>pile<sp/>!!!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533" refid="equations_8h_1acacabe612b4e956d3db6d1677dac4037" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a93e7c3c0bd43ade391fa122589734816" kindref="member" tooltip="Look for the quantity of a molecule in the list.">Equations_findSpecies</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*species,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*quantite,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille)</highlight></codeline>
+<codeline lineno="534"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extraction<sp/>d&apos;info<sp/>sur<sp/>la<sp/>quantite<sp/>de<sp/>la<sp/>molecule<sp/>durant<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;taille;<sp/>i++){</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Si<sp/>la<sp/>molecule<sp/>est<sp/>retrouve,<sp/>on<sp/>retourne<sp/>sa<sp/>quantite<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!strcmp(species,name[i])){</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>quantite[i];</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Erreur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;ERREUR<sp/>:<sp/>Molecule<sp/>non<sp/>retrouvee<sp/>dans<sp/>la<sp/>liste<sp/>des<sp/>especes<sp/>du<sp/>fichier<sp/>parametre\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="561" refid="equations_8h_1af09f4513d82b106e8e9157f30c909529" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aafe1cd5689dbec030ec792f43b40876b" kindref="member" tooltip="Compute the result of two pile.">Equations_resultat</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>result,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>result1,<sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>eq,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*quantite,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille)</highlight></codeline>
+<codeline lineno="562"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>resultat<sp/>de<sp/>l&apos;equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>resul=0.0,<sp/>op1=0.0,<sp/>op2=0.0;</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extraction<sp/>de<sp/>la<sp/>valeur<sp/>des<sp/>deux<sp/>elements<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/>op1=<ref refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" kindref="member" tooltip="Extract information on element of type Struct Equation.">Equations_extractData</ref>(result1,name,quantite,taille);</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/>op2=<ref refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" kindref="member" tooltip="Extract information on element of type Struct Equation.">Equations_extractData</ref>(result,name,quantite,taille);</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>d&apos;Egalite<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(eq-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" kindref="member">equal</ref>){</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>resul=pow(((op1-op2)/op2),2.0);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Superieur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(eq-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" kindref="member">superior</ref>){</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Test<sp/>de<sp/>la<sp/>superiorite<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(op1&gt;op2)<sp/>resul=0.0;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Inflige<sp/>une<sp/>penalite<sp/>de<sp/>1000<sp/>a<sp/>l&apos;energie<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>resul<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Inferieur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(eq-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" kindref="member">inferior</ref>){</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(op1&lt;op2)<sp/>resul=0.0;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>resul<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Superieur_egal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(eq-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" kindref="member">superior_equal</ref>){</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(op1&gt;=op2)<sp/>resul=0.0;</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>resul<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Inferieur_egal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(eq-&gt;<ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" kindref="member">inferior_equal</ref>){</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(op1&lt;=op2)<sp/>resul=0.0;</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>resul<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Erreur<sp/>type<sp/>non<sp/>reconnu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;Type<sp/>non<sp/>reconnu\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resul;</highlight></codeline>
+<codeline lineno="602"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614" refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" kindref="member" tooltip="Compute the score of the equation.">Equations_calcul</ref>(<ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>liste,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*quantite,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille)</highlight></codeline>
+<codeline lineno="615"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>score<sp/>d&apos;une<sp/>equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">pEquations</ref><sp/>result=NULL,<sp/>result1=NULL,<sp/>eq=NULL,<sp/>top=NULL,<sp/>temp1=NULL,<sp/>temp2=NULL,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">=NULL;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>op1=0.0,<sp/>op2=0.0;</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" kindref="member" tooltip="Test if the struct Equations is empty.">Equations_vide</ref>(liste)!=<ref refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" kindref="member">OUI</ref>){</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Defiler<sp/>se<sp/>fait<sp/>en<sp/>deux<sp/>coups*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>top=<sp/><ref refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" kindref="member" tooltip="Look for the first element of the struct Equations.">Equations_defiler</ref>(liste);</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>liste=<sp/><ref refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" kindref="member" tooltip="Get the next element of the struct Equations.">Equations_defilerSuiv</ref>(liste);</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>top-&gt;suiv=NULL;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" kindref="member">addition</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" kindref="member">soustraction</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" kindref="member">multiplication</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" kindref="member">division</ref>){</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*temp1*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(result-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>==NULL){</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp1=result;</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result=NULL;</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>temp1=<ref refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" kindref="member" tooltip="Unstack the last element of the struct Equations.">Equations_depiler</ref>(result);</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>temp2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(result-&gt;<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>==NULL){</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp2=result;</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result=NULL;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>temp2=<ref refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" kindref="member" tooltip="Unstack the last element of the struct Equations.">Equations_depiler</ref>(result);</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Extraction<sp/>des<sp/>valeurs<sp/>et<sp/>liberation<sp/>de<sp/>la<sp/>memoire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op2=<ref refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" kindref="member" tooltip="Extract information on element of type Struct Equation.">Equations_extractData</ref>(temp1,name,quantite,taille);</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op1=<ref refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" kindref="member" tooltip="Extract information on element of type Struct Equation.">Equations_extractData</ref>(temp2,name,quantite,taille);</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Ajout<sp/>dans<sp/>la<sp/>pile<sp/>du<sp/>resultat<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">=<ref refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" kindref="member" tooltip="Alloc memory and initialize the struct Equations.">Equations_alloc</ref>();</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Recuperation<sp/>de<sp/>la<sp/>valeur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;info.data=top-&gt;info.op(op1,op2);</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Type<sp/>defini<sp/>a<sp/>constant<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;type=<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" kindref="member">constant</ref>;</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>On<sp/>empile<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(top!=NULL){</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(top);</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>top=NULL;</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>de<sp/>l&apos;equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" kindref="member">equal</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" kindref="member">superior</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" kindref="member">superior_equal</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" kindref="member">inferior</ref><sp/>||<sp/>top-&gt;type==<ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" kindref="member">inferior_equal</ref>){</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result1=result;</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result=NULL;</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eq=top;</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/>result=<ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(result,top);</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>resultat<sp/>final<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aafe1cd5689dbec030ec792f43b40876b" kindref="member" tooltip="Compute the result of two pile.">Equations_resultat</ref>(result,result1,eq,name,quantite,taille);</highlight></codeline>
+<codeline lineno="668"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683" refid="equations_8h_1a543044646be5d2086c3301f7db2a0c1f" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" kindref="member" tooltip="Compute the score of the quantity which means the difference between what is expected to what is simu...">Equations_finalQuantite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>file_nb_especes,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**file_species,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*file_amount,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*file_weight,</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**sim_name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*sim_quantite,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sim_taille)</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>score<sp/>des<sp/>quantites<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>result=0.0,<sp/>simulated_quantite=0.0;</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Estimation<sp/>de<sp/>la<sp/>difference<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;file_nb_especes;i++){</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>file_amount[i]!=(-1)<sp/>){</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simulated_quantite=<ref refid="equations_8c_1a93e7c3c0bd43ade391fa122589734816" kindref="member" tooltip="Look for the quantity of a molecule in the list.">Equations_findSpecies</ref>(file_species[i],sim_name,sim_quantite,sim_taille);</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result+=(double)file_weight[i]*pow(((simulated_quantite-(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)file_amount[i])/(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)file_amount[i]),2.0);</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="698"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$equations_8c.html#adcc21952710a1783d451a42bd0448215" title="Build pile." alt="" coords="184,271,349,300"/>
+<area shape="rect" id="node5" href="$equations_8c.html#acfd75204575cdb598699e9599c24164e" title="Build the list of the Struct Equations result used to compute the equation." alt="" coords="405,139,531,168"/>
+<area shape="rect" id="node9" href="$equations_8c.html#a51aa19b01714bc3ae728031b8748694a" title="Stack an element to the struct Equations." alt="" coords="597,219,725,248"/>
+<area shape="rect" id="node17" href="$equations_8c.html#a977051374a319d6bd60ef8ca2c03c952" title="Alloc memory and initialize the struct Equations." alt="" coords="411,324,525,353"/>
+<area shape="rect" id="node19" href="$equations_8c.html#a17d096394760f8a2f63e5e3523168304" title="Identify the mathematical operator used." alt="" coords="407,565,529,595"/>
+<area shape="rect" id="node40" href="$equations_8c.html#a2265434c24c5db73dc45f4799f01fbb6" title="Empty the Struct Equations op for the struct Equation result." alt="" coords="399,271,537,300"/>
+<area shape="rect" id="node7" href="$equations_8c.html#a652cb08a19a4b10403a1751220d2de54" title="Unstack the last element of the struct Equations." alt="" coords="599,112,724,141"/>
+<area shape="rect" id="node11" href="$equations_8c.html#aafdce647fd1652f8cead7c6e90a0ee22" title="Give the priority of the operator. Multiplication and Division have higher priority than addition or ..." alt="" coords="599,5,724,35"/>
+<area shape="rect" id="node13" href="$equations_8c.html#a6cac5d605c548c5083d41d8140272201" title="Look for the last element of the struct Equations." alt="" coords="595,59,728,88"/>
+<area shape="rect" id="node15" href="$equations_8c.html#abc16d34fd78fc7bec99064ba06a0a27f" title="Test if the struct Equations is empty." alt="" coords="607,165,716,195"/>
+<area shape="rect" id="node21" href="$equations_8c.html#aadfa8a3c9e3c361367513bdc030d5068" title="Add two numbers." alt="" coords="640,539,683,568"/>
+<area shape="rect" id="node23" href="$equations_8c.html#aa1312b87a72d22e2bbebf101e292a9f9" title="Divide two numbers." alt="" coords="633,592,689,621"/>
+<area shape="rect" id="node25" href="$equations_8c.html#a67c2ddb47af2bd3b128dcea9bacf6400" title="Test the equality of two numbers." alt="" coords="628,645,695,675"/>
+<area shape="rect" id="node27" href="$equations_8c.html#a754ca014ba925b1c96920d21d7029ce2" title="Test the inferiority between two numbers." alt="" coords="643,699,680,728"/>
+<area shape="rect" id="node29" href="$equations_8c.html#a6638015dab123b16fe60b36e30169064" title="Test the inferiority or equality between two numbers." alt="" coords="624,752,699,781"/>
+<area shape="rect" id="node31" href="$equations_8c.html#afc6d7eeb06b30a5a37238e3b84c2176b" title="Multiply two numbers." alt="" coords="628,805,695,835"/>
+<area shape="rect" id="node33" href="$equations_8c.html#ad04157df89acd8d4e8bf80fd45dd00bb" title="Subtraction two numbers." alt="" coords="627,379,696,408"/>
+<area shape="rect" id="node35" href="$equations_8c.html#a513f2e0300d9efaaeb85e3a1c6483b59" title="Test the superiority between two numbers." alt="" coords="640,432,683,461"/>
+<area shape="rect" id="node37" href="$equations_8c.html#a363235573b747213d55920f8804445b4" title="Test the superiority or equality between two numbers." alt="" coords="621,485,701,515"/>
+<area shape="rect" id="node42" href="$equations_8c.html#a4c54e881f9153f6c8b0313f139ad1ade" title="Look for the first element of the struct Equations." alt="" coords="600,272,723,301"/>
+<area shape="rect" id="node44" href="$equations_8c.html#a3e550cf0e9190391a5c15b9edf1df721" title="Get the next element of the struct Equations." alt="" coords="588,325,735,355"/>
+</map>

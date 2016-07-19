@@ -1,0 +1,1501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="equations_8h" kind="file">
+    <compoundname>equations.h</compoundname>
+    <includedby refid="data__parameters_8c" local="yes">metaboflux/src/data_parameters.c</includedby>
+    <includedby refid="equations_8c" local="yes">metaboflux/src/equations.c</includedby>
+    <includedby refid="gsl__min_8c" local="yes">metaboflux/src/gsl_min.c</includedby>
+    <includedby refid="gsl__mod_8c" local="yes">metaboflux/src/gsl_mod.c</includedby>
+    <includedby refid="gsl__recuit_8c" local="yes">metaboflux/src/gsl_recuit.c</includedby>
+    <includedby refid="gsl__sd_8c" local="yes">metaboflux/src/gsl_sd.c</includedby>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <invincdepgraph>
+      <node id="302">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="296">
+        <label>metaboflux/src/data_parameters.c</label>
+        <link refid="data__parameters_8c"/>
+      </node>
+      <node id="297">
+        <label>metaboflux/src/equations.c</label>
+        <link refid="equations_8c"/>
+      </node>
+      <node id="303">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+      <node id="301">
+        <label>metaboflux/src/gsl_sd.c</label>
+        <link refid="gsl__sd_8c"/>
+      </node>
+      <node id="300">
+        <label>metaboflux/src/gsl_recuit.c</label>
+        <link refid="gsl__recuit_8c"/>
+      </node>
+      <node id="295">
+        <label>metaboflux/include/equations.h</label>
+        <link refid="equations.h"/>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>metaboflux/src/gsl_mod.c</label>
+        <link refid="gsl__mod_8c"/>
+      </node>
+      <node id="298">
+        <label>metaboflux/src/gsl_min.c</label>
+        <link refid="gsl__min_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="unionEqudata" prot="public">Equdata</innerclass>
+    <innerclass refid="structEquations" prot="public">Equations</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" prot="public" static="no">
+        <name>OUI</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="30" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0" prot="public" static="no">
+        <name>Equtype</name>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" prot="public">
+          <name>constant</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" prot="public">
+          <name>variable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Variable : ex. transition_x ... </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" prot="public">
+          <name>addition</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Addition </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" prot="public">
+          <name>soustraction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Substraction </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" prot="public">
+          <name>multiplication</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Multiply </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" prot="public">
+          <name>division</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Divide </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" prot="public">
+          <name>equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Equality </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" prot="public">
+          <name>superior</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Superiority </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" prot="public">
+          <name>superior_equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sup_equality </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" prot="public">
+          <name>inferior</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inferiority </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" prot="public">
+          <name>inferior_equal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Inf_equality </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Operation constants. </para>        </briefdescription>
+        <detaileddescription>
+<para>Equtype is a set of predefined constants for the different operators. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="39" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" bodystart="38" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="equations_8h_1a565281457355b4d92d8552d22e0253f3" prot="public" static="no">
+        <type>union <ref refid="unionEqudata" kindref="compound">Equdata</ref></type>
+        <definition>typedef union Equdata  Equdata</definition>
+        <argsstring></argsstring>
+        <name>Equdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="62"/>
+      </memberdef>
+      <memberdef kind="typedef" id="equations_8h_1adbb3155f417c977bfaedf972cf72c3c4" prot="public" static="no">
+        <type>struct <ref refid="structEquations" kindref="compound">Equations</ref></type>
+        <definition>typedef struct Equations  Equations</definition>
+        <argsstring></argsstring>
+        <name>Equations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="73"/>
+      </memberdef>
+      <memberdef kind="typedef" id="equations_8h_1af62075f284d37edbae87d829356860cb" prot="public" static="no">
+        <type>struct <ref refid="structEquations" kindref="compound">Equations</ref> *</type>
+        <definition>typedef struct Equations * pEquations</definition>
+        <argsstring></argsstring>
+        <name>pEquations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="equations_8h_1abaee43b91c808de325abcfa4cf1b6698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double add</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>add</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Add two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="76" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="43" bodyend="46"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a8c90ae25e75adcfeeaf307cc2df2f360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double subtract</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>subtract</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Subtraction two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="77" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="56" bodyend="59"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a6081051f0fa134ecbd577740cbb92220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double multiply</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Multiply two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="78" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="69" bodyend="72"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a004a98a2cd96d70101b27be400dc4a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double divide</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>divide</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Divide two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="79" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="82" bodyend="85"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1ae22300bfd59f7b0a12d56b5cb32b9429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double equality</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>equality</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Test the equality of two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="80" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="95" bodyend="98"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a0ce3f625ded68dd2b0a927b1c3d85471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sup</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>sup</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Test the superiority between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="81" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="108" bodyend="111"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a26bbff8f2c38ba14fea7a9d6067329b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sup_equal</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>sup_equal</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Test the superiority or equality between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="82" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="121" bodyend="124"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a3a5c2f0eec28c21db099d689bbcc5b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double inf</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>inf</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Test the inferiority between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="83" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="134" bodyend="137"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1aa6c076aacdfbdd13d6f25e0f36d6406b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double inf_equal</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>inf_equal</name>
+        <param>
+          <type>double</type>
+          <defname>arg1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>arg2</defname>
+        </param>
+        <briefdescription>
+<para>Test the inferiority or equality between two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value 2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="84" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="147" bodyend="150"/>
+        <referencedby refid="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" compoundref="equations_8c" startline="174" endline="228">Equations_define</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a977051374a319d6bd60ef8ca2c03c952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>Equations_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<simplesect kind="return"><para>Allocated struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="87" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="158" bodyend="165"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1afa3dcf131c38609646bd0ff79aef41d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equations_define</definition>
+        <argsstring>(pEquations, char *)</argsstring>
+        <name>Equations_define</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>new</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>operateur</defname>
+        </param>
+        <briefdescription>
+<para>Identify the mathematical operator used. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>operateur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read operator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="90" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="174" bodyend="228"/>
+        <references refid="equations_8c_1aadfa8a3c9e3c361367513bdc030d5068" compoundref="equations_8c" startline="43" endline="46">add</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" compoundref="equations_8h" startline="42">addition</references>
+        <references refid="equations_8c_1aa1312b87a72d22e2bbebf101e292a9f9" compoundref="equations_8c" startline="82" endline="85">divide</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" compoundref="equations_8h" startline="45">division</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1a67c2ddb47af2bd3b128dcea9bacf6400" compoundref="equations_8c" startline="95" endline="98">equality</references>
+        <references refid="equations_8c_1a754ca014ba925b1c96920d21d7029ce2" compoundref="equations_8c" startline="134" endline="137">inf</references>
+        <references refid="equations_8c_1a6638015dab123b16fe60b36e30169064" compoundref="equations_8c" startline="147" endline="150">inf_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" compoundref="equations_8h" startline="44">multiplication</references>
+        <references refid="equations_8c_1afc6d7eeb06b30a5a37238e3b84c2176b" compoundref="equations_8c" startline="69" endline="72">multiply</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" compoundref="equations_8h" startline="43">soustraction</references>
+        <references refid="equations_8c_1ad04157df89acd8d4e8bf80fd45dd00bb" compoundref="equations_8c" startline="56" endline="59">subtract</references>
+        <references refid="equations_8c_1a513f2e0300d9efaaeb85e3a1c6483b59" compoundref="equations_8c" startline="108" endline="111">sup</references>
+        <references refid="equations_8c_1a363235573b747213d55920f8804445b4" compoundref="equations_8c" startline="121" endline="124">sup_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a7aa0efc05d71c770b8aaf4ad6d677be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Equations_vide</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_vide</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <briefdescription>
+<para>Test if the struct <ref refid="structEquations" kindref="compound">Equations</ref> is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of elements </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="93" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="237" bodyend="248"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1ab8d4e4c2f309e68abe8dbcae96a240d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_empiler</definition>
+        <argsstring>(pEquations, pEquations)</argsstring>
+        <name>Equations_empiler</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>new</defname>
+        </param>
+        <briefdescription>
+<para>Stack an element to the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New struct <ref refid="structEquations" kindref="compound">Equations</ref> element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the last element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="96" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="258" bodyend="272"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1ae69932ae59f7f39d19b16efdcd0ba814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_depiler</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_depiler</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <briefdescription>
+<para>Unstack the last element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the &quot;unstack&quot; element of struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="99" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="282" bodyend="296"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a25cc9b41f25936e9d67a650554dc875d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_sommet</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_sommet</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <briefdescription>
+<para>Look for the last element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the last element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="102" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="305" bodyend="311"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a7b5cc03bbac246e28d61714dc2931a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_defiler</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_defiler</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <briefdescription>
+<para>Look for the first element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the first element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="105" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="320" bodyend="325"/>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a2c6acfd549462cb3be5a53775767429a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_defilerSuiv</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_defilerSuiv</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <briefdescription>
+<para>Get the next element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the next element of struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="108" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="334" bodyend="337"/>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+        <referencedby refid="equations_8h_1ae188053c785ea42afda7a9a604140b44" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a9107be336f525ee8ee8bb0d56bc91d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Equations_priorite</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_priorite</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>new</defname>
+        </param>
+        <briefdescription>
+<para>Give the priority of the operator. Multiplication and Division have higher priority than addition or subtration... </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One element of the struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Priority of the operator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="111" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="346" bodyend="351"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" compoundref="equations_8h" startline="42">addition</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" compoundref="equations_8h" startline="43">soustraction</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1ab5545fa4c945c64285e91687d90767f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equations_print</definition>
+        <argsstring>(pEquations)</argsstring>
+        <name>Equations_print</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <briefdescription>
+<para>Print all information on the element of the struct <ref refid="structEquations" kindref="compound">Equations</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="114" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="359" bodyend="372"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <references refid="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" compoundref="equations_8h" startline="60">Equdata::data</references>
+        <references refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" compoundref="equations_8h" startline="71">Equations::info</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <references refid="structEquations_1add825d3104abf54c01421c67536d0991" compoundref="equations_8h" startline="70">Equations::type</references>
+        <references refid="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" compoundref="equations_8h" startline="61">Equdata::var</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" compoundref="equations_8h" startline="41">variable</references>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1aa1fb3994a7c6fdf69e7aab84414f467c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_addOp</definition>
+        <argsstring>(pEquations, pEquations, pEquations)</argsstring>
+        <name>Equations_addOp</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>op</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>new</defname>
+        </param>
+        <briefdescription>
+<para>Build the list of the Struct <ref refid="structEquations" kindref="compound">Equations</ref> result used to compute the equation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> used for computation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> used to store the operator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One element of the Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of operator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="117" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="383" bodyend="412"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" compoundref="equations_8c" startline="282" endline="296">Equations_depiler</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" compoundref="equations_8c" startline="346" endline="351">Equations_priorite</references>
+        <references refid="equations_8c_1a6cac5d605c548c5083d41d8140272201" compoundref="equations_8c" startline="305" endline="311">Equations_sommet</references>
+        <references refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" compoundref="equations_8c" startline="237" endline="248">Equations_vide</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" compoundref="equations_8h" startline="30">OUI</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1ae188053c785ea42afda7a9a604140b44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equations_emptyOp</definition>
+        <argsstring>(pEquations, pEquations)</argsstring>
+        <name>Equations_emptyOp</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>op</defname>
+        </param>
+        <briefdescription>
+<para>Empty the Struct <ref refid="structEquations" kindref="compound">Equations</ref> op for the struct Equation result. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct <ref refid="structEquations" kindref="compound">Equations</ref> used for computation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct Equation used to store the operator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="120" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="421" bodyend="431"/>
+        <references refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" compoundref="equations_8c" startline="320" endline="325">Equations_defiler</references>
+        <references refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" compoundref="equations_8c" startline="334" endline="337">Equations_defilerSuiv</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" compoundref="equations_8c" startline="237" endline="248">Equations_vide</references>
+        <references refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" compoundref="equations_8h" startline="30">OUI</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <referencedby refid="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" compoundref="equations_8c" startline="441" endline="485">Equations_pileFormation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1ae0f5b302dbd7d0bb1524b48aa38bec6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+        <definition>pEquations Equations_pileFormation</definition>
+        <argsstring>(char ***, int)</argsstring>
+        <name>Equations_pileFormation</name>
+        <param>
+          <type>char ***</type>
+          <defname>equation</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>nb_noeud</defname>
+        </param>
+        <briefdescription>
+<para>Build pile. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>equation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table with the equation in Mathml format </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_noeud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of element inside the equation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Struct Equation needed for compute the equation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="123" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="441" bodyend="485"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <references refid="equations_8c_1acfd75204575cdb598699e9599c24164e" compoundref="equations_8c" startline="383" endline="412">Equations_addOp</references>
+        <references refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" compoundref="equations_8c" startline="158" endline="165">Equations_alloc</references>
+        <references refid="equations_8c_1a17d096394760f8a2f63e5e3523168304" compoundref="equations_8c" startline="174" endline="228">Equations_define</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1a2265434c24c5db73dc45f4799f01fbb6" compoundref="equations_8c" startline="421" endline="431">Equations_emptyOp</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" compoundref="equations_8h" startline="41">variable</references>
+        <referencedby refid="data__parameters_8h_1ac0ac001f1fc3102e3ed07568cba5c570" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1acacabe612b4e956d3db6d1677dac4037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_findSpecies</definition>
+        <argsstring>(char *, char **, double *, int)</argsstring>
+        <name>Equations_findSpecies</name>
+        <param>
+          <type>char *</type>
+          <defname>species</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>quantite</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <briefdescription>
+<para>Look for the quantity of a molecule in the list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of a molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Quantity of the molecule of interest </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="126" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="533" bodyend="547"/>
+        <referencedby refid="equations_8h_1a543044646be5d2086c3301f7db2a0c1f" compoundref="equations_8c" startline="683" endline="698">Equations_finalQuantite</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1af09f4513d82b106e8e9157f30c909529" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_resultat</definition>
+        <argsstring>(pEquations, pEquations, pEquations, char **, double *, int)</argsstring>
+        <name>Equations_resultat</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>result</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>result1</defname>
+        </param>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>eq</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>quantite</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <briefdescription>
+<para>Compute the result of two pile. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct Equation result </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct Equation result after the operator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Operator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of the two pile </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="129" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="561" bodyend="602"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" compoundref="equations_8c" startline="497" endline="521">Equations_extractData</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <references refid="structEquations_1add825d3104abf54c01421c67536d0991" compoundref="equations_8h" startline="70">Equations::type</references>
+        <referencedby refid="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a6e6af023dd85b15e2af2129a5c857238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_calcul</definition>
+        <argsstring>(pEquations, char **, double *, int)</argsstring>
+        <name>Equations_calcul</name>
+        <param>
+          <type><ref refid="structEquations" kindref="compound">pEquations</ref></type>
+          <defname>liste</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>quantite</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>taille</defname>
+        </param>
+        <briefdescription>
+<para>Compute the score of the equation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liste</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pile of type Struct <ref refid="structEquations" kindref="compound">Equations</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules in the list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of the equation (First part of the energy) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="132" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="614" bodyend="668"/>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" compoundref="equations_8h" startline="42">addition</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" compoundref="equations_8h" startline="40">constant</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" compoundref="equations_8h" startline="45">division</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" compoundref="equations_8h" startline="46">equal</references>
+        <references refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" compoundref="equations_8c" startline="158" endline="165">Equations_alloc</references>
+        <references refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" compoundref="equations_8c" startline="320" endline="325">Equations_defiler</references>
+        <references refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" compoundref="equations_8c" startline="334" endline="337">Equations_defilerSuiv</references>
+        <references refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" compoundref="equations_8c" startline="282" endline="296">Equations_depiler</references>
+        <references refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" compoundref="equations_8c" startline="258" endline="272">Equations_empiler</references>
+        <references refid="equations_8c_1ae2ab956dac833cf24b93305cfb79cfdf" compoundref="equations_8c" startline="497" endline="521">Equations_extractData</references>
+        <references refid="equations_8c_1aafe1cd5689dbec030ec792f43b40876b" compoundref="equations_8c" startline="561" endline="602">Equations_resultat</references>
+        <references refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" compoundref="equations_8c" startline="237" endline="248">Equations_vide</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" compoundref="equations_8h" startline="49">inferior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" compoundref="equations_8h" startline="50">inferior_equal</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" compoundref="equations_8h" startline="44">multiplication</references>
+        <references refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" compoundref="equations_8h" startline="30">OUI</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" compoundref="equations_8h" startline="43">soustraction</references>
+        <references refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" compoundref="equations_8h" startline="72">Equations::suiv</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" compoundref="equations_8h" startline="47">superior</references>
+        <references refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" compoundref="equations_8h" startline="48">superior_equal</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="equations_8h_1a543044646be5d2086c3301f7db2a0c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Equations_finalQuantite</definition>
+        <argsstring>(int, char **, int *, int *, char **, double *, int)</argsstring>
+        <name>Equations_finalQuantite</name>
+        <param>
+          <type>int</type>
+          <defname>file_nb_especes</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>file_species</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>file_amount</defname>
+        </param>
+        <param>
+          <type>int *</type>
+          <defname>file_weight</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>sim_name</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>sim_quantite</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>sim_taille</defname>
+        </param>
+        <briefdescription>
+<para>Compute the score of the quantity which means the difference between what is expected to what is simulated. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_nb_especes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species in the parameter file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_species</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of species in the parameter file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of species expected quantity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Weight defined for the species </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of species simulated (sbml file) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim_quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the quantity of the species simulated (sbml file) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim_taille</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of species simulated (sbml file) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result of the difference (Second part of the Energy) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h" line="135" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/equations.c" bodystart="683" bodyend="698"/>
+        <references refid="equations_8c_1a93e7c3c0bd43ade391fa122589734816" compoundref="equations_8c" startline="533" endline="547">Equations_findSpecies</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Processes an equation in MathML format. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>15 janvier 2010 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#ifndef<sp/>EQUATIONS_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EQUATIONS_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="equations_8h_1a18d80a12a704eaba1c5fd96fe53515d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUI<sp/>0</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="38" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a995640a12d5339aabee76a933fb5f519" kindref="member">constant</ref>,<sp/></highlight></codeline>
+<codeline lineno="41" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ac8bb815d8e3574231fdd28645507fdaf" kindref="member">variable</ref>,<sp/></highlight></codeline>
+<codeline lineno="42" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0adbbc94ea3351977e33fa1a1d9dfc458f" kindref="member">addition</ref>,<sp/></highlight></codeline>
+<codeline lineno="43" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a6ac6588349b6a4df159905733d74a8b0" kindref="member">soustraction</ref>,<sp/></highlight></codeline>
+<codeline lineno="44" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a5cadaaaf2f12196ff90d101dbcb07287" kindref="member">multiplication</ref>,<sp/></highlight></codeline>
+<codeline lineno="45" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0af91a7893f9d938f7eb36433f93f99f26" kindref="member">division</ref>,<sp/></highlight></codeline>
+<codeline lineno="46" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0ab5800e866b0cfbd93e858c68a8246c27" kindref="member">equal</ref>,<sp/></highlight></codeline>
+<codeline lineno="47" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a4461fc80cd8d4d479e0f9d26052c81b0" kindref="member">superior</ref>,<sp/></highlight></codeline>
+<codeline lineno="48" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a9e2d529f48f9a4c5234363cb003fdd7b" kindref="member">superior_equal</ref>,<sp/></highlight></codeline>
+<codeline lineno="49" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0aa26fb260205509c6b988d10a315646c8" kindref="member">inferior</ref>,<sp/></highlight></codeline>
+<codeline lineno="50" refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0a3e2f2ede1bcb2b6276d52c9ed64c4a8c" kindref="member">inferior_equal</ref><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0" kindref="member" tooltip="Operation constants.">Equtype</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="unionEqudata" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionEqudata" kindref="compound" tooltip="Equation data.">Equdata</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59" refid="unionEqudata_1a8dc088dcf334467249e93a946a2c3070" refkind="member"><highlight class="normal"><sp/><sp/>double<sp/>(*<ref refid="unionEqudata_1a8dc088dcf334467249e93a946a2c3070" kindref="member">op</ref>)(double,double);<sp/></highlight><highlight class="comment">/*<sp/>Function<sp/>pointers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="unionEqudata_1ab4b5db8558e5e8a50215854b3e8a3756" kindref="member">data</ref>;<sp/></highlight></codeline>
+<codeline lineno="61" refid="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="unionEqudata_1a48bbcfc2ff891a8bcd31f90591896985" kindref="member">var</ref>;<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="equations_8h_1a565281457355b4d92d8552d22e0253f3" kindref="member">Equdata</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structEquations" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70" refid="structEquations_1add825d3104abf54c01421c67536d0991" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="equations_8h_1adbcf1047b90fcdb0f3d285fb4a7c70d0" kindref="member" tooltip="Operation constants.">Equtype</ref><sp/><ref refid="structEquations_1add825d3104abf54c01421c67536d0991" kindref="member">type</ref>;<sp/></highlight></codeline>
+<codeline lineno="71" refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="unionEqudata" kindref="compound" tooltip="Equation data.">Equdata</ref><sp/><ref refid="structEquations_1a144a9d4f5c2af07da3ecdebbeb419d66" kindref="member">info</ref>;<sp/></highlight></codeline>
+<codeline lineno="72" refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structEquations" kindref="compound" tooltip="Function pointers used for operations.">Equations</ref><sp/>*<ref refid="structEquations_1a68b449fac792cf1bc0c4b6ad5adb24f5" kindref="member">suiv</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><ref refid="equations_8h_1adbb3155f417c977bfaedf972cf72c3c4" kindref="member">Equations</ref>,<sp/>*<ref refid="equations_8h_1af62075f284d37edbae87d829356860cb" kindref="member">pEquations</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aadfa8a3c9e3c361367513bdc030d5068" kindref="member" tooltip="Add two numbers.">add</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1ad04157df89acd8d4e8bf80fd45dd00bb" kindref="member" tooltip="Subtraction two numbers.">subtract</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1afc6d7eeb06b30a5a37238e3b84c2176b" kindref="member" tooltip="Multiply two numbers.">multiply</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aa1312b87a72d22e2bbebf101e292a9f9" kindref="member" tooltip="Divide two numbers.">divide</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a67c2ddb47af2bd3b128dcea9bacf6400" kindref="member" tooltip="Test the equality of two numbers.">equality</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a513f2e0300d9efaaeb85e3a1c6483b59" kindref="member" tooltip="Test the superiority between two numbers.">sup</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a363235573b747213d55920f8804445b4" kindref="member" tooltip="Test the superiority or equality between two numbers.">sup_equal</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a754ca014ba925b1c96920d21d7029ce2" kindref="member" tooltip="Test the inferiority between two numbers.">inf</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a6638015dab123b16fe60b36e30169064" kindref="member" tooltip="Test the inferiority or equality between two numbers.">inf_equal</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Allocation<sp/>memoire<sp/>de<sp/>la<sp/>struture<sp/>pequation<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1a977051374a319d6bd60ef8ca2c03c952" kindref="member" tooltip="Alloc memory and initialize the struct Equations.">Equations_alloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Identifie<sp/>l&apos;operateur<sp/>en<sp/>jeu<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a17d096394760f8a2f63e5e3523168304" kindref="member" tooltip="Identify the mathematical operator used.">Equations_define</ref>(pEquations,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Determine<sp/>si<sp/>la<sp/>liste<sp/>est<sp/>vide<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1abc16d34fd78fc7bec99064ba06a0a27f" kindref="member" tooltip="Test if the struct Equations is empty.">Equations_vide</ref>(pEquations);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Ajout<sp/>d&apos;un<sp/>element<sp/>dans<sp/>la<sp/>pile<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1a51aa19b01714bc3ae728031b8748694a" kindref="member" tooltip="Stack an element to the struct Equations.">Equations_empiler</ref>(pEquations,<sp/>pEquations);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Depile<sp/>un<sp/>element<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1a652cb08a19a4b10403a1751220d2de54" kindref="member" tooltip="Unstack the last element of the struct Equations.">Equations_depiler</ref>(pEquations);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>dernier<sp/>element<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1a6cac5d605c548c5083d41d8140272201" kindref="member" tooltip="Look for the last element of the struct Equations.">Equations_sommet</ref>(pEquations);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Retourne<sp/>le<sp/>premier<sp/>element<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1a4c54e881f9153f6c8b0313f139ad1ade" kindref="member" tooltip="Look for the first element of the struct Equations.">Equations_defiler</ref>(pEquations);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Decalle<sp/>le<sp/>pointeur<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1a3e550cf0e9190391a5c15b9edf1df721" kindref="member" tooltip="Get the next element of the struct Equations.">Equations_defilerSuiv</ref>(pEquations);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Priorite<sp/>de<sp/>l&apos;operateur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aafdce647fd1652f8cead7c6e90a0ee22" kindref="member" tooltip="Give the priority of the operator. Multiplication and Division have higher priority than addition or ...">Equations_priorite</ref>(pEquations);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Affichage<sp/>de<sp/>la<sp/>liste<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a0318c81313bd6f492aaeaaeb705e7a0d" kindref="member" tooltip="Print all information on the element of the struct Equations.">Equations_print</ref>(pEquations);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Ajout<sp/>d&apos;un<sp/>operateur<sp/>dans<sp/>la<sp/>pile<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1acfd75204575cdb598699e9599c24164e" kindref="member" tooltip="Build the list of the Struct Equations result used to compute the equation.">Equations_addOp</ref>(pEquations,<sp/>pEquations,<sp/>pEquations);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Transfuge<sp/>le<sp/>contenu<sp/>de<sp/>op<sp/>dans<sp/>result<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a2265434c24c5db73dc45f4799f01fbb6" kindref="member" tooltip="Empty the Struct Equations op for the struct Equation result.">Equations_emptyOp</ref>(pEquations,<sp/>pEquations);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Construction<sp/>de<sp/>la<sp/>pile<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">pEquations<sp/><ref refid="equations_8c_1adcc21952710a1783d451a42bd0448215" kindref="member" tooltip="Build pile.">Equations_pileFormation</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>***,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Extraction<sp/>d&apos;info<sp/>sur<sp/>la<sp/>quantite<sp/>de<sp/>la<sp/>molecule<sp/>durant<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a93e7c3c0bd43ade391fa122589734816" kindref="member" tooltip="Look for the quantity of a molecule in the list.">Equations_findSpecies</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>resultat<sp/>de<sp/>l&apos;equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1aafe1cd5689dbec030ec792f43b40876b" kindref="member" tooltip="Compute the result of two pile.">Equations_resultat</ref>(pEquations,<sp/>pEquations,<sp/>pEquations,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>score<sp/><sp/>d&apos;une<sp/>equation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" kindref="member" tooltip="Compute the score of the equation.">Equations_calcul</ref>(pEquations,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>score<sp/>des<sp/>quantites<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" kindref="member" tooltip="Compute the score of the quantity which means the difference between what is expected to what is simu...">Equations_finalQuantite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>EQUATIONS_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/equations.h"/>
+  </compounddef>
+</doxygen>

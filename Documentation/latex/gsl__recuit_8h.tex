@@ -1,0 +1,531 @@
+\hypertarget{gsl__recuit_8h}{
+\section{metaboflux/include/gsl\_\-recuit.h File Reference}
+\label{gsl__recuit_8h}\index{metaboflux/include/gsl\_\-recuit.h@{metaboflux/include/gsl\_\-recuit.h}}
+}
+
+
+Compute the simulated annealing.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__recuit_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{gsl__recuit_8h_a76e1fe1e0d6471f07f55bcf28d247fa5}{Recuit\_\-energyFunction} (void $\ast$)
+\begin{DoxyCompactList}\small\item\em Simulate the petri net and compute the energy. \end{DoxyCompactList}\item 
+double \hyperlink{gsl__recuit_8h_a262f0cba7cb59023d3b45bc17c103aac}{Recuit\_\-metricDistance} (void $\ast$, void $\ast$)
+\begin{DoxyCompactList}\small\item\em Compute the distance between the two table. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_a992371555f490f726cbe4a1c90785a09}{Recuit\_\-takeStep} (const gsl\_\-rng $\ast$, void $\ast$, double)
+\begin{DoxyCompactList}\small\item\em Take a step through the solution space TSP. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_afd9db376bfecbe387f3836854c31f6d0}{Recuit\_\-printPosition} (void $\ast$)
+\begin{DoxyCompactList}\small\item\em Print the table of reaction parameters. \end{DoxyCompactList}\item 
+FILE $\ast$ \hyperlink{gsl__recuit_8h_a50384383f4c2a13a1f7dc85f69339bd6}{Recuit\_\-redirectionFlux} (\hyperlink{structxmlConfig__t}{xmlConfig\_\-t} $\ast$, FILE $\ast$, char $\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Redirect stdout flux. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_acc458cd24422d89b326a1b4bb7940cbf}{Recuit\_\-verifParameters} (double $\ast$, const gsl\_\-rng $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Choice of parameters and verification of their value. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_a389f2f70421b758b2eaea08d8ef9033a}{Recuit\_\-verifParameters\_\-2} (double $\ast$, double $\ast$, const gsl\_\-rng $\ast$, int, int, double)
+\begin{DoxyCompactList}\small\item\em Choice of parameters and verification of their value. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_aa83d3ab8e9c0f5d45ddedf1b65a67f98}{Recuit\_\-defParametre} (double $\ast$, const gsl\_\-rng $\ast$)
+\begin{DoxyCompactList}\small\item\em Definition of the initial parameters of the simulation. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_a41e47a5713188f196ebc7a66a9052d3d}{Recuit\_\-printParametre} (double $\ast$)
+\begin{DoxyCompactList}\small\item\em Print initial parameters. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__recuit_8h_adde03ef6388e6b9b06eefbfa685c2ee0}{Recuit\_\-compute\_\-recuit} (char $\ast$$\ast$, int, int, \hyperlink{structListParameters}{pListParameters}, gsl\_\-siman\_\-params\_\-t)
+\begin{DoxyCompactList}\small\item\em Compute the simulated annealing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute the simulated annealing. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 novembre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{gsl__recuit_8h_source}{gsl\_\-recuit.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{gsl__recuit_8h_adde03ef6388e6b9b06eefbfa685c2ee0}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-compute\_\-recuit@{Recuit\_\-compute\_\-recuit}}
+\index{Recuit\_\-compute\_\-recuit@{Recuit\_\-compute\_\-recuit}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-compute\_\-recuit}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-compute\_\-recuit (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{debug, }
+\item[{int}]{number, }
+\item[{{\bf pListParameters}}]{allone, }
+\item[{gsl\_\-siman\_\-params\_\-t}]{params}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_adde03ef6388e6b9b06eefbfa685c2ee0}
+
+
+Compute the simulated annealing. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em files\_\-path} & List of paths \\
+\hline
+{\em debug} & Debug flag \\
+\hline
+{\em number} & Number of the simulation \\
+\hline
+{\em allone} & Global parameters : struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em params} & Gsl parameters \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 304 of file gsl\_\-recuit.c.
+
+
+
+References ListParameters::conf, Data\_\-desallocSim(), Data\_\-scoreAlloc(), Data\_\-scoreFree(), Data\_\-simParameters(), ListParameters::interest\_\-parameters, SimParameters::r, Recuit\_\-defParametre(), Recuit\_\-energyFunction(), Recuit\_\-metricDistance(), Recuit\_\-printParametre(), Recuit\_\-printPosition(), Recuit\_\-redirectionFlux(), and Recuit\_\-takeStep().
+
+
+
+Referenced by Mpi\_\-slave().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__recuit_8h_adde03ef6388e6b9b06eefbfa685c2ee0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_aa83d3ab8e9c0f5d45ddedf1b65a67f98}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-defParametre@{Recuit\_\-defParametre}}
+\index{Recuit\_\-defParametre@{Recuit\_\-defParametre}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-defParametre}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-defParametre (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x\_\-initial, }
+\item[{const gsl\_\-rng $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_aa83d3ab8e9c0f5d45ddedf1b65a67f98}
+
+
+Definition of the initial parameters of the simulation. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x\_\-initial} & table of reaction parameters \\
+\hline
+{\em r} & Random number generator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 261 of file gsl\_\-recuit.c.
+
+
+
+References ListParameters::nb\_\-couples, ListParameters::parameters, and Recuit\_\-verifParameters().
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{gsl__recuit_8h_aa83d3ab8e9c0f5d45ddedf1b65a67f98_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_a76e1fe1e0d6471f07f55bcf28d247fa5}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-energyFunction@{Recuit\_\-energyFunction}}
+\index{Recuit\_\-energyFunction@{Recuit\_\-energyFunction}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-energyFunction}]{\setlength{\rightskip}{0pt plus 5cm}double Recuit\_\-energyFunction (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{xp}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_a76e1fe1e0d6471f07f55bcf28d247fa5}
+
+
+Simulate the petri net and compute the energy. 
+
+double \hyperlink{gsl__recuit_8h_a76e1fe1e0d6471f07f55bcf28d247fa5}{Recuit\_\-energyFunction(void $\ast$xp)} \begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em xp} & Short table of reaction parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Energy value 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file gsl\_\-recuit.c.
+
+
+
+References ListParameters::banned, Data\_\-equationsAlloc(), Data\_\-equationsInit(), Data\_\-scoreInit(), Data\_\-updateTab(), SimParameters::debugFile, Equations\_\-calcul(), Equations\_\-finalQuantite(), ListParameters::model, Score::name, ListParameters::nb\_\-banned, ListParameters::nb\_\-equations, Score::nb\_\-species, ListParameters::nb\_\-triesSa, SimParameters::out, SimParameters::pile, Score::quantite, SimParameters::r, SBML\_\-compute\_\-simulation\_\-mean(), SBML\_\-debugPrint(), Score::species, Score::species\_\-amount, Score::species\_\-weight, Score::taille, Score::tailleSpecies, and SimParameters::y.
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__recuit_8h_a76e1fe1e0d6471f07f55bcf28d247fa5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_a262f0cba7cb59023d3b45bc17c103aac}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-metricDistance@{Recuit\_\-metricDistance}}
+\index{Recuit\_\-metricDistance@{Recuit\_\-metricDistance}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-metricDistance}]{\setlength{\rightskip}{0pt plus 5cm}double Recuit\_\-metricDistance (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{xp, }
+\item[{void $\ast$}]{yp}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_a262f0cba7cb59023d3b45bc17c103aac}
+
+
+Compute the distance between the two table. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em xp} & Past short table of reaction parameters \\
+\hline
+{\em yp} & New short table of reaction parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between the two table 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file gsl\_\-recuit.c.
+
+
+
+References ListParameters::interest\_\-parameters.
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+\hypertarget{gsl__recuit_8h_a41e47a5713188f196ebc7a66a9052d3d}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-printParametre@{Recuit\_\-printParametre}}
+\index{Recuit\_\-printParametre@{Recuit\_\-printParametre}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-printParametre}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-printParametre (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x\_\-initial}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_a41e47a5713188f196ebc7a66a9052d3d}
+
+
+Print initial parameters. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x\_\-initial} & table of reaction parameters \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 279 of file gsl\_\-recuit.c.
+
+
+
+References ListParameters::conf, ListParameters::interest\_\-parameters, Xml\_\-getBoltzmann(), Xml\_\-getMuT(), Xml\_\-getNbIters(), Xml\_\-getNbTriesSa(), Xml\_\-getStepSize(), Xml\_\-getTinitial(), and Xml\_\-getTmin().
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__recuit_8h_a41e47a5713188f196ebc7a66a9052d3d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_afd9db376bfecbe387f3836854c31f6d0}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-printPosition@{Recuit\_\-printPosition}}
+\index{Recuit\_\-printPosition@{Recuit\_\-printPosition}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-printPosition}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-printPosition (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{xp}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_afd9db376bfecbe387f3836854c31f6d0}
+
+
+Print the table of reaction parameters. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em xp} & Short table of reaction parameters \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 158 of file gsl\_\-recuit.c.
+
+
+
+References Data\_\-updateTab(), ListParameters::nb\_\-parameters, and SimParameters::y.
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__recuit_8h_afd9db376bfecbe387f3836854c31f6d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_a50384383f4c2a13a1f7dc85f69339bd6}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-redirectionFlux@{Recuit\_\-redirectionFlux}}
+\index{Recuit\_\-redirectionFlux@{Recuit\_\-redirectionFlux}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-redirectionFlux}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ Recuit\_\-redirectionFlux (
+\begin{DoxyParamCaption}
+\item[{{\bf xmlConfig\_\-t} $\ast$}]{conf, }
+\item[{FILE $\ast$}]{f, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_a50384383f4c2a13a1f7dc85f69339bd6}
+
+
+Redirect stdout flux. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em conf} & Struct \hyperlink{structxmlConfig__t}{xmlConfig\_\-t} \\
+\hline
+{\em f} & File name \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em number} & Index of out repertory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Out flux 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file gsl\_\-recuit.c.
+
+
+
+References Xml\_\-getString().
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{gsl__recuit_8h_a50384383f4c2a13a1f7dc85f69339bd6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_a992371555f490f726cbe4a1c90785a09}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-takeStep@{Recuit\_\-takeStep}}
+\index{Recuit\_\-takeStep@{Recuit\_\-takeStep}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-takeStep}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-takeStep (
+\begin{DoxyParamCaption}
+\item[{const gsl\_\-rng $\ast$}]{r, }
+\item[{void $\ast$}]{xp, }
+\item[{double}]{step\_\-size}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_a992371555f490f726cbe4a1c90785a09}
+
+
+Take a step through the solution space TSP. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Random number generator \\
+\hline
+{\em xp} & Short table of reaction parameters \\
+\hline
+{\em step\_\-size} & Size of step \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 136 of file gsl\_\-recuit.c.
+
+
+
+References ListParameters::interest\_\-parameters, ListParameters::nb\_\-couples, ListParameters::parameters, and Recuit\_\-verifParameters\_\-2().
+
+
+
+Referenced by Recuit\_\-compute\_\-recuit().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{gsl__recuit_8h_a992371555f490f726cbe4a1c90785a09_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__recuit_8h_acc458cd24422d89b326a1b4bb7940cbf}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-verifParameters@{Recuit\_\-verifParameters}}
+\index{Recuit\_\-verifParameters@{Recuit\_\-verifParameters}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-verifParameters}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-verifParameters (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x\_\-initial, }
+\item[{const gsl\_\-rng $\ast$}]{r, }
+\item[{int}]{debut, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_acc458cd24422d89b326a1b4bb7940cbf}
+
+
+Choice of parameters and verification of their value. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x\_\-initial} & table of reaction parameters \\
+\hline
+{\em r} & Random number generator \\
+\hline
+{\em debut} & Beginning \\
+\hline
+{\em max} & End \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 207 of file gsl\_\-recuit.c.
+
+
+
+Referenced by Recuit\_\-defParametre().
+
+\hypertarget{gsl__recuit_8h_a389f2f70421b758b2eaea08d8ef9033a}{
+\index{gsl\_\-recuit.h@{gsl\_\-recuit.h}!Recuit\_\-verifParameters\_\-2@{Recuit\_\-verifParameters\_\-2}}
+\index{Recuit\_\-verifParameters\_\-2@{Recuit\_\-verifParameters\_\-2}!gsl_recuit.h@{gsl\_\-recuit.h}}
+\subsubsection[{Recuit\_\-verifParameters\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void Recuit\_\-verifParameters\_\-2 (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{new\_\-x, }
+\item[{double $\ast$}]{old\_\-x, }
+\item[{const gsl\_\-rng $\ast$}]{r, }
+\item[{int}]{debut, }
+\item[{int}]{max, }
+\item[{double}]{step\_\-size}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__recuit_8h_a389f2f70421b758b2eaea08d8ef9033a}
+
+
+Choice of parameters and verification of their value. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em new\_\-x} & table of reaction parameters \\
+\hline
+{\em old\_\-x} & table of reaction parameters \\
+\hline
+{\em r} & Random number generator \\
+\hline
+{\em debut} & Beginning \\
+\hline
+{\em max} & End \\
+\hline
+{\em step\_\-size} & Size of the step \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 235 of file gsl\_\-recuit.c.
+
+
+
+Referenced by Recuit\_\-takeStep().
+

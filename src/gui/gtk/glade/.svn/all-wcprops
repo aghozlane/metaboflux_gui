@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/MetaboFlux/!svn/ver/37/src/gui/gtk/glade
+END
+about.glade
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/MetaboFlux/!svn/ver/34/src/gui/gtk/glade/about.glade
+END
+ask_load.glade
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/ask_load.glade
+END
+main.glade
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/MetaboFlux/!svn/ver/36/src/gui/gtk/glade/main.glade
+END
+popup_config.glade.save
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/MetaboFlux/!svn/ver/35/src/gui/gtk/glade/popup_config.glade.save
+END
+representations.glade
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/representations.glade
+END
+equation.glade
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/equation.glade
+END
+reactions.glade
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/reactions.glade
+END
+popup_config.glade
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/MetaboFlux/!svn/ver/37/src/gui/gtk/glade/popup_config.glade
+END
+math.glade
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/MetaboFlux/!svn/ver/43/src/gui/gtk/glade/math.glade
+END
+species.glade
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/species.glade
+END
+rep_table.glade
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/rep_table.glade
+END
+help_representations.glade
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/help_representations.glade
+END
+values.glade
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/MetaboFlux/!svn/ver/62/src/gui/gtk/glade/values.glade
+END
+results.glade
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/MetaboFlux/!svn/ver/57/src/gui/gtk/glade/results.glade
+END
+ask_close.glade
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/MetaboFlux/!svn/ver/14/src/gui/gtk/glade/ask_close.glade
+END

@@ -1,0 +1,482 @@
+.TH "metaboflux/src/mpi_load.c" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/src/mpi_load.c \- 
+.PP
+Parallelize the program.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <assert.h>\fP
+.br
+\fC#include <gsl/gsl_blas.h>\fP
+.br
+\fC#include <gsl/gsl_multimin.h>\fP
+.br
+\fC#include <gsl/gsl_math.h>\fP
+.br
+\fC#include <gsl/gsl_rng.h>\fP
+.br
+\fC#include <gsl/gsl_siman.h>\fP
+.br
+\fC#include <gsl/gsl_ieee_utils.h>\fP
+.br
+\fC#include <gsl/gsl_statistics_double.h>\fP
+.br
+\fC#include <sbml/SBMLTypes.h>\fP
+.br
+\fC#include <libxml/parser.h>\fP
+.br
+\fC#include <libxml/xpath.h>\fP
+.br
+\fC#include <sys/types.h>\fP
+.br
+\fC#include <sys/socket.h>\fP
+.br
+\fC#include <netinet/in.h>\fP
+.br
+\fC#include <unistd.h>\fP
+.br
+\fC#include 'xml_parameter.h'\fP
+.br
+\fC#include 'especes.h'\fP
+.br
+\fC#include 'equations.h'\fP
+.br
+\fC#include 'simulation.h'\fP
+.br
+\fC#include 'data_parameters.h'\fP
+.br
+\fC#include 'gsl_recuit.h'\fP
+.br
+\fC#include 'gsl_mod.h'\fP
+.br
+\fC#include 'gsl_min.h'\fP
+.br
+\fC#include 'gsl_sd.h'\fP
+.br
+\fC#include 'mpi.h'\fP
+.br
+\fC#include 'mpi_load.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_GNU_SOURCE\fP"
+.br
+.ti -1c
+.RI "#define \fBBUFSIZE\fP   100"
+.br
+.ti -1c
+.RI "#define \fBMASTER_RANK\fP   0"
+.br
+.ti -1c
+.RI "#define \fBWRITER_RANK\fP   1"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBMpi_connectInterface\fP (int port)"
+.br
+.RI "\fIEnter in the program for standard deviation. \fP"
+.ti -1c
+.RI "void \fBMpi_disconnectInterface\fP (int desc)"
+.br
+.RI "\fIDisconnection to the interface. \fP"
+.ti -1c
+.RI "void \fBMpi_init\fP (int argc, char **argv, int *tab)"
+.br
+.RI "\fIEnter in the program for standard deviation. \fP"
+.ti -1c
+.RI "void \fBMpi_master\fP (\fBpListParameters\fP allone, char **files_path, int activity, int group, int myid, int numprocs, int desc)"
+.br
+.RI "\fIMaster process. \fP"
+.ti -1c
+.RI "void \fBMpi_writer\fP (\fBpListParameters\fP allone, char **files_path, int activity, int group, int myid)"
+.br
+.RI "\fIMaster process. \fP"
+.ti -1c
+.RI "int \fBMpi_sizeResultTab\fP (\fBpListParameters\fP allone, int activity, int group, int nb_species)"
+.br
+.RI "\fIDetermine the size of the result tab. \fP"
+.ti -1c
+.RI "double * \fBMpi_allocResultTab\fP (int tailleTab)"
+.br
+.RI "\fIAllocate the result tab. \fP"
+.ti -1c
+.RI "void \fBMpi_writeSimFile\fP (\fBpListParameters\fP allone, FILE *out, FILE *logOut, double *result_tab, int group, int tailleSpecies, int nb_species)"
+.br
+.RI "\fIDetermine the size of the result tab. \fP"
+.ti -1c
+.RI "void \fBMpi_writeSdFile\fP (FILE *out, double *result_tab, int tailleTab)"
+.br
+.RI "\fIDetermine the size of the result tab. \fP"
+.ti -1c
+.RI "void \fBMpi_slave\fP (\fBpListParameters\fP allone, char **files_path, int activity, int group, int debug)"
+.br
+.ti -1c
+.RI "void \fBMpi_finalize\fP (void)"
+.br
+.RI "\fIEnd MPI execution environment. \fP"
+.ti -1c
+.RI "void \fBcompute_mpi\fP (int argc, char **argv, char **files_path, int activity, int group, int debug, int port)"
+.br
+.RI "\fICompute the simulated annealing through mpi. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Parallelize the program. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+9 novembre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBmpi_load.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define _GNU_SOURCE"
+.PP
+Definition at line 26 of file mpi_load.c.
+.SS "#define BUFSIZE   100"
+.PP
+Definition at line 57 of file mpi_load.c.
+.SS "#define MASTER_RANK   0"
+.PP
+Definition at line 59 of file mpi_load.c.
+.PP
+Referenced by compute_mpi(), Mpi_master(), Mpi_slave(), and Mpi_writer().
+.SS "#define WRITER_RANK   1"
+.PP
+Definition at line 60 of file mpi_load.c.
+.PP
+Referenced by compute_mpi(), Mpi_master(), and Mpi_slave().
+.SH "Function Documentation"
+.PP 
+.SS "void compute_mpi (intargc, char **argv, char **files_path, intactivity, intgroup, intdebug, intport)"
+.PP
+Compute the simulated annealing through mpi. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIargc\fP Number of arguments 
+.br
+\fIargv\fP List of arguments 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fIactivity\fP Chosen activity 
+.br
+\fIgroup\fP Group flag 
+.br
+\fIdebug\fP Debug flag 
+.br
+\fIport\fP Interface port 
+.RE
+.PP
+
+.PP
+Definition at line 546 of file mpi_load.c.
+.PP
+References Data_desallocation(), Data_parameters(), MASTER_RANK, Mpi_connectInterface(), Mpi_disconnectInterface(), Mpi_finalize(), Mpi_init(), Mpi_master(), Mpi_slave(), Mpi_writer(), and WRITER_RANK.
+.PP
+Referenced by main().
+.SS "double * Mpi_allocResultTab (inttailleTab)"
+.PP
+Allocate the result tab. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fItailleTab\fP Size of Result tab 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Adress of the allocated space 
+.RE
+.PP
+
+.PP
+Definition at line 355 of file mpi_load.c.
+.PP
+Referenced by Mpi_slave(), and Mpi_writer().
+.SS "int Mpi_connectInterface (intport)"
+.PP
+Enter in the program for standard deviation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIport\fP Connection port 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Socket 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file mpi_load.c.
+.PP
+Referenced by compute_mpi().
+.SS "void Mpi_disconnectInterface (intdesc)"
+.PP
+Disconnection to the interface. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdesc\fP Socket 
+.RE
+.PP
+
+.PP
+Definition at line 109 of file mpi_load.c.
+.PP
+Referenced by compute_mpi().
+.SS "void Mpi_finalize (void)"
+.PP
+End MPI execution environment. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+
+.PP
+Definition at line 527 of file mpi_load.c.
+.PP
+Referenced by compute_mpi().
+.SS "void Mpi_init (intargc, char **argv, int *tab)"
+.PP
+Enter in the program for standard deviation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIargc\fP Number of arguments 
+.br
+\fIargv\fP List of arguments 
+.br
+\fItab\fP Table 
+.RE
+.PP
+
+.PP
+Definition at line 123 of file mpi_load.c.
+.PP
+Referenced by compute_mpi().
+.SS "void Mpi_master (\fBpListParameters\fPallone, char **files_path, intactivity, intgroup, intmyid, intnumprocs, intdesc)"
+.PP
+Master process. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIallone\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fIactivity\fP Chosen activity 
+.br
+\fIgroup\fP Group flag 
+.br
+\fImyid\fP Id of the thread 
+.br
+\fInumprocs\fP Number of thread 
+.br
+\fIdesc\fP Socket 
+.RE
+.PP
+
+.PP
+Definition at line 154 of file mpi_load.c.
+.PP
+References a, ListParameters::conf, MASTER_RANK, ListParameters::nb_parameters, WRITER_RANK, Xml_getNbGroup(), and Xml_getNbSimulations().
+.PP
+Referenced by compute_mpi().
+.SS "int Mpi_sizeResultTab (\fBpListParameters\fPallone, intactivity, intgroup, intnb_species)"
+.PP
+Determine the size of the result tab. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIallone\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIactivity\fP Chosen activity 
+.br
+\fIgroup\fP Group flag 
+.br
+\fInb_species\fP Number of interest species 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Size of Result tab 
+.RE
+.PP
+
+.PP
+Definition at line 334 of file mpi_load.c.
+.PP
+References ListParameters::conf, ListParameters::model, ListParameters::nb_parameters, and Xml_getNbTriesMod().
+.PP
+Referenced by Mpi_slave(), and Mpi_writer().
+.SS "void Mpi_slave (\fBpListParameters\fPallone, char **files_path, intactivity, intgroup, intdebug)"\fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIallone\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fIactivity\fP Activity chosen 
+.br
+\fIgroup\fP Group flag 
+.br
+\fIdebug\fP Debug flag 
+.RE
+.PP
+
+.PP
+Definition at line 440 of file mpi_load.c.
+.PP
+References ListParameters::conf, MASTER_RANK, Min_compute_minimization(), Mod_compute_modeling(), Mpi_allocResultTab(), Mpi_sizeResultTab(), ListParameters::nb_parameters, Recuit_compute_recuit(), Sd_compute_standard_deviation(), WRITER_RANK, Xml_getBoltzmann(), Xml_getMuT(), Xml_getNbIters(), Xml_getNbSpecies(), Xml_getNbTriesSa(), Xml_getStepSize(), Xml_getTinitial(), and Xml_getTmin().
+.PP
+Referenced by compute_mpi().
+.SS "void Mpi_writer (\fBpListParameters\fPallone, char **files_path, intactivity, intgroup, intmyid)"
+.PP
+Master process. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIallone\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fIactivity\fP Chosen activity 
+.br
+\fIgroup\fP Group flag 
+.br
+\fImyid\fP Id of the thread 
+.RE
+.PP
+
+.PP
+Definition at line 273 of file mpi_load.c.
+.PP
+References ListParameters::conf, MASTER_RANK, ListParameters::model, Mpi_allocResultTab(), Mpi_sizeResultTab(), Mpi_writeSdFile(), Mpi_writeSimFile(), and Xml_getNbSpecies().
+.PP
+Referenced by compute_mpi().
+.SS "void Mpi_writeSdFile (FILE *out, double *result_tab, inttailleTab)"
+.PP
+Determine the size of the result tab. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIout\fP Result file 
+.br
+\fIresult_tab\fP Result table 
+.br
+\fItailleTab\fP Size of result table 
+.RE
+.PP
+
+.PP
+Definition at line 421 of file mpi_load.c.
+.PP
+Referenced by Mpi_writer().
+.SS "void Mpi_writeSimFile (\fBpListParameters\fPallone, FILE *out, FILE *logOut, double *result_tab, intgroup, inttailleSpecies, intnb_species)"
+.PP
+Determine the size of the result tab. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIallone\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIout\fP Result file 
+.br
+\fIlogOut\fP Log file 
+.br
+\fIresult_tab\fP Result table 
+.br
+\fIgroup\fP Group flag 
+.br
+\fItailleSpecies\fP Number of species 
+.br
+\fInb_species\fP Number of interest species 
+.RE
+.PP
+
+.PP
+Definition at line 375 of file mpi_load.c.
+.PP
+References ListParameters::nb_parameters.
+.PP
+Referenced by Mpi_writer().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

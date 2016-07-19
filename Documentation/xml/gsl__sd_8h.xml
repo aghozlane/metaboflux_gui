@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="gsl__sd_8h" kind="file">
+    <compoundname>gsl_sd.h</compoundname>
+    <includedby refid="gsl__sd_8c" local="yes">metaboflux/src/gsl_sd.c</includedby>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <invincdepgraph>
+      <node id="333">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="334">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+      <node id="332">
+        <label>metaboflux/src/gsl_sd.c</label>
+        <link refid="gsl__sd_8c"/>
+      </node>
+      <node id="331">
+        <label>metaboflux/include/gsl_sd.h</label>
+        <link refid="gsl_sd.h"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Sd_compute_simulation</definition>
+        <argsstring>(pListParameters, pSimParameters)</argsstring>
+        <name>Sd_compute_simulation</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>all</defname>
+        </param>
+        <param>
+          <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+          <defname>sim</defname>
+        </param>
+        <briefdescription>
+<para>Enter in the program for standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>all</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simulation parameters : struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Energy value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_sd.h" line="30" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" bodystart="56" bodyend="93"/>
+        <references refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" compoundref="data__parameters_8h" startline="47">ListParameters::banned</references>
+        <references refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" compoundref="data__parameters_8c" startline="169" endline="175">Data_equationsAlloc</references>
+        <references refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</references>
+        <references refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" compoundref="data__parameters_8c" startline="290" endline="299">Data_scoreInit</references>
+        <references refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" compoundref="data__parameters_8h" startline="64">SimParameters::debugFile</references>
+        <references refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</references>
+        <references refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" compoundref="equations_8c" startline="683" endline="698">Equations_finalQuantite</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structListParameters_1aae885063019b7630081d14786e3b48e9" compoundref="data__parameters_8h" startline="48">ListParameters::nb_banned</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" compoundref="simulation_8h" startline="61">Score::nb_species</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" compoundref="data__parameters_8h" startline="60">SimParameters::pile</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="simulation_8c_1a0eb4dda20b3a9cc639f50421f919f24e" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</references>
+        <references refid="simulation_8c_1a792ef36e542159096d4567a125aee565" compoundref="simulation_8c" startline="486" endline="502">SBML_debugPrint</references>
+        <references refid="simulation_8c_1a8823ee151e44d0d0b6b977bcebc7463e" compoundref="simulation_8c" startline="465" endline="474">SBML_debugPrintHead</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd_compute_standard_deviation</definition>
+        <argsstring>(pListParameters, double *, double *, char **, int, int)</argsstring>
+        <name>Sd_compute_standard_deviation</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>fluxRatio</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>result_tab</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>number_arg</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debug</defname>
+        </param>
+        <briefdescription>
+<para>Compute the standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fluxRatio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ratio parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug flag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_sd.h" line="33" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" bodystart="106" bodyend="154"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</references>
+        <references refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="gsl__sd_8c_1ad3a6822755dad511abb99b018c49699c" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</references>
+        <references refid="gsl__min_8c_1a35b5393331789adb5f9e49f148329417" compoundref="gsl__min_8c" startline="53">simu</references>
+        <references refid="xml__parameter_8c_1afeff8e3300946c36cea36ddd964e9265" compoundref="xml__parameter_8c" startline="240" endline="244">Xml_getNbTriesMod</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compute the standard deviation analysis of the simulations. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>9 novembre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>GSL_SD_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GSL_SD_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Simulations<sp/>unitaires<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="gsl__sd_8c_1ad3a6822755dad511abb99b018c49699c" kindref="member" tooltip="Enter in the program for standard deviation.">Sd_compute_simulation</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/><ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">pSimParameters</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Calcul<sp/>la<sp/>variance<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__sd_8c_1a1379b501622f4bc112b49be952e19022" kindref="member" tooltip="Compute the standard deviation.">Sd_compute_standard_deviation</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GSL_SD_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_sd.h"/>
+  </compounddef>
+</doxygen>

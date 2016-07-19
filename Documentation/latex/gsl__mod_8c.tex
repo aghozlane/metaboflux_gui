@@ -1,0 +1,190 @@
+\hypertarget{gsl__mod_8c}{
+\section{metaboflux/src/gsl\_\-mod.c File Reference}
+\label{gsl__mod_8c}\index{metaboflux/src/gsl\_\-mod.c@{metaboflux/src/gsl\_\-mod.c}}
+}
+
+
+Compute the modeling of scenarii.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$assert.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-math.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-rng.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-siman.h$>$}\par
+{\ttfamily \#include $<$gsl/gsl\_\-ieee\_\-utils.h$>$}\par
+{\ttfamily \#include $<$sbml/SBMLTypes.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+{\ttfamily \#include $<$libxml/xpath.h$>$}\par
+{\ttfamily \#include \char`\"{}especes.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}equations.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}simulation.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}xml\_\-parameter.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}data\_\-parameters.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}gsl\_\-mod.h\char`\"{}}\par
+Include dependency graph for gsl\_\-mod.c:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__mod_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{gsl__mod_8c_aaa14f55ed9c21a03405ede0ea3b67a32}{Mod\_\-score\_\-print\_\-mean} (\hyperlink{structListParameters}{pListParameters} a, \hyperlink{structSimParameters}{pSimParameters} simu, double $\ast$result\_\-tab, double energie, int number\_\-group, int group)
+\begin{DoxyCompactList}\small\item\em Print the mean score. \end{DoxyCompactList}\item 
+void \hyperlink{gsl__mod_8c_ae6b640decd2c333ae31603a88fc37c88}{Mod\_\-compute\_\-modeling} (\hyperlink{structListParameters}{pListParameters} a, double $\ast$fluxRatio, double $\ast$result\_\-tab, char $\ast$$\ast$files\_\-path, int number\_\-group, int group, int debug)
+\begin{DoxyCompactList}\small\item\em Compute the modeling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute the modeling of scenarii. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 novembre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{gsl__mod_8c_source}{gsl\_\-mod.c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{gsl__mod_8c_ae6b640decd2c333ae31603a88fc37c88}{
+\index{gsl\_\-mod.c@{gsl\_\-mod.c}!Mod\_\-compute\_\-modeling@{Mod\_\-compute\_\-modeling}}
+\index{Mod\_\-compute\_\-modeling@{Mod\_\-compute\_\-modeling}!gsl_mod.c@{gsl\_\-mod.c}}
+\subsubsection[{Mod\_\-compute\_\-modeling}]{\setlength{\rightskip}{0pt plus 5cm}void Mod\_\-compute\_\-modeling (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a, }
+\item[{double $\ast$}]{fluxRatio, }
+\item[{double $\ast$}]{result\_\-tab, }
+\item[{char $\ast$$\ast$}]{files\_\-path, }
+\item[{int}]{number\_\-group, }
+\item[{int}]{group, }
+\item[{int}]{debug}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__mod_8c_ae6b640decd2c333ae31603a88fc37c88}
+
+
+Compute the modeling. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & struct \hyperlink{structListParameters}{ListParameters} \\
+\hline
+{\em fluxRatio} & Ratio parameters \\
+\hline
+{\em result\_\-tab} & Result table \\
+\hline
+{\em files\_\-path} & List of paths \\
+\hline
+{\em number\_\-group} & Number of the group \\
+\hline
+{\em group} & Group flag \\
+\hline
+{\em debug} & Debug flag \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file gsl\_\-mod.c.
+
+
+
+References ListParameters::banned, ListParameters::conf, Data\_\-desallocSim(), Data\_\-equationsAlloc(), Data\_\-equationsInit(), Data\_\-scoreAlloc(), Data\_\-scoreFree(), Data\_\-simParameters(), SimParameters::debugFile, Equations\_\-calcul(), Equations\_\-finalQuantite(), Mod\_\-score\_\-print\_\-mean(), ListParameters::model, Score::name, ListParameters::nb\_\-banned, ListParameters::nb\_\-equations, ListParameters::nb\_\-parameters, Score::nb\_\-species, SimParameters::out, SimParameters::pile, Score::quantite, SimParameters::r, SBML\_\-compute\_\-simulation\_\-mean(), SBML\_\-debugPrint(), Score::species, Score::species\_\-amount, Score::species\_\-weight, Score::taille, Score::tailleSpecies, Xml\_\-getNbTriesMod(), and SimParameters::y.
+
+
+
+Referenced by Mpi\_\-slave().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{gsl__mod_8c_ae6b640decd2c333ae31603a88fc37c88_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{gsl__mod_8c_aaa14f55ed9c21a03405ede0ea3b67a32}{
+\index{gsl\_\-mod.c@{gsl\_\-mod.c}!Mod\_\-score\_\-print\_\-mean@{Mod\_\-score\_\-print\_\-mean}}
+\index{Mod\_\-score\_\-print\_\-mean@{Mod\_\-score\_\-print\_\-mean}!gsl_mod.c@{gsl\_\-mod.c}}
+\subsubsection[{Mod\_\-score\_\-print\_\-mean}]{\setlength{\rightskip}{0pt plus 5cm}void Mod\_\-score\_\-print\_\-mean (
+\begin{DoxyParamCaption}
+\item[{{\bf pListParameters}}]{a, }
+\item[{{\bf pSimParameters}}]{simu, }
+\item[{double $\ast$}]{result\_\-tab, }
+\item[{double}]{energie, }
+\item[{int}]{number\_\-group, }
+\item[{int}]{group}
+\end{DoxyParamCaption}
+)}}
+\label{gsl__mod_8c_aaa14f55ed9c21a03405ede0ea3b67a32}
+
+
+Print the mean score. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Global parameters \\
+\hline
+{\em simu} & Simulation parameters \\
+\hline
+{\em result\_\-tab} & Result table \\
+\hline
+{\em energie} & Energy of the simulation \\
+\hline
+{\em number\_\-group} & Number of simulation \\
+\hline
+{\em group} & Number of the group (if a group is simulated) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file gsl\_\-mod.c.
+
+
+
+References Equations\_\-findSpecies(), Score::name, ListParameters::nb\_\-parameters, Score::nb\_\-species, SimParameters::out, Score::quantite, Score::species, Score::species\_\-amount, Score::taille, Score::tailleSpecies, and SimParameters::y.
+
+
+
+Referenced by Mod\_\-compute\_\-modeling().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gsl__mod_8c_aaa14f55ed9c21a03405ede0ea3b67a32_cgraph}
+\end{center}
+\end{figure}
+
+

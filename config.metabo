@@ -1,0 +1,19 @@
+{
+	"param_name" : "param.xml",
+	"graph_name" : "graph.svg",
+	"name" : "tmp/name.tmp",
+	"path_schema_file" : "metaboflux_param.xsd",
+	"path_default_param" : "param_default.xml",
+	"path_metabo" : "metaboflux/bin/",
+	"file_format" : "svg",
+	"dir_tmp" : "tmp/",
+	"resu_simu" : "/simulation/",
+	"path_mpd" : "/home/amine/mpich2-install/bin/",
+	"graphviz_binary" : "dot",
+	"workspace" : "tmp/",
+	"progress" : "progress.tmp",
+	"resu_stat" : "/stat/",
+	"pids" : "pid.tmp",
+	"path_results_graphs" : "/new_graphs/",
+	"resu_mini" : "/minimization/"
+}

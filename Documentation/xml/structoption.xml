@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structoption" kind="struct" prot="public">
+    <compoundname>option</compoundname>
+    <briefdescription>
+<para>List of flag for getopt. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/MetaBoFlux.c" line="75"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

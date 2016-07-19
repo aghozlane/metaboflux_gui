@@ -1,0 +1,6 @@
+Group	Energy	Succinate_2	Succinate_1	Acetate	transition_13	transition_15	transition_14	transition_70	transition_22	transition_17	
+HX	0	400	1000	600	NA	NA	NA	NA	NA	NA	
+H1	2.656	0	40	1959	0.94	90.07	8.99	0.15	77.72	22.13	
+H2	0.756	155	977	866	0.63	31.15	68.22	11.89	16.90	71.22	
+H4	0.604	572	668	759	33.76	2.47	63.77	45.10	1.34	53.56	
+H3	0.560	566	698	735	33.76	2.47	63.77	45.10	1.34	53.56	

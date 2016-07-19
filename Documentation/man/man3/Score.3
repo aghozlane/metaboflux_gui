@@ -1,0 +1,116 @@
+.TH "Score" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Score \- 
+.PP
+Structure containing all information from simulations.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <simulation.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "char ** \fBname\fP"
+.br
+.ti -1c
+.RI "double * \fBquantite\fP"
+.br
+.ti -1c
+.RI "char ** \fBreaction\fP"
+.br
+.ti -1c
+.RI "int \fBnb_reaction\fP"
+.br
+.ti -1c
+.RI "int \fBtailleReactions\fP"
+.br
+.ti -1c
+.RI "int \fBtailleSpecies\fP"
+.br
+.ti -1c
+.RI "int \fBtaille\fP"
+.br
+.ti -1c
+.RI "char ** \fBspecies\fP"
+.br
+.ti -1c
+.RI "int \fBnb_species\fP"
+.br
+.ti -1c
+.RI "int * \fBspecies_amount\fP"
+.br
+.ti -1c
+.RI "int * \fBspecies_weight\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure containing all information from simulations. 
+.PP
+Definition at line 51 of file simulation.h.
+.SH "Field Documentation"
+.PP 
+.SS "char** \fBScore::name\fP"Molecules id 
+.PP
+Definition at line 53 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), SBML_score(), SBML_score_add(), and Sd_compute_simulation().
+.SS "int \fBScore::nb_reaction\fP"Number of reaction 
+.PP
+Definition at line 56 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), SBML_score(), and SBML_setReactions().
+.SS "int \fBScore::nb_species\fP"Number of molecules 
+.PP
+Definition at line 61 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "double* \fBScore::quantite\fP"Quantity of molecules 
+.PP
+Definition at line 54 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), Data_scoreInit(), Min_getTampon(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), SBML_score(), SBML_score_add(), SBML_score_mean(), and Sd_compute_simulation().
+.SS "char** \fBScore::reaction\fP"Interest reaction 
+.PP
+Definition at line 55 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), SBML_score(), and SBML_setReactions().
+.SS "char** \fBScore::species\fP"Interest molecules 
+.PP
+Definition at line 60 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "int* \fBScore::species_amount\fP"Quantity of the interest molecules 
+.PP
+Definition at line 62 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "int* \fBScore::species_weight\fP"Weight of the interest molecules 
+.PP
+Definition at line 63 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), and Sd_compute_simulation().
+.SS "int \fBScore::taille\fP"Total of other two sizes 
+.PP
+Definition at line 59 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Data_desallocSim(), Data_scoreFree(), Data_scoreInit(), Min_getTampon(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), SBML_score_add(), SBML_score_mean(), and Sd_compute_simulation().
+.SS "int \fBScore::tailleReactions\fP"Number of reaction in the SBML file 
+.PP
+Definition at line 57 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), and SBML_compute_simulation().
+.SS "int \fBScore::tailleSpecies\fP"Number of molecules in the SBML file 
+.PP
+Definition at line 58 of file simulation.h.
+.PP
+Referenced by Data_allocScore(), Min_my_f(), Min_score_print_mean(), Mod_compute_modeling(), Mod_score_print_mean(), Recuit_energyFunction(), SBML_compute_simulation(), SBML_score_add(), and Sd_compute_simulation().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

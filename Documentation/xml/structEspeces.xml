@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structEspeces" kind="struct" prot="public">
+    <compoundname>Especes</compoundname>
+    <includes refid="especes_8h" local="no">especes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Especes::quantite</definition>
+        <argsstring></argsstring>
+        <name>quantite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Molecule quantity </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="46" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="especes_8h_1a1610e9ef9702676f49dda6e338fc8ceb" compoundref="especes_8c" startline="40" endline="53">Especes_alloc</referencedby>
+        <referencedby refid="especes_8h_1a25fe0df8949f57735787b5a4e5cf5a3c" compoundref="especes_8c" startline="252" endline="255">Especes_getQuantite</referencedby>
+        <referencedby refid="especes_8h_1abb8810a8cb8bd51a12838f893e58e97b" compoundref="especes_8c" startline="134" endline="138">Especes_save</referencedby>
+        <referencedby refid="especes_8h_1a7f7d4b4764b583179bebcc86bbba09ed" compoundref="especes_8c" startline="149" endline="161">Especes_scoreSpecies</referencedby>
+        <referencedby refid="especes_8h_1acfdb089ad290ca7a4b3bc4c58957c1ac" compoundref="especes_8c" startline="239" endline="242">Especes_setQuantite</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEspeces_1a2fbe0a8da0e7c223e27f9bf40e48f170" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Especes::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Molecule id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="47" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="especes_8h_1abb8810a8cb8bd51a12838f893e58e97b" compoundref="especes_8c" startline="134" endline="138">Especes_save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structEspeces_1a61d949a99599938950d1508d7cb86d4d" prot="public" static="no" mutable="no">
+        <type><ref refid="structReaction" kindref="compound">pReaction</ref></type>
+        <definition>pReaction Especes::system</definition>
+        <argsstring></argsstring>
+        <name>system</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structReaction" kindref="compound">Reaction</ref> where the molecule is implicated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="48" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="especes_8h_1a1610e9ef9702676f49dda6e338fc8ceb" compoundref="especes_8c" startline="40" endline="53">Especes_alloc</referencedby>
+        <referencedby refid="especes_8h_1a622cfe5dc2bba2275a7316755ee08142" compoundref="especes_8c" startline="64" endline="85">Especes_allocReactions</referencedby>
+        <referencedby refid="especes_8h_1a271e25633ee1c9081b1b8b46f441be04" compoundref="especes_8c" startline="109" endline="123">Especes_freeReactions</referencedby>
+        <referencedby refid="especes_8h_1a3391146ab0a83b7db9cbe3bdaec9fdab" compoundref="especes_8c" startline="265" endline="281">Especes_getNbreactions</referencedby>
+        <referencedby refid="especes_8h_1a120630120d7c5a6cded061eab659048a" compoundref="especes_8c" startline="170" endline="187">Especes_print</referencedby>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a8d9458c6636b5b95598434453ad6e3dd" compoundref="simulation_8c" startline="206" endline="233">SBML_reactChoice</referencedby>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Molecules data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="34">
+        <label>Especes</label>
+        <link refid="structEspeces"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>system</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Reaction</label>
+        <link refid="structReaction"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>suivant</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="45" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="45" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structEspeces_1a2fbe0a8da0e7c223e27f9bf40e48f170" prot="public" virt="non-virtual"><scope>Especes</scope><name>id</name></member>
+      <member refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" prot="public" virt="non-virtual"><scope>Especes</scope><name>quantite</name></member>
+      <member refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" prot="public" virt="non-virtual"><scope>Especes</scope><name>system</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

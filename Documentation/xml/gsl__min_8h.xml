@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="gsl__min_8h" kind="file">
+    <compoundname>gsl_min.h</compoundname>
+    <includedby refid="gsl__min_8c" local="yes">metaboflux/src/gsl_min.c</includedby>
+    <includedby refid="MetaBoFlux_8c" local="yes">metaboflux/src/MetaBoFlux.c</includedby>
+    <includedby refid="mpi__load_8c" local="yes">metaboflux/src/mpi_load.c</includedby>
+    <invincdepgraph>
+      <node id="318">
+        <label>metaboflux/src/MetaBoFlux.c</label>
+        <link refid="MetaBoFlux_8c"/>
+      </node>
+      <node id="319">
+        <label>metaboflux/src/mpi_load.c</label>
+        <link refid="mpi__load_8c"/>
+      </node>
+      <node id="316">
+        <label>metaboflux/include/gsl_min.h</label>
+        <link refid="gsl_min.h"/>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>metaboflux/src/gsl_min.c</label>
+        <link refid="gsl__min_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gsl__min_8h_1a8d981de0373a06da9601e1b5eef379e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Min_copieTab2</definition>
+        <argsstring>(double *, int, int, int)</argsstring>
+        <name>Min_copieTab2</name>
+        <param>
+          <type>double *</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>current</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debut</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>fin</defname>
+        </param>
+        <briefdescription>
+<para>Copy table of reaction parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of copied element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="33" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="68" bodyend="78"/>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__min_8h_1a1f1d9c640473d18e2c9c092428d7052f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Min_copieTab3</definition>
+        <argsstring>(gsl_multimin_fminimizer *, int, int, int)</argsstring>
+        <name>Min_copieTab3</name>
+        <param>
+          <type>gsl_multimin_fminimizer *</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>current</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debut</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>fin</defname>
+        </param>
+        <briefdescription>
+<para>Copy short table of parameter into the larger table. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimizer parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of copied element </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="36" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="90" bodyend="103"/>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+      </memberdef>
+      <memberdef kind="function" id="gsl__min_8h_1a2d2f0b8fd130c026d88c29339e3766fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Min_verifValue</definition>
+        <argsstring>(gsl_vector *, double *, int, int)</argsstring>
+        <name>Min_verifValue</name>
+        <param>
+          <type>gsl_vector *</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debut</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>max</defname>
+        </param>
+        <briefdescription>
+<para>Checking reaction ratio parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Short table of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="39" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="114" bodyend="139"/>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Min_my_f</definition>
+        <argsstring>(const gsl_vector *, void *)</argsstring>
+        <name>Min_my_f</name>
+        <param>
+          <type>const gsl_vector *</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>void *</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+<para>Enter in the program for standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of reaction parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unused parameter define by GSL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Energy value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="42" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="149" bodyend="199"/>
+        <references refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" compoundref="data__parameters_8h" startline="47">ListParameters::banned</references>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" compoundref="data__parameters_8c" startline="169" endline="175">Data_equationsAlloc</references>
+        <references refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</references>
+        <references refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" compoundref="data__parameters_8c" startline="290" endline="299">Data_scoreInit</references>
+        <references refid="data__parameters_8c_1a707102f569c0db162aa724fe477d5e78" compoundref="data__parameters_8c" startline="371" endline="381">Data_updateTab</references>
+        <references refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" compoundref="data__parameters_8h" startline="64">SimParameters::debugFile</references>
+        <references refid="gsl__min_8c_1aa069e7c4a154495fed99561238a3d54e" compoundref="gsl__min_8c" startline="55">energie_temp</references>
+        <references refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</references>
+        <references refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" compoundref="equations_8c" startline="683" endline="698">Equations_finalQuantite</references>
+        <references refid="gsl__min_8c_1a2bea1c1e559b2f729fd8dc1c8cdca4ed" compoundref="gsl__min_8c" startline="208" endline="222">Min_getTampon</references>
+        <references refid="gsl__min_8c_1a7cb0833366eddb3930ab17934c6890ab" compoundref="gsl__min_8c" startline="114" endline="139">Min_verifValue</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structListParameters_1aae885063019b7630081d14786e3b48e9" compoundref="data__parameters_8h" startline="48">ListParameters::nb_banned</references>
+        <references refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" compoundref="data__parameters_8h" startline="42">ListParameters::nb_couples</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" compoundref="simulation_8h" startline="61">Score::nb_species</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <references refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" compoundref="data__parameters_8h" startline="60">SimParameters::pile</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="simulation_8c_1aeef27fa70d7f408e820193ef0a2c5496" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</references>
+        <references refid="simulation_8c_1a792ef36e542159096d4567a125aee565" compoundref="simulation_8c" startline="486" endline="502">SBML_debugPrint</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <references refid="xml__parameter_8c_1a7b67ce794add8c04563e07f9d25c6096" compoundref="xml__parameter_8c" startline="253" endline="257">Xml_getNbTriesSa</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__min_8h_1a843d6e8ed1d3354a55586c7734f60499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Min_getTampon</definition>
+        <argsstring>(double *, double)</argsstring>
+        <name>Min_getTampon</name>
+        <param>
+          <type>double *</type>
+          <defname>energie_temp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>energie</defname>
+        </param>
+        <briefdescription>
+<para>Enter in the program for standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>energie_temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current energy </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>energie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Best energy </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="45" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="208" bodyend="222"/>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Min_score_print_mean</definition>
+        <argsstring>(double *)</argsstring>
+        <name>Min_score_print_mean</name>
+        <param>
+          <type>double *</type>
+          <defname>result_tab</defname>
+        </param>
+        <briefdescription>
+<para>Save the minimization result. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result_tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result table </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="48" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="230" bodyend="261"/>
+        <references refid="equations_8c_1a93e7c3c0bd43ade391fa122589734816" compoundref="equations_8c" startline="533" endline="547">Equations_findSpecies</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" compoundref="simulation_8h" startline="61">Score::nb_species</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Min_compute_minimization</definition>
+        <argsstring>(pListParameters, double *, double *, char **, int, int)</argsstring>
+        <name>Min_compute_minimization</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <defname>allone</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>fluxRatio</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>result_tab</defname>
+        </param>
+        <param>
+          <type>char **</type>
+          <defname>files_path</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>number_arg</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>debug</defname>
+        </param>
+        <briefdescription>
+<para>Compute the minimization. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fluxRatio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ratio parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug flag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h" line="51" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_min.c" bodystart="274" bodyend="375"/>
+        <references refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</references>
+        <references refid="data__parameters_8c_1ae4f85916052b0acfa763dd33e63336b6" compoundref="data__parameters_8c" startline="274" endline="282">Data_scoreAlloc</references>
+        <references refid="data__parameters_8c_1ad65651512fd7fe4d41916573fd79b1aa" compoundref="data__parameters_8c" startline="307" endline="333">Data_scoreFree</references>
+        <references refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</references>
+        <references refid="gsl__min_8c_1aa069e7c4a154495fed99561238a3d54e" compoundref="gsl__min_8c" startline="55">energie_temp</references>
+        <references refid="structListParameters_1ae9a1f821ed712556e68fe4d2d91ca1a0" compoundref="data__parameters_8h" startline="41">ListParameters::interest_parameters</references>
+        <references refid="gsl__min_8c_1afb072963e9cb6ff01c9c5e9d5d32ee03" compoundref="gsl__min_8c" startline="68" endline="78">Min_copieTab2</references>
+        <references refid="gsl__min_8c_1aab43c48cf55713c2ba420ba4d354a27f" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</references>
+        <references refid="gsl__min_8c_1a8b522b04a413b0a6c6aea99e2eeff81b" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</references>
+        <references refid="structListParameters_1a78464fa8003787f72be81b561fcd141a" compoundref="data__parameters_8h" startline="42">ListParameters::nb_couples</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="structListParameters_1a20e9f07e2dc0f0024591b185bd126cb0" compoundref="data__parameters_8h" startline="46">ListParameters::parameters</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compute minimization of scenarii. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>9 novembre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>GSL_MIN_H_</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GSL_MIN_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/***************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Prototype<sp/>des<sp/>fonctions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/***************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copie<sp/>de<sp/>tableau<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1afb072963e9cb6ff01c9c5e9d5d32ee03" kindref="member" tooltip="Copy table of reaction parameters.">Min_copieTab2</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copie<sp/>de<sp/>tableau<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1ae554610a5bc4c271407bb9342fb54bd3" kindref="member" tooltip="Copy short table of parameter into the larger table.">Min_copieTab3</ref>(<sp/>gsl_multimin_fminimizer<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Verification<sp/>des<sp/>valeurs<sp/>des<sp/>parametres<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1a7cb0833366eddb3930ab17934c6890ab" kindref="member" tooltip="Checking reaction ratio parameters.">Min_verifValue</ref>(gsl_vector<sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fonction<sp/>de<sp/>calcul<sp/>d&apos;energie<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1aab43c48cf55713c2ba420ba4d354a27f" kindref="member" tooltip="Enter in the program for standard deviation.">Min_my_f</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_vector<sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Met<sp/>en<sp/>tampon<sp/>la<sp/>meilleure<sp/>energie<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1a2bea1c1e559b2f729fd8dc1c8cdca4ed" kindref="member" tooltip="Enter in the program for standard deviation.">Min_getTampon</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Sortie<sp/>du<sp/>resultat<sp/>des<sp/>simulations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1a8b522b04a413b0a6c6aea99e2eeff81b" kindref="member" tooltip="Save the minimization result.">Min_score_print_mean</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Minimize<sp/>les<sp/>solutions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__min_8c_1a27da5814ca1f00e95f1a4ee550b8484b" kindref="member" tooltip="Compute the minimization.">Min_compute_minimization</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GSL_MIN_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/gsl_min.h"/>
+  </compounddef>
+</doxygen>

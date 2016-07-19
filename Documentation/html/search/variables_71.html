@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_quantite">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_quantite')">quantite</a>
+  <div class="SRChildren">
+    <a id="Item0_c0" onkeydown="return searchResults.NavChild(event,0,0)" onkeypress="return searchResults.NavChild(event,0,0)" onkeyup="return searchResults.NavChild(event,0,0)" class="SRScope" href="../structEspeces.html#ab4d42c5e3bcb897311b17030db5b882e" target="_parent">Especes::quantite()</a>
+    <a id="Item0_c1" onkeydown="return searchResults.NavChild(event,0,1)" onkeypress="return searchResults.NavChild(event,0,1)" onkeyup="return searchResults.NavChild(event,0,1)" class="SRScope" href="../structScore.html#aadd3a70f5dc0018739a48ff13cb9fa2d" target="_parent">Score::quantite()</a>
+  </div>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

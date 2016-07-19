@@ -1,0 +1,169 @@
+.TH "metaboflux/src/gsl_mod.c" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/src/gsl_mod.c \- 
+.PP
+Compute the modeling of scenarii.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <math.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <assert.h>\fP
+.br
+\fC#include <gsl/gsl_math.h>\fP
+.br
+\fC#include <gsl/gsl_rng.h>\fP
+.br
+\fC#include <gsl/gsl_siman.h>\fP
+.br
+\fC#include <gsl/gsl_ieee_utils.h>\fP
+.br
+\fC#include <sbml/SBMLTypes.h>\fP
+.br
+\fC#include <libxml/parser.h>\fP
+.br
+\fC#include <libxml/xpath.h>\fP
+.br
+\fC#include 'especes.h'\fP
+.br
+\fC#include 'equations.h'\fP
+.br
+\fC#include 'simulation.h'\fP
+.br
+\fC#include 'xml_parameter.h'\fP
+.br
+\fC#include 'data_parameters.h'\fP
+.br
+\fC#include 'gsl_mod.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_GNU_SOURCE\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBMod_score_print_mean\fP (\fBpListParameters\fP \fBa\fP, \fBpSimParameters\fP \fBsimu\fP, double *result_tab, double energie, int number_group, int group)"
+.br
+.RI "\fIPrint the mean score. \fP"
+.ti -1c
+.RI "void \fBMod_compute_modeling\fP (\fBpListParameters\fP \fBa\fP, double *fluxRatio, double *result_tab, char **files_path, int number_group, int group, int debug)"
+.br
+.RI "\fICompute the modeling. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Compute the modeling of scenarii. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+9 novembre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBgsl_mod.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define _GNU_SOURCE"
+.PP
+Definition at line 26 of file gsl_mod.c.
+.SH "Function Documentation"
+.PP 
+.SS "void Mod_compute_modeling (\fBpListParameters\fPa, double *fluxRatio, double *result_tab, char **files_path, intnumber_group, intgroup, intdebug)"
+.PP
+Compute the modeling. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP struct \fBListParameters\fP 
+.br
+\fIfluxRatio\fP Ratio parameters 
+.br
+\fIresult_tab\fP Result table 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fInumber_group\fP Number of the group 
+.br
+\fIgroup\fP Group flag 
+.br
+\fIdebug\fP Debug flag 
+.RE
+.PP
+
+.PP
+Definition at line 109 of file gsl_mod.c.
+.PP
+References ListParameters::banned, ListParameters::conf, Data_desallocSim(), Data_equationsAlloc(), Data_equationsInit(), Data_scoreAlloc(), Data_scoreFree(), Data_simParameters(), SimParameters::debugFile, Equations_calcul(), Equations_finalQuantite(), Mod_score_print_mean(), ListParameters::model, Score::name, ListParameters::nb_banned, ListParameters::nb_equations, ListParameters::nb_parameters, Score::nb_species, SimParameters::out, SimParameters::pile, Score::quantite, SimParameters::r, result_temp, SBML_compute_simulation_mean(), SBML_debugPrint(), simu, Score::species, Score::species_amount, Score::species_weight, Score::taille, Score::tailleSpecies, Xml_getNbTriesMod(), and SimParameters::y.
+.PP
+Referenced by Mpi_slave().
+.SS "void Mod_score_print_mean (\fBpListParameters\fPa, \fBpSimParameters\fPsimu, double *result_tab, doubleenergie, intnumber_group, intgroup)"
+.PP
+Print the mean score. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Global parameters 
+.br
+\fIsimu\fP Simulation parameters 
+.br
+\fIresult_tab\fP Result table 
+.br
+\fIenergie\fP Energy of the simulation 
+.br
+\fInumber_group\fP Number of simulation 
+.br
+\fIgroup\fP Number of the group (if a group is simulated) 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file gsl_mod.c.
+.PP
+References Equations_findSpecies(), Score::name, ListParameters::nb_parameters, Score::nb_species, SimParameters::out, Score::quantite, Score::species, Score::species_amount, Score::taille, Score::tailleSpecies, and SimParameters::y.
+.PP
+Referenced by Mod_compute_modeling().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

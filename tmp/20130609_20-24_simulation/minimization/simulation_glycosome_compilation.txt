@@ -1,0 +1,12 @@
+==> /home/amine/workspace/MetaboFlux/bin/../src/../tmp/20130609_20-24_simulation/simulation/simulation_glycosome_simulated_annealing_1.txt <==
+  179       181      0.699323  [ 0.44  90.07  9.49  0.15  77.72  22.14 ]         2.63498       2.63498
+
+==> /home/amine/workspace/MetaboFlux/bin/../src/../tmp/20130609_20-24_simulation/simulation/simulation_glycosome_simulated_annealing_2.txt <==
+   76        78      0.859119  [ 33.83  3.66  62.51  53.40  1.16  45.44 ]        0.762308      0.762308
+
+==> /home/amine/workspace/MetaboFlux/bin/../src/../tmp/20130609_20-24_simulation/simulation/simulation_glycosome_simulated_annealing_3.txt <==
+  341       343      0.505949  [ 0.22  31.36  68.43  9.42  17.40  73.18 ]        0.783644      0.783644
+
+==> /home/amine/workspace/MetaboFlux/bin/../src/../tmp/20130609_20-24_simulation/simulation/simulation_glycosome_simulated_annealing_4.txt <==
+  335       337      0.512051  [ 32.79  0.92  66.29  36.54  1.05  62.41 ]        0.246228      0.246228
+

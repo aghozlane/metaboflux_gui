@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node37" href="$especes_8h.html" title="Modelize a molecule." alt="" coords="2048,83,2131,112"/>
+<area shape="rect" id="node39" href="$equations_8h.html" title="Processes an equation in MathML format." alt="" coords="2155,83,2243,112"/>
+<area shape="rect" id="node41" href="$simulation_8h.html" title="Simulate a petri net." alt="" coords="2267,83,2357,112"/>
+<area shape="rect" id="node43" href="$xml__parameter_8h.html" title="Xml reader for parametre.xml." alt="" coords="2381,83,2499,112"/>
+<area shape="rect" id="node45" href="$data__parameters_8h.html" title="Load data parameters." alt="" coords="2523,83,2653,112"/>
+<area shape="rect" id="node47" href="$gsl__recuit_8h.html" title="Compute the simulated annealing." alt="" coords="2677,83,2765,112"/>
+<area shape="rect" id="node49" href="$gsl__mod_8h.html" title="Compute the modeling of scenarii." alt="" coords="2789,83,2872,112"/>
+<area shape="rect" id="node51" href="$gsl__min_8h.html" title="Compute minimization of scenarii." alt="" coords="2896,83,2973,112"/>
+<area shape="rect" id="node53" href="$gsl__sd_8h.html" title="Compute the standard deviation analysis of the simulations." alt="" coords="2997,83,3067,112"/>
+<area shape="rect" id="node55" href="$mpi__load_8h.html" title="Parallelize the program." alt="" coords="3091,83,3176,112"/>
+</map>

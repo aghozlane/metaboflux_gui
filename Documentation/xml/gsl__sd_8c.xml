@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="gsl__sd_8c" kind="file">
+    <compoundname>gsl_sd.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">gsl/gsl_math.h</includes>
+    <includes local="no">gsl/gsl_rng.h</includes>
+    <includes local="no">gsl/gsl_siman.h</includes>
+    <includes local="no">gsl/gsl_ieee_utils.h</includes>
+    <includes local="no">gsl/gsl_statistics_double.h</includes>
+    <includes local="no">sbml/SBMLTypes.h</includes>
+    <includes local="no">libxml/parser.h</includes>
+    <includes local="no">libxml/xpath.h</includes>
+    <includes refid="especes_8h" local="yes">especes.h</includes>
+    <includes refid="equations_8h" local="yes">equations.h</includes>
+    <includes refid="simulation_8h" local="yes">simulation.h</includes>
+    <includes refid="xml__parameter_8h" local="yes">xml_parameter.h</includes>
+    <includes refid="data__parameters_8h" local="yes">data_parameters.h</includes>
+    <includes refid="gsl__sd_8h" local="yes">gsl_sd.h</includes>
+    <incdepgraph>
+      <node id="474">
+        <label>assert.h</label>
+      </node>
+      <node id="478">
+        <label>gsl/gsl_ieee_utils.h</label>
+      </node>
+      <node id="477">
+        <label>gsl/gsl_siman.h</label>
+      </node>
+      <node id="470">
+        <label>stdlib.h</label>
+      </node>
+      <node id="481">
+        <label>libxml/parser.h</label>
+      </node>
+      <node id="479">
+        <label>gsl/gsl_statistics_double.h</label>
+      </node>
+      <node id="483">
+        <label>especes.h</label>
+        <link refid="especes_8h"/>
+      </node>
+      <node id="480">
+        <label>sbml/SBMLTypes.h</label>
+      </node>
+      <node id="473">
+        <label>string.h</label>
+      </node>
+      <node id="468">
+        <label>metaboflux/src/gsl_sd.c</label>
+        <link refid="gsl_sd.c"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>gsl_sd.h</label>
+        <link refid="gsl__sd_8h"/>
+      </node>
+      <node id="471">
+        <label>time.h</label>
+      </node>
+      <node id="472">
+        <label>math.h</label>
+      </node>
+      <node id="484">
+        <label>equations.h</label>
+        <link refid="equations_8h"/>
+      </node>
+      <node id="482">
+        <label>libxml/xpath.h</label>
+      </node>
+      <node id="485">
+        <label>simulation.h</label>
+        <link refid="simulation_8h"/>
+      </node>
+      <node id="475">
+        <label>gsl/gsl_math.h</label>
+      </node>
+      <node id="476">
+        <label>gsl/gsl_rng.h</label>
+      </node>
+      <node id="487">
+        <label>data_parameters.h</label>
+        <link refid="data__parameters_8h"/>
+      </node>
+      <node id="469">
+        <label>stdio.h</label>
+      </node>
+      <node id="486">
+        <label>xml_parameter.h</label>
+        <link refid="xml__parameter_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gsl__sd_8c_1a369266c24eacffb87046522897a570d5" prot="public" static="no">
+        <name>_GNU_SOURCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" line="26" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gsl__sd_8c_1ad3a6822755dad511abb99b018c49699c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Sd_compute_simulation</definition>
+        <argsstring>(pListParameters all, pSimParameters sim)</argsstring>
+        <name>Sd_compute_simulation</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <declname>all</declname>
+        </param>
+        <param>
+          <type><ref refid="structSimParameters" kindref="compound">pSimParameters</ref></type>
+          <declname>sim</declname>
+        </param>
+        <briefdescription>
+<para>Enter in the program for standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>all</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global parameters : struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simulation parameters : struct <ref refid="structSimParameters" kindref="compound">SimParameters</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Energy value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" line="57" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" bodystart="56" bodyend="93"/>
+        <references refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" compoundref="data__parameters_8h" startline="47">ListParameters::banned</references>
+        <references refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" compoundref="data__parameters_8c" startline="169" endline="175">Data_equationsAlloc</references>
+        <references refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" compoundref="data__parameters_8c" startline="184" endline="194">Data_equationsInit</references>
+        <references refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" compoundref="data__parameters_8c" startline="290" endline="299">Data_scoreInit</references>
+        <references refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" compoundref="data__parameters_8h" startline="64">SimParameters::debugFile</references>
+        <references refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" compoundref="equations_8c" startline="614" endline="668">Equations_calcul</references>
+        <references refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" compoundref="equations_8c" startline="683" endline="698">Equations_finalQuantite</references>
+        <references refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" compoundref="data__parameters_8h" startline="37">ListParameters::model</references>
+        <references refid="structScore_1a29547e98673d89a8964a747015b2c26c" compoundref="simulation_8h" startline="53">Score::name</references>
+        <references refid="structListParameters_1aae885063019b7630081d14786e3b48e9" compoundref="data__parameters_8h" startline="48">ListParameters::nb_banned</references>
+        <references refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" compoundref="data__parameters_8h" startline="43">ListParameters::nb_equations</references>
+        <references refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" compoundref="simulation_8h" startline="61">Score::nb_species</references>
+        <references refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" compoundref="data__parameters_8h" startline="61">SimParameters::out</references>
+        <references refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" compoundref="data__parameters_8h" startline="60">SimParameters::pile</references>
+        <references refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" compoundref="simulation_8h" startline="54">Score::quantite</references>
+        <references refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" compoundref="data__parameters_8h" startline="62">SimParameters::r</references>
+        <references refid="simulation_8c_1a0eb4dda20b3a9cc639f50421f919f24e" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</references>
+        <references refid="simulation_8c_1a792ef36e542159096d4567a125aee565" compoundref="simulation_8c" startline="486" endline="502">SBML_debugPrint</references>
+        <references refid="simulation_8c_1a8823ee151e44d0d0b6b977bcebc7463e" compoundref="simulation_8c" startline="465" endline="474">SBML_debugPrintHead</references>
+        <references refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" compoundref="simulation_8h" startline="60">Score::species</references>
+        <references refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" compoundref="simulation_8h" startline="62">Score::species_amount</references>
+        <references refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" compoundref="simulation_8h" startline="63">Score::species_weight</references>
+        <references refid="structScore_1aee1e19fc90d330de6fced582dff7102c" compoundref="simulation_8h" startline="59">Score::taille</references>
+        <references refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" compoundref="simulation_8h" startline="58">Score::tailleSpecies</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gsl__sd_8c_1a1379b501622f4bc112b49be952e19022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd_compute_standard_deviation</definition>
+        <argsstring>(pListParameters a, double *fluxRatio, double *result_tab, char **files_path, int number_arg, int debug)</argsstring>
+        <name>Sd_compute_standard_deviation</name>
+        <param>
+          <type><ref refid="structListParameters" kindref="compound">pListParameters</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>fluxRatio</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result_tab</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>files_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number_arg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+<para>Compute the standard deviation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>struct <ref refid="structListParameters" kindref="compound">ListParameters</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fluxRatio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ratio parameters </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result table </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>files_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of paths </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of simulation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug flag </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" line="107" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c" bodystart="106" bodyend="154"/>
+        <references refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" compoundref="data__parameters_8h" startline="38">ListParameters::conf</references>
+        <references refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</references>
+        <references refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</references>
+        <references refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" compoundref="data__parameters_8h" startline="40">ListParameters::nb_parameters</references>
+        <references refid="gsl__sd_8c_1ad3a6822755dad511abb99b018c49699c" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</references>
+        <references refid="gsl__min_8c_1a35b5393331789adb5f9e49f148329417" compoundref="gsl__min_8c" startline="53">simu</references>
+        <references refid="xml__parameter_8c_1afeff8e3300946c36cea36ddd964e9265" compoundref="xml__parameter_8c" startline="240" endline="244">Xml_getNbTriesMod</references>
+        <references refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" compoundref="data__parameters_8h" startline="63">SimParameters::y</references>
+        <referencedby refid="mpi__load_8h_1a73a3042b31e240b5785eed805f963212" compoundref="mpi__load_8c" startline="440" endline="520">Mpi_slave</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compute the standard deviation analysis of the simulations. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>9 novembre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26" refid="gsl__sd_8c_1a369266c24eacffb87046522897a570d5" refkind="member"><highlight class="preprocessor">#define<sp/>_GNU_SOURCE</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_rng.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_siman.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_ieee_utils.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gsl/gsl_statistics_double.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sbml/SBMLTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/parser.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xpath.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="especes_8h" kindref="compound" tooltip="Modelize a molecule.">especes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="equations_8h" kindref="compound" tooltip="Processes an equation in MathML format.">equations.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="simulation_8h" kindref="compound" tooltip="Simulate a petri net.">simulation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="xml__parameter_8h" kindref="compound" tooltip="Xml reader for parametre.xml.">xml_parameter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__parameters_8h" kindref="compound" tooltip="Load data parameters.">data_parameters.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gsl__sd_8h" kindref="compound" tooltip="Compute the standard deviation analysis of the simulations.">gsl_sd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="gsl__sd_8c_1ad3a6822755dad511abb99b018c49699c" kindref="member" tooltip="Enter in the program for standard deviation.">Sd_compute_simulation</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref><sp/><ref refid="gsl__recuit_8c_1ae78b385d27f680dd0d0bd3b700776071" kindref="member">all</ref>,<sp/><ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">pSimParameters</ref><sp/><ref refid="gsl__recuit_8c_1ac5741f1199033e1f7d3809762d7b3b8b" kindref="member">sim</ref>)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Simulations<sp/>unitaires<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>energy<sp/>=0.0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>choice=0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Determine<sp/>si<sp/>l&apos;entete<sp/>doit<sp/>etre<sp/>imprime<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>[0]==NULL)<sp/>choice=1;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>du<sp/>tableau<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a85ac72a7daa9c81e510fbd8d09edb8b3" kindref="member" tooltip="Initialize the struct Score.">Data_scoreInit</ref>(sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>=<ref refid="data__parameters_8c_1a5cbbdc869f6afdad90fbc19e8cb71653" kindref="member" tooltip="Allocate the struct Equations.">Data_equationsAlloc</ref>(all,<sp/>sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1ab87022ba396950a530c349d81e250cf4" kindref="member" tooltip="Initialize equations.">Data_equationsInit</ref>(all,<sp/>sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><ref refid="simulation_8c_1a0eb4dda20b3a9cc639f50421f919f24e" kindref="member" tooltip="Simulation of metabolic network.">SBML_compute_simulation</ref>(sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>,<sp/>all-&gt;<ref refid="structListParameters_1ad167c56ffa16ae7c55245c7c683bbc1c" kindref="member">model</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" kindref="member">y</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" kindref="member">r</ref>,<sp/>all-&gt;<ref refid="structListParameters_1ab0d2940b00e8d0d8ae31606f79ce6373" kindref="member">banned</ref>,<sp/>all-&gt;<ref refid="structListParameters_1aae885063019b7630081d14786e3b48e9" kindref="member">nb_banned</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>du<sp/>score<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;all-&gt;<ref refid="structListParameters_1a45a3376021fb8e41738aa3452d7c0dbb" kindref="member">nb_equations</ref>;i++){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>energy+=<ref refid="equations_8c_1ac44a002ce6003458f78db2b85bff29ef" kindref="member" tooltip="Compute the score of the equation.">Equations_calcul</ref>(sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>[i],<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if(sim-&gt;pile[i]!=NULL)<sp/>free(sim-&gt;pile[i]);*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>energy+=<ref refid="equations_8c_1a52f64995ddba108da9f528b20d373a2d" kindref="member" tooltip="Compute the score of the quantity which means the difference between what is expected to what is simu...">Equations_finalQuantite</ref>(sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a88d07328145c2565fb2fa50c31760dbe" kindref="member">nb_species</ref>,sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1ae22017a9e14dbbacbc7ef1a41f880ceb" kindref="member">species</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1abb78b9e380ec83ab8f0274480c420be7" kindref="member">species_amount</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a46e74b92b29101ec9dc68255ab71a480" kindref="member">species_weight</ref>,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>,sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>energy=sqrt(energy);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Debug<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sim-&gt;<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>!=NULL){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(choice)<sp/><ref refid="simulation_8c_1a8823ee151e44d0d0b6b977bcebc7463e" kindref="member" tooltip="Print the head of the debug file.">SBML_debugPrintHead</ref>(sim-&gt;<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1a29547e98673d89a8964a747015b2c26c" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simulation_8c_1a792ef36e542159096d4567a125aee565" kindref="member" tooltip="Print the debuf file.">SBML_debugPrint</ref>(sim-&gt;<ref refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" kindref="member">debugFile</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1ac5a5af5f70e341fb42ea765394d86207" kindref="member">tailleSpecies</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aee1e19fc90d330de6fced582dff7102c" kindref="member">taille</ref>,<sp/>sim-&gt;<ref refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" kindref="member">out</ref>-&gt;<ref refid="structScore_1aadd3a70f5dc0018739a48ff13cb9fa2d" kindref="member">quantite</ref>,<sp/>energy);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reinitialisation<sp/>des<sp/>equations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>!=NULL)<sp/>free(sim-&gt;<ref refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" kindref="member">pile</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>energy;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gsl__sd_8c_1a1379b501622f4bc112b49be952e19022" kindref="member" tooltip="Compute the standard deviation.">Sd_compute_standard_deviation</ref>(<ref refid="structListParameters" kindref="compound" tooltip="Global list parameters.">pListParameters</ref><sp/><ref refid="gsl__min_8c_1a30c0e0cd742ae3ee221dc0c83a2a0752" kindref="member">a</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*fluxRatio,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*result_tab,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**files_path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number_arg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debug)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>la<sp/>variance<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">pSimParameters</ref><sp/><ref refid="gsl__min_8c_1a35b5393331789adb5f9e49f148329417" kindref="member">simu</ref>=NULL;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*energie=NULL,<sp/>energie_sd=0.0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>nbTries=0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allocation<sp/>de<sp/>la<sp/>memoire<sp/>aux<sp/>parametres<sp/>simules<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>simu=(<ref refid="data__parameters_8h_1ae9651e8001cc412f6a207d4d90b0132e" kindref="member">pSimParameters</ref>)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structSimParameters" kindref="compound" tooltip="List of parameters specific to each simulation.">SimParameters</ref>));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>assert(simu!=NULL);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Demarre<sp/>de<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>number_arg+=1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Intialisation<sp/>des<sp/>parametres<sp/>de<sp/>simulation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1a72112e95502d41a9b171e9d9fea2e8ab" kindref="member" tooltip="Recording parameters specific to each simulation.">Data_simParameters</ref>(a,simu,files_path[2],</highlight><highlight class="stringliteral">&quot;standard_deviation&quot;</highlight><highlight class="normal">,<sp/>number_arg,<sp/>debug);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>des<sp/>parametres<sp/>des<sp/>reactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;a-&gt;<ref refid="structListParameters_1a079cdc6651256ac5ee10e546fc01ebba" kindref="member">nb_parameters</ref>;i++){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>simu-&gt;<ref refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" kindref="member">y</ref>[i]=fluxRatio[i];</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Nombre<sp/>d&apos;essaie<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>nbTries=<ref refid="xml__parameter_8c_1afeff8e3300946c36cea36ddd964e9265" kindref="member" tooltip="Get number of tries for modelling.">Xml_getNbTriesMod</ref>(a-&gt;<ref refid="structListParameters_1a96adc4ee0346b24efd2139d3768be76e" kindref="member">conf</ref>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enregistrement<sp/>des<sp/>energies*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>energie=(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*)malloc(nbTries*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;nbTries;i++){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>energie[i]=0.0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>energie[i]=<ref refid="gsl__sd_8c_1ad3a6822755dad511abb99b018c49699c" kindref="member" tooltip="Enter in the program for standard deviation.">Sd_compute_simulation</ref>(a,<sp/>simu);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Calcul<sp/>de<sp/>la<sp/>variance<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nbTries&gt;1)<sp/>energie_sd=gsl_stats_sd(energie,1,nbTries);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>energie_sd=0.0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enregistrement<sp/>des<sp/>resultats<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>result_tab[0]=(double)number_arg;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>result_tab[1]=energie_sd;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;nbTries;i++){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>result_tab[i+2]=energie[i];</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fermeture<sp/>du<sp/>fichier<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(energie!=NULL)<sp/>free(energie);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Desallocation<sp/>memoire<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="data__parameters_8c_1ac6adf7017183beb79ae1511c65f669af" kindref="member" tooltip="Free struct parameters specific to each simulation.">Data_desallocSim</ref>(simu);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/gsl_sd.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structTestReaction" kind="struct" prot="public">
+    <compoundname>TestReaction</compoundname>
+    <includes refid="simulation_8h" local="no">simulation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" prot="public" static="no" mutable="no">
+        <type>Reaction_t **</type>
+        <definition>Reaction_t** TestReaction::tabReactions</definition>
+        <argsstring></argsstring>
+        <name>tabReactions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stock temporairement une reaction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="42" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="simulation_8h_1abb6b027abfcddf0b783bdb3bc29e47d8" compoundref="simulation_8c" startline="279" endline="296">SBML_allocTest</referencedby>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a9103674f503bec1df341d62554e1a9c2" compoundref="simulation_8c" startline="304" endline="309">SBML_freeTest</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structTestReaction_1a04037c90652dceaab2f416e099be460c" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* TestReaction::minStepTab</definition>
+        <argsstring></argsstring>
+        <name>minStepTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stock le nombre de realisation possible pour cette reaction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="43" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="simulation_8h_1abb6b027abfcddf0b783bdb3bc29e47d8" compoundref="simulation_8c" startline="279" endline="296">SBML_allocTest</referencedby>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a9103674f503bec1df341d62554e1a9c2" compoundref="simulation_8c" startline="304" endline="309">SBML_freeTest</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure used to test reactions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" line="41" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/simulation.h" bodystart="40" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structTestReaction_1a04037c90652dceaab2f416e099be460c" prot="public" virt="non-virtual"><scope>TestReaction</scope><name>minStepTab</name></member>
+      <member refid="structTestReaction_1abc440bf3f3edc3d4ca6ad896962ffad2" prot="public" virt="non-virtual"><scope>TestReaction</scope><name>tabReactions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

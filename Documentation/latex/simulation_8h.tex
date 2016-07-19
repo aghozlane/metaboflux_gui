@@ -1,0 +1,963 @@
+\hypertarget{simulation_8h}{
+\section{metaboflux/include/simulation.h File Reference}
+\label{simulation_8h}\index{metaboflux/include/simulation.h@{metaboflux/include/simulation.h}}
+}
+
+
+Simulate a petri net.  
+
+
+This graph shows which files directly or indirectly include this file:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{simulation_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structTestReaction}{TestReaction}
+\begin{DoxyCompactList}\small\item\em Structure used to test reactions. \end{DoxyCompactList}\item 
+struct \hyperlink{structScore}{Score}
+\begin{DoxyCompactList}\small\item\em Structure containing all information from simulations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{simulation_8h_a611031d9c60ad182fade6ae74e6b7e7e}{SBML\_\-initEspeceAmounts} (Model\_\-t $\ast$, \hyperlink{structEspeces}{pEspeces}, int)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. \end{DoxyCompactList}\item 
+int \hyperlink{simulation_8h_acc2b5d50969ffb4eac4e86227f583b39}{SBML\_\-findReaction} (char $\ast$$\ast$, const char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Determine if the reaction is study. \end{DoxyCompactList}\item 
+double \hyperlink{simulation_8h_a97ee89b0e47e49cdcf5579255b8cd3a3}{SBML\_\-evalExpression} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em Get the reaction ratio define in the sbml. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a4e69a993d7460adf46b17909e8991565}{SBML\_\-setReactions} (Model\_\-t $\ast$, \hyperlink{structEspeces}{pEspeces}, \hyperlink{structScore}{pScore}, double $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. \end{DoxyCompactList}\item 
+int \hyperlink{simulation_8h_a29d1d4fcf0dcc060769bf71e4e451b15}{SBML\_\-checkQuantite} (Model\_\-t $\ast$, Reaction\_\-t $\ast$, int, \hyperlink{structEspeces}{pEspeces})
+\begin{DoxyCompactList}\small\item\em Determine the number of reaction for one molecule. \end{DoxyCompactList}\item 
+Reaction\_\-t $\ast$ \hyperlink{simulation_8h_a8d9458c6636b5b95598434453ad6e3dd}{SBML\_\-reactChoice} (\hyperlink{structEspeces}{pEspeces}, const gsl\_\-rng $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Determine randomly the reaction to achieve for several nodes reactions. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a0421946146569268a97c95c27e57a65e}{SBML\_\-reaction} (Model\_\-t $\ast$, \hyperlink{structEspeces}{pEspeces}, Reaction\_\-t $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Simulation of a discrete transision. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_abb6b027abfcddf0b783bdb3bc29e47d8}{SBML\_\-allocTest} (\hyperlink{structTestReaction}{pTestReaction}, int)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct pTestReaction. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a9103674f503bec1df341d62554e1a9c2}{SBML\_\-freeTest} (\hyperlink{structTestReaction}{pTestReaction})
+\begin{DoxyCompactList}\small\item\em Free memory of the struct \hyperlink{structTestReaction}{TestReaction}. \end{DoxyCompactList}\item 
+int \hyperlink{simulation_8h_a5e7dd721fd4e49d51adaa2dd290879d4}{SBML\_\-EstimationReaction} (Model\_\-t $\ast$, \hyperlink{structTestReaction}{pTestReaction}, \hyperlink{structEspeces}{pEspeces}, int, int)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. \end{DoxyCompactList}\item 
+int \hyperlink{simulation_8h_a79f018dd624b1b4a2ee36a2cb2939462}{SBML\_\-simulate} (Model\_\-t $\ast$, \hyperlink{structEspeces}{pEspeces}, const gsl\_\-rng $\ast$, \hyperlink{structTestReaction}{pTestReaction}, char $\ast$$\ast$, int, int, int)
+\begin{DoxyCompactList}\small\item\em Simulate one step of petri net. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a0b14dd5a1a8cf318c2f7974bd9a8cc1c}{SBML\_\-score} (Model\_\-t $\ast$, \hyperlink{structEspeces}{pEspeces}, \hyperlink{structScore}{pScore}, double $\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a12fd385702f666987a4b569e84abed70}{SBML\_\-debugPrintHead} (FILE $\ast$, int, char $\ast$$\ast$)
+\begin{DoxyCompactList}\small\item\em Print the head of the debug file. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a69e2b7c32f7b66e66d28030d00917fd7}{SBML\_\-debugPrint} (FILE $\ast$, int, int, double $\ast$, double)
+\begin{DoxyCompactList}\small\item\em Print the debuf file. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a443eccd5296f1a2844c4d97e514a61c5}{SBML\_\-compute\_\-simulation} (\hyperlink{structScore}{pScore}, Model\_\-t $\ast$, double $\ast$, gsl\_\-rng $\ast$, char $\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Simulation of metabolic network. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a97ba6b434d34399d17103fbb366afd74}{SBML\_\-score\_\-add} (\hyperlink{structScore}{pScore}, \hyperlink{structScore}{pScore}, FILE $\ast$)
+\begin{DoxyCompactList}\small\item\em Add scores. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a785b8432d885cc9e8ef50413c3643f6a}{SBML\_\-score\_\-mean} (\hyperlink{structScore}{pScore}, int)
+\begin{DoxyCompactList}\small\item\em Mean quantities for score. \end{DoxyCompactList}\item 
+void \hyperlink{simulation_8h_a16b0c1105bbcfc7ddc9a9e044d567ed5}{SBML\_\-compute\_\-simulation\_\-mean} (FILE $\ast$, \hyperlink{structScore}{pScore}, \hyperlink{structScore}{pScore}, Model\_\-t $\ast$, double $\ast$, gsl\_\-rng $\ast$, char $\ast$$\ast$, int, int)
+\begin{DoxyCompactList}\small\item\em X time simulation of metabolic network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simulate a petri net. This file is part of MetaBoFlux (\href{http://www.cbib.u-bordeaux2.fr/metaboflux/}{\tt http://www.cbib.u-\/bordeaux2.fr/metaboflux/}) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+\begin{DoxyAuthor}{Author}
+\{Amine Ghozlane\} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27 octobre 2009 
+\end{DoxyDate}
+
+
+Definition in file \hyperlink{simulation_8h_source}{simulation.h}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{simulation_8h_abb6b027abfcddf0b783bdb3bc29e47d8}{
+\index{simulation.h@{simulation.h}!SBML\_\-allocTest@{SBML\_\-allocTest}}
+\index{SBML\_\-allocTest@{SBML\_\-allocTest}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-allocTest}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-allocTest (
+\begin{DoxyParamCaption}
+\item[{{\bf pTestReaction}}]{T, }
+\item[{int}]{nbReactions}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_abb6b027abfcddf0b783bdb3bc29e47d8}
+
+
+Alloc memory and initialize the struct pTestReaction. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em T} & Empty struct \hyperlink{structTestReaction}{TestReaction} \\
+\hline
+{\em nbReactions} & Number of reactions \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 279 of file simulation.c.
+
+
+
+References TestReaction::minStepTab, and TestReaction::tabReactions.
+
+
+
+Referenced by SBML\_\-simulate().
+
+\hypertarget{simulation_8h_a29d1d4fcf0dcc060769bf71e4e451b15}{
+\index{simulation.h@{simulation.h}!SBML\_\-checkQuantite@{SBML\_\-checkQuantite}}
+\index{SBML\_\-checkQuantite@{SBML\_\-checkQuantite}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-checkQuantite}]{\setlength{\rightskip}{0pt plus 5cm}int SBML\_\-checkQuantite (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{Reaction\_\-t $\ast$}]{react, }
+\item[{int}]{nbEspeces, }
+\item[{{\bf pEspeces}}]{molecules}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a29d1d4fcf0dcc060769bf71e4e451b15}
+
+
+Determine the number of reaction for one molecule. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em react} & \hyperlink{structReaction}{Reaction} id \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of reaction for one molecule 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file simulation.c.
+
+
+
+References Especes\_\-find(), and Especes\_\-getQuantite().
+
+
+
+Referenced by SBML\_\-EstimationReaction(), and SBML\_\-simulate().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{simulation_8h_a29d1d4fcf0dcc060769bf71e4e451b15_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a443eccd5296f1a2844c4d97e514a61c5}{
+\index{simulation.h@{simulation.h}!SBML\_\-compute\_\-simulation@{SBML\_\-compute\_\-simulation}}
+\index{SBML\_\-compute\_\-simulation@{SBML\_\-compute\_\-simulation}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-compute\_\-simulation}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-compute\_\-simulation (
+\begin{DoxyParamCaption}
+\item[{{\bf pScore}}]{result, }
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{double $\ast$}]{reactions\_\-ratio, }
+\item[{gsl\_\-rng $\ast$}]{r, }
+\item[{char $\ast$$\ast$}]{banned, }
+\item[{int}]{nbBanned}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a443eccd5296f1a2844c4d97e514a61c5}
+
+
+Simulation of metabolic network. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Struct \hyperlink{structScore}{Score} \\
+\hline
+{\em mod} & Model of the SBML file \\
+\hline
+{\em reactions\_\-ratio} & List of computed reaction ratio \\
+\hline
+{\em r} & Random number generator \\
+\hline
+{\em banned} & List of banned compound \\
+\hline
+{\em nbBanned} & Number of banned compound \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 515 of file simulation.c.
+
+
+
+References Especes\_\-alloc(), Especes\_\-free(), SBML\_\-initEspeceAmounts(), SBML\_\-score(), SBML\_\-setReactions(), SBML\_\-simulate(), Score::tailleReactions, and Score::tailleSpecies.
+
+
+
+Referenced by Sd\_\-compute\_\-simulation().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{simulation_8h_a443eccd5296f1a2844c4d97e514a61c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a16b0c1105bbcfc7ddc9a9e044d567ed5}{
+\index{simulation.h@{simulation.h}!SBML\_\-compute\_\-simulation\_\-mean@{SBML\_\-compute\_\-simulation\_\-mean}}
+\index{SBML\_\-compute\_\-simulation\_\-mean@{SBML\_\-compute\_\-simulation\_\-mean}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-compute\_\-simulation\_\-mean}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-compute\_\-simulation\_\-mean (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{debugFile, }
+\item[{{\bf pScore}}]{result, }
+\item[{{\bf pScore}}]{result\_\-temp, }
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{double $\ast$}]{reactions\_\-ratio, }
+\item[{gsl\_\-rng $\ast$}]{r, }
+\item[{char $\ast$$\ast$}]{banned, }
+\item[{int}]{nbBanned, }
+\item[{int}]{nb\_\-simulation}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a16b0c1105bbcfc7ddc9a9e044d567ed5}
+
+
+X time simulation of metabolic network. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em debugFile} & File use for debug \\
+\hline
+{\em result} & Struct \hyperlink{structScore}{Score} used for all the simulation \\
+\hline
+{\em result\_\-temp} & Struct \hyperlink{structScore}{Score} used at each simulation step \\
+\hline
+{\em mod} & Model of the SBML file \\
+\hline
+{\em reactions\_\-ratio} & List of computed reaction ratio \\
+\hline
+{\em r} & Random number generator \\
+\hline
+{\em banned} & List of banned compound \\
+\hline
+{\em nbBanned} & Number of banned compound \\
+\hline
+{\em nb\_\-simulation} & Number of simulation step \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 614 of file simulation.c.
+
+
+
+References Especes\_\-alloc(), Especes\_\-free(), SBML\_\-initEspeceAmounts(), SBML\_\-score(), SBML\_\-score\_\-add(), SBML\_\-score\_\-mean(), SBML\_\-setReactions(), and SBML\_\-simulate().
+
+
+
+Referenced by Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), and Recuit\_\-energyFunction().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{simulation_8h_a16b0c1105bbcfc7ddc9a9e044d567ed5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a69e2b7c32f7b66e66d28030d00917fd7}{
+\index{simulation.h@{simulation.h}!SBML\_\-debugPrint@{SBML\_\-debugPrint}}
+\index{SBML\_\-debugPrint@{SBML\_\-debugPrint}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-debugPrint}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-debugPrint (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{debugFile, }
+\item[{int}]{tailleSpecies, }
+\item[{int}]{taille, }
+\item[{double $\ast$}]{quantite, }
+\item[{double}]{result}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a69e2b7c32f7b66e66d28030d00917fd7}
+
+
+Print the debuf file. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em debugFile} & File use for debug \\
+\hline
+{\em tailleSpecies} & Number of molecules \\
+\hline
+{\em taille} & Number of molecules/reactions \\
+\hline
+{\em quantite} & Quantity of molecules/reactions \\
+\hline
+{\em result} & Energy value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 486 of file simulation.c.
+
+
+
+Referenced by Min\_\-my\_\-f(), Mod\_\-compute\_\-modeling(), Recuit\_\-energyFunction(), SBML\_\-score\_\-add(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{simulation_8h_a12fd385702f666987a4b569e84abed70}{
+\index{simulation.h@{simulation.h}!SBML\_\-debugPrintHead@{SBML\_\-debugPrintHead}}
+\index{SBML\_\-debugPrintHead@{SBML\_\-debugPrintHead}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-debugPrintHead}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-debugPrintHead (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{debugFile, }
+\item[{int}]{taille, }
+\item[{char $\ast$$\ast$}]{name}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a12fd385702f666987a4b569e84abed70}
+
+
+Print the head of the debug file. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em debugFile} & File use for debug \\
+\hline
+{\em taille} & Number of molecules/reactions \\
+\hline
+{\em name} & List of molecules/reactions \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 465 of file simulation.c.
+
+
+
+Referenced by SBML\_\-score\_\-add(), and Sd\_\-compute\_\-simulation().
+
+\hypertarget{simulation_8h_a5e7dd721fd4e49d51adaa2dd290879d4}{
+\index{simulation.h@{simulation.h}!SBML\_\-EstimationReaction@{SBML\_\-EstimationReaction}}
+\index{SBML\_\-EstimationReaction@{SBML\_\-EstimationReaction}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-EstimationReaction}]{\setlength{\rightskip}{0pt plus 5cm}int SBML\_\-EstimationReaction (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{{\bf pTestReaction}}]{T, }
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{ref, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a5e7dd721fd4e49d51adaa2dd290879d4}
+
+
+Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em T} & Struct \hyperlink{structTestReaction}{TestReaction} gives data on reaction \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em ref} & Number reference of one molecule \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estimated number of feasible step by reaction 
+\end{DoxyReturn}
+
+
+Definition at line 322 of file simulation.c.
+
+
+
+References Reaction::link, TestReaction::minStepTab, SBML\_\-checkQuantite(), Reaction::suivant, Especes::system, and TestReaction::tabReactions.
+
+
+
+Referenced by SBML\_\-simulate().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{simulation_8h_a5e7dd721fd4e49d51adaa2dd290879d4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a97ee89b0e47e49cdcf5579255b8cd3a3}{
+\index{simulation.h@{simulation.h}!SBML\_\-evalExpression@{SBML\_\-evalExpression}}
+\index{SBML\_\-evalExpression@{SBML\_\-evalExpression}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-evalExpression}]{\setlength{\rightskip}{0pt plus 5cm}double SBML\_\-evalExpression (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{formule}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a97ee89b0e47e49cdcf5579255b8cd3a3}
+
+
+Get the reaction ratio define in the sbml. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em formule} & Formule SBML \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return double value of the constraint 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file simulation.c.
+
+
+
+Referenced by SBML\_\-score(), and SBML\_\-setReactions().
+
+\hypertarget{simulation_8h_acc2b5d50969ffb4eac4e86227f583b39}{
+\index{simulation.h@{simulation.h}!SBML\_\-findReaction@{SBML\_\-findReaction}}
+\index{SBML\_\-findReaction@{SBML\_\-findReaction}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-findReaction}]{\setlength{\rightskip}{0pt plus 5cm}int SBML\_\-findReaction (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{reaction, }
+\item[{const char $\ast$}]{react, }
+\item[{int}]{nb\_\-reaction}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_acc2b5d50969ffb4eac4e86227f583b39}
+
+
+Determine if the reaction is study. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em reaction} & List of reactions \\
+\hline
+{\em react} & \hyperlink{structReaction}{Reaction} of interest \\
+\hline
+{\em nb\_\-reaction} & Number of reactions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of the molecules if it's study 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file simulation.c.
+
+
+
+Referenced by SBML\_\-score(), and SBML\_\-setReactions().
+
+\hypertarget{simulation_8h_a9103674f503bec1df341d62554e1a9c2}{
+\index{simulation.h@{simulation.h}!SBML\_\-freeTest@{SBML\_\-freeTest}}
+\index{SBML\_\-freeTest@{SBML\_\-freeTest}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-freeTest}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-freeTest (
+\begin{DoxyParamCaption}
+\item[{{\bf pTestReaction}}]{T}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a9103674f503bec1df341d62554e1a9c2}
+
+
+Free memory of the struct \hyperlink{structTestReaction}{TestReaction}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em T} & Struct \hyperlink{structTestReaction}{TestReaction} gives data on reaction \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 304 of file simulation.c.
+
+
+
+References TestReaction::minStepTab, and TestReaction::tabReactions.
+
+
+
+Referenced by SBML\_\-simulate().
+
+\hypertarget{simulation_8h_a611031d9c60ad182fade6ae74e6b7e7e}{
+\index{simulation.h@{simulation.h}!SBML\_\-initEspeceAmounts@{SBML\_\-initEspeceAmounts}}
+\index{SBML\_\-initEspeceAmounts@{SBML\_\-initEspeceAmounts}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-initEspeceAmounts}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-initEspeceAmounts (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a611031d9c60ad182fade6ae74e6b7e7e}
+
+
+Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file simulation.c.
+
+
+
+References Especes\_\-save().
+
+
+
+Referenced by SBML\_\-compute\_\-simulation(), and SBML\_\-compute\_\-simulation\_\-mean().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{simulation_8h_a611031d9c60ad182fade6ae74e6b7e7e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a8d9458c6636b5b95598434453ad6e3dd}{
+\index{simulation.h@{simulation.h}!SBML\_\-reactChoice@{SBML\_\-reactChoice}}
+\index{SBML\_\-reactChoice@{SBML\_\-reactChoice}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-reactChoice}]{\setlength{\rightskip}{0pt plus 5cm}Reaction\_\-t$\ast$ SBML\_\-reactChoice (
+\begin{DoxyParamCaption}
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{const gsl\_\-rng $\ast$}]{r, }
+\item[{int}]{ref}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a8d9458c6636b5b95598434453ad6e3dd}
+
+
+Determine randomly the reaction to achieve for several nodes reactions. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em r} & Random number generator \\
+\hline
+{\em ref} & Number reference of one molecule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id of the selected reaction 
+\end{DoxyReturn}
+
+
+Definition at line 206 of file simulation.c.
+
+
+
+References Reaction::link, Reaction::suivant, and Especes::system.
+
+
+
+Referenced by SBML\_\-simulate().
+
+\hypertarget{simulation_8h_a0421946146569268a97c95c27e57a65e}{
+\index{simulation.h@{simulation.h}!SBML\_\-reaction@{SBML\_\-reaction}}
+\index{SBML\_\-reaction@{SBML\_\-reaction}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-reaction}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-reaction (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{Reaction\_\-t $\ast$}]{react, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a0421946146569268a97c95c27e57a65e}
+
+
+Simulation of a discrete transision. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em react} & \hyperlink{structReaction}{Reaction} id \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file simulation.c.
+
+
+
+References Especes\_\-find(), Especes\_\-getQuantite(), and Especes\_\-setQuantite().
+
+
+
+Referenced by SBML\_\-simulate().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{simulation_8h_a0421946146569268a97c95c27e57a65e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a0b14dd5a1a8cf318c2f7974bd9a8cc1c}{
+\index{simulation.h@{simulation.h}!SBML\_\-score@{SBML\_\-score}}
+\index{SBML\_\-score@{SBML\_\-score}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-score (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{{\bf pScore}}]{result, }
+\item[{double $\ast$}]{reactions\_\-ratio, }
+\item[{int}]{nbReactions, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a0b14dd5a1a8cf318c2f7974bd9a8cc1c}
+
+
+Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em result} & Struct \hyperlink{structScore}{Score} \\
+\hline
+{\em reactions\_\-ratio} & List of computed reaction ratio \\
+\hline
+{\em nbReactions} & Number of reactions \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 420 of file simulation.c.
+
+
+
+References Especes\_\-scoreSpecies(), Score::name, Score::nb\_\-reaction, Score::quantite, Score::reaction, SBML\_\-evalExpression(), and SBML\_\-findReaction().
+
+
+
+Referenced by SBML\_\-compute\_\-simulation(), and SBML\_\-compute\_\-simulation\_\-mean().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{simulation_8h_a0b14dd5a1a8cf318c2f7974bd9a8cc1c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a97ba6b434d34399d17103fbb366afd74}{
+\index{simulation.h@{simulation.h}!SBML\_\-score\_\-add@{SBML\_\-score\_\-add}}
+\index{SBML\_\-score\_\-add@{SBML\_\-score\_\-add}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-score\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-score\_\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf pScore}}]{result, }
+\item[{{\bf pScore}}]{result\_\-temp, }
+\item[{FILE $\ast$}]{debugFile}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a97ba6b434d34399d17103fbb366afd74}
+
+
+Add scores. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Struct \hyperlink{structScore}{Score} used for all the simulation \\
+\hline
+{\em result\_\-temp} & Struct \hyperlink{structScore}{Score} used at each simulation step \\
+\hline
+{\em debugFile} & File use for debug \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 560 of file simulation.c.
+
+
+
+References Score::name, Score::quantite, SBML\_\-debugPrint(), SBML\_\-debugPrintHead(), Score::taille, and Score::tailleSpecies.
+
+
+
+Referenced by SBML\_\-compute\_\-simulation\_\-mean().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{simulation_8h_a97ba6b434d34399d17103fbb366afd74_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a785b8432d885cc9e8ef50413c3643f6a}{
+\index{simulation.h@{simulation.h}!SBML\_\-score\_\-mean@{SBML\_\-score\_\-mean}}
+\index{SBML\_\-score\_\-mean@{SBML\_\-score\_\-mean}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-score\_\-mean}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-score\_\-mean (
+\begin{DoxyParamCaption}
+\item[{{\bf pScore}}]{result, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a785b8432d885cc9e8ef50413c3643f6a}
+
+
+Mean quantities for score. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & Struct \hyperlink{structScore}{Score} \\
+\hline
+{\em n} & Number of simulation step \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 591 of file simulation.c.
+
+
+
+References Score::quantite, and Score::taille.
+
+
+
+Referenced by SBML\_\-compute\_\-simulation\_\-mean().
+
+\hypertarget{simulation_8h_a4e69a993d7460adf46b17909e8991565}{
+\index{simulation.h@{simulation.h}!SBML\_\-setReactions@{SBML\_\-setReactions}}
+\index{SBML\_\-setReactions@{SBML\_\-setReactions}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-setReactions}]{\setlength{\rightskip}{0pt plus 5cm}void SBML\_\-setReactions (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{{\bf pScore}}]{result, }
+\item[{double $\ast$}]{reactions\_\-ratio, }
+\item[{int}]{nbReactions, }
+\item[{int}]{nbEspeces}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a4e69a993d7460adf46b17909e8991565}
+
+
+Alloc memory and initialize the struct \hyperlink{structEspeces}{Especes}. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em result} & Struct \hyperlink{structScore}{Score} \\
+\hline
+{\em reactions\_\-ratio} & List of computed reaction ratio \\
+\hline
+{\em nbReactions} & Number of reaction \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file simulation.c.
+
+
+
+References Especes\_\-allocReactions(), Especes\_\-find(), Score::nb\_\-reaction, Score::reaction, SBML\_\-evalExpression(), and SBML\_\-findReaction().
+
+
+
+Referenced by SBML\_\-compute\_\-simulation(), and SBML\_\-compute\_\-simulation\_\-mean().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulation_8h_a4e69a993d7460adf46b17909e8991565_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simulation_8h_a79f018dd624b1b4a2ee36a2cb2939462}{
+\index{simulation.h@{simulation.h}!SBML\_\-simulate@{SBML\_\-simulate}}
+\index{SBML\_\-simulate@{SBML\_\-simulate}!simulation.h@{simulation.h}}
+\subsubsection[{SBML\_\-simulate}]{\setlength{\rightskip}{0pt plus 5cm}int SBML\_\-simulate (
+\begin{DoxyParamCaption}
+\item[{Model\_\-t $\ast$}]{mod, }
+\item[{{\bf pEspeces}}]{molecules, }
+\item[{const gsl\_\-rng $\ast$}]{r, }
+\item[{{\bf pTestReaction}}]{T, }
+\item[{char $\ast$$\ast$}]{banned, }
+\item[{int}]{nbBanned, }
+\item[{int}]{nbEspeces, }
+\item[{int}]{ref}
+\end{DoxyParamCaption}
+)}}
+\label{simulation_8h_a79f018dd624b1b4a2ee36a2cb2939462}
+
+
+Simulate one step of petri net. 
+
+\begin{DoxyAuthor}{Author}
+Amine Ghozlane 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & Model of the SBML file \\
+\hline
+{\em molecules} & Struct \hyperlink{structEspeces}{Especes} \\
+\hline
+{\em r} & Random number generator \\
+\hline
+{\em T} & Struct \hyperlink{structTestReaction}{TestReaction} gives data on reaction \\
+\hline
+{\em banned} & List of banned compound \\
+\hline
+{\em nbBanned} & Number of banned compound \\
+\hline
+{\em nbEspeces} & Number of molecules \\
+\hline
+{\em ref} & Number reference of one molecule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Condition of stop/pursue 
+\end{DoxyReturn}
+
+
+Definition at line 356 of file simulation.c.
+
+
+
+References Especes\_\-getNbreactions(), Especes\_\-getQuantite(), Reaction::link, SBML\_\-allocTest(), SBML\_\-checkQuantite(), SBML\_\-EstimationReaction(), SBML\_\-freeTest(), SBML\_\-reactChoice(), SBML\_\-reaction(), and Especes::system.
+
+
+
+Referenced by SBML\_\-compute\_\-simulation(), and SBML\_\-compute\_\-simulation\_\-mean().
+
+
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{simulation_8h_a79f018dd624b1b4a2ee36a2cb2939462_cgraph}
+\end{center}
+\end{figure}
+
+

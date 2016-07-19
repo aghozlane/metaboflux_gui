@@ -1,0 +1,442 @@
+\contentsline {chapter}{\numberline {1}Data Structure Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Data Structures}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Data Structure Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Equations Struct Reference}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Field Documentation}{6}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}info}{6}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}type}{6}{subsubsection.3.1.2.2}
+\contentsline {section}{\numberline {3.2}Equdata Union Reference}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Field Documentation}{6}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}data}{6}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}var}{7}{subsubsection.3.2.2.2}
+\contentsline {section}{\numberline {3.3}Especes Struct Reference}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Field Documentation}{8}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}id}{8}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}quantite}{8}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}system}{8}{subsubsection.3.3.2.3}
+\contentsline {section}{\numberline {3.4}ListArguments Struct Reference}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Field Documentation}{9}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}activity}{9}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}debug}{9}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.3}files\_\discretionary {-}{}{}path}{9}{subsubsection.3.4.2.3}
+\contentsline {subsubsection}{\numberline {3.4.2.4}group}{9}{subsubsection.3.4.2.4}
+\contentsline {subsubsection}{\numberline {3.4.2.5}port}{9}{subsubsection.3.4.2.5}
+\contentsline {section}{\numberline {3.5}ListParameters Struct Reference}{10}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{11}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Field Documentation}{11}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}banned}{11}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}conf}{11}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}equation}{11}{subsubsection.3.5.2.3}
+\contentsline {subsubsection}{\numberline {3.5.2.4}interest\_\discretionary {-}{}{}parameters}{11}{subsubsection.3.5.2.4}
+\contentsline {subsubsection}{\numberline {3.5.2.5}model}{11}{subsubsection.3.5.2.5}
+\contentsline {subsubsection}{\numberline {3.5.2.6}nb\_\discretionary {-}{}{}banned}{12}{subsubsection.3.5.2.6}
+\contentsline {subsubsection}{\numberline {3.5.2.7}nb\_\discretionary {-}{}{}couples}{12}{subsubsection.3.5.2.7}
+\contentsline {subsubsection}{\numberline {3.5.2.8}nb\_\discretionary {-}{}{}equations}{12}{subsubsection.3.5.2.8}
+\contentsline {subsubsection}{\numberline {3.5.2.9}nb\_\discretionary {-}{}{}parameters}{12}{subsubsection.3.5.2.9}
+\contentsline {subsubsection}{\numberline {3.5.2.10}nb\_\discretionary {-}{}{}reaction}{12}{subsubsection.3.5.2.10}
+\contentsline {subsubsection}{\numberline {3.5.2.11}nb\_\discretionary {-}{}{}triesMod}{13}{subsubsection.3.5.2.11}
+\contentsline {subsubsection}{\numberline {3.5.2.12}nb\_\discretionary {-}{}{}triesSa}{13}{subsubsection.3.5.2.12}
+\contentsline {subsubsection}{\numberline {3.5.2.13}noeud}{13}{subsubsection.3.5.2.13}
+\contentsline {subsubsection}{\numberline {3.5.2.14}parameters}{13}{subsubsection.3.5.2.14}
+\contentsline {section}{\numberline {3.6}option Struct Reference}{13}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{13}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}Reaction Struct Reference}{14}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{14}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Field Documentation}{14}{subsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.2.1}link}{14}{subsubsection.3.7.2.1}
+\contentsline {subsubsection}{\numberline {3.7.2.2}suivant}{14}{subsubsection.3.7.2.2}
+\contentsline {section}{\numberline {3.8}Score Struct Reference}{15}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{15}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Field Documentation}{15}{subsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.2.1}name}{15}{subsubsection.3.8.2.1}
+\contentsline {subsubsection}{\numberline {3.8.2.2}nb\_\discretionary {-}{}{}reaction}{15}{subsubsection.3.8.2.2}
+\contentsline {subsubsection}{\numberline {3.8.2.3}nb\_\discretionary {-}{}{}species}{16}{subsubsection.3.8.2.3}
+\contentsline {subsubsection}{\numberline {3.8.2.4}quantite}{16}{subsubsection.3.8.2.4}
+\contentsline {subsubsection}{\numberline {3.8.2.5}reaction}{16}{subsubsection.3.8.2.5}
+\contentsline {subsubsection}{\numberline {3.8.2.6}species}{16}{subsubsection.3.8.2.6}
+\contentsline {subsubsection}{\numberline {3.8.2.7}species\_\discretionary {-}{}{}amount}{16}{subsubsection.3.8.2.7}
+\contentsline {subsubsection}{\numberline {3.8.2.8}species\_\discretionary {-}{}{}weight}{17}{subsubsection.3.8.2.8}
+\contentsline {subsubsection}{\numberline {3.8.2.9}taille}{17}{subsubsection.3.8.2.9}
+\contentsline {subsubsection}{\numberline {3.8.2.10}tailleReactions}{17}{subsubsection.3.8.2.10}
+\contentsline {subsubsection}{\numberline {3.8.2.11}tailleSpecies}{17}{subsubsection.3.8.2.11}
+\contentsline {section}{\numberline {3.9}SimParameters Struct Reference}{17}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{18}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Field Documentation}{18}{subsection.3.9.2}
+\contentsline {subsubsection}{\numberline {3.9.2.1}debugFile}{18}{subsubsection.3.9.2.1}
+\contentsline {subsubsection}{\numberline {3.9.2.2}out}{19}{subsubsection.3.9.2.2}
+\contentsline {subsubsection}{\numberline {3.9.2.3}pile}{19}{subsubsection.3.9.2.3}
+\contentsline {subsubsection}{\numberline {3.9.2.4}r}{19}{subsubsection.3.9.2.4}
+\contentsline {subsubsection}{\numberline {3.9.2.5}y}{19}{subsubsection.3.9.2.5}
+\contentsline {section}{\numberline {3.10}TestReaction Struct Reference}{19}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{20}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Field Documentation}{20}{subsection.3.10.2}
+\contentsline {subsubsection}{\numberline {3.10.2.1}minStepTab}{20}{subsubsection.3.10.2.1}
+\contentsline {subsubsection}{\numberline {3.10.2.2}tabReactions}{20}{subsubsection.3.10.2.2}
+\contentsline {section}{\numberline {3.11}xmlConfig\_\discretionary {-}{}{}t Struct Reference}{20}{section.3.11}
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{21}{subsection.3.11.1}
+\contentsline {subsection}{\numberline {3.11.2}Field Documentation}{21}{subsection.3.11.2}
+\contentsline {subsubsection}{\numberline {3.11.2.1}ctxt}{21}{subsubsection.3.11.2.1}
+\contentsline {subsubsection}{\numberline {3.11.2.2}doc}{21}{subsubsection.3.11.2.2}
+\contentsline {subsubsection}{\numberline {3.11.2.3}fichier}{21}{subsubsection.3.11.2.3}
+\contentsline {subsubsection}{\numberline {3.11.2.4}racine}{21}{subsubsection.3.11.2.4}
+\contentsline {chapter}{\numberline {4}File Documentation}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}metaboflux/include/data\_\discretionary {-}{}{}parameters.h File Reference}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{25}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Data\_\discretionary {-}{}{}allocEquations}{25}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Data\_\discretionary {-}{}{}allocParameters}{26}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}Data\_\discretionary {-}{}{}allocScore}{26}{subsubsection.4.1.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2.4}Data\_\discretionary {-}{}{}allocSimParameters}{27}{subsubsection.4.1.2.4}
+\contentsline {subsubsection}{\numberline {4.1.2.5}Data\_\discretionary {-}{}{}copieTab}{28}{subsubsection.4.1.2.5}
+\contentsline {subsubsection}{\numberline {4.1.2.6}Data\_\discretionary {-}{}{}desallocation}{28}{subsubsection.4.1.2.6}
+\contentsline {subsubsection}{\numberline {4.1.2.7}Data\_\discretionary {-}{}{}desallocSim}{29}{subsubsection.4.1.2.7}
+\contentsline {subsubsection}{\numberline {4.1.2.8}Data\_\discretionary {-}{}{}equationsAlloc}{29}{subsubsection.4.1.2.8}
+\contentsline {subsubsection}{\numberline {4.1.2.9}Data\_\discretionary {-}{}{}equationsInit}{30}{subsubsection.4.1.2.9}
+\contentsline {subsubsection}{\numberline {4.1.2.10}Data\_\discretionary {-}{}{}initSBML}{31}{subsubsection.4.1.2.10}
+\contentsline {subsubsection}{\numberline {4.1.2.11}Data\_\discretionary {-}{}{}initXML}{32}{subsubsection.4.1.2.11}
+\contentsline {subsubsection}{\numberline {4.1.2.12}Data\_\discretionary {-}{}{}parameters}{32}{subsubsection.4.1.2.12}
+\contentsline {subsubsection}{\numberline {4.1.2.13}Data\_\discretionary {-}{}{}rngAlloc}{33}{subsubsection.4.1.2.13}
+\contentsline {subsubsection}{\numberline {4.1.2.14}Data\_\discretionary {-}{}{}scoreAlloc}{34}{subsubsection.4.1.2.14}
+\contentsline {subsubsection}{\numberline {4.1.2.15}Data\_\discretionary {-}{}{}scoreFree}{34}{subsubsection.4.1.2.15}
+\contentsline {subsubsection}{\numberline {4.1.2.16}Data\_\discretionary {-}{}{}scoreInit}{35}{subsubsection.4.1.2.16}
+\contentsline {subsubsection}{\numberline {4.1.2.17}Data\_\discretionary {-}{}{}simParameters}{35}{subsubsection.4.1.2.17}
+\contentsline {subsubsection}{\numberline {4.1.2.18}Data\_\discretionary {-}{}{}updateTab}{36}{subsubsection.4.1.2.18}
+\contentsline {section}{\numberline {4.2}metaboflux/include/equations.h File Reference}{37}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{39}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Enumeration Type Documentation}{39}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Equtype}{39}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Function Documentation}{40}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}add}{40}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}divide}{40}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}equality}{40}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}Equations\_\discretionary {-}{}{}addOp}{41}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}Equations\_\discretionary {-}{}{}alloc}{42}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}Equations\_\discretionary {-}{}{}calcul}{42}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}Equations\_\discretionary {-}{}{}defiler}{44}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}Equations\_\discretionary {-}{}{}defilerSuiv}{44}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}Equations\_\discretionary {-}{}{}define}{44}{subsubsection.4.2.3.9}
+\contentsline {subsubsection}{\numberline {4.2.3.10}Equations\_\discretionary {-}{}{}depiler}{46}{subsubsection.4.2.3.10}
+\contentsline {subsubsection}{\numberline {4.2.3.11}Equations\_\discretionary {-}{}{}empiler}{46}{subsubsection.4.2.3.11}
+\contentsline {subsubsection}{\numberline {4.2.3.12}Equations\_\discretionary {-}{}{}emptyOp}{46}{subsubsection.4.2.3.12}
+\contentsline {subsubsection}{\numberline {4.2.3.13}Equations\_\discretionary {-}{}{}finalQuantite}{47}{subsubsection.4.2.3.13}
+\contentsline {subsubsection}{\numberline {4.2.3.14}Equations\_\discretionary {-}{}{}findSpecies}{48}{subsubsection.4.2.3.14}
+\contentsline {subsubsection}{\numberline {4.2.3.15}Equations\_\discretionary {-}{}{}pileFormation}{48}{subsubsection.4.2.3.15}
+\contentsline {subsubsection}{\numberline {4.2.3.16}Equations\_\discretionary {-}{}{}print}{51}{subsubsection.4.2.3.16}
+\contentsline {subsubsection}{\numberline {4.2.3.17}Equations\_\discretionary {-}{}{}priorite}{51}{subsubsection.4.2.3.17}
+\contentsline {subsubsection}{\numberline {4.2.3.18}Equations\_\discretionary {-}{}{}resultat}{51}{subsubsection.4.2.3.18}
+\contentsline {subsubsection}{\numberline {4.2.3.19}Equations\_\discretionary {-}{}{}sommet}{52}{subsubsection.4.2.3.19}
+\contentsline {subsubsection}{\numberline {4.2.3.20}Equations\_\discretionary {-}{}{}vide}{53}{subsubsection.4.2.3.20}
+\contentsline {subsubsection}{\numberline {4.2.3.21}inf}{53}{subsubsection.4.2.3.21}
+\contentsline {subsubsection}{\numberline {4.2.3.22}inf\_\discretionary {-}{}{}equal}{53}{subsubsection.4.2.3.22}
+\contentsline {subsubsection}{\numberline {4.2.3.23}multiply}{54}{subsubsection.4.2.3.23}
+\contentsline {subsubsection}{\numberline {4.2.3.24}subtract}{54}{subsubsection.4.2.3.24}
+\contentsline {subsubsection}{\numberline {4.2.3.25}sup}{54}{subsubsection.4.2.3.25}
+\contentsline {subsubsection}{\numberline {4.2.3.26}sup\_\discretionary {-}{}{}equal}{55}{subsubsection.4.2.3.26}
+\contentsline {section}{\numberline {4.3}metaboflux/include/especes.h File Reference}{55}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{56}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{57}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Especes\_\discretionary {-}{}{}alloc}{57}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Especes\_\discretionary {-}{}{}allocReactions}{57}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Especes\_\discretionary {-}{}{}find}{58}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}Especes\_\discretionary {-}{}{}free}{58}{subsubsection.4.3.2.4}
+\contentsline {subsubsection}{\numberline {4.3.2.5}Especes\_\discretionary {-}{}{}freeReactions}{59}{subsubsection.4.3.2.5}
+\contentsline {subsubsection}{\numberline {4.3.2.6}Especes\_\discretionary {-}{}{}getNbreactions}{59}{subsubsection.4.3.2.6}
+\contentsline {subsubsection}{\numberline {4.3.2.7}Especes\_\discretionary {-}{}{}getQuantite}{60}{subsubsection.4.3.2.7}
+\contentsline {subsubsection}{\numberline {4.3.2.8}Especes\_\discretionary {-}{}{}print}{60}{subsubsection.4.3.2.8}
+\contentsline {subsubsection}{\numberline {4.3.2.9}Especes\_\discretionary {-}{}{}print\_\discretionary {-}{}{}2}{60}{subsubsection.4.3.2.9}
+\contentsline {subsubsection}{\numberline {4.3.2.10}Especes\_\discretionary {-}{}{}save}{61}{subsubsection.4.3.2.10}
+\contentsline {subsubsection}{\numberline {4.3.2.11}Especes\_\discretionary {-}{}{}scoreSpecies}{61}{subsubsection.4.3.2.11}
+\contentsline {subsubsection}{\numberline {4.3.2.12}Especes\_\discretionary {-}{}{}setQuantite}{62}{subsubsection.4.3.2.12}
+\contentsline {section}{\numberline {4.4}metaboflux/include/gsl\_\discretionary {-}{}{}min.h File Reference}{62}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{63}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Function Documentation}{63}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Min\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}minimization}{63}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}Min\_\discretionary {-}{}{}copieTab2}{65}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}Min\_\discretionary {-}{}{}copieTab3}{65}{subsubsection.4.4.2.3}
+\contentsline {subsubsection}{\numberline {4.4.2.4}Min\_\discretionary {-}{}{}getTampon}{65}{subsubsection.4.4.2.4}
+\contentsline {subsubsection}{\numberline {4.4.2.5}Min\_\discretionary {-}{}{}my\_\discretionary {-}{}{}f}{66}{subsubsection.4.4.2.5}
+\contentsline {subsubsection}{\numberline {4.4.2.6}Min\_\discretionary {-}{}{}score\_\discretionary {-}{}{}print\_\discretionary {-}{}{}mean}{67}{subsubsection.4.4.2.6}
+\contentsline {subsubsection}{\numberline {4.4.2.7}Min\_\discretionary {-}{}{}verifValue}{68}{subsubsection.4.4.2.7}
+\contentsline {section}{\numberline {4.5}metaboflux/include/gsl\_\discretionary {-}{}{}mod.h File Reference}{68}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{69}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Function Documentation}{70}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Mod\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}modeling}{70}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}Mod\_\discretionary {-}{}{}score\_\discretionary {-}{}{}print\_\discretionary {-}{}{}mean}{71}{subsubsection.4.5.2.2}
+\contentsline {section}{\numberline {4.6}metaboflux/include/gsl\_\discretionary {-}{}{}recuit.h File Reference}{72}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{73}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{74}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}Recuit\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}recuit}{74}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}Recuit\_\discretionary {-}{}{}defParametre}{75}{subsubsection.4.6.2.2}
+\contentsline {subsubsection}{\numberline {4.6.2.3}Recuit\_\discretionary {-}{}{}energyFunction}{76}{subsubsection.4.6.2.3}
+\contentsline {subsubsection}{\numberline {4.6.2.4}Recuit\_\discretionary {-}{}{}metricDistance}{77}{subsubsection.4.6.2.4}
+\contentsline {subsubsection}{\numberline {4.6.2.5}Recuit\_\discretionary {-}{}{}printParametre}{78}{subsubsection.4.6.2.5}
+\contentsline {subsubsection}{\numberline {4.6.2.6}Recuit\_\discretionary {-}{}{}printPosition}{79}{subsubsection.4.6.2.6}
+\contentsline {subsubsection}{\numberline {4.6.2.7}Recuit\_\discretionary {-}{}{}redirectionFlux}{80}{subsubsection.4.6.2.7}
+\contentsline {subsubsection}{\numberline {4.6.2.8}Recuit\_\discretionary {-}{}{}takeStep}{81}{subsubsection.4.6.2.8}
+\contentsline {subsubsection}{\numberline {4.6.2.9}Recuit\_\discretionary {-}{}{}verifParameters}{81}{subsubsection.4.6.2.9}
+\contentsline {subsubsection}{\numberline {4.6.2.10}Recuit\_\discretionary {-}{}{}verifParameters\_\discretionary {-}{}{}2}{82}{subsubsection.4.6.2.10}
+\contentsline {section}{\numberline {4.7}metaboflux/include/gsl\_\discretionary {-}{}{}sd.h File Reference}{82}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{83}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Function Documentation}{83}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}Sd\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}simulation}{83}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}Sd\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}standard\_\discretionary {-}{}{}deviation}{85}{subsubsection.4.7.2.2}
+\contentsline {section}{\numberline {4.8}metaboflux/include/mpi\_\discretionary {-}{}{}load.h File Reference}{86}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{87}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Function Documentation}{87}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}compute\_\discretionary {-}{}{}mpi}{87}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}Mpi\_\discretionary {-}{}{}allocResultTab}{90}{subsubsection.4.8.2.2}
+\contentsline {subsubsection}{\numberline {4.8.2.3}Mpi\_\discretionary {-}{}{}connectInterface}{90}{subsubsection.4.8.2.3}
+\contentsline {subsubsection}{\numberline {4.8.2.4}Mpi\_\discretionary {-}{}{}disconnectInterface}{90}{subsubsection.4.8.2.4}
+\contentsline {subsubsection}{\numberline {4.8.2.5}Mpi\_\discretionary {-}{}{}finalize}{91}{subsubsection.4.8.2.5}
+\contentsline {subsubsection}{\numberline {4.8.2.6}Mpi\_\discretionary {-}{}{}init}{91}{subsubsection.4.8.2.6}
+\contentsline {subsubsection}{\numberline {4.8.2.7}Mpi\_\discretionary {-}{}{}master}{91}{subsubsection.4.8.2.7}
+\contentsline {subsubsection}{\numberline {4.8.2.8}Mpi\_\discretionary {-}{}{}sizeResultTab}{92}{subsubsection.4.8.2.8}
+\contentsline {subsubsection}{\numberline {4.8.2.9}Mpi\_\discretionary {-}{}{}slave}{93}{subsubsection.4.8.2.9}
+\contentsline {subsubsection}{\numberline {4.8.2.10}Mpi\_\discretionary {-}{}{}writer}{95}{subsubsection.4.8.2.10}
+\contentsline {subsubsection}{\numberline {4.8.2.11}Mpi\_\discretionary {-}{}{}writeSdFile}{95}{subsubsection.4.8.2.11}
+\contentsline {subsubsection}{\numberline {4.8.2.12}Mpi\_\discretionary {-}{}{}writeSimFile}{96}{subsubsection.4.8.2.12}
+\contentsline {section}{\numberline {4.9}metaboflux/include/simulation.h File Reference}{96}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{98}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Function Documentation}{98}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}SBML\_\discretionary {-}{}{}allocTest}{98}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}SBML\_\discretionary {-}{}{}checkQuantite}{99}{subsubsection.4.9.2.2}
+\contentsline {subsubsection}{\numberline {4.9.2.3}SBML\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}simulation}{99}{subsubsection.4.9.2.3}
+\contentsline {subsubsection}{\numberline {4.9.2.4}SBML\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}simulation\_\discretionary {-}{}{}mean}{101}{subsubsection.4.9.2.4}
+\contentsline {subsubsection}{\numberline {4.9.2.5}SBML\_\discretionary {-}{}{}debugPrint}{102}{subsubsection.4.9.2.5}
+\contentsline {subsubsection}{\numberline {4.9.2.6}SBML\_\discretionary {-}{}{}debugPrintHead}{103}{subsubsection.4.9.2.6}
+\contentsline {subsubsection}{\numberline {4.9.2.7}SBML\_\discretionary {-}{}{}EstimationReaction}{103}{subsubsection.4.9.2.7}
+\contentsline {subsubsection}{\numberline {4.9.2.8}SBML\_\discretionary {-}{}{}evalExpression}{104}{subsubsection.4.9.2.8}
+\contentsline {subsubsection}{\numberline {4.9.2.9}SBML\_\discretionary {-}{}{}findReaction}{104}{subsubsection.4.9.2.9}
+\contentsline {subsubsection}{\numberline {4.9.2.10}SBML\_\discretionary {-}{}{}freeTest}{105}{subsubsection.4.9.2.10}
+\contentsline {subsubsection}{\numberline {4.9.2.11}SBML\_\discretionary {-}{}{}initEspeceAmounts}{105}{subsubsection.4.9.2.11}
+\contentsline {subsubsection}{\numberline {4.9.2.12}SBML\_\discretionary {-}{}{}reactChoice}{106}{subsubsection.4.9.2.12}
+\contentsline {subsubsection}{\numberline {4.9.2.13}SBML\_\discretionary {-}{}{}reaction}{106}{subsubsection.4.9.2.13}
+\contentsline {subsubsection}{\numberline {4.9.2.14}SBML\_\discretionary {-}{}{}score}{107}{subsubsection.4.9.2.14}
+\contentsline {subsubsection}{\numberline {4.9.2.15}SBML\_\discretionary {-}{}{}score\_\discretionary {-}{}{}add}{108}{subsubsection.4.9.2.15}
+\contentsline {subsubsection}{\numberline {4.9.2.16}SBML\_\discretionary {-}{}{}score\_\discretionary {-}{}{}mean}{109}{subsubsection.4.9.2.16}
+\contentsline {subsubsection}{\numberline {4.9.2.17}SBML\_\discretionary {-}{}{}setReactions}{109}{subsubsection.4.9.2.17}
+\contentsline {subsubsection}{\numberline {4.9.2.18}SBML\_\discretionary {-}{}{}simulate}{110}{subsubsection.4.9.2.18}
+\contentsline {section}{\numberline {4.10}metaboflux/include/xml\_\discretionary {-}{}{}parameter.h File Reference}{111}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{113}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Function Documentation}{114}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}Xml\_\discretionary {-}{}{}allocEquation}{114}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}Xml\_\discretionary {-}{}{}freeConfig}{114}{subsubsection.4.10.2.2}
+\contentsline {subsubsection}{\numberline {4.10.2.3}Xml\_\discretionary {-}{}{}getallSpeciesFinalAmount}{115}{subsubsection.4.10.2.3}
+\contentsline {subsubsection}{\numberline {4.10.2.4}Xml\_\discretionary {-}{}{}getallSpeciesWeight}{115}{subsubsection.4.10.2.4}
+\contentsline {subsubsection}{\numberline {4.10.2.5}Xml\_\discretionary {-}{}{}getBanned}{116}{subsubsection.4.10.2.5}
+\contentsline {subsubsection}{\numberline {4.10.2.6}Xml\_\discretionary {-}{}{}getBoltzmann}{117}{subsubsection.4.10.2.6}
+\contentsline {subsubsection}{\numberline {4.10.2.7}Xml\_\discretionary {-}{}{}getCount}{117}{subsubsection.4.10.2.7}
+\contentsline {subsubsection}{\numberline {4.10.2.8}Xml\_\discretionary {-}{}{}getDoubleNumber}{118}{subsubsection.4.10.2.8}
+\contentsline {subsubsection}{\numberline {4.10.2.9}Xml\_\discretionary {-}{}{}getKineticLaw}{118}{subsubsection.4.10.2.9}
+\contentsline {subsubsection}{\numberline {4.10.2.10}Xml\_\discretionary {-}{}{}getKineticLawNodes}{119}{subsubsection.4.10.2.10}
+\contentsline {subsubsection}{\numberline {4.10.2.11}Xml\_\discretionary {-}{}{}getMuT}{120}{subsubsection.4.10.2.11}
+\contentsline {subsubsection}{\numberline {4.10.2.12}Xml\_\discretionary {-}{}{}getNbBannedSpecies}{120}{subsubsection.4.10.2.12}
+\contentsline {subsubsection}{\numberline {4.10.2.13}Xml\_\discretionary {-}{}{}getNbCouples}{121}{subsubsection.4.10.2.13}
+\contentsline {subsubsection}{\numberline {4.10.2.14}Xml\_\discretionary {-}{}{}getNbEquations}{122}{subsubsection.4.10.2.14}
+\contentsline {subsubsection}{\numberline {4.10.2.15}Xml\_\discretionary {-}{}{}getNbGroup}{122}{subsubsection.4.10.2.15}
+\contentsline {subsubsection}{\numberline {4.10.2.16}Xml\_\discretionary {-}{}{}getNbIters}{123}{subsubsection.4.10.2.16}
+\contentsline {subsubsection}{\numberline {4.10.2.17}Xml\_\discretionary {-}{}{}getNbParameters}{124}{subsubsection.4.10.2.17}
+\contentsline {subsubsection}{\numberline {4.10.2.18}Xml\_\discretionary {-}{}{}getNbReaction}{124}{subsubsection.4.10.2.18}
+\contentsline {subsubsection}{\numberline {4.10.2.19}Xml\_\discretionary {-}{}{}getNbReactioninNoeud}{125}{subsubsection.4.10.2.19}
+\contentsline {subsubsection}{\numberline {4.10.2.20}Xml\_\discretionary {-}{}{}getNbSimulations}{126}{subsubsection.4.10.2.20}
+\contentsline {subsubsection}{\numberline {4.10.2.21}Xml\_\discretionary {-}{}{}getNbSpecies}{126}{subsubsection.4.10.2.21}
+\contentsline {subsubsection}{\numberline {4.10.2.22}Xml\_\discretionary {-}{}{}getNbTriesMod}{127}{subsubsection.4.10.2.22}
+\contentsline {subsubsection}{\numberline {4.10.2.23}Xml\_\discretionary {-}{}{}getNbTriesSa}{128}{subsubsection.4.10.2.23}
+\contentsline {subsubsection}{\numberline {4.10.2.24}Xml\_\discretionary {-}{}{}getNumber}{128}{subsubsection.4.10.2.24}
+\contentsline {subsubsection}{\numberline {4.10.2.25}Xml\_\discretionary {-}{}{}getReactionsNames}{129}{subsubsection.4.10.2.25}
+\contentsline {subsubsection}{\numberline {4.10.2.26}Xml\_\discretionary {-}{}{}getReactionsNamesinNoeud}{129}{subsubsection.4.10.2.26}
+\contentsline {subsubsection}{\numberline {4.10.2.27}Xml\_\discretionary {-}{}{}getSpeciesFinalAmount}{130}{subsubsection.4.10.2.27}
+\contentsline {subsubsection}{\numberline {4.10.2.28}Xml\_\discretionary {-}{}{}getSpeciesWeight}{131}{subsubsection.4.10.2.28}
+\contentsline {subsubsection}{\numberline {4.10.2.29}Xml\_\discretionary {-}{}{}getStepSize}{131}{subsubsection.4.10.2.29}
+\contentsline {subsubsection}{\numberline {4.10.2.30}Xml\_\discretionary {-}{}{}getString}{132}{subsubsection.4.10.2.30}
+\contentsline {subsubsection}{\numberline {4.10.2.31}Xml\_\discretionary {-}{}{}getTinitial}{132}{subsubsection.4.10.2.31}
+\contentsline {subsubsection}{\numberline {4.10.2.32}Xml\_\discretionary {-}{}{}getTmin}{133}{subsubsection.4.10.2.32}
+\contentsline {subsubsection}{\numberline {4.10.2.33}Xml\_\discretionary {-}{}{}loadConfig}{134}{subsubsection.4.10.2.33}
+\contentsline {section}{\numberline {4.11}metaboflux/src/data\_\discretionary {-}{}{}parameters.c File Reference}{134}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{136}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Function Documentation}{137}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}Data\_\discretionary {-}{}{}allocEquations}{137}{subsubsection.4.11.2.1}
+\contentsline {subsubsection}{\numberline {4.11.2.2}Data\_\discretionary {-}{}{}allocParameters}{137}{subsubsection.4.11.2.2}
+\contentsline {subsubsection}{\numberline {4.11.2.3}Data\_\discretionary {-}{}{}allocScore}{138}{subsubsection.4.11.2.3}
+\contentsline {subsubsection}{\numberline {4.11.2.4}Data\_\discretionary {-}{}{}allocSimParameters}{139}{subsubsection.4.11.2.4}
+\contentsline {subsubsection}{\numberline {4.11.2.5}Data\_\discretionary {-}{}{}copieTab}{139}{subsubsection.4.11.2.5}
+\contentsline {subsubsection}{\numberline {4.11.2.6}Data\_\discretionary {-}{}{}desallocation}{140}{subsubsection.4.11.2.6}
+\contentsline {subsubsection}{\numberline {4.11.2.7}Data\_\discretionary {-}{}{}desallocSim}{141}{subsubsection.4.11.2.7}
+\contentsline {subsubsection}{\numberline {4.11.2.8}Data\_\discretionary {-}{}{}equationsAlloc}{141}{subsubsection.4.11.2.8}
+\contentsline {subsubsection}{\numberline {4.11.2.9}Data\_\discretionary {-}{}{}equationsInit}{141}{subsubsection.4.11.2.9}
+\contentsline {subsubsection}{\numberline {4.11.2.10}Data\_\discretionary {-}{}{}initSBML}{143}{subsubsection.4.11.2.10}
+\contentsline {subsubsection}{\numberline {4.11.2.11}Data\_\discretionary {-}{}{}initXML}{144}{subsubsection.4.11.2.11}
+\contentsline {subsubsection}{\numberline {4.11.2.12}Data\_\discretionary {-}{}{}parameters}{144}{subsubsection.4.11.2.12}
+\contentsline {subsubsection}{\numberline {4.11.2.13}Data\_\discretionary {-}{}{}rngAlloc}{145}{subsubsection.4.11.2.13}
+\contentsline {subsubsection}{\numberline {4.11.2.14}Data\_\discretionary {-}{}{}scoreAlloc}{146}{subsubsection.4.11.2.14}
+\contentsline {subsubsection}{\numberline {4.11.2.15}Data\_\discretionary {-}{}{}scoreFree}{146}{subsubsection.4.11.2.15}
+\contentsline {subsubsection}{\numberline {4.11.2.16}Data\_\discretionary {-}{}{}scoreInit}{147}{subsubsection.4.11.2.16}
+\contentsline {subsubsection}{\numberline {4.11.2.17}Data\_\discretionary {-}{}{}simParameters}{147}{subsubsection.4.11.2.17}
+\contentsline {subsubsection}{\numberline {4.11.2.18}Data\_\discretionary {-}{}{}updateTab}{148}{subsubsection.4.11.2.18}
+\contentsline {section}{\numberline {4.12}metaboflux/src/equations.c File Reference}{149}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{151}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Function Documentation}{151}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}add}{151}{subsubsection.4.12.2.1}
+\contentsline {subsubsection}{\numberline {4.12.2.2}divide}{152}{subsubsection.4.12.2.2}
+\contentsline {subsubsection}{\numberline {4.12.2.3}equality}{152}{subsubsection.4.12.2.3}
+\contentsline {subsubsection}{\numberline {4.12.2.4}Equations\_\discretionary {-}{}{}addOp}{152}{subsubsection.4.12.2.4}
+\contentsline {subsubsection}{\numberline {4.12.2.5}Equations\_\discretionary {-}{}{}alloc}{153}{subsubsection.4.12.2.5}
+\contentsline {subsubsection}{\numberline {4.12.2.6}Equations\_\discretionary {-}{}{}calcul}{154}{subsubsection.4.12.2.6}
+\contentsline {subsubsection}{\numberline {4.12.2.7}Equations\_\discretionary {-}{}{}defiler}{155}{subsubsection.4.12.2.7}
+\contentsline {subsubsection}{\numberline {4.12.2.8}Equations\_\discretionary {-}{}{}defilerSuiv}{156}{subsubsection.4.12.2.8}
+\contentsline {subsubsection}{\numberline {4.12.2.9}Equations\_\discretionary {-}{}{}define}{156}{subsubsection.4.12.2.9}
+\contentsline {subsubsection}{\numberline {4.12.2.10}Equations\_\discretionary {-}{}{}depiler}{157}{subsubsection.4.12.2.10}
+\contentsline {subsubsection}{\numberline {4.12.2.11}Equations\_\discretionary {-}{}{}empiler}{158}{subsubsection.4.12.2.11}
+\contentsline {subsubsection}{\numberline {4.12.2.12}Equations\_\discretionary {-}{}{}emptyOp}{158}{subsubsection.4.12.2.12}
+\contentsline {subsubsection}{\numberline {4.12.2.13}Equations\_\discretionary {-}{}{}extractData}{159}{subsubsection.4.12.2.13}
+\contentsline {subsubsection}{\numberline {4.12.2.14}Equations\_\discretionary {-}{}{}finalQuantite}{160}{subsubsection.4.12.2.14}
+\contentsline {subsubsection}{\numberline {4.12.2.15}Equations\_\discretionary {-}{}{}findSpecies}{160}{subsubsection.4.12.2.15}
+\contentsline {subsubsection}{\numberline {4.12.2.16}Equations\_\discretionary {-}{}{}pileFormation}{161}{subsubsection.4.12.2.16}
+\contentsline {subsubsection}{\numberline {4.12.2.17}Equations\_\discretionary {-}{}{}print}{163}{subsubsection.4.12.2.17}
+\contentsline {subsubsection}{\numberline {4.12.2.18}Equations\_\discretionary {-}{}{}priorite}{163}{subsubsection.4.12.2.18}
+\contentsline {subsubsection}{\numberline {4.12.2.19}Equations\_\discretionary {-}{}{}resultat}{163}{subsubsection.4.12.2.19}
+\contentsline {subsubsection}{\numberline {4.12.2.20}Equations\_\discretionary {-}{}{}sommet}{164}{subsubsection.4.12.2.20}
+\contentsline {subsubsection}{\numberline {4.12.2.21}Equations\_\discretionary {-}{}{}vide}{165}{subsubsection.4.12.2.21}
+\contentsline {subsubsection}{\numberline {4.12.2.22}inf}{165}{subsubsection.4.12.2.22}
+\contentsline {subsubsection}{\numberline {4.12.2.23}inf\_\discretionary {-}{}{}equal}{165}{subsubsection.4.12.2.23}
+\contentsline {subsubsection}{\numberline {4.12.2.24}multiply}{166}{subsubsection.4.12.2.24}
+\contentsline {subsubsection}{\numberline {4.12.2.25}subtract}{166}{subsubsection.4.12.2.25}
+\contentsline {subsubsection}{\numberline {4.12.2.26}sup}{166}{subsubsection.4.12.2.26}
+\contentsline {subsubsection}{\numberline {4.12.2.27}sup\_\discretionary {-}{}{}equal}{167}{subsubsection.4.12.2.27}
+\contentsline {section}{\numberline {4.13}metaboflux/src/especes.c File Reference}{167}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{169}{subsection.4.13.1}
+\contentsline {subsection}{\numberline {4.13.2}Function Documentation}{169}{subsection.4.13.2}
+\contentsline {subsubsection}{\numberline {4.13.2.1}Especes\_\discretionary {-}{}{}alloc}{169}{subsubsection.4.13.2.1}
+\contentsline {subsubsection}{\numberline {4.13.2.2}Especes\_\discretionary {-}{}{}allocReactions}{170}{subsubsection.4.13.2.2}
+\contentsline {subsubsection}{\numberline {4.13.2.3}Especes\_\discretionary {-}{}{}find}{170}{subsubsection.4.13.2.3}
+\contentsline {subsubsection}{\numberline {4.13.2.4}Especes\_\discretionary {-}{}{}free}{170}{subsubsection.4.13.2.4}
+\contentsline {subsubsection}{\numberline {4.13.2.5}Especes\_\discretionary {-}{}{}freeReactions}{171}{subsubsection.4.13.2.5}
+\contentsline {subsubsection}{\numberline {4.13.2.6}Especes\_\discretionary {-}{}{}getNbreactions}{171}{subsubsection.4.13.2.6}
+\contentsline {subsubsection}{\numberline {4.13.2.7}Especes\_\discretionary {-}{}{}getQuantite}{172}{subsubsection.4.13.2.7}
+\contentsline {subsubsection}{\numberline {4.13.2.8}Especes\_\discretionary {-}{}{}print}{172}{subsubsection.4.13.2.8}
+\contentsline {subsubsection}{\numberline {4.13.2.9}Especes\_\discretionary {-}{}{}print\_\discretionary {-}{}{}2}{172}{subsubsection.4.13.2.9}
+\contentsline {subsubsection}{\numberline {4.13.2.10}Especes\_\discretionary {-}{}{}save}{173}{subsubsection.4.13.2.10}
+\contentsline {subsubsection}{\numberline {4.13.2.11}Especes\_\discretionary {-}{}{}scoreSpecies}{173}{subsubsection.4.13.2.11}
+\contentsline {subsubsection}{\numberline {4.13.2.12}Especes\_\discretionary {-}{}{}setQuantite}{174}{subsubsection.4.13.2.12}
+\contentsline {section}{\numberline {4.14}metaboflux/src/gsl\_\discretionary {-}{}{}min.c File Reference}{174}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{175}{subsection.4.14.1}
+\contentsline {subsection}{\numberline {4.14.2}Function Documentation}{176}{subsection.4.14.2}
+\contentsline {subsubsection}{\numberline {4.14.2.1}Min\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}minimization}{176}{subsubsection.4.14.2.1}
+\contentsline {subsubsection}{\numberline {4.14.2.2}Min\_\discretionary {-}{}{}copieTab2}{177}{subsubsection.4.14.2.2}
+\contentsline {subsubsection}{\numberline {4.14.2.3}Min\_\discretionary {-}{}{}copieTab3}{178}{subsubsection.4.14.2.3}
+\contentsline {subsubsection}{\numberline {4.14.2.4}Min\_\discretionary {-}{}{}getTampon}{178}{subsubsection.4.14.2.4}
+\contentsline {subsubsection}{\numberline {4.14.2.5}Min\_\discretionary {-}{}{}my\_\discretionary {-}{}{}f}{179}{subsubsection.4.14.2.5}
+\contentsline {subsubsection}{\numberline {4.14.2.6}Min\_\discretionary {-}{}{}score\_\discretionary {-}{}{}print\_\discretionary {-}{}{}mean}{180}{subsubsection.4.14.2.6}
+\contentsline {subsubsection}{\numberline {4.14.2.7}Min\_\discretionary {-}{}{}verifValue}{181}{subsubsection.4.14.2.7}
+\contentsline {section}{\numberline {4.15}metaboflux/src/gsl\_\discretionary {-}{}{}mod.c File Reference}{181}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{182}{subsection.4.15.1}
+\contentsline {subsection}{\numberline {4.15.2}Function Documentation}{183}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}Mod\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}modeling}{183}{subsubsection.4.15.2.1}
+\contentsline {subsubsection}{\numberline {4.15.2.2}Mod\_\discretionary {-}{}{}score\_\discretionary {-}{}{}print\_\discretionary {-}{}{}mean}{184}{subsubsection.4.15.2.2}
+\contentsline {section}{\numberline {4.16}metaboflux/src/gsl\_\discretionary {-}{}{}recuit.c File Reference}{185}{section.4.16}
+\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{187}{subsection.4.16.1}
+\contentsline {subsection}{\numberline {4.16.2}Function Documentation}{187}{subsection.4.16.2}
+\contentsline {subsubsection}{\numberline {4.16.2.1}Recuit\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}recuit}{187}{subsubsection.4.16.2.1}
+\contentsline {subsubsection}{\numberline {4.16.2.2}Recuit\_\discretionary {-}{}{}defParametre}{188}{subsubsection.4.16.2.2}
+\contentsline {subsubsection}{\numberline {4.16.2.3}Recuit\_\discretionary {-}{}{}energyFunction}{189}{subsubsection.4.16.2.3}
+\contentsline {subsubsection}{\numberline {4.16.2.4}Recuit\_\discretionary {-}{}{}metricDistance}{190}{subsubsection.4.16.2.4}
+\contentsline {subsubsection}{\numberline {4.16.2.5}Recuit\_\discretionary {-}{}{}printParametre}{191}{subsubsection.4.16.2.5}
+\contentsline {subsubsection}{\numberline {4.16.2.6}Recuit\_\discretionary {-}{}{}printPosition}{192}{subsubsection.4.16.2.6}
+\contentsline {subsubsection}{\numberline {4.16.2.7}Recuit\_\discretionary {-}{}{}redirectionFlux}{193}{subsubsection.4.16.2.7}
+\contentsline {subsubsection}{\numberline {4.16.2.8}Recuit\_\discretionary {-}{}{}takeStep}{194}{subsubsection.4.16.2.8}
+\contentsline {subsubsection}{\numberline {4.16.2.9}Recuit\_\discretionary {-}{}{}verifParameters}{194}{subsubsection.4.16.2.9}
+\contentsline {subsubsection}{\numberline {4.16.2.10}Recuit\_\discretionary {-}{}{}verifParameters\_\discretionary {-}{}{}2}{195}{subsubsection.4.16.2.10}
+\contentsline {section}{\numberline {4.17}metaboflux/src/gsl\_\discretionary {-}{}{}sd.c File Reference}{195}{section.4.17}
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{196}{subsection.4.17.1}
+\contentsline {subsection}{\numberline {4.17.2}Function Documentation}{197}{subsection.4.17.2}
+\contentsline {subsubsection}{\numberline {4.17.2.1}Sd\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}simulation}{197}{subsubsection.4.17.2.1}
+\contentsline {subsubsection}{\numberline {4.17.2.2}Sd\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}standard\_\discretionary {-}{}{}deviation}{198}{subsubsection.4.17.2.2}
+\contentsline {section}{\numberline {4.18}metaboflux/src/MetaBoFlux.c File Reference}{199}{section.4.18}
+\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{201}{subsection.4.18.1}
+\contentsline {subsection}{\numberline {4.18.2}Function Documentation}{202}{subsection.4.18.2}
+\contentsline {subsubsection}{\numberline {4.18.2.1}alloc\_\discretionary {-}{}{}arguments}{202}{subsubsection.4.18.2.1}
+\contentsline {subsubsection}{\numberline {4.18.2.2}argument\_\discretionary {-}{}{}analysis}{202}{subsubsection.4.18.2.2}
+\contentsline {subsubsection}{\numberline {4.18.2.3}check\_\discretionary {-}{}{}arguments}{203}{subsubsection.4.18.2.3}
+\contentsline {subsubsection}{\numberline {4.18.2.4}check\_\discretionary {-}{}{}common}{203}{subsubsection.4.18.2.4}
+\contentsline {subsubsection}{\numberline {4.18.2.5}error\_\discretionary {-}{}{}activity}{204}{subsubsection.4.18.2.5}
+\contentsline {subsubsection}{\numberline {4.18.2.6}free\_\discretionary {-}{}{}arguments}{204}{subsubsection.4.18.2.6}
+\contentsline {subsubsection}{\numberline {4.18.2.7}help\_\discretionary {-}{}{}print}{205}{subsubsection.4.18.2.7}
+\contentsline {subsubsection}{\numberline {4.18.2.8}main}{205}{subsubsection.4.18.2.8}
+\contentsline {section}{\numberline {4.19}metaboflux/src/mpi\_\discretionary {-}{}{}load.c File Reference}{206}{section.4.19}
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{208}{subsection.4.19.1}
+\contentsline {subsection}{\numberline {4.19.2}Function Documentation}{209}{subsection.4.19.2}
+\contentsline {subsubsection}{\numberline {4.19.2.1}compute\_\discretionary {-}{}{}mpi}{209}{subsubsection.4.19.2.1}
+\contentsline {subsubsection}{\numberline {4.19.2.2}Mpi\_\discretionary {-}{}{}allocResultTab}{211}{subsubsection.4.19.2.2}
+\contentsline {subsubsection}{\numberline {4.19.2.3}Mpi\_\discretionary {-}{}{}connectInterface}{211}{subsubsection.4.19.2.3}
+\contentsline {subsubsection}{\numberline {4.19.2.4}Mpi\_\discretionary {-}{}{}disconnectInterface}{211}{subsubsection.4.19.2.4}
+\contentsline {subsubsection}{\numberline {4.19.2.5}Mpi\_\discretionary {-}{}{}finalize}{212}{subsubsection.4.19.2.5}
+\contentsline {subsubsection}{\numberline {4.19.2.6}Mpi\_\discretionary {-}{}{}init}{212}{subsubsection.4.19.2.6}
+\contentsline {subsubsection}{\numberline {4.19.2.7}Mpi\_\discretionary {-}{}{}master}{212}{subsubsection.4.19.2.7}
+\contentsline {subsubsection}{\numberline {4.19.2.8}Mpi\_\discretionary {-}{}{}sizeResultTab}{213}{subsubsection.4.19.2.8}
+\contentsline {subsubsection}{\numberline {4.19.2.9}Mpi\_\discretionary {-}{}{}slave}{214}{subsubsection.4.19.2.9}
+\contentsline {subsubsection}{\numberline {4.19.2.10}Mpi\_\discretionary {-}{}{}writer}{216}{subsubsection.4.19.2.10}
+\contentsline {subsubsection}{\numberline {4.19.2.11}Mpi\_\discretionary {-}{}{}writeSdFile}{216}{subsubsection.4.19.2.11}
+\contentsline {subsubsection}{\numberline {4.19.2.12}Mpi\_\discretionary {-}{}{}writeSimFile}{217}{subsubsection.4.19.2.12}
+\contentsline {section}{\numberline {4.20}metaboflux/src/simulation.c File Reference}{217}{section.4.20}
+\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{219}{subsection.4.20.1}
+\contentsline {subsection}{\numberline {4.20.2}Function Documentation}{220}{subsection.4.20.2}
+\contentsline {subsubsection}{\numberline {4.20.2.1}SBML\_\discretionary {-}{}{}allocTest}{220}{subsubsection.4.20.2.1}
+\contentsline {subsubsection}{\numberline {4.20.2.2}SBML\_\discretionary {-}{}{}checkQuantite}{220}{subsubsection.4.20.2.2}
+\contentsline {subsubsection}{\numberline {4.20.2.3}SBML\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}simulation}{221}{subsubsection.4.20.2.3}
+\contentsline {subsubsection}{\numberline {4.20.2.4}SBML\_\discretionary {-}{}{}compute\_\discretionary {-}{}{}simulation\_\discretionary {-}{}{}mean}{222}{subsubsection.4.20.2.4}
+\contentsline {subsubsection}{\numberline {4.20.2.5}SBML\_\discretionary {-}{}{}debugPrint}{223}{subsubsection.4.20.2.5}
+\contentsline {subsubsection}{\numberline {4.20.2.6}SBML\_\discretionary {-}{}{}debugPrintHead}{224}{subsubsection.4.20.2.6}
+\contentsline {subsubsection}{\numberline {4.20.2.7}SBML\_\discretionary {-}{}{}EstimationReaction}{224}{subsubsection.4.20.2.7}
+\contentsline {subsubsection}{\numberline {4.20.2.8}SBML\_\discretionary {-}{}{}evalExpression}{225}{subsubsection.4.20.2.8}
+\contentsline {subsubsection}{\numberline {4.20.2.9}SBML\_\discretionary {-}{}{}findReaction}{225}{subsubsection.4.20.2.9}
+\contentsline {subsubsection}{\numberline {4.20.2.10}SBML\_\discretionary {-}{}{}freeTest}{226}{subsubsection.4.20.2.10}
+\contentsline {subsubsection}{\numberline {4.20.2.11}SBML\_\discretionary {-}{}{}initEspeceAmounts}{226}{subsubsection.4.20.2.11}
+\contentsline {subsubsection}{\numberline {4.20.2.12}SBML\_\discretionary {-}{}{}reactChoice}{227}{subsubsection.4.20.2.12}
+\contentsline {subsubsection}{\numberline {4.20.2.13}SBML\_\discretionary {-}{}{}reaction}{227}{subsubsection.4.20.2.13}
+\contentsline {subsubsection}{\numberline {4.20.2.14}SBML\_\discretionary {-}{}{}score}{228}{subsubsection.4.20.2.14}
+\contentsline {subsubsection}{\numberline {4.20.2.15}SBML\_\discretionary {-}{}{}score\_\discretionary {-}{}{}add}{229}{subsubsection.4.20.2.15}
+\contentsline {subsubsection}{\numberline {4.20.2.16}SBML\_\discretionary {-}{}{}score\_\discretionary {-}{}{}mean}{230}{subsubsection.4.20.2.16}
+\contentsline {subsubsection}{\numberline {4.20.2.17}SBML\_\discretionary {-}{}{}setReactions}{230}{subsubsection.4.20.2.17}
+\contentsline {subsubsection}{\numberline {4.20.2.18}SBML\_\discretionary {-}{}{}simulate}{231}{subsubsection.4.20.2.18}
+\contentsline {section}{\numberline {4.21}metaboflux/src/xml\_\discretionary {-}{}{}parameter.c File Reference}{232}{section.4.21}
+\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{235}{subsection.4.21.1}
+\contentsline {subsection}{\numberline {4.21.2}Function Documentation}{235}{subsection.4.21.2}
+\contentsline {subsubsection}{\numberline {4.21.2.1}Xml\_\discretionary {-}{}{}allocEquation}{235}{subsubsection.4.21.2.1}
+\contentsline {subsubsection}{\numberline {4.21.2.2}Xml\_\discretionary {-}{}{}freeConfig}{236}{subsubsection.4.21.2.2}
+\contentsline {subsubsection}{\numberline {4.21.2.3}Xml\_\discretionary {-}{}{}getallSpeciesFinalAmount}{236}{subsubsection.4.21.2.3}
+\contentsline {subsubsection}{\numberline {4.21.2.4}Xml\_\discretionary {-}{}{}getallSpeciesWeight}{237}{subsubsection.4.21.2.4}
+\contentsline {subsubsection}{\numberline {4.21.2.5}Xml\_\discretionary {-}{}{}getBanned}{237}{subsubsection.4.21.2.5}
+\contentsline {subsubsection}{\numberline {4.21.2.6}Xml\_\discretionary {-}{}{}getBoltzmann}{238}{subsubsection.4.21.2.6}
+\contentsline {subsubsection}{\numberline {4.21.2.7}Xml\_\discretionary {-}{}{}getCount}{239}{subsubsection.4.21.2.7}
+\contentsline {subsubsection}{\numberline {4.21.2.8}Xml\_\discretionary {-}{}{}getDoubleNumber}{239}{subsubsection.4.21.2.8}
+\contentsline {subsubsection}{\numberline {4.21.2.9}Xml\_\discretionary {-}{}{}getKineticLaw}{239}{subsubsection.4.21.2.9}
+\contentsline {subsubsection}{\numberline {4.21.2.10}Xml\_\discretionary {-}{}{}getKineticLawNodes}{240}{subsubsection.4.21.2.10}
+\contentsline {subsubsection}{\numberline {4.21.2.11}Xml\_\discretionary {-}{}{}getMuT}{241}{subsubsection.4.21.2.11}
+\contentsline {subsubsection}{\numberline {4.21.2.12}Xml\_\discretionary {-}{}{}getNbBannedSpecies}{241}{subsubsection.4.21.2.12}
+\contentsline {subsubsection}{\numberline {4.21.2.13}Xml\_\discretionary {-}{}{}getNbCouples}{242}{subsubsection.4.21.2.13}
+\contentsline {subsubsection}{\numberline {4.21.2.14}Xml\_\discretionary {-}{}{}getNbEquations}{243}{subsubsection.4.21.2.14}
+\contentsline {subsubsection}{\numberline {4.21.2.15}Xml\_\discretionary {-}{}{}getNbGroup}{243}{subsubsection.4.21.2.15}
+\contentsline {subsubsection}{\numberline {4.21.2.16}Xml\_\discretionary {-}{}{}getNbIters}{244}{subsubsection.4.21.2.16}
+\contentsline {subsubsection}{\numberline {4.21.2.17}Xml\_\discretionary {-}{}{}getNbParameters}{245}{subsubsection.4.21.2.17}
+\contentsline {subsubsection}{\numberline {4.21.2.18}Xml\_\discretionary {-}{}{}getNbReaction}{245}{subsubsection.4.21.2.18}
+\contentsline {subsubsection}{\numberline {4.21.2.19}Xml\_\discretionary {-}{}{}getNbReactioninNoeud}{246}{subsubsection.4.21.2.19}
+\contentsline {subsubsection}{\numberline {4.21.2.20}Xml\_\discretionary {-}{}{}getNbSimulations}{247}{subsubsection.4.21.2.20}
+\contentsline {subsubsection}{\numberline {4.21.2.21}Xml\_\discretionary {-}{}{}getNbSpecies}{247}{subsubsection.4.21.2.21}
+\contentsline {subsubsection}{\numberline {4.21.2.22}Xml\_\discretionary {-}{}{}getNbTriesMod}{248}{subsubsection.4.21.2.22}
+\contentsline {subsubsection}{\numberline {4.21.2.23}Xml\_\discretionary {-}{}{}getNbTriesSa}{249}{subsubsection.4.21.2.23}
+\contentsline {subsubsection}{\numberline {4.21.2.24}Xml\_\discretionary {-}{}{}getNumber}{249}{subsubsection.4.21.2.24}
+\contentsline {subsubsection}{\numberline {4.21.2.25}Xml\_\discretionary {-}{}{}getReactionsNames}{250}{subsubsection.4.21.2.25}
+\contentsline {subsubsection}{\numberline {4.21.2.26}Xml\_\discretionary {-}{}{}getReactionsNamesinNoeud}{251}{subsubsection.4.21.2.26}
+\contentsline {subsubsection}{\numberline {4.21.2.27}Xml\_\discretionary {-}{}{}getSpeciesFinalAmount}{251}{subsubsection.4.21.2.27}
+\contentsline {subsubsection}{\numberline {4.21.2.28}Xml\_\discretionary {-}{}{}getSpeciesWeight}{252}{subsubsection.4.21.2.28}
+\contentsline {subsubsection}{\numberline {4.21.2.29}Xml\_\discretionary {-}{}{}getStepSize}{252}{subsubsection.4.21.2.29}
+\contentsline {subsubsection}{\numberline {4.21.2.30}Xml\_\discretionary {-}{}{}getString}{253}{subsubsection.4.21.2.30}
+\contentsline {subsubsection}{\numberline {4.21.2.31}Xml\_\discretionary {-}{}{}getTinitial}{253}{subsubsection.4.21.2.31}
+\contentsline {subsubsection}{\numberline {4.21.2.32}Xml\_\discretionary {-}{}{}getTmin}{254}{subsubsection.4.21.2.32}
+\contentsline {subsubsection}{\numberline {4.21.2.33}Xml\_\discretionary {-}{}{}loadConfig}{255}{subsubsection.4.21.2.33}

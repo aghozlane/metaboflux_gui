@@ -1,0 +1,166 @@
+.TH "metaboflux/src/gsl_sd.c" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/src/gsl_sd.c \- 
+.PP
+Compute the standard deviation analysis of the simulations.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio.h>\fP
+.br
+\fC#include <stdlib.h>\fP
+.br
+\fC#include <time.h>\fP
+.br
+\fC#include <math.h>\fP
+.br
+\fC#include <string.h>\fP
+.br
+\fC#include <assert.h>\fP
+.br
+\fC#include <gsl/gsl_math.h>\fP
+.br
+\fC#include <gsl/gsl_rng.h>\fP
+.br
+\fC#include <gsl/gsl_siman.h>\fP
+.br
+\fC#include <gsl/gsl_ieee_utils.h>\fP
+.br
+\fC#include <gsl/gsl_statistics_double.h>\fP
+.br
+\fC#include <sbml/SBMLTypes.h>\fP
+.br
+\fC#include <libxml/parser.h>\fP
+.br
+\fC#include <libxml/xpath.h>\fP
+.br
+\fC#include 'especes.h'\fP
+.br
+\fC#include 'equations.h'\fP
+.br
+\fC#include 'simulation.h'\fP
+.br
+\fC#include 'xml_parameter.h'\fP
+.br
+\fC#include 'data_parameters.h'\fP
+.br
+\fC#include 'gsl_sd.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_GNU_SOURCE\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBSd_compute_simulation\fP (\fBpListParameters\fP \fBall\fP, \fBpSimParameters\fP \fBsim\fP)"
+.br
+.RI "\fIEnter in the program for standard deviation. \fP"
+.ti -1c
+.RI "void \fBSd_compute_standard_deviation\fP (\fBpListParameters\fP \fBa\fP, double *fluxRatio, double *result_tab, char **files_path, int number_arg, int debug)"
+.br
+.RI "\fICompute the standard deviation. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Compute the standard deviation analysis of the simulations. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+9 novembre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBgsl_sd.c\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define _GNU_SOURCE"
+.PP
+Definition at line 26 of file gsl_sd.c.
+.SH "Function Documentation"
+.PP 
+.SS "double Sd_compute_simulation (\fBpListParameters\fPall, \fBpSimParameters\fPsim)"
+.PP
+Enter in the program for standard deviation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIall\fP Global parameters : struct \fBListParameters\fP 
+.br
+\fIsim\fP Simulation parameters : struct \fBSimParameters\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Energy value 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file gsl_sd.c.
+.PP
+References ListParameters::banned, Data_equationsAlloc(), Data_equationsInit(), Data_scoreInit(), SimParameters::debugFile, Equations_calcul(), Equations_finalQuantite(), ListParameters::model, Score::name, ListParameters::nb_banned, ListParameters::nb_equations, Score::nb_species, SimParameters::out, SimParameters::pile, Score::quantite, SimParameters::r, SBML_compute_simulation(), SBML_debugPrint(), SBML_debugPrintHead(), Score::species, Score::species_amount, Score::species_weight, Score::taille, Score::tailleSpecies, and SimParameters::y.
+.PP
+Referenced by Sd_compute_standard_deviation().
+.SS "void Sd_compute_standard_deviation (\fBpListParameters\fPa, double *fluxRatio, double *result_tab, char **files_path, intnumber_arg, intdebug)"
+.PP
+Compute the standard deviation. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP struct \fBListParameters\fP 
+.br
+\fIfluxRatio\fP Ratio parameters 
+.br
+\fIresult_tab\fP Result table 
+.br
+\fIfiles_path\fP List of paths 
+.br
+\fInumber_arg\fP Number of simulation 
+.br
+\fIdebug\fP Debug flag 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file gsl_sd.c.
+.PP
+References ListParameters::conf, Data_desallocSim(), Data_simParameters(), ListParameters::nb_parameters, Sd_compute_simulation(), simu, Xml_getNbTriesMod(), and SimParameters::y.
+.PP
+Referenced by Mpi_slave().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

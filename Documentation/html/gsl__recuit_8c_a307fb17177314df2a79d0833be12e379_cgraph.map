@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$data__parameters_8c.html#ac6adf7017183beb79ae1511c65f669af" title="Free struct parameters specific to each simulation." alt="" coords="225,111,353,140"/>
+<area shape="rect" id="node5" href="$data__parameters_8c.html#ae4f85916052b0acfa763dd33e63336b6" title="Allocation of the struct Score." alt="" coords="231,164,348,193"/>
+<area shape="rect" id="node20" href="$data__parameters_8c.html#ad65651512fd7fe4d41916573fd79b1aa" title="Free the struct Score." alt="" coords="232,401,347,431"/>
+<area shape="rect" id="node22" href="$data__parameters_8c.html#a72112e95502d41a9b171e9d9fea2e8ab" title="Recording parameters specific to each simulation." alt="" coords="217,217,361,247"/>
+<area shape="rect" id="node29" href="$gsl__recuit_8c.html#aba216c03f79fce2efa085a08eff3d1b2" title="Definition of the initial parameters of the simulation." alt="" coords="217,455,361,484"/>
+<area shape="rect" id="node33" href="$gsl__recuit_8c.html#a89c76a53c82e9e4082b6816ae9156847" title="Simulate the petri net and compute the energy." alt="" coords="212,508,367,537"/>
+<area shape="rect" id="node78" href="$gsl__recuit_8c.html#a7d7ba6e6ed671b3bb39a9badfd4e0289" title="Compute the distance between the two table." alt="" coords="212,615,367,644"/>
+<area shape="rect" id="node80" href="$gsl__recuit_8c.html#accb4bccfdfa93478c6cb6400f18ba9a1" title="Print initial parameters." alt="" coords="213,881,365,911"/>
+<area shape="rect" id="node96" href="$gsl__recuit_8c.html#a4a6f6b6fe31febebc2805c9cabfc9b10" title="Print the table of reaction parameters." alt="" coords="220,561,359,591"/>
+<area shape="rect" id="node99" href="$gsl__recuit_8c.html#a79f5b519a9246972864c8150c07aa3b9" title="Redirect stdout flux." alt="" coords="213,988,365,1017"/>
+<area shape="rect" id="node103" href="$gsl__recuit_8c.html#adc78fde056663ea47deb34141271d036" title="Take a step through the solution space TSP." alt="" coords="231,1148,348,1177"/>
+<area shape="rect" id="node7" href="$data__parameters_8c.html#aafa73dbdb81fb526cdb945f7bd5ab5c4" title="Copy the partial table x in the full table y." alt="" coords="468,111,585,140"/>
+<area shape="rect" id="node9" href="$xml__parameter_8c.html#ab64b5c70d3ad223797b8047c29b3a176" title="Get Table of species amount." alt="" coords="685,5,888,35"/>
+<area shape="rect" id="node11" href="$xml__parameter_8c.html#a2269733e284ffe4b8ff58248e060efea" title="Get list of species weight." alt="" coords="701,59,872,88"/>
+<area shape="rect" id="node13" href="$xml__parameter_8c.html#a1237b1ca7c942eb4db3bc5a3edae6dcb" title="Get the number of reactions." alt="" coords="941,137,1080,167"/>
+<area shape="rect" id="node15" href="$xml__parameter_8c.html#aa38353601b43859be1905fb37632fbf0" title="Get the number of species." alt="" coords="720,216,853,245"/>
+<area shape="rect" id="node17" href="$xml__parameter_8c.html#a3b6fb6f415a7542cd722d9d327eea7b8" title="Get name of reactions." alt="" coords="701,163,872,192"/>
+<area shape="rect" id="node25" href="$data__parameters_8c.html#a471111b1274ced0e59605c283c81108f" title="Allocation of tables needed for simulations." alt="" coords="440,217,613,247"/>
+<area shape="rect" id="node27" href="$data__parameters_8c.html#a01cffb5411305dc2bcedfda13c7532cd" title="Allocation of the random number generator." alt="" coords="475,164,579,193"/>
+<area shape="rect" id="node31" href="$gsl__recuit_8c.html#aa90b2d48221559744a10dc6bb9441b0b" title="Choice of parameters and verification of their value." alt="" coords="448,271,605,300"/>
+<area shape="rect" id="node35" href="$data__parameters_8c.html#a5cbbdc869f6afdad90fbc19e8cb71653" title="Allocate the struct Equations." alt="" coords="456,324,597,353"/>
+<area shape="rect" id="node37" href="$data__parameters_8c.html#ab87022ba396950a530c349d81e250cf4" title="Initialize equations." alt="" coords="461,377,592,407"/>
+<area shape="rect" id="node45" href="$data__parameters_8c.html#a85ac72a7daa9c81e510fbd8d09edb8b3" title="Initialize the struct Score." alt="" coords="473,481,580,511"/>
+<area shape="rect" id="node47" href="$data__parameters_8c.html#a707102f569c0db162aa724fe477d5e78" title="Copy table." alt="" coords="468,695,585,724"/>
+<area shape="rect" id="node51" href="$equations_8c.html#ac44a002ce6003458f78db2b85bff29ef" title="Compute the score of the equation." alt="" coords="727,455,847,484"/>
+<area shape="rect" id="node68" href="$equations_8c.html#a52f64995ddba108da9f528b20d373a2d" title="Compute the score of the quantity which means the difference between what is expected to what is simu..." alt="" coords="447,535,607,564"/>
+<area shape="rect" id="node72" href="$simulation_8c.html#aeef27fa70d7f408e820193ef0a2c5496" title="X time simulation of metabolic network." alt="" coords="417,588,636,617"/>
+<area shape="rect" id="node76" href="$simulation_8c.html#a792ef36e542159096d4567a125aee565" title="Print the debuf file." alt="" coords="464,641,589,671"/>
+<area shape="rect" id="node39" href="$equations_8c.html#adcc21952710a1783d451a42bd0448215" title="Build pile." alt="" coords="704,349,869,379"/>
+<area shape="rect" id="node41" href="$equations_8c.html#a977051374a319d6bd60ef8ca2c03c952" title="Alloc memory and initialize the struct Equations." alt="" coords="953,349,1068,379"/>
+<area shape="rect" id="node43" href="$equations_8c.html#a51aa19b01714bc3ae728031b8748694a" title="Stack an element to the struct Equations." alt="" coords="947,296,1075,325"/>
+<area shape="rect" id="node49" href="$data__parameters_8c.html#a007148bff8b5d1d6dd7c42eefbfeb1fb" title="Copy the partial table x in the full table y." alt="" coords="732,695,841,724"/>
+<area shape="rect" id="node54" href="$equations_8c.html#a4c54e881f9153f6c8b0313f139ad1ade" title="Look for the first element of the struct Equations." alt="" coords="949,560,1072,589"/>
+<area shape="rect" id="node56" href="$equations_8c.html#a3e550cf0e9190391a5c15b9edf1df721" title="Get the next element of the struct Equations." alt="" coords="937,613,1084,643"/>
+<area shape="rect" id="node58" href="$equations_8c.html#a652cb08a19a4b10403a1751220d2de54" title="Unstack the last element of the struct Equations." alt="" coords="948,667,1073,696"/>
+<area shape="rect" id="node61" href="$equations_8c.html#ae2ab956dac833cf24b93305cfb79cfdf" title="Extract information on element of type Struct Equation." alt="" coords="1133,429,1288,459"/>
+<area shape="rect" id="node63" href="$equations_8c.html#aafe1cd5689dbec030ec792f43b40876b" title="Compute the result of two pile." alt="" coords="945,403,1076,432"/>
+<area shape="rect" id="node66" href="$equations_8c.html#abc16d34fd78fc7bec99064ba06a0a27f" title="Test if the struct Equations is empty." alt="" coords="956,507,1065,536"/>
+<area shape="rect" id="node70" href="$equations_8c.html#a93e7c3c0bd43ade391fa122589734816" title="Look for the quantity of a molecule in the list." alt="" coords="709,535,864,564"/>
+<area shape="rect" id="node74" href="$especes_8c.html#ad40ac9cd39a9c9b70657f8e87209bc4d" title="Alloc memory and initialize the struct Especes." alt="" coords="733,588,840,617"/>
+<area shape="rect" id="node82" href="$xml__parameter_8c.html#af051a5017271240c72cad70ee82b6af7" title="Get the Boltzmann value." alt="" coords="461,748,592,777"/>
+<area shape="rect" id="node84" href="$xml__parameter_8c.html#a9e2c04caf11e5a95f5aa22f6f37f479d" title="Get the variation of temperature." alt="" coords="479,801,575,831"/>
+<area shape="rect" id="node86" href="$xml__parameter_8c.html#ae49d86627f34fb18c996a3060e2a297a" title="Get number of iteration." alt="" coords="471,855,583,884"/>
+<area shape="rect" id="node88" href="$xml__parameter_8c.html#a7b67ce794add8c04563e07f9d25c6096" title="Get number of tries for the simulated annealing and minimization." alt="" coords="461,908,592,937"/>
+<area shape="rect" id="node90" href="$xml__parameter_8c.html#a1770352729facbccf4b8fb288551ebbb" title="Get the step size." alt="" coords="465,961,588,991"/>
+<area shape="rect" id="node92" href="$xml__parameter_8c.html#ab2406faab9296a45cc596beec457f268" title="Get the initial temperature." alt="" coords="473,1015,580,1044"/>
+<area shape="rect" id="node94" href="$xml__parameter_8c.html#a9401fbdd3c314c0e729c9a278a6e2805" title="Get the minimum temperature." alt="" coords="477,1068,576,1097"/>
+<area shape="rect" id="node101" href="$xml__parameter_8c.html#a2961477293ec8eb23f4b7f2c654932a0" title="Get name value." alt="" coords="475,1121,579,1151"/>
+<area shape="rect" id="node105" href="$gsl__recuit_8c.html#a421d0cc9a2d5ab2cbbfd476bfa4980d6" title="Choice of parameters and verification of their value." alt="" coords="440,1175,613,1204"/>
+</map>

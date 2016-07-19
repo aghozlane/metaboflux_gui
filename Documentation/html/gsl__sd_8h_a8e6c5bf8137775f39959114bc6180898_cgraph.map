@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$data__parameters_8c.html#a5cbbdc869f6afdad90fbc19e8cb71653" title="Allocate the struct Equations." alt="" coords="236,484,377,513"/>
+<area shape="rect" id="node5" href="$data__parameters_8c.html#ab87022ba396950a530c349d81e250cf4" title="Initialize equations." alt="" coords="241,537,372,567"/>
+<area shape="rect" id="node44" href="$data__parameters_8c.html#a85ac72a7daa9c81e510fbd8d09edb8b3" title="Initialize the struct Score." alt="" coords="253,591,360,620"/>
+<area shape="rect" id="node46" href="$equations_8c.html#ac44a002ce6003458f78db2b85bff29ef" title="Compute the score of the equation." alt="" coords="701,539,821,568"/>
+<area shape="rect" id="node59" href="$equations_8c.html#a52f64995ddba108da9f528b20d373a2d" title="Compute the score of the quantity which means the difference between what is expected to what is simu..." alt="" coords="227,695,387,724"/>
+<area shape="rect" id="node63" href="$simulation_8c.html#a0eb4dda20b3a9cc639f50421f919f24e" title="Simulation of metabolic network." alt="" coords="216,801,397,831"/>
+<area shape="rect" id="node114" href="$simulation_8c.html#a792ef36e542159096d4567a125aee565" title="Print the debuf file." alt="" coords="244,855,369,884"/>
+<area shape="rect" id="node116" href="$simulation_8c.html#a8823ee151e44d0d0b6b977bcebc7463e" title="Print the head of the debug file." alt="" coords="228,908,385,937"/>
+<area shape="rect" id="node7" href="$equations_8c.html#adcc21952710a1783d451a42bd0448215" title="Build pile." alt="" coords="452,457,617,487"/>
+<area shape="rect" id="node9" href="$equations_8c.html#acfd75204575cdb598699e9599c24164e" title="Build the list of the Struct Equations result used to compute the equation." alt="" coords="699,379,824,408"/>
+<area shape="rect" id="node13" href="$equations_8c.html#a51aa19b01714bc3ae728031b8748694a" title="Stack an element to the struct Equations." alt="" coords="909,379,1037,408"/>
+<area shape="rect" id="node21" href="$equations_8c.html#a977051374a319d6bd60ef8ca2c03c952" title="Alloc memory and initialize the struct Equations." alt="" coords="916,749,1031,779"/>
+<area shape="rect" id="node23" href="$equations_8c.html#a17d096394760f8a2f63e5e3523168304" title="Identify the mathematical operator used." alt="" coords="700,139,823,168"/>
+<area shape="rect" id="node36" href="$equations_8c.html#a2265434c24c5db73dc45f4799f01fbb6" title="Empty the Struct Equations op for the struct Equation result." alt="" coords="692,483,831,512"/>
+<area shape="rect" id="node11" href="$equations_8c.html#a652cb08a19a4b10403a1751220d2de54" title="Unstack the last element of the struct Equations." alt="" coords="911,485,1036,515"/>
+<area shape="rect" id="node15" href="$equations_8c.html#aafdce647fd1652f8cead7c6e90a0ee22" title="Give the priority of the operator. Multiplication and Division have higher priority than addition or ..." alt="" coords="911,272,1036,301"/>
+<area shape="rect" id="node17" href="$equations_8c.html#a6cac5d605c548c5083d41d8140272201" title="Look for the last element of the struct Equations." alt="" coords="907,325,1040,355"/>
+<area shape="rect" id="node19" href="$equations_8c.html#abc16d34fd78fc7bec99064ba06a0a27f" title="Test if the struct Equations is empty." alt="" coords="919,432,1028,461"/>
+<area shape="rect" id="node25" href="$equations_8c.html#aadfa8a3c9e3c361367513bdc030d5068" title="Add two numbers." alt="" coords="952,165,995,195"/>
+<area shape="rect" id="node27" href="$equations_8c.html#aa1312b87a72d22e2bbebf101e292a9f9" title="Divide two numbers." alt="" coords="945,219,1001,248"/>
+<area shape="rect" id="node29" href="$equations_8c.html#a67c2ddb47af2bd3b128dcea9bacf6400" title="Test the equality of two numbers." alt="" coords="940,5,1007,35"/>
+<area shape="rect" id="node31" href="$equations_8c.html#a754ca014ba925b1c96920d21d7029ce2" title="Test the inferiority between two numbers." alt="" coords="955,59,992,88"/>
+<area shape="rect" id="node33" href="$equations_8c.html#a6638015dab123b16fe60b36e30169064" title="Test the inferiority or equality between two numbers." alt="" coords="936,112,1011,141"/>
+<area shape="rect" id="node38" href="$equations_8c.html#a4c54e881f9153f6c8b0313f139ad1ade" title="Look for the first element of the struct Equations." alt="" coords="912,539,1035,568"/>
+<area shape="rect" id="node40" href="$equations_8c.html#a3e550cf0e9190391a5c15b9edf1df721" title="Get the next element of the struct Equations." alt="" coords="900,592,1047,621"/>
+<area shape="rect" id="node53" href="$equations_8c.html#ae2ab956dac833cf24b93305cfb79cfdf" title="Extract information on element of type Struct Equation." alt="" coords="1096,672,1251,701"/>
+<area shape="rect" id="node55" href="$equations_8c.html#aafe1cd5689dbec030ec792f43b40876b" title="Compute the result of two pile." alt="" coords="908,645,1039,675"/>
+<area shape="rect" id="node61" href="$equations_8c.html#a93e7c3c0bd43ade391fa122589734816" title="Look for the quantity of a molecule in the list." alt="" coords="457,695,612,724"/>
+<area shape="rect" id="node65" href="$especes_8c.html#ad40ac9cd39a9c9b70657f8e87209bc4d" title="Alloc memory and initialize the struct Especes." alt="" coords="481,1091,588,1120"/>
+<area shape="rect" id="node67" href="$especes_8c.html#aa4c9945c5a0484f255ebe9ae6e1e7d30" title="Free the struct pEspeces." alt="" coords="484,1235,585,1264"/>
+<area shape="rect" id="node71" href="$simulation_8c.html#ab96386e57e0e58e356974d26ced8eeb2" title="Alloc memory and initialize the struct Especes." alt="" coords="445,1288,624,1317"/>
+<area shape="rect" id="node75" href="$simulation_8c.html#ad857fd679e78b0081d6c6898f6a51f52" title="Alloc memory and initialize the struct Especes." alt="" coords="487,748,583,777"/>
+<area shape="rect" id="node83" href="$simulation_8c.html#a744147acf49de269630c456d0c5f4247" title="Alloc memory and initialize the struct Especes." alt="" coords="464,801,605,831"/>
+<area shape="rect" id="node91" href="$simulation_8c.html#a36a9d2b343c5fcf0f4d88e5720fb86ce" title="Simulate one step of petri net." alt="" coords="477,1037,592,1067"/>
+<area shape="rect" id="node69" href="$especes_8c.html#aff847305d7a79c95a9c8296276840529" title="Free the struct Reaction." alt="" coords="681,1325,841,1355"/>
+<area shape="rect" id="node73" href="$especes_8c.html#a4ca513fe43dc3919cab3044166d9f9fb" title="Save data on one molecule." alt="" coords="708,1379,815,1408"/>
+<area shape="rect" id="node77" href="$especes_8c.html#a13dfbbe353cc238a9f53e5a183904fa4" title="Save the quantite of all molecules for scoring." alt="" coords="683,643,840,672"/>
+<area shape="rect" id="node79" href="$simulation_8c.html#a2aee345900876fe3c6888dfc620265b0" title="Get the reaction ratio define in the sbml." alt="" coords="684,696,839,725"/>
+<area shape="rect" id="node81" href="$simulation_8c.html#a56b2d00e703b09b6c3f52e971517ecb3" title="Determine if the reaction is study." alt="" coords="692,749,831,779"/>
+<area shape="rect" id="node85" href="$especes_8c.html#ab485f86ce621d4a8aaec5d1bc78f6105" title="Alloc memory and initialize the struct Reaction for each molecule." alt="" coords="679,853,844,883"/>
+<area shape="rect" id="node87" href="$especes_8c.html#a1749f688ebd8c3ffb4f6c16e5093e351" title="Find a molecule thank to it ID." alt="" coords="1123,959,1224,988"/>
+<area shape="rect" id="node93" href="$especes_8c.html#a3391146ab0a83b7db9cbe3bdaec9fdab" title="Get number of reaction where one molecule is used (like a reactif)" alt="" coords="677,1168,845,1197"/>
+<area shape="rect" id="node95" href="$especes_8c.html#a95287ee5ed282bd8842d2456b6c5a220" title="Get the quanty of one molecule by its number." alt="" coords="1100,1064,1247,1093"/>
+<area shape="rect" id="node97" href="$simulation_8c.html#a11e6f95793902cf6d16dcd127d09ab7a" title="Alloc memory and initialize the struct pTestReaction." alt="" coords="703,1272,820,1301"/>
+<area shape="rect" id="node99" href="$simulation_8c.html#a5630aef6f927ffef62f6535977ae8200" title="Determine the number of reaction for one molecule." alt="" coords="899,959,1048,988"/>
+<area shape="rect" id="node103" href="$simulation_8c.html#a26a3a6e92c8b51177e1e2c42c20fec30" title="Alloc memory and initialize the struct Especes." alt="" coords="672,907,851,936"/>
+<area shape="rect" id="node106" href="$simulation_8c.html#a583a492a3d9db3c0f15b581f9762e85b" title="Free memory of the struct TestReaction." alt="" coords="705,1011,817,1040"/>
+<area shape="rect" id="node108" href="$simulation_8c.html#ac9187b648cc6e8a588813ab31c12193f" title="Determine randomly the reaction to achieve for several nodes reactions." alt="" coords="695,1064,828,1093"/>
+<area shape="rect" id="node110" href="$simulation_8c.html#a463648eb9010400731a5ffc3a13e56dd" title="Simulation of a discrete transision." alt="" coords="919,1064,1028,1093"/>
+</map>

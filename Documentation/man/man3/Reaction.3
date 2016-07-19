@@ -1,0 +1,52 @@
+.TH "Reaction" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Reaction \- 
+.PP
+Reactions data.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <especes.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "Reaction_t * \fBlink\fP"
+.br
+.ti -1c
+.RI "double \fBratio\fP"
+.br
+.ti -1c
+.RI "struct \fBReaction\fP * \fBsuivant\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Reactions data. 
+.PP
+Definition at line 34 of file especes.h.
+.SH "Field Documentation"
+.PP 
+.SS "Reaction_t* \fBReaction::link\fP"\fBReaction\fP id 
+.PP
+Definition at line 36 of file especes.h.
+.PP
+Referenced by Especes_allocReactions(), Especes_print(), SBML_EstimationReaction(), SBML_reactChoice(), and SBML_simulate().
+.SS "double \fBReaction::ratio\fP"
+.PP
+Definition at line 37 of file especes.h.
+.PP
+Referenced by Especes_print(), and SBML_reactChoice().
+.SS "struct \fBReaction\fP* \fBReaction::suivant\fP"Next reaction implicated for the molecule 
+.PP
+Definition at line 38 of file especes.h.
+.PP
+Referenced by Especes_allocReactions(), Especes_freeReactions(), Especes_getNbreactions(), Especes_print(), SBML_EstimationReaction(), and SBML_reactChoice().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

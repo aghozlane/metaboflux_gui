@@ -1,0 +1,21 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$data__parameters_8c.html#a014a6fdcabd0d2dbfee53acf4a32e218" title="Allocate the different elements related to he struct Equations." alt="" coords="181,85,323,115"/>
+<area shape="rect" id="node15" href="$data__parameters_8c.html#ac934a73d670600f3dc8d3a6a6b398463" title="Copy the partial table x in the full table y." alt="" coords="177,316,327,345"/>
+<area shape="rect" id="node39" href="$data__parameters_8c.html#a9f9a132c1df2f3c60d773713b5f8f808" title="Load SBML file." alt="" coords="197,369,307,399"/>
+<area shape="rect" id="node41" href="$data__parameters_8c.html#a9a36eeea775961ef075a27520e9d7c65" title="Load parameter file." alt="" coords="201,475,303,504"/>
+<area shape="rect" id="node5" href="$xml__parameter_8c.html#a62bde7fe978c5b428aedf7011ef5444f" title="Get list of kinetic laws." alt="" coords="403,5,536,35"/>
+<area shape="rect" id="node9" href="$xml__parameter_8c.html#aebbd1beeffa0d86d3fb414443579bd2c" title="Get the kinetic law for one node." alt="" coords="384,59,555,88"/>
+<area shape="rect" id="node11" href="$xml__parameter_8c.html#a4cd7ca36e09a00f6eead68fa2fe9c181" title="Get the number of equations." alt="" coords="628,133,772,163"/>
+<area shape="rect" id="node7" href="$xml__parameter_8c.html#a33fc7308481aa2c6ceebbf6dffa2626d" title="Allocate memory for the list of equation." alt="" coords="635,5,765,35"/>
+<area shape="rect" id="node13" href="$xml__parameter_8c.html#ab341a0b1147a2c5866cab65f552f0817" title="Get count." alt="" coords="839,263,943,292"/>
+<area shape="rect" id="node17" href="$xml__parameter_8c.html#a08ff3dcc547d1e4cd67fc5cdcf76207b" title="Get list of banned species." alt="" coords="412,163,527,192"/>
+<area shape="rect" id="node19" href="$xml__parameter_8c.html#a76777435e4d20d96bf38532590dde9df" title="Get the number of banned species." alt="" coords="611,209,789,239"/>
+<area shape="rect" id="node23" href="$xml__parameter_8c.html#af2cfdc761c81f2a612b89c4287532b59" title="Get the number of couples." alt="" coords="633,263,767,292"/>
+<area shape="rect" id="node26" href="$xml__parameter_8c.html#a970461b8c6940e3446ae533b7ad02784" title="Get the number of parameters." alt="" coords="623,316,777,345"/>
+<area shape="rect" id="node29" href="$xml__parameter_8c.html#abe3e4fdcc6be469255833ced99af8fd5" title="Count the number of reaction in one node." alt="" coords="376,368,563,397"/>
+<area shape="rect" id="node32" href="$xml__parameter_8c.html#afeff8e3300946c36cea36ddd964e9265" title="Get number of tries for modelling." alt="" coords="399,421,540,451"/>
+<area shape="rect" id="node36" href="$xml__parameter_8c.html#a7b67ce794add8c04563e07f9d25c6096" title="Get number of tries for the simulated annealing and minimization." alt="" coords="404,475,535,504"/>
+<area shape="rect" id="node34" href="$xml__parameter_8c.html#a4024e4decc374dde9740834c575c2057" title="Get integer value." alt="" coords="643,448,757,477"/>
+<area shape="rect" id="node43" href="$xml__parameter_8c.html#ab12b2036f57ce74c1c2ac44a19434bda" title="Initialize and load the parameter.xml." alt="" coords="412,528,527,557"/>
+<area shape="rect" id="node45" href="$xml__parameter_8c.html#a8b93c82fdf9f830d2170f8dfe1e206bd" title="Free the Struct xmlConfig_t." alt="" coords="644,528,756,557"/>
+</map>

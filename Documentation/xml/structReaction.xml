@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structReaction" kind="struct" prot="public">
+    <compoundname>Reaction</compoundname>
+    <includes refid="especes_8h" local="no">especes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structReaction_1ac0afd1990830008577958aec1d974e5d" prot="public" static="no" mutable="no">
+        <type>Reaction_t *</type>
+        <definition>Reaction_t* Reaction::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structReaction" kindref="compound">Reaction</ref> id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="36" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="especes_8h_1a622cfe5dc2bba2275a7316755ee08142" compoundref="especes_8c" startline="64" endline="85">Especes_allocReactions</referencedby>
+        <referencedby refid="especes_8h_1a120630120d7c5a6cded061eab659048a" compoundref="especes_8c" startline="170" endline="187">Especes_print</referencedby>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a8d9458c6636b5b95598434453ad6e3dd" compoundref="simulation_8c" startline="206" endline="233">SBML_reactChoice</referencedby>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structReaction_1a8f0edc9c1a0652917a5a18d3e9fe931a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Reaction::ratio</definition>
+        <argsstring></argsstring>
+        <name>ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="37" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="especes_8h_1a120630120d7c5a6cded061eab659048a" compoundref="especes_8c" startline="170" endline="187">Especes_print</referencedby>
+        <referencedby refid="simulation_8h_1a8d9458c6636b5b95598434453ad6e3dd" compoundref="simulation_8c" startline="206" endline="233">SBML_reactChoice</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structReaction" kindref="compound">Reaction</ref> *</type>
+        <definition>struct Reaction* Reaction::suivant</definition>
+        <argsstring></argsstring>
+        <name>suivant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Next reaction implicated for the molecule </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="38" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="especes_8h_1a622cfe5dc2bba2275a7316755ee08142" compoundref="especes_8c" startline="64" endline="85">Especes_allocReactions</referencedby>
+        <referencedby refid="especes_8h_1a271e25633ee1c9081b1b8b46f441be04" compoundref="especes_8c" startline="109" endline="123">Especes_freeReactions</referencedby>
+        <referencedby refid="especes_8h_1a3391146ab0a83b7db9cbe3bdaec9fdab" compoundref="especes_8c" startline="265" endline="281">Especes_getNbreactions</referencedby>
+        <referencedby refid="especes_8h_1a120630120d7c5a6cded061eab659048a" compoundref="especes_8c" startline="170" endline="187">Especes_print</referencedby>
+        <referencedby refid="simulation_8h_1a5e7dd721fd4e49d51adaa2dd290879d4" compoundref="simulation_8c" startline="322" endline="340">SBML_EstimationReaction</referencedby>
+        <referencedby refid="simulation_8h_1a8d9458c6636b5b95598434453ad6e3dd" compoundref="simulation_8c" startline="206" endline="233">SBML_reactChoice</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reactions data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="44">
+        <label>Reaction</label>
+        <link refid="structReaction"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>suivant</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" line="35" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/especes.h" bodystart="34" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structReaction_1ac0afd1990830008577958aec1d974e5d" prot="public" virt="non-virtual"><scope>Reaction</scope><name>link</name></member>
+      <member refid="structReaction_1a8f0edc9c1a0652917a5a18d3e9fe931a" prot="public" virt="non-virtual"><scope>Reaction</scope><name>ratio</name></member>
+      <member refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" prot="public" virt="non-virtual"><scope>Reaction</scope><name>suivant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

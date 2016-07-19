@@ -1,0 +1,773 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="especes_8c" kind="file">
+    <compoundname>especes.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">sbml/SBMLTypes.h</includes>
+    <includes refid="especes_8h" local="yes">especes.h</includes>
+    <incdepgraph>
+      <node id="395">
+        <label>assert.h</label>
+      </node>
+      <node id="393">
+        <label>stdlib.h</label>
+      </node>
+      <node id="397">
+        <label>especes.h</label>
+        <link refid="especes_8h"/>
+      </node>
+      <node id="391">
+        <label>metaboflux/src/especes.c</label>
+        <link refid="especes.c"/>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>sbml/SBMLTypes.h</label>
+      </node>
+      <node id="394">
+        <label>string.h</label>
+      </node>
+      <node id="392">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="especes_8c_1ad40ac9cd39a9c9b70657f8e87209bc4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+        <definition>pEspeces Especes_alloc</definition>
+        <argsstring>(int nbEspeces)</argsstring>
+        <name>Especes_alloc</name>
+        <param>
+          <type>int</type>
+          <declname>nbEspeces</declname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structEspeces" kindref="compound">Especes</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Allocated struct Espece </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="41" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="40" bodyend="53"/>
+        <references refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" compoundref="especes_8h" startline="46">Especes::quantite</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1ab485f86ce621d4a8aaec5d1bc78f6105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_allocReactions</definition>
+        <argsstring>(pEspeces molecules, int Espece, Reaction_t *local, double reactRatio)</argsstring>
+        <name>Especes_allocReactions</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Espece</declname>
+        </param>
+        <param>
+          <type>Reaction_t *</type>
+          <declname>local</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>reactRatio</declname>
+        </param>
+        <briefdescription>
+<para>Alloc memory and initialize the struct <ref refid="structReaction" kindref="compound">Reaction</ref> for each molecule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Espece</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the selected molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>local</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structReaction" kindref="compound">Reaction</ref> sbml reference </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reactRatio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ratio of the reaction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="65" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="64" bodyend="85"/>
+        <references refid="structReaction_1ac0afd1990830008577958aec1d974e5d" compoundref="especes_8h" startline="36">Reaction::link</references>
+        <references refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" compoundref="especes_8h" startline="38">Reaction::suivant</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1aa4c9945c5a0484f255ebe9ae6e1e7d30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_free</definition>
+        <argsstring>(pEspeces molecules, int nbEspeces)</argsstring>
+        <name>Especes_free</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbEspeces</declname>
+        </param>
+        <briefdescription>
+<para>Free the struct pEspeces. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="95" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="94" bodyend="101"/>
+        <references refid="especes_8c_1aff847305d7a79c95a9c8296276840529" compoundref="especes_8c" startline="109" endline="123">Especes_freeReactions</references>
+        <referencedby refid="simulation_8h_1a443eccd5296f1a2844c4d97e514a61c5" compoundref="simulation_8c" startline="515" endline="550">SBML_compute_simulation</referencedby>
+        <referencedby refid="simulation_8h_1a16b0c1105bbcfc7ddc9a9e044d567ed5" compoundref="simulation_8c" startline="614" endline="659">SBML_compute_simulation_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1aff847305d7a79c95a9c8296276840529" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_freeReactions</definition>
+        <argsstring>(Especes molecules)</argsstring>
+        <name>Especes_freeReactions</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">Especes</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <briefdescription>
+<para>Free the struct <ref refid="structReaction" kindref="compound">Reaction</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="110" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="109" bodyend="123"/>
+        <references refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" compoundref="especes_8h" startline="38">Reaction::suivant</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <referencedby refid="especes_8h_1a4e81e01f1f8e3b472bfdc2ea0dd5b769" compoundref="especes_8c" startline="94" endline="101">Especes_free</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1a4ca513fe43dc3919cab3044166d9f9fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_save</definition>
+        <argsstring>(pEspeces molecules, int i, double quant, const char *dye)</argsstring>
+        <name>Especes_save</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>quant</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dye</declname>
+        </param>
+        <briefdescription>
+<para>Save data on one molecule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the selected molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantity of the molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dye</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the molecule </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="135" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="134" bodyend="138"/>
+        <references refid="structEspeces_1a2fbe0a8da0e7c223e27f9bf40e48f170" compoundref="especes_8h" startline="47">Especes::id</references>
+        <references refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" compoundref="especes_8h" startline="46">Especes::quantite</references>
+        <referencedby refid="simulation_8h_1a611031d9c60ad182fade6ae74e6b7e7e" compoundref="simulation_8c" startline="46" endline="58">SBML_initEspeceAmounts</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1a13dfbbe353cc238a9f53e5a183904fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_scoreSpecies</definition>
+        <argsstring>(pEspeces molecules, int nbEspeces, char **name, double *quantite)</argsstring>
+        <name>Especes_scoreSpecies</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbEspeces</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>quantite</declname>
+        </param>
+        <briefdescription>
+<para>Save the quantite of all molecules for scoring. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the selected molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Table of molecule Quantity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="150" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="149" bodyend="161"/>
+        <references refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" compoundref="especes_8h" startline="46">Especes::quantite</references>
+        <referencedby refid="simulation_8h_1a0b14dd5a1a8cf318c2f7974bd9a8cc1c" compoundref="simulation_8c" startline="420" endline="455">SBML_score</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1ae6559ca6fa9ba4c0877f869844c493f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_print</definition>
+        <argsstring>(pEspeces molecules, int nbEspeces)</argsstring>
+        <name>Especes_print</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbEspeces</declname>
+        </param>
+        <briefdescription>
+<para>Print data on each molecule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="171" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="170" bodyend="187"/>
+        <references refid="structReaction_1ac0afd1990830008577958aec1d974e5d" compoundref="especes_8h" startline="36">Reaction::link</references>
+        <references refid="structReaction_1a8f0edc9c1a0652917a5a18d3e9fe931a" compoundref="especes_8h" startline="37">Reaction::ratio</references>
+        <references refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" compoundref="especes_8h" startline="38">Reaction::suivant</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1ad534ec7af1733aaf00880570d5fc99b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_print_2</definition>
+        <argsstring>(pEspeces molecules, int nbEspeces)</argsstring>
+        <name>Especes_print_2</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbEspeces</declname>
+        </param>
+        <briefdescription>
+<para>Print Id and quantity on each molecule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="197" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="196" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1a1749f688ebd8c3ffb4f6c16e5093e351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Especes_find</definition>
+        <argsstring>(pEspeces molecules, const char *especeId, int nbEspeces)</argsstring>
+        <name>Especes_find</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>especeId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbEspeces</declname>
+        </param>
+        <briefdescription>
+<para>Find a molecule thank to it ID. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>especeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SBML ID of the molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbEspeces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of molecules </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of a selected molecule </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="215" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="214" bodyend="229"/>
+        <referencedby refid="simulation_8h_1a29d1d4fcf0dcc060769bf71e4e451b15" compoundref="simulation_8c" startline="158" endline="195">SBML_checkQuantite</referencedby>
+        <referencedby refid="simulation_8h_1a0421946146569268a97c95c27e57a65e" compoundref="simulation_8c" startline="244" endline="270">SBML_reaction</referencedby>
+        <referencedby refid="simulation_8h_1a4e69a993d7460adf46b17909e8991565" compoundref="simulation_8c" startline="105" endline="146">SBML_setReactions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1a673f93f68d9ea2b84db4a73c2f4f5b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Especes_setQuantite</definition>
+        <argsstring>(pEspeces molecules, int Especes, double quant)</argsstring>
+        <name>Especes_setQuantite</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Especes</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>quant</declname>
+        </param>
+        <briefdescription>
+<para>Change the quantity of a molecule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="structEspeces" kindref="compound">Especes</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of a selected molecule </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantity of the molecule </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="240" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="239" bodyend="242"/>
+        <references refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" compoundref="especes_8h" startline="46">Especes::quantite</references>
+        <referencedby refid="simulation_8h_1a0421946146569268a97c95c27e57a65e" compoundref="simulation_8c" startline="244" endline="270">SBML_reaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1a95287ee5ed282bd8842d2456b6c5a220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Especes_getQuantite</definition>
+        <argsstring>(pEspeces molecules, int Especes)</argsstring>
+        <name>Especes_getQuantite</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Especes</declname>
+        </param>
+        <briefdescription>
+<para>Get the quanty of one molecule by its number. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="structEspeces" kindref="compound">Especes</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of a selected molecule </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Quantity of a selected molecule </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="253" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="252" bodyend="255"/>
+        <references refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" compoundref="especes_8h" startline="46">Especes::quantite</references>
+        <referencedby refid="simulation_8h_1a29d1d4fcf0dcc060769bf71e4e451b15" compoundref="simulation_8c" startline="158" endline="195">SBML_checkQuantite</referencedby>
+        <referencedby refid="simulation_8h_1a0421946146569268a97c95c27e57a65e" compoundref="simulation_8c" startline="244" endline="270">SBML_reaction</referencedby>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="especes_8c_1a3391146ab0a83b7db9cbe3bdaec9fdab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Especes_getNbreactions</definition>
+        <argsstring>(pEspeces molecules, int ref)</argsstring>
+        <name>Especes_getNbreactions</name>
+        <param>
+          <type><ref refid="structEspeces" kindref="compound">pEspeces</ref></type>
+          <declname>molecules</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para>Get number of reaction where one molecule is used (like a reactif) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Amine Ghozlane </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>molecules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of molecules </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of a selected molecule </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of reactions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" line="266" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c" bodystart="265" bodyend="281"/>
+        <references refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" compoundref="especes_8h" startline="38">Reaction::suivant</references>
+        <references refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" compoundref="especes_8h" startline="48">Especes::system</references>
+        <referencedby refid="simulation_8h_1a79f018dd624b1b4a2ee36a2cb2939462" compoundref="simulation_8c" startline="356" endline="407">SBML_simulate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Modelize a molecule. </para>    </briefdescription>
+    <detaileddescription>
+<para>This file is part of MetaBoFlux (<ulink url="http://www.cbib.u-bordeaux2.fr/metaboflux/">http://www.cbib.u-bordeaux2.fr/metaboflux/</ulink>) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1</para><para>MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>&gt;.</para><para><simplesect kind="author"><para>{Amine Ghozlane} </para></simplesect>
+<simplesect kind="version"><para>2.0 </para></simplesect>
+<simplesect kind="date"><para>27 octobre 2009 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sbml/SBMLTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="especes_8h" kindref="compound" tooltip="Modelize a molecule.">especes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="especes_8h_1a1610e9ef9702676f49dda6e338fc8ceb" refkind="member"><highlight class="normal"><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/><ref refid="especes_8c_1ad40ac9cd39a9c9b70657f8e87209bc4d" kindref="member" tooltip="Alloc memory and initialize the struct Especes.">Especes_alloc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspeces)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules<sp/>=<sp/>(<ref refid="especes_8h_1adda4f9a5e653631ff1e957c4e5732eb3" kindref="member">pEspeces</ref>)<sp/>malloc(nbEspeces<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">Especes</ref>));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>assert(molecules!=NULL);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>de<sp/>la<sp/>quantite<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nbEspeces;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>molecules[i].<ref refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" kindref="member">quantite</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>molecules[i].<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Alloue<sp/>et<sp/>initialise<sp/>la<sp/>memoire<sp/>a<sp/>la<sp/>structure<sp/>espece<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>molecules;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="especes_8h_1a622cfe5dc2bba2275a7316755ee08142" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1ab485f86ce621d4a8aaec5d1bc78f6105" kindref="member" tooltip="Alloc memory and initialize the struct Reaction for each molecule.">Especes_allocReactions</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Espece,<sp/>Reaction_t<sp/>*local,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>reactRatio)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="structReaction" kindref="compound" tooltip="Reactions data.">pReaction</ref><sp/>Q<sp/>=<sp/>molecules[Espece].<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="structReaction" kindref="compound" tooltip="Reactions data.">pReaction</ref><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>=<sp/>(<ref refid="especes_8h_1aa4df08d3132110bb150ee614feae8053" kindref="member">pReaction</ref>)<sp/>malloc(1<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structReaction" kindref="compound" tooltip="Reactions data.">Reaction</ref>));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialisation<sp/>de<sp/>la<sp/>nouvelle<sp/>structure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;<ref refid="structReaction_1ac0afd1990830008577958aec1d974e5d" kindref="member">link</ref><sp/>=<sp/>local;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;ratio<sp/>=<sp/>reactRatio;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;suivant<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Deplacement<sp/>le<sp/>long<sp/>de<sp/>la<sp/>liste<sp/>chainee<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Q<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>n°1<sp/>:<sp/>premiere<sp/>molecule<sp/>de<sp/>la<sp/>chaine<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>molecules[Espece].<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>n°2<sp/>:<sp/><sp/>deuxieme<sp/>ou<sp/>plus<sp/>molecule<sp/>de<sp/>la<sp/>chaine<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(Q-&gt;<ref refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" kindref="member">suivant</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Q<sp/>=<sp/>Q-&gt;<ref refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>Q-&gt;<ref refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" kindref="member">suivant</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="especes_8h_1a4e81e01f1f8e3b472bfdc2ea0dd5b769" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1aa4c9945c5a0484f255ebe9ae6e1e7d30" kindref="member" tooltip="Free the struct pEspeces.">Especes_free</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspeces)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nbEspeces;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="especes_8c_1aff847305d7a79c95a9c8296276840529" kindref="member" tooltip="Free the struct Reaction.">Especes_freeReactions</ref>(molecules[i]);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(molecules!=NULL)<sp/>free(molecules);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="especes_8h_1a271e25633ee1c9081b1b8b46f441be04" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1aff847305d7a79c95a9c8296276840529" kindref="member" tooltip="Free the struct Reaction.">Especes_freeReactions</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">Especes</ref><sp/>molecules)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="structReaction" kindref="compound" tooltip="Reactions data.">pReaction</ref><sp/>Q=NULL;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="structReaction" kindref="compound" tooltip="Reactions data.">pReaction</ref><sp/>P=NULL;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(molecules.<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref>!=NULL)<sp/>Q=molecules.<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Q<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(Q!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>P<sp/>=<sp/>Q-&gt;<ref refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Q!=NULL)free(Q);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Q=NULL;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Q<sp/>=<sp/>P;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>P=NULL;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="especes_8h_1abb8810a8cb8bd51a12838f893e58e97b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1a4ca513fe43dc3919cab3044166d9f9fb" kindref="member" tooltip="Save data on one molecule.">Especes_save</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>quant,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dye)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>molecules[i].<ref refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" kindref="member">quantite</ref><sp/>=<sp/>quant;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>molecules[i].<ref refid="structEspeces_1a2fbe0a8da0e7c223e27f9bf40e48f170" kindref="member">id</ref><sp/>=<sp/>dye;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="especes_8h_1a7f7d4b4764b583179bebcc86bbba09ed" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1a13dfbbe353cc238a9f53e5a183904fa4" kindref="member" tooltip="Save the quantite of all molecules for scoring.">Especes_scoreSpecies</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspeces,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*quantite)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enregistre<sp/>la<sp/>quantite<sp/>de<sp/>toutes<sp/>les<sp/>molecules<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nbEspeces;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(name[i]==NULL){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>name[i]=(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)malloc(((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)strlen(molecules[i].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)+1)*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert(name[i]!=NULL);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(name[i],<sp/>molecules[i].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>quantite[i]=molecules[i].<ref refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" kindref="member">quantite</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="especes_8h_1a120630120d7c5a6cded061eab659048a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1ae6559ca6fa9ba4c0877f869844c493f3" kindref="member" tooltip="Print data on each molecule.">Especes_print</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspeces)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><ref refid="structReaction" kindref="compound" tooltip="Reactions data.">pReaction</ref><sp/>Q<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nbEspeces;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;Espece<sp/>:<sp/>%s,<sp/>Quantite<sp/>:<sp/>%.0f\n&quot;</highlight><highlight class="normal">,<sp/>molecules[i].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>molecules[i].quantite);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>Q<sp/>=<sp/>molecules[i].<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Q<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Compte<sp/>le<sp/>nombre<sp/>de<sp/>reactions<sp/>rattachees<sp/>a<sp/>une<sp/>espece<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(Q<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;reaction<sp/>%s<sp/>:<sp/>ratio<sp/>%.2f%%\n&quot;</highlight><highlight class="normal">,Reaction_getId(Q-&gt;<ref refid="structReaction_1ac0afd1990830008577958aec1d974e5d" kindref="member">link</ref>),Q-&gt;<ref refid="structReaction_1a8f0edc9c1a0652917a5a18d3e9fe931a" kindref="member">ratio</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q<sp/>=<sp/>Q-&gt;<ref refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="especes_8h_1ad534ec7af1733aaf00880570d5fc99b2" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1ad534ec7af1733aaf00880570d5fc99b2" kindref="member" tooltip="Print Id and quantity on each molecule.">Especes_print_2</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspeces)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nbEspeces;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;Espece<sp/>:<sp/>%s,<sp/>Quantite<sp/>:<sp/>%.0f\n&quot;</highlight><highlight class="normal">,<sp/>molecules[i].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>molecules[i].quantite);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="especes_8h_1a321b94dc8b65a8ff167218edb83df25e" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1a1749f688ebd8c3ffb4f6c16e5093e351" kindref="member" tooltip="Find a molecule thank to it ID.">Especes_find</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*especeId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspeces)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>nbEspeces;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp(especeId,<sp/>molecules[i].</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cas<sp/>ou<sp/>la<sp/>molecule<sp/>n&apos;est<sp/>pas<sp/>trouvee<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>nbEspeces)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;On<sp/>ne<sp/>retrouve<sp/>pas<sp/>l&apos;espece<sp/>en<sp/>question\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="especes_8h_1acfdb089ad290ca7a4b3bc4c58957c1ac" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1a673f93f68d9ea2b84db4a73c2f4f5b39" kindref="member" tooltip="Change the quantity of a molecule.">Especes_setQuantite</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">Especes</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>quant)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>molecules[<ref refid="especes_8h_1a454184691a5eb3392b642cbc8232b9eb" kindref="member">Especes</ref>].<ref refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" kindref="member">quantite</ref><sp/>=<sp/>quant;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="especes_8h_1a25fe0df8949f57735787b5a4e5cf5a3c" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1a95287ee5ed282bd8842d2456b6c5a220" kindref="member" tooltip="Get the quanty of one molecule by its number.">Especes_getQuantite</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">Especes</ref>)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>molecules[<ref refid="especes_8h_1a454184691a5eb3392b642cbc8232b9eb" kindref="member">Especes</ref>].<ref refid="structEspeces_1ab4d42c5e3bcb897311b17030db5b882e" kindref="member">quantite</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="especes_8h_1a3391146ab0a83b7db9cbe3bdaec9fdab" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="especes_8c_1a3391146ab0a83b7db9cbe3bdaec9fdab" kindref="member" tooltip="Get number of reaction where one molecule is used (like a reactif)">Especes_getNbreactions</ref>(<ref refid="structEspeces" kindref="compound" tooltip="Molecules data.">pEspeces</ref><sp/>molecules,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ref)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbReactions=0;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><ref refid="structReaction" kindref="compound" tooltip="Reactions data.">pReaction</ref><sp/>Q<sp/>=<sp/>molecules[ref].<ref refid="structEspeces_1a61d949a99599938950d1508d7cb86d4d" kindref="member">system</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>L&apos;espece<sp/>ne<sp/>participe<sp/>en<sp/>tant<sp/>que<sp/>reactif<sp/>a<sp/>aucune<sp/>reaction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Q<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nbReactions;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Compte<sp/>le<sp/>nombre<sp/>de<sp/>reactions<sp/>rattachees<sp/>a<sp/>une<sp/>espece<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(Q!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nbReactions++;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Q<sp/>=<sp/>Q-&gt;<ref refid="structReaction_1ae0a12022d2d1cda2fe244b08a59be3d0" kindref="member">suivant</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nbReactions;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/src/especes.c"/>
+  </compounddef>
+</doxygen>

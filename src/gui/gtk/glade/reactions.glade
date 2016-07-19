@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkFrame" id="reactions_frame">
+    <property name="visible">True</property>
+    <property name="label_xalign">0.05000000074505806</property>
+    <child>
+      <object class="GtkAlignment" id="alignment1">
+        <property name="visible">True</property>
+        <property name="yalign">0.15000000596046448</property>
+        <property name="xscale">0.55000001192092896</property>
+        <property name="yscale">0.80000001192092896</property>
+        <child>
+          <object class="GtkScrolledWindow" id="reactions_tab">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child type="label">
+      <object class="GtkLabel" id="Reactions">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">&lt;b&gt;Reactions&lt;/b&gt;</property>
+        <property name="use_markup">True</property>
+      </object>
+    </child>
+  </object>
+</interface>

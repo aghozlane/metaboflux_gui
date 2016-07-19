@@ -1,0 +1,52 @@
+.TH "Especes" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Especes \- 
+.PP
+Molecules data.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <especes.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "double \fBquantite\fP"
+.br
+.ti -1c
+.RI "const char * \fBid\fP"
+.br
+.ti -1c
+.RI "\fBpReaction\fP \fBsystem\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Molecules data. 
+.PP
+Definition at line 45 of file especes.h.
+.SH "Field Documentation"
+.PP 
+.SS "const char* \fBEspeces::id\fP"Molecule id 
+.PP
+Definition at line 47 of file especes.h.
+.PP
+Referenced by Especes_save().
+.SS "double \fBEspeces::quantite\fP"Molecule quantity 
+.PP
+Definition at line 46 of file especes.h.
+.PP
+Referenced by Especes_alloc(), Especes_getQuantite(), Especes_save(), Especes_scoreSpecies(), and Especes_setQuantite().
+.SS "\fBpReaction\fP \fBEspeces::system\fP"\fBReaction\fP where the molecule is implicated 
+.PP
+Definition at line 48 of file especes.h.
+.PP
+Referenced by Especes_alloc(), Especes_allocReactions(), Especes_freeReactions(), Especes_getNbreactions(), Especes_print(), SBML_EstimationReaction(), SBML_reactChoice(), and SBML_simulate().
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

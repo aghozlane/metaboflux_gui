@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="structSimParameters" kind="struct" prot="public">
+    <compoundname>SimParameters</compoundname>
+    <includes refid="data__parameters_8h" local="no">data_parameters.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" prot="public" static="no" mutable="no">
+        <type><ref refid="structEquations" kindref="compound">Equations</ref> **</type>
+        <definition>Equations** SimParameters::pile</definition>
+        <argsstring></argsstring>
+        <name>pile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interpreted <ref refid="structEquations" kindref="compound">Equations</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="60" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSimParameters_1a0dc198d74946f531dbf36860796bf108" prot="public" static="no" mutable="no">
+        <type><ref refid="structScore" kindref="compound">pScore</ref></type>
+        <definition>pScore SimParameters::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structScore" kindref="compound">Score</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="61" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1a843d6e8ed1d3354a55586c7734f60499" compoundref="gsl__min_8c" startline="208" endline="222">Min_getTampon</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" prot="public" static="no" mutable="no">
+        <type>gsl_rng *</type>
+        <definition>gsl_rng* SimParameters::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Random number generator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="62" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1adde03ef6388e6b9b06eefbfa685c2ee0" compoundref="gsl__recuit_8c" startline="304" endline="353">Recuit_compute_recuit</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* SimParameters::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Table of reaction parameters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="63" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a27598d9ebdecd23858dc015d34daa9f8" compoundref="data__parameters_8c" startline="347" endline="361">Data_copieTab</referencedby>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1a016be27ae853d4d14d48d81c626b1e50" compoundref="gsl__min_8c" startline="274" endline="375">Min_compute_minimization</referencedby>
+        <referencedby refid="gsl__min_8h_1a8d981de0373a06da9601e1b5eef379e1" compoundref="gsl__min_8c" startline="68" endline="78">Min_copieTab2</referencedby>
+        <referencedby refid="gsl__min_8h_1a1f1d9c640473d18e2c9c092428d7052f" compoundref="gsl__min_8c" startline="90" endline="103">Min_copieTab3</referencedby>
+        <referencedby refid="gsl__min_8h_1a843d6e8ed1d3354a55586c7734f60499" compoundref="gsl__min_8c" startline="208" endline="222">Min_getTampon</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__min_8h_1a6fc9a31eec661815e3b5b83fc196d652" compoundref="gsl__min_8c" startline="230" endline="261">Min_score_print_mean</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__mod_8h_1a97dc18e0e086fa391d82d703cc470bc8" compoundref="gsl__mod_8c" startline="58" endline="95">Mod_score_print_mean</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__recuit_8h_1afd9db376bfecbe387f3836854c31f6d0" compoundref="gsl__recuit_8c" startline="158" endline="172">Recuit_printPosition</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+        <referencedby refid="gsl__sd_8h_1a3574b473c8bc4f17b1d3921621f78132" compoundref="gsl__sd_8c" startline="106" endline="154">Sd_compute_standard_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* SimParameters::debugFile</definition>
+        <argsstring></argsstring>
+        <name>debugFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Debug file : storage of intermediate values of the simulations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="64" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="data__parameters_8h_1a77e81e9bc2cd1ffe83bb3b8b2ecc4454" compoundref="data__parameters_8c" startline="549" endline="583">Data_desallocSim</referencedby>
+        <referencedby refid="data__parameters_8h_1a2f0df5c0de22994cb0aec62dba0e1bd5" compoundref="data__parameters_8c" startline="506" endline="541">Data_simParameters</referencedby>
+        <referencedby refid="gsl__min_8h_1ac0cf1b97696b91752884777f11368223" compoundref="gsl__min_8c" startline="149" endline="199">Min_my_f</referencedby>
+        <referencedby refid="gsl__mod_8h_1af23349f6e6b94ecae16caf9b7837eb06" compoundref="gsl__mod_8c" startline="109" endline="167">Mod_compute_modeling</referencedby>
+        <referencedby refid="gsl__recuit_8h_1a76e1fe1e0d6471f07f55bcf28d247fa5" compoundref="gsl__recuit_8c" startline="65" endline="105">Recuit_energyFunction</referencedby>
+        <referencedby refid="gsl__sd_8h_1a8e6c5bf8137775f39959114bc6180898" compoundref="gsl__sd_8c" startline="56" endline="93">Sd_compute_simulation</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of parameters specific to each simulation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="49">
+        <label>Equations</label>
+        <link refid="structEquations"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>info</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>suiv</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>SimParameters</label>
+        <link refid="structSimParameters"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>pile</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>out</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Equdata</label>
+        <link refid="unionEqudata"/>
+      </node>
+      <node id="51">
+        <label>Score</label>
+        <link refid="structScore"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" line="59" bodyfile="/home/amine/workspace/MetaboFlux/metaboflux/include/data_parameters.h" bodystart="58" bodyend="65"/>
+    <listofallmembers>
+      <member refid="structSimParameters_1aad7fb1c37993627a2c2c04b7509ce3c0" prot="public" virt="non-virtual"><scope>SimParameters</scope><name>debugFile</name></member>
+      <member refid="structSimParameters_1a0dc198d74946f531dbf36860796bf108" prot="public" virt="non-virtual"><scope>SimParameters</scope><name>out</name></member>
+      <member refid="structSimParameters_1aecbff20f6647d4d348d3026e166a5c93" prot="public" virt="non-virtual"><scope>SimParameters</scope><name>pile</name></member>
+      <member refid="structSimParameters_1a3657bf540ffac966ca5e6e48595370ac" prot="public" virt="non-virtual"><scope>SimParameters</scope><name>r</name></member>
+      <member refid="structSimParameters_1aba46fa332475a2c74856712fa0ca10a0" prot="public" virt="non-virtual"><scope>SimParameters</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

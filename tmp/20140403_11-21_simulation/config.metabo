@@ -1,0 +1,12 @@
+{
+    "sbml_file": "modele_glycosome.xml", 
+    "result": false, 
+    "simu_dir": {
+        "mini": "/minimization/", 
+        "stat": "/stat/", 
+        "simu": "/simulation/"
+    }, 
+    "graph_file": "graph.svg", 
+    "graphs_dir": "/new_graphs/", 
+    "param_file": "param.xml"
+}

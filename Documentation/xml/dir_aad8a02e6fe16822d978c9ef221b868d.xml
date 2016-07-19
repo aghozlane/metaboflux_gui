@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.4">
+  <compounddef id="dir_aad8a02e6fe16822d978c9ef221b868d" kind="dir">
+    <compoundname>metaboflux/include/</compoundname>
+    <innerfile refid="data__parameters_8h">data_parameters.h</innerfile>
+    <innerfile refid="equations_8h">equations.h</innerfile>
+    <innerfile refid="especes_8h">especes.h</innerfile>
+    <innerfile refid="gsl__min_8h">gsl_min.h</innerfile>
+    <innerfile refid="gsl__mod_8h">gsl_mod.h</innerfile>
+    <innerfile refid="gsl__recuit_8h">gsl_recuit.h</innerfile>
+    <innerfile refid="gsl__sd_8h">gsl_sd.h</innerfile>
+    <innerfile refid="mpi__load_8h">mpi_load.h</innerfile>
+    <innerfile refid="simulation_8h">simulation.h</innerfile>
+    <innerfile refid="xml__parameter_8h">xml_parameter.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/amine/workspace/MetaboFlux/metaboflux/include/"/>
+  </compounddef>
+</doxygen>

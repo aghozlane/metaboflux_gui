@@ -1,0 +1,664 @@
+.TH "metaboflux/include/simulation.h" 3 "Wed Apr 27 2011" "Version 2.0" "MetaboFlux" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+metaboflux/include/simulation.h \- 
+.PP
+Simulate a petri net.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTestReaction\fP"
+.br
+.RI "\fIStructure used to test reactions. \fP"
+.ti -1c
+.RI "struct \fBScore\fP"
+.br
+.RI "\fIStructure containing all information from simulations. \fP"
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBOK\fP   -1"
+.br
+.ti -1c
+.RI "#define \fBEND\fP   0"
+.br
+.ti -1c
+.RI "#define \fBPURSUE\fP   1"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBTestReaction\fP \fBTestReaction\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBTestReaction\fP * \fBpTestReaction\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBScore\fP \fBScore\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBScore\fP * \fBpScore\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBSBML_initEspeceAmounts\fP (Model_t *, \fBpEspeces\fP, int)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBEspeces\fP. \fP"
+.ti -1c
+.RI "int \fBSBML_findReaction\fP (char **, const char *, int)"
+.br
+.RI "\fIDetermine if the reaction is study. \fP"
+.ti -1c
+.RI "double \fBSBML_evalExpression\fP (const char *)"
+.br
+.RI "\fIGet the reaction ratio define in the sbml. \fP"
+.ti -1c
+.RI "void \fBSBML_setReactions\fP (Model_t *, \fBpEspeces\fP, \fBpScore\fP, double *, int, int)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBEspeces\fP. \fP"
+.ti -1c
+.RI "int \fBSBML_checkQuantite\fP (Model_t *, Reaction_t *, int, \fBpEspeces\fP)"
+.br
+.RI "\fIDetermine the number of reaction for one molecule. \fP"
+.ti -1c
+.RI "Reaction_t * \fBSBML_reactChoice\fP (\fBpEspeces\fP, const gsl_rng *, int)"
+.br
+.RI "\fIDetermine randomly the reaction to achieve for several nodes reactions. \fP"
+.ti -1c
+.RI "void \fBSBML_reaction\fP (Model_t *, \fBpEspeces\fP, Reaction_t *, int)"
+.br
+.RI "\fISimulation of a discrete transision. \fP"
+.ti -1c
+.RI "void \fBSBML_allocTest\fP (\fBpTestReaction\fP, int)"
+.br
+.RI "\fIAlloc memory and initialize the struct pTestReaction. \fP"
+.ti -1c
+.RI "void \fBSBML_freeTest\fP (\fBpTestReaction\fP)"
+.br
+.RI "\fIFree memory of the struct \fBTestReaction\fP. \fP"
+.ti -1c
+.RI "int \fBSBML_EstimationReaction\fP (Model_t *, \fBpTestReaction\fP, \fBpEspeces\fP, int, int)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBEspeces\fP. \fP"
+.ti -1c
+.RI "int \fBSBML_simulate\fP (Model_t *, \fBpEspeces\fP, const gsl_rng *, \fBpTestReaction\fP, char **, int, int, int)"
+.br
+.RI "\fISimulate one step of petri net. \fP"
+.ti -1c
+.RI "void \fBSBML_score\fP (Model_t *, \fBpEspeces\fP, \fBpScore\fP, double *, int, int)"
+.br
+.RI "\fIAlloc memory and initialize the struct \fBEspeces\fP. \fP"
+.ti -1c
+.RI "void \fBSBML_debugPrintHead\fP (FILE *, int, char **)"
+.br
+.RI "\fIPrint the head of the debug file. \fP"
+.ti -1c
+.RI "void \fBSBML_debugPrint\fP (FILE *, int, int, double *, double)"
+.br
+.RI "\fIPrint the debuf file. \fP"
+.ti -1c
+.RI "void \fBSBML_compute_simulation\fP (\fBpScore\fP, Model_t *, double *, gsl_rng *, char **, int)"
+.br
+.RI "\fISimulation of metabolic network. \fP"
+.ti -1c
+.RI "void \fBSBML_score_add\fP (\fBpScore\fP, \fBpScore\fP, FILE *)"
+.br
+.RI "\fIAdd scores. \fP"
+.ti -1c
+.RI "void \fBSBML_score_mean\fP (\fBpScore\fP, int)"
+.br
+.RI "\fIMean quantities for score. \fP"
+.ti -1c
+.RI "void \fBSBML_compute_simulation_mean\fP (FILE *, \fBpScore\fP, \fBpScore\fP, Model_t *, double *, gsl_rng *, char **, int, int)"
+.br
+.RI "\fIX time simulation of metabolic network. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Simulate a petri net. 
+
+This file is part of MetaBoFlux (http://www.cbib.u-bordeaux2.fr/metaboflux/) Copyright (C) 2010 Amine Ghozlane from LaBRI and University of Bordeaux 1
+.PP
+MetaBoFlux is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+.PP
+MetaBoFlux is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+.PP
+You should have received a copy of the GNU Lesser General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+.PP
+\fBAuthor:\fP
+.RS 4
+{Amine Ghozlane} 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+2.0 
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+27 octobre 2009 
+.RE
+.PP
+
+.PP
+Definition in file \fBsimulation.h\fP.
+.SH "Define Documentation"
+.PP 
+.SS "#define END   0"
+.PP
+Definition at line 31 of file simulation.h.
+.PP
+Referenced by SBML_checkQuantite(), SBML_compute_simulation(), SBML_compute_simulation_mean(), SBML_EstimationReaction(), and SBML_simulate().
+.SS "#define OK   -1"
+.PP
+Definition at line 30 of file simulation.h.
+.PP
+Referenced by SBML_findReaction(), SBML_score(), and SBML_setReactions().
+.SS "#define PURSUE   1"
+.PP
+Definition at line 32 of file simulation.h.
+.PP
+Referenced by SBML_simulate().
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBScore\fP * \fBpScore\fP"
+.SS "typedef struct \fBTestReaction\fP* \fBpTestReaction\fP"
+.SS "typedef struct \fBScore\fP \fBScore\fP"
+.SS "typedef struct \fBTestReaction\fP \fBTestReaction\fP"
+.SH "Function Documentation"
+.PP 
+.SS "void SBML_allocTest (\fBpTestReaction\fPT, intnbReactions)"
+.PP
+Alloc memory and initialize the struct pTestReaction. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIT\fP Empty struct \fBTestReaction\fP 
+.br
+\fInbReactions\fP Number of reactions 
+.RE
+.PP
+
+.PP
+Definition at line 279 of file simulation.c.
+.PP
+References TestReaction::minStepTab, and TestReaction::tabReactions.
+.PP
+Referenced by SBML_simulate().
+.SS "int SBML_checkQuantite (Model_t *mod, Reaction_t *react, intnbEspeces, \fBpEspeces\fPmolecules)"
+.PP
+Determine the number of reaction for one molecule. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fIreact\fP \fBReaction\fP id 
+.br
+\fInbEspeces\fP Number of molecules 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of reaction for one molecule 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file simulation.c.
+.PP
+References END, Especes_find(), and Especes_getQuantite().
+.PP
+Referenced by SBML_EstimationReaction(), and SBML_simulate().
+.SS "void SBML_compute_simulation (\fBpScore\fPresult, Model_t *mod, double *reactions_ratio, gsl_rng *r, char **banned, intnbBanned)"
+.PP
+Simulation of metabolic network. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult\fP Struct \fBScore\fP 
+.br
+\fImod\fP Model of the SBML file 
+.br
+\fIreactions_ratio\fP List of computed reaction ratio 
+.br
+\fIr\fP Random number generator 
+.br
+\fIbanned\fP List of banned compound 
+.br
+\fInbBanned\fP Number of banned compound 
+.RE
+.PP
+
+.PP
+Definition at line 515 of file simulation.c.
+.PP
+References END, Especes_alloc(), Especes_free(), SBML_initEspeceAmounts(), SBML_score(), SBML_setReactions(), SBML_simulate(), Score::tailleReactions, and Score::tailleSpecies.
+.PP
+Referenced by Sd_compute_simulation().
+.SS "void SBML_compute_simulation_mean (FILE *debugFile, \fBpScore\fPresult, \fBpScore\fPresult_temp, Model_t *mod, double *reactions_ratio, gsl_rng *r, char **banned, intnbBanned, intnb_simulation)"
+.PP
+X time simulation of metabolic network. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdebugFile\fP File use for debug 
+.br
+\fIresult\fP Struct \fBScore\fP used for all the simulation 
+.br
+\fIresult_temp\fP Struct \fBScore\fP used at each simulation step 
+.br
+\fImod\fP Model of the SBML file 
+.br
+\fIreactions_ratio\fP List of computed reaction ratio 
+.br
+\fIr\fP Random number generator 
+.br
+\fIbanned\fP List of banned compound 
+.br
+\fInbBanned\fP Number of banned compound 
+.br
+\fInb_simulation\fP Number of simulation step 
+.RE
+.PP
+
+.PP
+Definition at line 614 of file simulation.c.
+.PP
+References END, Especes_alloc(), Especes_free(), SBML_initEspeceAmounts(), SBML_score(), SBML_score_add(), SBML_score_mean(), SBML_setReactions(), and SBML_simulate().
+.PP
+Referenced by Min_my_f(), Mod_compute_modeling(), and Recuit_energyFunction().
+.SS "void SBML_debugPrint (FILE *debugFile, inttailleSpecies, inttaille, double *quantite, doubleresult)"
+.PP
+Print the debuf file. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdebugFile\fP File use for debug 
+.br
+\fItailleSpecies\fP Number of molecules 
+.br
+\fItaille\fP Number of molecules/reactions 
+.br
+\fIquantite\fP Quantity of molecules/reactions 
+.br
+\fIresult\fP Energy value 
+.RE
+.PP
+
+.PP
+Definition at line 486 of file simulation.c.
+.PP
+Referenced by Min_my_f(), Mod_compute_modeling(), Recuit_energyFunction(), SBML_score_add(), and Sd_compute_simulation().
+.SS "void SBML_debugPrintHead (FILE *debugFile, inttaille, char **name)"
+.PP
+Print the head of the debug file. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdebugFile\fP File use for debug 
+.br
+\fItaille\fP Number of molecules/reactions 
+.br
+\fIname\fP List of molecules/reactions 
+.RE
+.PP
+
+.PP
+Definition at line 465 of file simulation.c.
+.PP
+Referenced by SBML_score_add(), and Sd_compute_simulation().
+.SS "int SBML_EstimationReaction (Model_t *mod, \fBpTestReaction\fPT, \fBpEspeces\fPmolecules, intref, intnbEspeces)"
+.PP
+Alloc memory and initialize the struct \fBEspeces\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fIT\fP Struct \fBTestReaction\fP gives data on reaction 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fIref\fP Number reference of one molecule 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Estimated number of feasible step by reaction 
+.RE
+.PP
+
+.PP
+Definition at line 322 of file simulation.c.
+.PP
+References END, Reaction::link, TestReaction::minStepTab, SBML_checkQuantite(), Reaction::suivant, Especes::system, and TestReaction::tabReactions.
+.PP
+Referenced by SBML_simulate().
+.SS "double SBML_evalExpression (const char *formule)"
+.PP
+Get the reaction ratio define in the sbml. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIformule\fP Formule SBML 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Return double value of the constraint 
+.RE
+.PP
+
+.PP
+Definition at line 88 of file simulation.c.
+.PP
+Referenced by SBML_score(), and SBML_setReactions().
+.SS "int SBML_findReaction (char **reaction, const char *react, intnb_reaction)"
+.PP
+Determine if the reaction is study. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreaction\fP List of reactions 
+.br
+\fIreact\fP \fBReaction\fP of interest 
+.br
+\fInb_reaction\fP Number of reactions 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Number of the molecules if it's study 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file simulation.c.
+.PP
+References OK.
+.PP
+Referenced by SBML_score(), and SBML_setReactions().
+.SS "void SBML_freeTest (\fBpTestReaction\fPT)"
+.PP
+Free memory of the struct \fBTestReaction\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIT\fP Struct \fBTestReaction\fP gives data on reaction 
+.RE
+.PP
+
+.PP
+Definition at line 304 of file simulation.c.
+.PP
+References TestReaction::minStepTab, and TestReaction::tabReactions.
+.PP
+Referenced by SBML_simulate().
+.SS "void SBML_initEspeceAmounts (Model_t *mod, \fBpEspeces\fPmolecules, intnbEspeces)"
+.PP
+Alloc memory and initialize the struct \fBEspeces\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file simulation.c.
+.PP
+References Especes_save().
+.PP
+Referenced by SBML_compute_simulation(), and SBML_compute_simulation_mean().
+.SS "Reaction_t* SBML_reactChoice (\fBpEspeces\fPmolecules, const gsl_rng *r, intref)"
+.PP
+Determine randomly the reaction to achieve for several nodes reactions. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fIr\fP Random number generator 
+.br
+\fIref\fP Number reference of one molecule 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Id of the selected reaction 
+.RE
+.PP
+
+.PP
+Definition at line 206 of file simulation.c.
+.PP
+References Reaction::link, Reaction::ratio, Reaction::suivant, and Especes::system.
+.PP
+Referenced by SBML_simulate().
+.SS "void SBML_reaction (Model_t *mod, \fBpEspeces\fPmolecules, Reaction_t *react, intnbEspeces)"
+.PP
+Simulation of a discrete transision. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fIreact\fP \fBReaction\fP id 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 244 of file simulation.c.
+.PP
+References Especes_find(), Especes_getQuantite(), and Especes_setQuantite().
+.PP
+Referenced by SBML_simulate().
+.SS "void SBML_score (Model_t *mod, \fBpEspeces\fPmolecules, \fBpScore\fPresult, double *reactions_ratio, intnbReactions, intnbEspeces)"
+.PP
+Alloc memory and initialize the struct \fBEspeces\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fIresult\fP Struct \fBScore\fP 
+.br
+\fIreactions_ratio\fP List of computed reaction ratio 
+.br
+\fInbReactions\fP Number of reactions 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 420 of file simulation.c.
+.PP
+References Especes_scoreSpecies(), Score::name, Score::nb_reaction, OK, Score::quantite, Score::reaction, SBML_evalExpression(), and SBML_findReaction().
+.PP
+Referenced by SBML_compute_simulation(), and SBML_compute_simulation_mean().
+.SS "void SBML_score_add (\fBpScore\fPresult, \fBpScore\fPresult_temp, FILE *debugFile)"
+.PP
+Add scores. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult\fP Struct \fBScore\fP used for all the simulation 
+.br
+\fIresult_temp\fP Struct \fBScore\fP used at each simulation step 
+.br
+\fIdebugFile\fP File use for debug 
+.RE
+.PP
+
+.PP
+Definition at line 560 of file simulation.c.
+.PP
+References Score::name, Score::quantite, SBML_debugPrint(), SBML_debugPrintHead(), Score::taille, and Score::tailleSpecies.
+.PP
+Referenced by SBML_compute_simulation_mean().
+.SS "void SBML_score_mean (\fBpScore\fPresult, intn)"
+.PP
+Mean quantities for score. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIresult\fP Struct \fBScore\fP 
+.br
+\fIn\fP Number of simulation step 
+.RE
+.PP
+
+.PP
+Definition at line 591 of file simulation.c.
+.PP
+References Score::quantite, and Score::taille.
+.PP
+Referenced by SBML_compute_simulation_mean().
+.SS "void SBML_setReactions (Model_t *mod, \fBpEspeces\fPmolecules, \fBpScore\fPresult, double *reactions_ratio, intnbReactions, intnbEspeces)"
+.PP
+Alloc memory and initialize the struct \fBEspeces\fP. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fIresult\fP Struct \fBScore\fP 
+.br
+\fIreactions_ratio\fP List of computed reaction ratio 
+.br
+\fInbReactions\fP Number of reaction 
+.br
+\fInbEspeces\fP Number of molecules 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file simulation.c.
+.PP
+References Especes_allocReactions(), Especes_find(), Score::nb_reaction, OK, Score::reaction, SBML_evalExpression(), and SBML_findReaction().
+.PP
+Referenced by SBML_compute_simulation(), and SBML_compute_simulation_mean().
+.SS "int SBML_simulate (Model_t *mod, \fBpEspeces\fPmolecules, const gsl_rng *r, \fBpTestReaction\fPT, char **banned, intnbBanned, intnbEspeces, intref)"
+.PP
+Simulate one step of petri net. \fBAuthor:\fP
+.RS 4
+Amine Ghozlane 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fImod\fP Model of the SBML file 
+.br
+\fImolecules\fP Struct \fBEspeces\fP 
+.br
+\fIr\fP Random number generator 
+.br
+\fIT\fP Struct \fBTestReaction\fP gives data on reaction 
+.br
+\fIbanned\fP List of banned compound 
+.br
+\fInbBanned\fP Number of banned compound 
+.br
+\fInbEspeces\fP Number of molecules 
+.br
+\fIref\fP Number reference of one molecule 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Condition of stop/pursue 
+.RE
+.PP
+
+.PP
+Definition at line 356 of file simulation.c.
+.PP
+References END, Especes_getNbreactions(), Especes_getQuantite(), Reaction::link, PURSUE, SBML_allocTest(), SBML_checkQuantite(), SBML_EstimationReaction(), SBML_freeTest(), SBML_reactChoice(), SBML_reaction(), and Especes::system.
+.PP
+Referenced by SBML_compute_simulation(), and SBML_compute_simulation_mean().
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MetaboFlux from the source code.

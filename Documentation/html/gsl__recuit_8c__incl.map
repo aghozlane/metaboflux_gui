@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node37" href="$xml__parameter_8h.html" title="Xml reader for parametre.xml." alt="" coords="1968,83,2085,112"/>
+<area shape="rect" id="node39" href="$especes_8h.html" title="Modelize a molecule." alt="" coords="2109,83,2192,112"/>
+<area shape="rect" id="node41" href="$equations_8h.html" title="Processes an equation in MathML format." alt="" coords="2216,83,2304,112"/>
+<area shape="rect" id="node43" href="$simulation_8h.html" title="Simulate a petri net." alt="" coords="2328,83,2419,112"/>
+<area shape="rect" id="node45" href="$data__parameters_8h.html" title="Load data parameters." alt="" coords="2443,83,2573,112"/>
+<area shape="rect" id="node47" href="$gsl__recuit_8h.html" title="Compute the simulated annealing." alt="" coords="2597,83,2685,112"/>
+</map>

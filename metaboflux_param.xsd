@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- listOfReactions -->
+  <xsd:element name="reaction">
+    <xsd:complexType>
+      <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="noeud">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="reaction" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="reference" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="listOfReactions">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="noeud" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- listOfSpecies -->
+  <xsd:element name="species">
+    <xsd:complexType>
+      <xsd:attribute name="id" type="xsd:string" use="required"/>
+      <xsd:attribute name="finalAmount" type="xsd:integer" use="required"/>
+      <xsd:attribute name="weight" type="xsd:integer" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="listOfSpecies">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="species" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- listOfBannedCompounds -->
+  <xsd:element name="compounds">
+    <xsd:complexType>
+      <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="listOfBannedCompounds">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="compounds" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- listOfKineticlaw -->
+  <xsd:group name="equ">
+    <xsd:choice>
+      <xsd:element name="mi" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="mo" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="mn" type="xsd:decimal" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:choice>
+  </xsd:group>
+
+  <xsd:element name="mrow">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:group ref="equ" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="math">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="mrow"/>
+      </xsd:sequence>
+      <xsd:attribute name="display" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="listOfKineticlaw">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="math" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <!-- representations -->
+  <xsd:element name="graph">
+    <xsd:complexType>
+      <xsd:attribute name="reference" type="xsd:string" use="required"/>
+      <xsd:attribute name="title" type="xsd:string" use="required"/>
+      <xsd:attribute name="subtitle" type="xsd:string" use="required"/>
+      <xsd:attribute name="xtext" type="xsd:string" use="required"/>
+      <xsd:attribute name="ytext" type="xsd:string" use="required"/>
+      <xsd:attribute name="height" type="xsd:string" use="required"/>
+      <xsd:attribute name="width" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="representations">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="graph" minOccurs="5" maxOccurs="5"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- definition of element type -->
+
+  <xsd:element name="parameters">
+    <xsd:complexType>
+      <xsd:all>
+        
+        <xsd:element name="name" type="xsd:string"/>
+        <xsd:element name="nbSimulations" type="xsd:integer"/>
+        <xsd:element name="nbtriesSa" type="xsd:integer"/>
+        <xsd:element name="nbtriesMod" type="xsd:integer"/>
+        <xsd:element name="nbiters" type="xsd:integer"/>
+        <xsd:element name="stepsize" type="xsd:decimal"/>
+        <xsd:element name="boltzmann" type="xsd:decimal"/>
+        <xsd:element name="Tinitial" type="xsd:decimal"/>
+        <xsd:element name="muT" type="xsd:decimal"/>
+        <xsd:element name="Tmin" type="xsd:decimal"/>
+        <xsd:element name="groupSize" type="xsd:integer"/>
+        <xsd:element name="nbGroup" type="xsd:integer"/>
+        <xsd:element name="interestEnergy" type="xsd:integer"/>
+
+        <xsd:element ref="listOfReactions"/>
+        <xsd:element ref="listOfSpecies"/>
+        <xsd:element ref="listOfKineticlaw"/>
+        <xsd:element ref="listOfBannedCompounds"/>
+        <xsd:element ref="representations"/>
+                
+      </xsd:all>
+    </xsd:complexType>
+  </xsd:element> 
+
+</xsd:schema>
